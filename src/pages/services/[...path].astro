@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import {familyPaths} from '../../data/page-entrypoints.mjs';
+import ServiceFamily from '../../components/ServiceFamily.astro';
+import ACRepair from '../../components/ACRepair.astro';
+import EmergencyHVAC from '../../components/EmergencyHVAC.astro';
+import FamilyPilotHub from '../../components/FamilyPilotHub.astro';
+import FamilyPilotService from '../../components/FamilyPilotService.astro';
+import {serviceRolloutIds} from '../../data/service-family-rollout.mjs';
+import {contextFor} from '../../data/catalog.mjs';
+export function getStaticPaths(){return familyPaths('services','services');}
+const {route,content}=Astro.props;
+const context=contextFor(route);
+---
+<Base route={route} content={content}>{route.page_id==='ST-005'?<FamilyPilotHub route={route}/>:route.page_id==='ST-079'?<EmergencyHVAC route={route} content={content}/>:route.page_id==='ST-061'?<ACRepair route={route} content={content}/>:serviceRolloutIds.includes(route.page_id)?<ServiceFamily route={route} content={content}/>:<FamilyPilotService route={route} content={content}/>}</Base>

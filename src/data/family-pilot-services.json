@@ -1,0 +1,381 @@
+{
+  "ST-059": {
+    "title": "We fix furnace problems, from no heat to new noises.",
+    "summary": "Tell us what changed. MGI Heating and Air can check the cause and explain the repair before you choose the work.",
+    "label": "Request furnace repair",
+    "close": "Tell us what your furnace is doing",
+    "closeBody": "Start with when the heat changed and what you notice now. You can request a repair visit without choosing a part or agreeing to replacement.",
+    "safety": "Gas smell? Leave. From a safe place, call 911 and your gas utility. Do not use switches or try to relight the furnace. Suspected carbon monoxide? Get outside to fresh air and call 911. Smoke or immediate danger? Leave and call 911 from a safe place.",
+    "faqs": [
+      [
+        "Can a repair be finished on the first visit?",
+        "That depends on the fault and whether the needed parts are available. If a part must be ordered, ask about the next step and any added cost."
+      ],
+      [
+        "Does furnace age mean replacement?",
+        "No. Condition, past repairs, available parts, and the heat your home needs matter too. Compare what each choice would fix before deciding."
+      ],
+      [
+        "What should I know about the diagnostic charge?",
+        "Get the visit charge, what it covers, and any credit toward the repair clear before arranging the visit. The repair price is a separate detail."
+      ],
+      [
+        "What if the same problem returns?",
+        "Keep the findings and repair record. Refer to the written parts and labor terms, and contact the office with the original concern and what changed."
+      ]
+    ],
+    "unresolvedOperatingInputs": [
+      "Exact visit scope and inclusions",
+      "Fee basis and current price range",
+      "Intake confirmation and ownership",
+      "Written coverage and follow-through"
+    ],
+    "sections": [
+      {
+        "key": "recognition",
+        "heading": "Start with what changed",
+        "body": "You do not need to know which part failed. Describe what you can see or hear without opening the furnace.",
+        "bullets": [
+          "When the heat changed, and whether it stays off or starts briefly.",
+          "Which rooms feel different, and any error already visible on the display.",
+          "Past repairs or the model, if you have them handy.",
+          "Your address, access to the equipment, and pets the visitor should know about."
+        ]
+      },
+      {
+        "key": "trust",
+        "heading": "Know who you are choosing",
+        "body": "Get to know MGI and hear from a customer about their furnace work.",
+        "review": "John Beilman",
+        "reviewScope": "John describes his experience with furnace work.",
+        "action": true
+      },
+      {
+        "key": "process",
+        "heading": "Finding the cause comes before choosing work",
+        "body": "Finding the fault comes first. The repair choice follows the findings, the available parts, and the full price.",
+        "steps": [
+          [
+            "Describe the concern",
+            "Start with when the heat changed and what you notice now."
+          ],
+          [
+            "Understand the finding",
+            "What was checked, what points to the cause, and what is still unknown?"
+          ],
+          [
+            "Choose the work",
+            "Get the proposed work, full price, and your approval step clear before work starts."
+          ]
+        ]
+      },
+      {
+        "key": "money",
+        "heading": "The visit and the repair have separate costs",
+        "body": "Know the visit terms before arranging help. Finding a fault and approving its repair are separate decisions.",
+        "rows": [
+          [
+            "The visit",
+            "Agree on what will be checked and the diagnostic charge before the visit is arranged. Ask whether that charge is credited toward a repair."
+          ],
+          [
+            "Separate work",
+            "A repair may need parts or another visit. Get the repair price and your approval step clear before work starts."
+          ]
+        ],
+        "action": true
+      },
+      {
+        "key": "options",
+        "heading": "What would this repair fix?",
+        "body": "A repair that restores heat may not solve a cold back room. Compare the finding with the concern you want solved. Age alone does not decide whether a furnace needs replacing.",
+        "rows": [
+          [
+            "The finding",
+            "What was checked, what points to the cause, and what is still unknown?"
+          ],
+          [
+            "The choice",
+            "Compare the repair cost, parts availability, and written coverage with the full replacement project."
+          ],
+          [
+            "The follow-through",
+            "Understand who to contact if the same problem returns, and which terms apply."
+          ]
+        ],
+        "links": [
+          [
+            "/answers/repair-before-replacement/",
+            "Read repair assessment questions"
+          ],
+          [
+            "/services/furnace-replacement/",
+            "Explore furnace replacement"
+          ]
+        ]
+      }
+    ]
+  },
+  "ST-060": {
+    "title": "We help you choose and install a new furnace.",
+    "summary": "MGI Heating and Air helps you compare repair with replacement and plan a new furnace installation. Start with your home, the findings, and the full project.",
+    "label": "Request a replacement assessment",
+    "close": "Talk through the full project",
+    "closeBody": "Bring your concerns, past repairs, and any quotes you want to compare. A consultation request starts the conversation. It does not authorize a purchase.",
+    "safety": "If you smell gas, leave the area. From a safe place, call 911 and your gas utility. Do not use switches or try to relight the furnace. If you suspect carbon monoxide, get outside to fresh air and call 911. For smoke or other immediate danger, leave the area and call 911 from a safe place.",
+    "faqs": [
+      [
+        "How is the furnace size chosen?",
+        "The choice should fit the heat the home needs, not just match the old furnace. Ask what the sizing recommendation is based on and how the proposed model fits those needs."
+      ],
+      [
+        "What should the estimate include?",
+        "Equipment and installation work, what stays, what is removed, and any separate trade or permit responsibility. Make sure added work and checks at the finish are clear."
+      ],
+      [
+        "How long will installation take?",
+        "The work in your home sets the timeline. Get a project-specific plan, including time without heat and any work that must happen first."
+      ],
+      [
+        "What warranty applies?",
+        "Equipment and labor coverage can have different terms. Read the written coverage, registration duties, exclusions, and contact route before choosing."
+      ],
+      [
+        "Will a higher efficiency rating lower my bill?",
+        "The rating alone does not establish a lower bill. Fuel price, home heat loss, weather, and use also affect the cost. A useful estimate names its assumptions."
+      ]
+    ],
+    "unresolvedOperatingInputs": [
+      "Exact visit scope and inclusions",
+      "Fee basis and current price range",
+      "Intake confirmation and ownership",
+      "Written coverage and follow-through"
+    ],
+    "sections": [
+      {
+        "key": "recognition",
+        "heading": "Age is a clue. The whole picture decides.",
+        "body": "A new furnace is one choice. A supported repair can be another. A repeated fault, a hard-to-find part, or a room that still feels wrong can change the comparison.",
+        "rows": [
+          [
+            "Condition and repairs",
+            "Look at what failed, the past repair history, and whether the next repair addresses the cause."
+          ],
+          [
+            "Your home",
+            "Compare the heat your home needs and the rooms you want to improve. A new furnace alone does not explain every cold room."
+          ],
+          [
+            "The total",
+            "Put the complete repair and replacement prices side by side, with coverage and unfinished work included."
+          ]
+        ],
+        "links": [
+          [
+            "/answers/repair-before-replacement/",
+            "Read repair assessment questions"
+          ],
+          [
+            "/services/furnace-repair/",
+            "Explore furnace repair"
+          ]
+        ]
+      },
+      {
+        "key": "trust",
+        "heading": "A customer’s installation experience",
+        "body": "Choosing an installer is part of choosing the project. Read about MGI and one customer’s experience with a combined AC and heating installation.",
+        "review": "Sara Mitchell",
+        "reviewScope": "Sara describes her combined AC and heating installation. This is not a furnace-only result or a guarantee.",
+        "action": true
+      },
+      {
+        "key": "process",
+        "heading": "Keep the assessment and the purchase separate",
+        "body": "A consultation request starts the conversation. It does not authorize a purchase.",
+        "steps": [
+          [
+            "Name the concern",
+            "Bring your concerns, past repairs, and any quotes you want to compare."
+          ],
+          [
+            "Understand the proposal",
+            "Compare what each choice would fix, what stays, and what work is separate."
+          ],
+          [
+            "Choose from the full scope",
+            "Keep the agreed work and any changes in writing."
+          ]
+        ]
+      },
+      {
+        "key": "scope",
+        "heading": "Compare the complete work",
+        "body": "The furnace price is only part of the project. A useful written estimate makes the equipment, installation work, and separate responsibilities clear.",
+        "rows": [
+          [
+            "Equipment and fit",
+            "The proposed model, how its size was chosen for the home, and which existing equipment can stay."
+          ],
+          [
+            "Connections and installation",
+            "Fuel, venting, controls, removal of old equipment, permits, and any work by another trade. Identify what is included and what is separate."
+          ],
+          [
+            "Checks and handoff",
+            "Startup checks, control instructions, records, and who owns anything still unfinished."
+          ]
+        ]
+      },
+      {
+        "key": "money",
+        "heading": "Start with the full price. Then ways to pay.",
+        "body": "Equipment, installation work, and changes needed in your home affect the price. Keep the amount due separate from possible rebates and monthly payments.",
+        "bullets": [
+          "Compare the full project cost before comparing a monthly payment.",
+          "A monthly payment is only one part of the financing decision. Read the full terms and approval conditions before committing."
+        ],
+        "financingInformation": true,
+        "action": true
+      },
+      {
+        "key": "options",
+        "heading": "Know how the work will finish",
+        "body": "The project sets the timing. Before installation, get access needs, time without heat, and work by other trades clear. At the finish, review the checks, controls, and written equipment and labor coverage.",
+        "bullets": [
+          "Keep the agreed work and any changes in writing.",
+          "Know who handles registration, warranty questions, and any unfinished work.",
+          "An efficiency rating compares heat produced with fuel used. Actual running cost also depends on fuel price, heat lost from the home, and how you use the heat."
+        ]
+      }
+    ]
+  },
+  "ST-063": {
+    "title": "We help you stay on top of furnace care.",
+    "summary": "MGI Heating and Air provides furnace maintenance. Plan a care visit with the checks, price, and any separate work clear before you agree.",
+    "label": "Request furnace maintenance",
+    "close": "Plan the care your furnace needs",
+    "closeBody": "Share the furnace model or past service record if you have it. You can start without those details. A maintenance request does not enroll you in a membership.",
+    "safety": "If you smell gas, leave the area. From a safe place, call 911 and your gas utility. Do not use switches or try to relight the furnace. If you suspect carbon monoxide, get outside to fresh air and call 911. For smoke or other immediate danger, leave the area and call 911 from a safe place.",
+    "faqs": [
+      [
+        "How often should my furnace be checked?",
+        "ENERGY STAR recommends annual preseason heating checkups. The furnace's instructions and a qualified assessment guide care for your exact equipment."
+      ],
+      [
+        "Is a new filter included?",
+        "Filter type and supply are part of the visit terms. Check whether a filter is supplied or charged separately. Follow the furnace's instructions for the right filter."
+      ],
+      [
+        "What if a problem is found?",
+        "Get the finding, its meaning, and the recommended next step clear. A care visit and a repair are separate decisions; understand any added charge before approving work."
+      ],
+      [
+        "Should I wait for maintenance if the heat stops?",
+        "No heat is a repair concern. Use the repair path and describe what stopped. If you smell gas, leave and call 911 and your gas utility from a safe place. If you suspect carbon monoxide, get outside to fresh air and call 911. For other immediate danger, leave and call 911 from a safe place."
+      ]
+    ],
+    "unresolvedOperatingInputs": [
+      "Exact visit scope and inclusions",
+      "Fee basis and current price range",
+      "Intake confirmation and ownership",
+      "Written coverage and follow-through"
+    ],
+    "sections": [
+      {
+        "key": "recognition",
+        "heading": "A current problem needs its own path",
+        "body": "No heat, a recurring error, or a new furnace noise needs a problem assessment. Tell the office what changed so a current fault is not treated as routine care.",
+        "links": [
+          [
+            "/services/furnace-repair/",
+            "Explore furnace repair"
+          ]
+        ]
+      },
+      {
+        "key": "scope",
+        "heading": "Know what you are buying",
+        "body": "A maintenance visit is agreed checks and care. It does not include every repair the furnace might need. The exact furnace and its instructions guide the work.",
+        "rows": [
+          [
+            "The care visit",
+            "Get the equipment and tasks covered, filter or other supplies included, and the full visit charge clear."
+          ],
+          [
+            "Separate repairs",
+            "A finding may lead to recommended work. Understand the finding and approve repairs as a separate decision."
+          ],
+          [
+            "The record",
+            "A useful care record says what was checked, what was found, and what was not checked."
+          ]
+        ]
+      },
+      {
+        "key": "trust",
+        "heading": "What a professional check can cover",
+        "body": "ENERGY STAR describes common heating checks. They explain the kind of work involved; the tasks included in your MGI visit depend on the agreed visit terms.",
+        "rows": [
+          [
+            "Controls",
+            "Check whether the thermostat and controls start, run, and stop the heat as intended."
+          ],
+          [
+            "Electrical parts",
+            "Check connections and the power supplied to the motor. These are professional checks, not homeowner tasks."
+          ],
+          [
+            "Fuel and heat",
+            "Check gas connections, gas pressure, the burner, and the heat exchanger, the part that transfers heat to the air. These checks need a qualified person."
+          ]
+        ],
+        "source": "https://www.energystar.gov/saveathome/heating-cooling/maintenance-checklist",
+        "sourceLabel": "Read the general maintenance checklist"
+      },
+      {
+        "key": "process",
+        "heading": "A finding is not permission for extra work",
+        "body": "Get the finding, its meaning, and the recommended next step clear. A care visit and a repair are separate decisions; understand any added charge before approving work.",
+        "steps": [
+          [
+            "Choose the visit",
+            "Get the equipment and tasks covered, filter or other supplies included, and the full visit charge clear."
+          ],
+          [
+            "Keep the findings",
+            "A useful care record says what was checked, what was found, and what was not checked."
+          ],
+          [
+            "Decide about repairs",
+            "Understand the finding and approve repairs as a separate decision."
+          ]
+        ]
+      },
+      {
+        "key": "money",
+        "heading": "Start with one defined care visit",
+        "body": "Know the full visit charge and what costs extra. A maintenance request does not enroll you in a membership.",
+        "action": true
+      },
+      {
+        "key": "options",
+        "heading": "Care between visits",
+        "body": "ENERGY STAR recommends annual preseason checkups, with heating checked in fall. It also recommends monthly filter inspection. Inspection does not mean every filter needs replacing every month.",
+        "bullets": [
+          "Follow your model's owner instructions for filter type and care.",
+          "Notice a new noise, repeated error, or change in heat. Share the pattern instead of trying internal equipment checks.",
+          "Leave electrical, fuel, and combustion checks to a qualified person. Do not open internal panels or try repeated resets."
+        ],
+        "source": "https://www.energystar.gov/saveathome/heating-cooling/maintenance-checklist",
+        "sourceLabel": "Read ENERGY STAR's maintenance guidance",
+        "links": [
+          [
+            "/answers/find-furnace-filter/",
+            "Read where to find the furnace filter"
+          ]
+        ]
+      }
+    ]
+  }
+}

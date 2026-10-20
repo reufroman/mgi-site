@@ -1,0 +1,672 @@
+{
+  "ST-020": {
+    "kind": "hub",
+    "financing": false,
+    "heroHeading": "Furnace help for life at home.",
+    "heroBody": "The house feels cold, the furnace sounds different, or you are planning a change. Find the repair, replacement, or care path that fits what is happening.",
+    "label": "Ask about furnace help",
+    "preparationHeading": "What does your furnace need?",
+    "preparationBody": "Choose the concern closest to yours. You do not have to diagnose the problem first.",
+    "preparation": [
+      {
+        "title": "What you notice",
+        "body": "Tell us whether heat stopped, a room stays cold or you want to plan ahead. The equipment type, controls and past work can help guide the right assessment."
+      },
+      {
+        "title": "What you want to change",
+        "body": "If something stopped, ask about a diagnosis. If the system works but you are planning ahead, compare care or replacement options based on the home’s needs."
+      },
+      {
+        "title": "Before a visit",
+        "body": "Share what you want checked or changed, the equipment if known and any current problem. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation."
+      }
+    ],
+    "technicalHeading": "Useful details about furnaces.",
+    "technicalTitles": [
+      "What AFUE measures",
+      "What the rating leaves out",
+      "What the thermostat shows",
+      "Airflow and shutdown"
+    ],
+    "findingsHeading": "What to check before choosing furnace work.",
+    "processHeading": "A clear next step. More room for home life.",
+    "processBody": "Start with the concern, agree on the work, and understand the finish.",
+    "steps": [
+      [
+        "Choose the right conversation.",
+        "Share the equipment and what you notice or want to change. Confirm the visit scope, charge, and available appointment."
+      ],
+      [
+        "Decide with the findings in view.",
+        "Review the recommended work, what it would address, its full cost, and anything still unknown before approving it."
+      ],
+      [
+        "Make room for the rest of your day.",
+        "After the agreed work, review the checks and any remaining next step. Keep the record and get back to the moments you enjoy at home."
+      ]
+    ],
+    "closeHeading": "Let’s give your furnace question a clear next step.",
+    "closeBody": "Bring the concern or the change you are planning. Ask about the help that fits, so you can make the choice with useful information.",
+    "comparisonHref": "/services/furnace-repair/",
+    "comparisonLabel": "Furnace Repair",
+    "replacementHref": "/services/furnace-replacement/",
+    "replacementLabel": "Furnace Replacement",
+    "safety": "Gas smell? Leave. From a safe place, call 911 and your gas utility. Do not use switches or try to relight the furnace. Suspected carbon monoxide? Get outside to fresh air and call 911. Smoke or immediate danger? Leave and call 911 from a safe place.",
+    "quoteHeading": "Choose your service path.",
+    "quoteIntro": "Each path answers a different question.",
+    "quoteQuestions": [],
+    "quoteLimit": "",
+    "servicePaths": [
+      {
+        "href": "/services/furnace-repair/",
+        "title": "Furnace Repair",
+        "body": "Repair addresses a fault after someone checks the furnace. A symptom alone does not name the part."
+      },
+      {
+        "href": "/services/furnace-replacement/",
+        "title": "Furnace Replacement",
+        "body": "Replacement means choosing a furnace and all the work needed to install and set it up."
+      },
+      {
+        "href": "/services/furnace-maintenance/",
+        "title": "Furnace Maintenance",
+        "body": "Maintenance is a defined check and care visit. It is not every repair the furnace might need."
+      }
+    ]
+  },
+  "ST-021": {
+    "kind": "hub",
+    "financing": false,
+    "heroHeading": "Air conditioning help for life at home.",
+    "heroBody": "Cooling stopped, one room stays hot or a replacement quote is hard to compare? Choose the AC repair, care or replacement path that matches the question.",
+    "label": "Ask about air conditioning help",
+    "preparationHeading": "What does your air conditioning need?",
+    "preparationBody": "Choose the concern closest to yours. You do not have to diagnose the problem first.",
+    "preparation": [
+      {
+        "title": "What you notice",
+        "body": "Note whether the whole home or one room is affected and when it happens. An ice patch, wet area or longer runtime is a symptom to assess, not a replacement verdict."
+      },
+      {
+        "title": "What you want to change",
+        "body": "If something stopped, ask about a diagnosis. If the system works but you are planning ahead, compare care or replacement options based on the home’s needs."
+      },
+      {
+        "title": "Before a visit",
+        "body": "Share what you want checked or changed, the equipment if known and any current problem. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation."
+      }
+    ],
+    "technicalHeading": "Useful details about air conditioning.",
+    "technicalTitles": [
+      "How heat moves",
+      "Why ice can form",
+      "The fan setting",
+      "What SEER2 measures"
+    ],
+    "findingsHeading": "What to check before choosing AC work.",
+    "processHeading": "A clear next step. More room for home life.",
+    "processBody": "Start with the concern, agree on the work, and understand the finish.",
+    "steps": [
+      [
+        "Choose the right conversation.",
+        "Share the equipment and what you notice or want to change. Confirm the visit scope, charge, and available appointment."
+      ],
+      [
+        "Decide with the findings in view.",
+        "Review the recommended work, what it would address, its full cost, and anything still unknown before approving it."
+      ],
+      [
+        "Make room for the rest of your day.",
+        "After the agreed work, review the checks and any remaining next step. Keep the record and get back to the moments you enjoy at home."
+      ]
+    ],
+    "closeHeading": "Let’s give your air conditioning question a clear next step.",
+    "closeBody": "Bring the concern or the change you are planning. Ask about the help that fits, so you can make the choice with useful information.",
+    "comparisonHref": "/services/ac-repair/",
+    "comparisonLabel": "AC Repair",
+    "replacementHref": "/services/ac-replacement/",
+    "replacementLabel": "AC Replacement",
+    "safety": "",
+    "quoteHeading": "Choose your service path.",
+    "quoteIntro": "Each path answers a different question.",
+    "quoteQuestions": [],
+    "quoteLimit": "",
+    "servicePaths": [
+      {
+        "href": "/services/ac-repair/",
+        "title": "AC Repair",
+        "body": "AC repair starts with finding why cooling stopped or changed. Warm air, ice and water each need a check."
+      },
+      {
+        "href": "/services/ac-replacement/",
+        "title": "AC Replacement",
+        "body": "A replacement AC must fit the home and work with the indoor equipment that remains."
+      },
+      {
+        "href": "/services/ac-maintenance/",
+        "title": "AC Maintenance",
+        "body": "AC maintenance checks the cooling equipment and keeps defined parts clean and working as designed."
+      }
+    ]
+  },
+  "ST-022": {
+    "kind": "hub",
+    "financing": false,
+    "heroHeading": "Heat pump help for life at home.",
+    "heroBody": "Exploring a heat pump, or need help with one you already own? Separate an existing heating or cooling problem from a new-equipment comparison.",
+    "label": "Ask about heat pump help",
+    "preparationHeading": "What does your heat pump need?",
+    "preparationBody": "Choose the concern closest to yours. You do not have to diagnose the problem first.",
+    "preparation": [
+      {
+        "title": "What you notice",
+        "body": "A space heat pump heats and cools rooms. A heat-pump water heater warms stored water. Identify the equipment and the decision you want help with."
+      },
+      {
+        "title": "What you want to change",
+        "body": "If something stopped, ask about a diagnosis. If the system works but you are planning ahead, compare care or replacement options based on the home’s needs."
+      },
+      {
+        "title": "Before a visit",
+        "body": "Share what you want checked or changed, the equipment if known and any current problem. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation."
+      }
+    ],
+    "technicalHeading": "Useful details about heat pumps.",
+    "technicalTitles": [
+      "Heating and cooling",
+      "A heat pump with a furnace",
+      "Sizing starts with your home",
+      "Cold-weather output"
+    ],
+    "findingsHeading": "What to check before choosing heat pump work.",
+    "processHeading": "A clear next step. More room for home life.",
+    "processBody": "Start with the concern, agree on the work, and understand the finish.",
+    "steps": [
+      [
+        "Choose the right conversation.",
+        "Share the equipment and what you notice or want to change. Confirm the visit scope, charge, and available appointment."
+      ],
+      [
+        "Decide with the findings in view.",
+        "Review the recommended work, what it would address, its full cost, and anything still unknown before approving it."
+      ],
+      [
+        "Make room for the rest of your day.",
+        "After the agreed work, review the checks and any remaining next step. Keep the record and get back to the moments you enjoy at home."
+      ]
+    ],
+    "closeHeading": "Let’s give your heat pump question a clear next step.",
+    "closeBody": "Bring the concern or the change you are planning. Ask about the help that fits, so you can make the choice with useful information.",
+    "comparisonHref": "/services/heat-pump-repair/",
+    "comparisonLabel": "Heat Pump Repair",
+    "replacementHref": "/services/heat-pump-installation/",
+    "replacementLabel": "Heat Pump Installation and Replacement",
+    "safety": "",
+    "quoteHeading": "Choose your service path.",
+    "quoteIntro": "Each path answers a different question.",
+    "quoteQuestions": [],
+    "quoteLimit": "",
+    "servicePaths": [
+      {
+        "href": "/services/heat-pump-repair/",
+        "title": "Heat Pump Repair",
+        "body": "Repair checks heating, cooling, controls and any backup heat before replacing parts."
+      },
+      {
+        "href": "/services/heat-pump-installation/",
+        "title": "Heat Pump Installation and Replacement",
+        "body": "Installation chooses a system and controls that can meet the home's heating and cooling needs."
+      },
+      {
+        "href": "/services/heat-pump-maintenance/",
+        "title": "Heat Pump Maintenance",
+        "body": "Heat-pump care checks equipment used for both heating and cooling, including outdoor winter behavior."
+      }
+    ]
+  },
+  "ST-023": {
+    "kind": "hub",
+    "financing": false,
+    "heroHeading": "Water heater help for life at home.",
+    "heroBody": "Hot water stopped, runs out too soon or needs a replacement plan? Find the right water-heater question before choosing a tank or a repair.",
+    "label": "Ask about water heater help",
+    "preparationHeading": "What does your water heater need?",
+    "preparationBody": "Choose the concern closest to yours. You do not have to diagnose the problem first.",
+    "preparation": [
+      {
+        "title": "What you notice",
+        "body": "Describe whether all fixtures are affected, whether water stays cold or runs out and any visible leak. Fuel, controls and equipment type help guide the next check."
+      },
+      {
+        "title": "What you want to change",
+        "body": "If something stopped, ask about a diagnosis. If the system works but you are planning ahead, compare care or replacement options based on the home’s needs."
+      },
+      {
+        "title": "Before a visit",
+        "body": "Share what you want checked or changed, the equipment if known and any current problem. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation."
+      }
+    ],
+    "technicalHeading": "Useful details about water heaters.",
+    "technicalTitles": [
+      "Hot water in the first hour",
+      "What the efficiency rating measures",
+      "The tank’s protective rod",
+      "Electric heating elements"
+    ],
+    "findingsHeading": "What to check before choosing water heater work.",
+    "processHeading": "A clear next step. More room for home life.",
+    "processBody": "Start with the concern, agree on the work, and understand the finish.",
+    "steps": [
+      [
+        "Choose the right conversation.",
+        "Share the equipment and what you notice or want to change. Confirm the visit scope, charge, and available appointment."
+      ],
+      [
+        "Decide with the findings in view.",
+        "Review the recommended work, what it would address, its full cost, and anything still unknown before approving it."
+      ],
+      [
+        "Make room for the rest of your day.",
+        "After the agreed work, review the checks and any remaining next step. Keep the record and get back to the moments you enjoy at home."
+      ]
+    ],
+    "closeHeading": "Let’s give your water heater question a clear next step.",
+    "closeBody": "Bring the concern or the change you are planning. Ask about the help that fits, so you can make the choice with useful information.",
+    "comparisonHref": "/services/water-heater-repair/",
+    "comparisonLabel": "Water Heater Repair",
+    "replacementHref": "/services/water-heater-replacement/",
+    "replacementLabel": "Water Heater Installation and Replacement",
+    "safety": "",
+    "quoteHeading": "Choose your service path.",
+    "quoteIntro": "Each path answers a different question.",
+    "quoteQuestions": [],
+    "quoteLimit": "",
+    "servicePaths": [
+      {
+        "href": "/services/water-heater-repair/",
+        "title": "Water Heater Repair",
+        "body": "A repair checks the heat source, controls and leak location before deciding what can be fixed."
+      },
+      {
+        "href": "/services/water-heater-replacement/",
+        "title": "Water Heater Installation and Replacement",
+        "body": "Replacement selects useful hot-water delivery and defines the entire installation job."
+      },
+      {
+        "href": "/services/water-heater-maintenance/",
+        "title": "Water Heater Maintenance",
+        "body": "Care depends on whether the unit has a tank, burner, electric elements or a heat pump."
+      }
+    ]
+  },
+  "ST-024": {
+    "kind": "hub",
+    "financing": false,
+    "heroHeading": "Heat-pump water heater help for life at home.",
+    "heroBody": "Considering a heat-pump water heater, or have a question about an existing one? Start with hot-water demand, the installation room and the actual model.",
+    "label": "Ask about heat-pump water heater help",
+    "preparationHeading": "What does your heat-pump water heater need?",
+    "preparationBody": "Choose the concern closest to yours. You do not have to diagnose the problem first.",
+    "preparation": [
+      {
+        "title": "What you notice",
+        "body": "A heat-pump water heater uses surrounding air to warm water. Temperature, air space, drainage, electrical supply and operating noise can affect the fit."
+      },
+      {
+        "title": "What you want to change",
+        "body": "If something stopped, ask about a diagnosis. If the system works but you are planning ahead, compare care or replacement options based on the home’s needs."
+      },
+      {
+        "title": "Before a visit",
+        "body": "Share what you want checked or changed, the equipment if known and any current problem. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation."
+      }
+    ],
+    "technicalHeading": "Useful details about heat-pump water heaters.",
+    "technicalTitles": [
+      "Hot water in the first hour",
+      "What the efficiency rating measures",
+      "Room and air-space requirements",
+      "Room conditions and backup heat"
+    ],
+    "findingsHeading": "What to check before choosing heat-pump water heater work.",
+    "processHeading": "A clear next step. More room for home life.",
+    "processBody": "Start with the concern, agree on the work, and understand the finish.",
+    "steps": [
+      [
+        "Choose the right conversation.",
+        "Share the equipment and what you notice or want to change. Confirm the visit scope, charge, and available appointment."
+      ],
+      [
+        "Decide with the findings in view.",
+        "Review the recommended work, what it would address, its full cost, and anything still unknown before approving it."
+      ],
+      [
+        "Make room for the rest of your day.",
+        "After the agreed work, review the checks and any remaining next step. Keep the record and get back to the moments you enjoy at home."
+      ]
+    ],
+    "closeHeading": "Let’s give your heat-pump water heater question a clear next step.",
+    "closeBody": "Bring the concern or the change you are planning. Ask about the help that fits, so you can make the choice with useful information.",
+    "comparisonHref": "/services/heat-pump-water-heater-repair/",
+    "comparisonLabel": "Heat-Pump Water Heater Repair",
+    "replacementHref": "/services/heat-pump-water-heater-installation/",
+    "replacementLabel": "Heat-Pump Water Heater Installation and Replacement",
+    "safety": "",
+    "quoteHeading": "Choose your service path.",
+    "quoteIntro": "Each path answers a different question.",
+    "quoteQuestions": [],
+    "quoteLimit": "",
+    "servicePaths": [
+      {
+        "href": "/services/heat-pump-water-heater-repair/",
+        "title": "Heat-Pump Water Heater Repair",
+        "body": "Repair assessment checks the water-heating parts, air path, controls and manufacturer service limits."
+      },
+      {
+        "href": "/services/heat-pump-water-heater-installation/",
+        "title": "Heat-Pump Water Heater Installation and Replacement",
+        "body": "Installation must provide enough hot water and a suitable place for the unit to draw heat from air."
+      },
+      {
+        "href": "/services/heat-pump-water-heater-maintenance/",
+        "title": "Heat-Pump Water Heater Maintenance",
+        "body": "A hybrid water heater needs tank care plus care of its air filter and the drain for water collected as it runs."
+      }
+    ]
+  },
+  "ST-025": {
+    "kind": "hub",
+    "financing": false,
+    "heroHeading": "Indoor air quality help for life at home.",
+    "heroBody": "A room feels dusty, dry or stale? Start with the pattern you notice. Different air concerns need different questions before choosing a product.",
+    "label": "Ask about indoor air quality help",
+    "preparationHeading": "What do you notice about the air at home?",
+    "preparationBody": "Choose the concern closest to yours. You do not have to diagnose the problem first.",
+    "preparation": [
+      {
+        "title": "What you notice",
+        "body": "Note the room, timing, moisture and possible sources. Dust or odor alone does not identify mold, a medical condition or the right treatment."
+      },
+      {
+        "title": "What you want to change",
+        "body": "Describe the air concern and what you want to understand. Compare a clearly defined assessment before choosing a product, and keep measurement limits clear."
+      },
+      {
+        "title": "Before a visit",
+        "body": "Share what you want checked or changed, the equipment if known and any current problem. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation."
+      }
+    ],
+    "technicalHeading": "Useful details about indoor air quality.",
+    "technicalTitles": [
+      "Sources and fresh-air ventilation",
+      "Room cleaners and central filters",
+      "What filters cannot remove",
+      "Humidity guidance"
+    ],
+    "findingsHeading": "What to check before choosing indoor air quality work.",
+    "processHeading": "A clear next step. More room for home life.",
+    "processBody": "Start with the concern, agree on the work, and understand the finish.",
+    "steps": [
+      [
+        "Choose the right conversation.",
+        "Share the equipment and what you notice or want to change. Confirm the visit scope, charge, and available appointment."
+      ],
+      [
+        "Decide with the findings in view.",
+        "Review the recommended work, what it would address, its full cost, and anything still unknown before approving it."
+      ],
+      [
+        "Make room for the rest of your day.",
+        "After the agreed work, review the checks and any remaining next step. Keep the record and get back to the moments you enjoy at home."
+      ]
+    ],
+    "closeHeading": "Let’s give your indoor air quality question a clear next step.",
+    "closeBody": "Bring the concern or the change you are planning. Ask about the help that fits, so you can make the choice with useful information.",
+    "comparisonHref": "/services/indoor-air-quality-assessment/",
+    "comparisonLabel": "Indoor Air Quality Assessment",
+    "replacementHref": "/services/air-purification-systems/",
+    "replacementLabel": "Air Purification Systems",
+    "safety": "",
+    "quoteHeading": "Choose your service path.",
+    "quoteIntro": "Each path answers a different question.",
+    "quoteQuestions": [],
+    "quoteLimit": "",
+    "servicePaths": [
+      {
+        "href": "/services/indoor-air-quality-assessment/",
+        "title": "Indoor Air Quality Assessment",
+        "body": "An assessment identifies what can be checked about the reported air concern and what remains unknown."
+      },
+      {
+        "href": "/services/air-purification-systems/",
+        "title": "Air Purification Systems",
+        "body": "Choose a system for a named pollutant and the space or airflow it must treat. The word purification alone says little."
+      }
+    ]
+  },
+  "ST-026": {
+    "kind": "hub",
+    "financing": false,
+    "heroHeading": "Mini split help for life at home.",
+    "heroBody": "One room needs help, or an existing mini split is not working? Explore room-by-room installation choices, repair questions and care for indoor units.",
+    "label": "Ask about mini split help",
+    "preparationHeading": "What does your mini split need?",
+    "preparationBody": "Choose the concern closest to yours. You do not have to diagnose the problem first.",
+    "preparation": [
+      {
+        "title": "What you notice",
+        "body": "List the rooms, open or closed doors and when the problem appears. The layout matters before choosing indoor units or outdoor equipment."
+      },
+      {
+        "title": "What you want to change",
+        "body": "If something stopped, ask about a diagnosis. If the system works but you are planning ahead, compare care or replacement options based on the home’s needs."
+      },
+      {
+        "title": "Before a visit",
+        "body": "Share what you want checked or changed, the equipment if known and any current problem. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation."
+      }
+    ],
+    "technicalHeading": "Useful details about mini splits.",
+    "technicalTitles": [
+      "A single-room system",
+      "Matched multi-room equipment",
+      "Cold-weather output",
+      "Indoor unit choices"
+    ],
+    "findingsHeading": "What to check before choosing mini split work.",
+    "processHeading": "A clear next step. More room for home life.",
+    "processBody": "Start with the concern, agree on the work, and understand the finish.",
+    "steps": [
+      [
+        "Choose the right conversation.",
+        "Share the equipment and what you notice or want to change. Confirm the visit scope, charge, and available appointment."
+      ],
+      [
+        "Decide with the findings in view.",
+        "Review the recommended work, what it would address, its full cost, and anything still unknown before approving it."
+      ],
+      [
+        "Make room for the rest of your day.",
+        "After the agreed work, review the checks and any remaining next step. Keep the record and get back to the moments you enjoy at home."
+      ]
+    ],
+    "closeHeading": "Let’s give your mini split question a clear next step.",
+    "closeBody": "Bring the concern or the change you are planning. Ask about the help that fits, so you can make the choice with useful information.",
+    "comparisonHref": "/services/mini-split-repair/",
+    "comparisonLabel": "Mini Split Repair",
+    "replacementHref": "/services/mini-split-installation/",
+    "replacementLabel": "Mini Split Installation and Replacement",
+    "safety": "",
+    "quoteHeading": "Choose your service path.",
+    "quoteIntro": "Each path answers a different question.",
+    "quoteQuestions": [],
+    "quoteLimit": "",
+    "servicePaths": [
+      {
+        "href": "/services/mini-split-repair/",
+        "title": "Mini Split Repair",
+        "body": "Ductless repair checks the whole matched system, not just the indoor unit that shows a symptom."
+      },
+      {
+        "href": "/services/mini-split-installation/",
+        "title": "Mini Split Installation and Replacement",
+        "body": "Installation selects compatible units and places them to serve the agreed rooms."
+      },
+      {
+        "href": "/services/mini-split-maintenance/",
+        "title": "Mini Split Maintenance",
+        "body": "Ductless care covers indoor units, outdoor equipment, filters and water drainage."
+      }
+    ]
+  },
+  "ST-077": {
+    "kind": "assessment",
+    "financing": false,
+    "heroHeading": "Understand the air concern before choosing a product.",
+    "heroBody": "Want to understand a recurring air concern before buying a device? Ask what the assessment can check, what it cannot tell you, and which question it can help answer.",
+    "label": "Ask about air quality assessment",
+    "preparationHeading": "Start with the air concern in your home.",
+    "preparationBody": "Where it happens and when it changes help frame the right question.",
+    "preparation": [
+      {
+        "title": "The concern and its pattern",
+        "body": "A pattern can help choose useful observations. Ask how the duration, locations and conditions of any measurement affect its meaning."
+      },
+      {
+        "title": "What you want to understand",
+        "body": "Share the affected rooms, timing, and anything that changed. Keep observations separate from a confirmed cause."
+      },
+      {
+        "title": "The requested visit",
+        "body": "Share what you want checked or changed, the equipment if known and any current problem. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation."
+      }
+    ],
+    "technicalHeading": "What air cleaning can and cannot do.",
+    "technicalTitles": [
+      "Sources and fresh-air ventilation",
+      "What filters cannot remove",
+      "Humidity guidance",
+      "Smoke and compatible filters"
+    ],
+    "findingsHeading": "Understand the measurement before choosing the next check.",
+    "processHeading": "From an air concern to an informed choice.",
+    "processBody": "Name the question, understand the limits, and choose supported work.",
+    "steps": [
+      [
+        "Agree on the question.",
+        "Share the concern and the rooms involved. Confirm the visit scope, what can be checked, and the charge."
+      ],
+      [
+        "Choose within the findings.",
+        "Review what the observations establish and what they leave unknown. Get the proposed work, full cost, and limits clear before approval."
+      ],
+      [
+        "Review the findings and next question.",
+        "After the agreed assessment, review the observations, what they establish, and what remains unknown. Choose any next check or work separately, then get back to the rest of your day."
+      ]
+    ],
+    "closeHeading": "Let’s make your air-quality question clearer.",
+    "closeBody": "You do not need to choose a device before understanding the concern. Ask about the next check or product comparison for your home.",
+    "comparisonHref": "/services/indoor-air-quality/",
+    "comparisonLabel": "Explore indoor air quality help",
+    "replacementHref": "/services/air-purification-systems/",
+    "replacementLabel": "Explore air purification systems",
+    "safety": "",
+    "quoteHeading": "What the proposed work should explain.",
+    "quoteIntro": "A measured result, a possible source, and a product claim are different things.",
+    "quoteQuestions": [
+      {
+        "title": "The question and the limits",
+        "body": "What does this assessment or product address, and what can it not establish?"
+      },
+      {
+        "title": "The home and equipment fit",
+        "body": "How do the rooms, airflow, existing equipment, and proposed settings affect the recommendation?"
+      },
+      {
+        "title": "Full cost and ongoing care",
+        "body": "What is the full charge? What filters, supplies, and care will cost extra later?"
+      },
+      {
+        "title": "Checks and next steps",
+        "body": "What will be checked after the agreed work, and what remains unknown? Approve additional work separately."
+      }
+    ],
+    "quoteLimit": "Air-cleaning products are not a medical diagnosis or treatment. Ask what the findings support before choosing the work."
+  },
+  "ST-078": {
+    "kind": "product",
+    "financing": false,
+    "heroHeading": "Air purification. Choose for the concern you want to address.",
+    "heroBody": "Comparing whole-home filters or air-cleaning devices? Identify the concern first, then compare what each product targets, its fit and its ongoing care.",
+    "label": "Ask about air purification systems",
+    "preparationHeading": "Start with the air concern in your home.",
+    "preparationBody": "Where it happens and when it changes help frame the right question.",
+    "preparation": [
+      {
+        "title": "The concern and its pattern",
+        "body": "Particles, gases and moisture need different answers. A laboratory percentage does not by itself describe exposure or results throughout a home."
+      },
+      {
+        "title": "What you want to understand",
+        "body": "Share the affected rooms, timing, and anything that changed. Keep observations separate from a confirmed cause."
+      },
+      {
+        "title": "The requested visit",
+        "body": "Share what you want checked or changed, the equipment if known and any current problem. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation."
+      }
+    ],
+    "technicalHeading": "What air cleaning can and cannot do.",
+    "technicalTitles": [
+      "Room cleaners and central filters",
+      "What filters cannot remove",
+      "Smoke and compatible filters",
+      "Cleaner size and airflow"
+    ],
+    "findingsHeading": "Compare the product with the concern and the room.",
+    "processHeading": "From an air concern to an informed choice.",
+    "processBody": "Name the question, understand the limits, and choose supported work.",
+    "steps": [
+      [
+        "Agree on the question.",
+        "Share the concern and the rooms involved. Confirm the visit scope, what can be checked, and the charge."
+      ],
+      [
+        "Choose within the findings.",
+        "Review what the observations establish and what they leave unknown. Get the proposed work, full cost, and limits clear before approval."
+      ],
+      [
+        "Keep the result in perspective.",
+        "After agreed work, review the settings, care instructions, and anything still unresolved. Make room for the everyday parts of home life."
+      ]
+    ],
+    "closeHeading": "Let’s make your air-quality question clearer.",
+    "closeBody": "You do not need to choose a device before understanding the concern. Ask about the next check or product comparison for your home.",
+    "comparisonHref": "/services/indoor-air-quality/",
+    "comparisonLabel": "Explore indoor air quality help",
+    "replacementHref": "/services/indoor-air-quality-assessment/",
+    "replacementLabel": "Explore an air quality assessment",
+    "safety": "",
+    "quoteHeading": "What the proposed work should explain.",
+    "quoteIntro": "A measured result, a possible source, and a product claim are different things.",
+    "quoteQuestions": [
+      {
+        "title": "The question and the limits",
+        "body": "What does this assessment or product address, and what can it not establish?"
+      },
+      {
+        "title": "The home and equipment fit",
+        "body": "How do the rooms, airflow, existing equipment, and proposed settings affect the recommendation?"
+      },
+      {
+        "title": "Full cost and ongoing care",
+        "body": "What is the full charge? What filters, supplies, and care will cost extra later?"
+      },
+      {
+        "title": "Checks and next steps",
+        "body": "What will be checked after the agreed work, and what remains unknown? Approve additional work separately."
+      }
+    ],
+    "quoteLimit": "Air-cleaning products are not a medical diagnosis or treatment. Ask what the findings support before choosing the work."
+  }
+}

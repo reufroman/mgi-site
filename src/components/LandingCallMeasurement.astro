@@ -1,0 +1,51 @@
+---
+import config from '../data/landing-call-measurement.json';
+import tagManager from '../data/tag-manager.json';
+import { validateCallMeasurement } from '../data/landing-call-measurement.mjs';
+interface Props { choicesOnly?: boolean; sitewide?: boolean; }
+const { choicesOnly = false, sitewide = false } = Astro.props;
+if (!choicesOnly && config.enabled && !validateCallMeasurement(config)) throw Error('Website call measurement requires verified configuration.');
+---
+<aside style="max-width:1200px;margin:0 auto;padding:12px 20px;border-bottom:1px solid #ccd5d7;font-size:14px" data-google-call-measurement data-config={JSON.stringify(config)} data-tag-manager={JSON.stringify(tagManager)} data-sitewide={String(sitewide)} data-choices-only={String(choicesOnly)} aria-label="Website measurement choices">
+  <div data-call-measurement-controls style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap"><p data-measurement-explanation style="margin:0;max-width:560px">May we use Google and ServiceTitan to measure visits and which ads lead to calls or service requests? You can call or request service either way.</p>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center"><button class="button small outline" type="button" data-call-measurement-grant>Allow measurement</button><button class="button small outline" type="button" data-call-measurement-deny>Decline</button> <a href="/privacy-choices/">Privacy choices</a></div>
+  </div><a data-change-privacy-choice href="/privacy-choices/" hidden>Change privacy choices</a><p style="margin:4px 0" data-call-measurement-status role="status" aria-live="polite"></p>
+</aside>
+<script>
+  import { installCallMeasurement } from '../data/landing-call-measurement.mjs';
+  import { installTagManager } from '../data/tag-manager.mjs';
+  const panel = document.querySelector<HTMLElement>('[data-google-call-measurement]');
+  if (panel?.dataset.config) {
+    const choicesOnly = panel.dataset.choicesOnly === 'true';
+    const sitewide = panel.dataset.sitewide === 'true';
+    function onChange(choice: string = 'unset', state?: { basis: string; pending: boolean }) {
+        const status = panel!.querySelector<HTMLElement>('[data-call-measurement-status]');
+        const controls = panel!.querySelector<HTMLElement>('[data-call-measurement-controls]');
+        const explanation = panel!.querySelector<HTMLElement>('[data-measurement-explanation]');
+        const allow = panel!.querySelector<HTMLButtonElement>('[data-call-measurement-grant]');
+        const decline = panel!.querySelector<HTMLButtonElement>('[data-call-measurement-deny]');
+        const changeLink = panel!.querySelector<HTMLElement>('[data-change-privacy-choice]');
+        if (state) panel!.dataset.measurementBasis = state.basis;
+        panel!.dataset.measurementState = choice;
+        const gpc = state?.basis === 'gpc';
+        const on = choice === 'granted';
+        if (changeLink) changeLink.hidden = choice === 'unset' || choicesOnly;
+        if (controls) controls.hidden = !choicesOnly && choice === 'denied';
+        if (allow) { allow.hidden = gpc || (on && !choicesOnly); allow.disabled = gpc; }
+        if (decline) decline.textContent = on ? 'Turn measurement off' : 'Decline';
+        if (explanation) explanation.textContent = on
+          ? 'Website measurement is on. We use Google and ServiceTitan to understand visits and which ads lead to calls or service requests. You can turn measurement off and still call or request service.'
+          : 'May we use Google and ServiceTitan to measure visits and which ads lead to calls or service requests? You can call or request service either way.';
+        if (status) status.textContent = gpc ? 'Website measurement is off because your browser sent a privacy signal.'
+          : on ? 'Website measurement is on. You can turn it off below or in Privacy Choices.'
+          : choice === 'denied' ? 'Website measurement is off. You can change your choice in Privacy Choices.'
+          : state?.pending ? 'Website measurement is off while we check the initial setting for this visit.'
+          : 'Website measurement is off until you choose Allow measurement.';
+    }
+    const callController = !sitewide ? installCallMeasurement(JSON.parse(panel.dataset.config), { window, document, choicesOnly, onChange }) : undefined;
+    const manager = installTagManager(JSON.parse(panel.dataset.tagManager!), { window, document, choicesOnly, manageConsent: sitewide, reloadOnWithdrawal: sitewide, onChange: sitewide ? onChange : undefined });
+    const controller = callController || manager;
+    panel.querySelector('[data-call-measurement-grant]')?.addEventListener('click', () => controller.grant());
+    panel.querySelector('[data-call-measurement-deny]')?.addEventListener('click', () => controller.deny());
+  }
+</script>

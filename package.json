@@ -1,0 +1,33 @@
+{
+  "name": "mgi-website-astro",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "node scripts/validate-content.mjs && astro build && node scripts/finalize-build.mjs",
+    "preview": "astro preview --host 127.0.0.1",
+    "check": "astro check",
+    "test": "node --test tests/unit.test.mjs tests/intake.test.mjs tests/render-fingerprint.test.mjs tests/page-metadata.test.mjs tests/answer-links.test.mjs tests/seo-policy.test.mjs tests/migration-redirects.test.mjs tests/page-entrypoints.test.mjs && node tests/verify-build.mjs",
+    "test:measurement": "node --test tests/tag-manager.test.mjs tests/landing-call-measurement.test.mjs tests/landing-conversions.test.mjs",
+    "test:browser": "node tests/browser.spec.mjs",
+    "build:release": "MGI_BUILD_MODE=release npm run build",
+    "audit:seo": "python3 scripts/audit-technical-seo.py",
+    "prepare:candidate": "node scripts/prepare-production-candidate.mjs --build",
+    "test:production-controls": "node --test tests/production-integrations.test.mjs tests/render-fingerprint.test.mjs tests/seo-policy.test.mjs",
+    "build:public": "MGI_BUILD_MODE=public MGI_SITE_URL=https://mgiheatingandair.com npm run build",
+    "test:publication": "node --test tests/publication.test.mjs tests/render-fingerprint.test.mjs tests/public-build.test.mjs"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0",
+    "astro": "^7.3.5",
+    "sharp": "^0.35.5",
+    "typescript": "^6.0.3",
+    "zod": "^4.6.5"
+  }
+}

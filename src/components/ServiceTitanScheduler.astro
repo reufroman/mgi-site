@@ -1,0 +1,31 @@
+---
+import site from '../data/site.json';
+const widgetId = site.schedulerWidgetId;
+const websiteUrl = site.schedulerWebsiteUrl;
+---
+{widgetId && <>
+<div id="scheduler-help" class="scheduler-help" role="status" hidden> The scheduling window could not load. Please <a href="tel:+19702871673">call MGI at (970) 287-1673</a>.</div>
+<script is:inline define:vars={{widgetId,websiteUrl}}>
+const schedulerOrigin=new URL(websiteUrl).origin;
+const localScheduler=location.origin===schedulerOrigin;
+if(localScheduler)(function(q,w,e,r,t,y,u){q[t]=q[t]||function(){(q[t].q=q[t].q||[]).push(arguments)};
+ q[t].l=1*new Date();y=w.createElement(e);u=w.getElementsByTagName(e)[0];y.async=true;
+ y.src=r;y.onerror=function(){window.mgiSchedulerFailed=true;};u.parentNode.insertBefore(y,u);
+ q[t]('init',widgetId);
+})(window,document,'script','https://static.servicetitan.com/webscheduler/shim.js','STWidgetManager');
+// Keep every existing booking link as a usable fallback and open the provider on activation.
+document.addEventListener('click',function(event){
+ const target=event.target instanceof Element?event.target.closest('a[href],button[data-scheduler-open]'):null;
+ if(!target||event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+ const url=target instanceof HTMLAnchorElement?new URL(target.href,location.href):null;
+ if(!target.hasAttribute('data-scheduler-open')&&(!url||url.origin!==location.origin||url.pathname.replace(/\/$/,'')!=='/schedule-service'))return;
+ if(target instanceof HTMLAnchorElement&&(target.target==='_blank'||target.hasAttribute('download')))return;
+ event.preventDefault();
+ if(window.mgiSchedulerFailed){document.getElementById('scheduler-help').hidden=false;return;}
+ const menu=target.closest('.mobile-menu');if(menu)menu.removeAttribute('open');
+ if(!localScheduler){const destination=new URL('/schedule-service/',schedulerOrigin);if(url)destination.search=url.search;destination.searchParams.set('ws-widget','open');location.assign(destination.href);return;}
+ window.STWidgetManager('ws-open');
+});
+</script>
+</>}
+<style>.scheduler-help{position:fixed;bottom:16px;left:16px;right:16px;z-index:10000;padding:20px;background:#fffdfb;color:#174e5b;border:2px solid #174e5b;border-radius:12px;box-shadow:0 4px 24px #0002}.scheduler-help a{font-weight:700;text-decoration:underline}</style>

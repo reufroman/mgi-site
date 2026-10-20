@@ -1,0 +1,3 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';
+import {allRoutes} from '../src/data/catalog.mjs';import {entryFamily,familyPaths,familyPrefixes} from '../src/data/page-entrypoints.mjs';
+test('family entrypoints partition every governed route once with exact path reconstruction',()=>{const paths=['core',...familyPrefixes].flatMap(family=>familyPaths(family,family==='core'?'':family).map(p=>({family,...p})));assert.equal(paths.length,allRoutes.length);assert.equal(new Set(paths.map(p=>p.props.route.page_id)).size,allRoutes.length);for(const p of paths){const prefix=p.family==='core'?'':p.family+'/';assert.equal('/'+prefix+(p.params.path?p.params.path+'/':''),p.props.route.canonical_route);assert.equal(entryFamily(p.props.route),p.family);}});

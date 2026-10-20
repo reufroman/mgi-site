@@ -1,0 +1,451 @@
+{
+  "ST-060": {
+    "kind": "replacement",
+    "financing": true,
+    "heroHeading": "A new furnace. A clear plan for your home.",
+    "heroBody": "MGI Heating and Air helps you compare furnace repair with replacement and understand the full installation project. Start with the heat your home needs and what you want to improve.",
+    "label": "Request a furnace replacement assessment",
+    "preparationHeading": "Start with the reason you are considering a new furnace.",
+    "preparationBody": "The condition, past repairs, and your home’s needs matter more than age alone.",
+    "preparation": [
+      {
+        "title": "The heating concern",
+        "body": "Which rooms feel wrong, and what would you like to improve? A new furnace alone does not explain every cold room."
+      },
+      {
+        "title": "Past repairs and condition",
+        "body": "Bring the repair history and any findings or quotes you want to compare. A supported repair may still be a choice."
+      },
+      {
+        "title": "Your home and plans",
+        "body": "Share your address, existing equipment, and any timing needs. Confirm the assessment scope, charges, and availability."
+      }
+    ],
+    "technicalHeading": "What furnace ratings and connections can tell you.",
+    "technicalTitles": [
+      "What the efficiency rating measures",
+      "What else changes heating cost",
+      "Fuel connections and venting"
+    ],
+    "findingsHeading": "Compare the repair with the complete furnace project.",
+    "processHeading": "From a furnace proposal to a clear finish.",
+    "processBody": "Keep the equipment, installation work, and responsibilities together as you decide.",
+    "steps": [
+      [
+        "Assess the home and the choices.",
+        "Compare the concern, repair history, heating needs, and proposed furnace. Confirm the assessment details before arranging a visit."
+      ],
+      [
+        "Choose the complete project.",
+        "Review what stays, what changes, the full price, and any other-trade or permit work. Approve the agreed scope before installation."
+      ],
+      [
+        "Use your new furnace with a clear handoff.",
+        "After the agreed installation, review the checks, controls, written coverage, and any unfinished work. Then make room for the parts of home life you enjoy."
+      ]
+    ],
+    "closeHeading": "Let’s plan the furnace your home needs.",
+    "closeBody": "Less time sorting through quotes. More room for everyday life. Ask about a furnace replacement assessment and compare the whole project before choosing.",
+    "comparisonHref": "/blog/repair-or-replace-furnace/",
+    "comparisonLabel": "Compare furnace repair and replacement",
+    "replacementHref": "/services/furnace-repair/",
+    "replacementLabel": "Explore furnace repair",
+    "safety": "If you smell gas, leave the area. From a safe place, call 911 and your gas utility. Do not use switches or try to relight the furnace. If you suspect carbon monoxide, get outside to fresh air and call 911. For smoke or other immediate danger, leave the area and call 911 from a safe place.",
+    "quoteHeading": "What your furnace installation quote should explain.",
+    "quoteIntro": "The furnace is one part of the price. Get the work around it clear too.",
+    "quoteQuestions": [
+      {
+        "title": "The model and what stays",
+        "body": "How was the proposed furnace chosen for your home? Which existing equipment and controls stay, and what is removed?"
+      },
+      {
+        "title": "Connections and responsibilities",
+        "body": "What fuel, venting, or control work is included? Who arranges, performs, and pays for any other-trade work, permits, and inspections?"
+      },
+      {
+        "title": "The full amount due",
+        "body": "What is the total for the agreed project, including separate charges? Keep possible rebates separate, and compare financing terms with the full cost."
+      },
+      {
+        "title": "Checks and handoff",
+        "body": "Which checks follow installation? Who handles control instructions, registration, written equipment and labor coverage, and anything unfinished?"
+      }
+    ],
+    "quoteLimit": "Approve the full project price and responsibilities before work begins, and keep any conditional rebate separate from the amount due."
+  },
+  "ST-062": {
+    "kind": "replacement",
+    "financing": true,
+    "heroHeading": "AC replacement. Plan for more than a new outdoor unit.",
+    "heroBody": "MGI Heating and Air helps you compare AC repair with replacement and understand the indoor and outdoor equipment, installation work, and full price for your home.",
+    "label": "Request an AC replacement assessment",
+    "preparationHeading": "Name the cooling problem you want the next system to address.",
+    "preparationBody": "Room concerns and the existing equipment help guide the comparison.",
+    "preparation": [
+      {
+        "title": "The rooms and the concern",
+        "body": "Which rooms feel too warm, and when? A larger outdoor unit alone is not a supported fix for an uncomfortable room."
+      },
+      {
+        "title": "The equipment you have",
+        "body": "Share the indoor and outdoor models if you have them, along with repair findings and any quotes you want to compare."
+      },
+      {
+        "title": "Your project questions",
+        "body": "Tell us what matters in the choice. Confirm your address, assessment scope, any charge, and availability before arranging a visit."
+      }
+    ],
+    "technicalHeading": "Understand the AC rating before comparing systems.",
+    "technicalTitles": [
+      "What SEER2 measures",
+      "Why matched equipment matters",
+      "What a certification does not tell you",
+      "The R-22 phaseout and replacement"
+    ],
+    "findingsHeading": "Compare the whole AC system and installation work.",
+    "processHeading": "A clear path from AC choices to installation.",
+    "processBody": "The cooling your home needs comes first. The equipment and work should fit that need.",
+    "steps": [
+      [
+        "Compare the home and equipment.",
+        "Bring the cooling concern and existing-system details. Ask what supports the proposed equipment and whether repair is a viable choice."
+      ],
+      [
+        "Approve the full installation.",
+        "Review the matched indoor and outdoor parts, what stays, control or wiring changes, full price, and separate responsibilities."
+      ],
+      [
+        "Review the finish and get back to your day.",
+        "After the agreed installation, review the setup and operating checks, controls, written terms, and anything still open. Make room for life at home."
+      ]
+    ],
+    "closeHeading": "Let’s make the AC replacement choice clearer.",
+    "closeBody": "A plan for the cooling you need, with the whole project in view. Ask about an AC replacement assessment before choosing equipment or agreeing to work.",
+    "comparisonHref": "/blog/repair-or-replace-air-conditioner/",
+    "comparisonLabel": "Compare AC repair and replacement",
+    "replacementHref": "/services/ac-repair/",
+    "replacementLabel": "Explore AC repair",
+    "safety": "",
+    "quoteHeading": "What your AC replacement quote should explain.",
+    "quoteIntro": "Compare the complete system and work, rather than the outdoor-unit price alone.",
+    "quoteQuestions": [
+      {
+        "title": "Matched equipment and retained parts",
+        "body": "Which indoor and outdoor models are proposed? Which furnace, fan, and controls stay, and how was the home’s cooling need checked?"
+      },
+      {
+        "title": "Installation and separate work",
+        "body": "What removal, setup, control, or wiring work is included? Who arranges, performs, and pays for other-trade work, permits, and inspections?"
+      },
+      {
+        "title": "The project price and payment",
+        "body": "What is the full amount due, including separate charges? Keep conditional rebates apart, and compare monthly payments with total financing cost and terms."
+      },
+      {
+        "title": "Operating checks and handoff",
+        "body": "Which setup and operating checks follow installation? Who explains the controls, registration, written coverage, and any unfinished work?"
+      }
+    ],
+    "quoteLimit": "Confirm the full system and installation price before approval, with separate work and conditional rebates clearly identified."
+  },
+  "ST-066": {
+    "kind": "replacement",
+    "financing": true,
+    "heroHeading": "A heat pump for your home. Start with the full plan.",
+    "heroBody": "MGI Heating and Air helps you compare heat pump installation and replacement with your home’s heating and cooling needs. Understand the equipment, backup heat, and full project before choosing.",
+    "label": "Request a heat pump assessment",
+    "preparationHeading": "What started your heat pump question?",
+    "preparationBody": "A repair, a planned replacement, or a fuel change can lead to different comparisons.",
+    "preparation": [
+      {
+        "title": "The result you want",
+        "body": "Describe the rooms that feel wrong and what you want the new system to do in heating and cooling."
+      },
+      {
+        "title": "Existing heat and cooling",
+        "body": "Share the current equipment and any repair findings. Ask which parts could stay and how they would work with the proposed system."
+      },
+      {
+        "title": "The home and the decision",
+        "body": "Bring questions about cold-weather output, backup heat, and running cost. Confirm the address, assessment scope, charges, and availability."
+      }
+    ],
+    "technicalHeading": "Check the heat pump against your home’s needs.",
+    "technicalTitles": [
+      "A heat pump with a furnace",
+      "Sizing starts with the home",
+      "What a cold-climate label establishes",
+      "Heat output in cold weather"
+    ],
+    "findingsHeading": "Compare equipment fit, backup heat, and the full project.",
+    "processHeading": "From heat pump goals to a working project plan.",
+    "processBody": "Keep cold-weather performance, compatible equipment, and responsibilities visible.",
+    "steps": [
+      [
+        "Assess the home and the options.",
+        "Discuss heating and cooling needs, existing equipment, and the reason for the change. Ask what supports the proposed heat pump."
+      ],
+      [
+        "Choose the whole system.",
+        "Review cold-weather output, backup heat, controls, retained equipment, full price, and work by other trades before approving the project."
+      ],
+      [
+        "Review operation and the finish.",
+        "After the agreed installation, review the operating checks, controls, written terms, and any remaining work. Get back to enjoying the rooms you planned for."
+      ]
+    ],
+    "closeHeading": "Let’s plan a heat pump around your home.",
+    "closeBody": "Understand what the system would do and what the installation needs. Ask about a heat pump assessment, so you can make the choice with the whole project in view.",
+    "comparisonHref": "/answers/repair-before-replacement/",
+    "comparisonLabel": "Read repair assessment questions",
+    "replacementHref": "/services/heat-pump-repair/",
+    "replacementLabel": "Explore heat pump repair",
+    "safety": "",
+    "quoteHeading": "What your heat pump installation quote should explain.",
+    "quoteIntro": "The equipment, backup heat, controls, and other work belong in one clear comparison.",
+    "quoteQuestions": [
+      {
+        "title": "The proposed system and what stays",
+        "body": "How does the model’s heating and cooling output fit the home? Which existing equipment stays, and how will backup heat and controls work?"
+      },
+      {
+        "title": "Other work and its owner",
+        "body": "What installation work is included? Name who arranges, performs, and pays for other-trade work, permits, and inspections."
+      },
+      {
+        "title": "Full price and cost assumptions",
+        "body": "What is the complete amount due? Keep rebates separate. Any running-cost comparison needs stated energy-price and use assumptions; financing needs its full terms."
+      },
+      {
+        "title": "Checks and follow-through",
+        "body": "Which functions and controls will be checked after installation? Who handles instructions, registration, written coverage, and unfinished work?"
+      }
+    ],
+    "quoteLimit": "Approve the complete project and named responsibilities before work starts, keeping possible rebates separate from the price you owe."
+  },
+  "ST-069": {
+    "kind": "replacement",
+    "financing": true,
+    "heroHeading": "A new water heater. A plan for your everyday needs.",
+    "heroBody": "MGI Heating and Air helps you compare water heater replacement with the hot water your home uses. Understand the delivery, fuel, space, and full installation before choosing.",
+    "label": "Request a water heater replacement assessment",
+    "preparationHeading": "Start with the times your home needs hot water.",
+    "preparationBody": "Tank size is one detail. The busiest uses and the installation space matter too.",
+    "preparation": [
+      {
+        "title": "When hot water runs short",
+        "body": "Which uses happen together, and when does hot water run out? Describe the household demand you want the next heater to meet."
+      },
+      {
+        "title": "The current heater and concern",
+        "body": "Share the equipment and any repair findings. A repair may still be possible when the tank’s condition and the cause support it."
+      },
+      {
+        "title": "Space, connections, and plans",
+        "body": "Describe the available space and fuel if you know them. Confirm the address, assessment scope, any charge, and availability."
+      }
+    ],
+    "technicalHeading": "What helps you compare water heaters.",
+    "technicalTitles": [
+      "Hot-water delivery in the first hour",
+      "What the efficiency rating compares",
+      "Temperature settings need a qualified check",
+      "Planning a heat-pump water heater ahead"
+    ],
+    "findingsHeading": "Compare hot-water delivery with the whole installation.",
+    "processHeading": "From hot-water needs to the installation you choose.",
+    "processBody": "The heater, its location, and the work around it belong in the same plan.",
+    "steps": [
+      [
+        "Assess demand and fit.",
+        "Discuss your busiest hot-water use, current heater, fuel, and available space. Compare repair and suitable replacement choices."
+      ],
+      [
+        "Approve the complete work.",
+        "Review the selected heater, connections, what stays, full price, and other-trade or permit responsibilities before installation."
+      ],
+      [
+        "Review the finish and return to your routine.",
+        "After the agreed installation, review the operating checks, settings, written terms, and any unfinished work. Make room for the everyday parts of home life."
+      ]
+    ],
+    "closeHeading": "Let’s plan for the hot water your home needs.",
+    "closeBody": "Morning routines. Dinner cleanup. The small parts of a day that need hot water. Ask about replacement with the full project in view.",
+    "comparisonHref": "/blog/repair-or-replace-water-heater/",
+    "comparisonLabel": "Compare water heater repair and replacement",
+    "replacementHref": "/services/water-heater-repair/",
+    "replacementLabel": "Explore water heater repair",
+    "safety": "",
+    "quoteHeading": "What your water heater installation quote should explain.",
+    "quoteIntro": "Compare useful hot-water delivery and the complete installation, rather than tank size alone.",
+    "quoteQuestions": [
+      {
+        "title": "The heater and retained parts",
+        "body": "How does the proposed heater fit your busiest use, fuel, and space? Which existing connections stay, and what is removed?"
+      },
+      {
+        "title": "Installation and responsibilities",
+        "body": "What connection, removal, or setup work is included? Who arranges, performs, and pays for other-trade work, permits, and inspections?"
+      },
+      {
+        "title": "Full price and payment",
+        "body": "What is the total amount due, including separate charges? Keep possible rebates separate and review total financing cost, approval, and terms."
+      },
+      {
+        "title": "Checks, settings, and handoff",
+        "body": "Which operating checks follow installation? Who explains the settings, registration, written coverage, and any work still open?"
+      }
+    ],
+    "quoteLimit": "Approve the complete heater and installation price before work starts, with other responsibilities and conditional rebates listed separately."
+  },
+  "ST-072": {
+    "kind": "replacement",
+    "financing": true,
+    "heroHeading": "A heat-pump water heater. Start with the right fit.",
+    "heroBody": "MGI Heating and Air helps you compare a heat-pump water heater with your home’s hot-water needs and the room where it would go. Understand the model requirements and the whole installation before choosing.",
+    "label": "Request a heat-pump water heater assessment",
+    "preparationHeading": "Bring the room and your hot-water use into the decision.",
+    "preparationBody": "A suitable model needs both useful hot-water delivery and a suitable place to operate.",
+    "preparation": [
+      {
+        "title": "Your busiest hot-water use",
+        "body": "Describe which uses happen together and when hot water runs short. Ask how the model’s first-hour delivery fits that demand."
+      },
+      {
+        "title": "The proposed room",
+        "body": "Discuss air space, room temperature, clearance, drainage, noise, and access for care. The exact model instructions guide the fit check."
+      },
+      {
+        "title": "The existing installation",
+        "body": "Share the current heater and any questions about electrical or water connections. Confirm the assessment scope, charges, and availability."
+      }
+    ],
+    "technicalHeading": "Check the model against the actual room.",
+    "technicalTitles": [
+      "Hot-water delivery in the first hour",
+      "Air space and temperature requirements",
+      "Noise and nearby bedrooms",
+      "Room volume and allowed ventilation"
+    ],
+    "findingsHeading": "Compare the heater, the room, and the full project.",
+    "processHeading": "From a fit check to the installation you approve.",
+    "processBody": "Keep the model requirements, operating choices, and responsibilities clear before committing.",
+    "steps": [
+      [
+        "Assess hot-water demand and the room.",
+        "Compare the proposed model’s instructions with the actual space and household use. Ask which other work is needed."
+      ],
+      [
+        "Choose the complete installation.",
+        "Review equipment, electrical and water connections, drainage, full price, and named trade or permit responsibilities before approval."
+      ],
+      [
+        "Review operation and the handoff.",
+        "After the agreed installation, review setup and operating checks, modes, instructions, written terms, and any unfinished work. Get back to your home routine."
+      ]
+    ],
+    "closeHeading": "Let’s see how a heat-pump water heater fits your home.",
+    "closeBody": "A clear fit check helps you choose with fewer open questions. Ask about the room, hot-water delivery, and complete installation before deciding.",
+    "comparisonHref": "/answers/repair-before-replacement/",
+    "comparisonLabel": "Read repair assessment questions",
+    "replacementHref": "/services/heat-pump-water-heater-repair/",
+    "replacementLabel": "Explore heat-pump water heater repair",
+    "safety": "",
+    "quoteHeading": "What your heat-pump water heater quote should explain.",
+    "quoteIntro": "The price should show the model and the work needed to make its location suitable.",
+    "quoteQuestions": [
+      {
+        "title": "The model and room fit",
+        "body": "How does the model meet your hot-water use and room requirements? Which existing parts stay, and what is removed?"
+      },
+      {
+        "title": "Connections and other work",
+        "body": "What electrical, water-connection, drainage, or allowed air-path work is included? Name who arranges, performs, and pays for separate work, permits, and inspections."
+      },
+      {
+        "title": "The full amount due",
+        "body": "What is the total project price, including separate charges? Keep conditional rebates separate and review financing approval, full cost, and terms."
+      },
+      {
+        "title": "Setup, controls, and completion",
+        "body": "Which setup and operating checks follow installation? Who explains operating modes, registration, written coverage, and any unfinished work?"
+      }
+    ],
+    "quoteLimit": "Approve the full installation price and named responsibilities before work begins, keeping any possible rebate separate from the amount due."
+  },
+  "ST-075": {
+    "kind": "replacement",
+    "financing": true,
+    "heroHeading": "Mini split installation. Plan around the rooms you use.",
+    "heroBody": "MGI Heating and Air helps you compare mini split installation and replacement for an office, bedroom, or several rooms. Start with room needs, compatible units, placement, and the full work.",
+    "label": "Request a mini split installation assessment",
+    "preparationHeading": "Which rooms should the mini split serve?",
+    "preparationBody": "The layout and the way you use the rooms help guide the equipment and placement.",
+    "preparation": [
+      {
+        "title": "Rooms and closed doors",
+        "body": "Name the rooms you want heated or cooled and how you use them. Ask what closed doors may limit."
+      },
+      {
+        "title": "Placement and access",
+        "body": "Discuss indoor-unit locations, line routes, drains, controls, and access for future care."
+      },
+      {
+        "title": "Existing equipment and plans",
+        "body": "Share any equipment already in place and what you want to change. Confirm your address, assessment scope, charges, and availability."
+      }
+    ],
+    "technicalHeading": "Understand the proposed mini split combination.",
+    "technicalTitles": [
+      "One indoor and one outdoor unit",
+      "Approved multi-zone combinations",
+      "Cold-weather output and room needs",
+      "Wall-mounted and ceiling units"
+    ],
+    "findingsHeading": "Compare the room plan with the complete installation.",
+    "processHeading": "From a room plan to the system you choose.",
+    "processBody": "Agree on the rooms, compatible units, and installation responsibilities before work starts.",
+    "steps": [
+      [
+        "Assess the rooms and placement.",
+        "Compare heating and cooling needs, closed-door limits, unit locations, and the proposed equipment combination."
+      ],
+      [
+        "Approve the full project.",
+        "Review line routes, drains, controls, retained parts, full price, and other-trade or permit responsibilities before installation."
+      ],
+      [
+        "Review the room-by-room handoff.",
+        "After the agreed installation, review the operating checks, controls, care access, written terms, and any unfinished work. Get back to enjoying the rooms you planned for."
+      ]
+    ],
+    "closeHeading": "Let’s plan the mini split around your rooms.",
+    "closeBody": "A workspace you can focus in. A favorite place to read. Ask about the room plan and full installation before choosing your mini split.",
+    "comparisonHref": "/answers/repair-before-replacement/",
+    "comparisonLabel": "Read repair assessment questions",
+    "replacementHref": "/services/mini-split-repair/",
+    "replacementLabel": "Explore mini split repair",
+    "safety": "",
+    "quoteHeading": "What your mini split installation quote should explain.",
+    "quoteIntro": "Get the served rooms, equipment combination, and routes clear alongside the price.",
+    "quoteQuestions": [
+      {
+        "title": "The rooms and compatible units",
+        "body": "Which rooms does each indoor unit serve? Is the indoor/outdoor combination approved by the maker, and which existing parts stay?"
+      },
+      {
+        "title": "Routes and separate responsibilities",
+        "body": "What line, drain, control, and installation work is included? Who arranges, performs, and pays for electrical or other-trade work, permits, and inspections?"
+      },
+      {
+        "title": "The complete cost",
+        "body": "What is the full amount due, including separate work? Keep possible rebates separate and compare financing approval, total cost, and terms."
+      },
+      {
+        "title": "Checks and user handoff",
+        "body": "Which operating checks follow installation? Who explains controls, filter care, registration, written coverage, and any unfinished work?"
+      }
+    ],
+    "quoteLimit": "Approve the full room plan and installation price before work begins, with separate responsibilities and conditional rebates clearly listed."
+  }
+}

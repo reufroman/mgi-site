@@ -1,0 +1,6 @@
+---
+import ServiceIcon from './ServiceIcon.astro';
+interface Props {dark?:boolean;rebates?:boolean;href?:string;label?:string;}
+const {dark=false,rebates=false,href='/schedule-service/',label='Schedule service'}=Astro.props;
+---
+<div class:list={['actions','primary-actions',{'on-dark':dark}]}><a class:list={['button',{'light':dark}]} href={href}>{label} <span aria-hidden="true">↗</span></a><a class="button outline" href="tel:+19702871673"><ServiceIcon name="phone"/>Call MGI</a>{rebates&&<a class="button rebate-season" href="/rebates/">Rebate Season! <span aria-hidden="true">↗</span></a>}</div>

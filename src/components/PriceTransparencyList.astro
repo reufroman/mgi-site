@@ -1,0 +1,26 @@
+---
+import {review} from '../data/catalog.mjs';
+import type PriceData from '../data/ac-repair-price-transparency.json';
+interface Props {data:typeof PriceData;anchorOffset?:boolean;}
+const {data,anchorOffset=false}=Astro.props;
+---
+<div class="price-transparency-list" data-pattern="price-transparency-list">
+  <p class="price-draft">{review?data.status:'Examples only. Ask MGI to confirm the checks, repair scope, and current price for your visit.'}</p>
+  <section class="price-inclusions" aria-labelledby="price-inclusions-heading">
+    <h2 id="price-inclusions-heading">{data.inclusionsHeading}</h2>
+    <p>{data.inclusionsIntro}</p>
+    <div class="price-check-groups">{data.groups.map(group=><div><h3>{group.title}</h3><ul>{group.items.map(item=><li>{item}</li>)}</ul></div>)}</div>
+    <p class="price-note price-inclusion-limit">{data.inclusionsLimit}</p>
+  </section>
+  <section class="price-examples" aria-labelledby="price-examples-heading">
+    <header><h2 id="price-examples-heading" tabindex={anchorOffset?-1:undefined} style={anchorOffset?'scroll-margin-top:120px':undefined}>{data.examplesHeading}</h2><p>{data.examplesIntro}</p><p class="price-note">{data.exampleLabel}</p></header>
+    <div class="price-column-headings" aria-hidden="true"><span>Example situation</span><span>Work included in this example</span><span>Price and what changes it</span></div>
+    <div class="price-comparison">{data.cases.map(example=><article class="price-example"><div><h3>{example.title}</h3><p>{example.finding}</p></div><div><h4 class="price-mobile-label">Work included in this example</h4><ul>{example.work.map(item=><li>{item}</li>)}</ul></div><div class="price-range-cell"><h4>Example price range</h4><p class="price-range">{data.priceRange}</p><p class="price-note">{data.priceBasis}</p><p>{example.driver}</p><p class="price-note price-scope-limit">{example.limit}</p></div></article>)}</div>
+    <p class="price-note price-basis">{data.basis}</p>
+  </section>
+</div>
+<style>
+.price-transparency-list{margin-top:64px}.price-draft{font-size:14px;color:var(--teal);border-left:3px solid var(--green);padding:8px 16px;margin-bottom:24px}.price-inclusions{padding:30px 24px;background:var(--teal);color:var(--warm);border-radius:18px}.price-inclusions h2,.price-inclusions h3{color:var(--warm)}.price-inclusions h2,.price-inclusions>p:not(.price-inclusion-limit),.price-examples header{text-align:center}.price-inclusions h2,.price-examples h2{max-width:none}.price-inclusions>p,.price-examples header p{max-width:none}.price-check-groups{display:grid;grid-template-columns:1fr 1fr;gap:24px 32px;margin-top:28px}.price-check-groups h3{font-family:Manrope,Arial,sans-serif;font-size:17px;font-weight:700;padding-bottom:12px;border-bottom:1px solid #70969b}.price-check-groups ul{list-style:none;padding:0;margin:0}.price-check-groups li{position:relative;padding:0 0 12px 25px;font-size:14px;line-height:1.65}.price-check-groups li:before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:700}.price-note{font-size:14px;line-height:1.6}.price-inclusion-limit{border-top:1px solid #70969b;margin:16px 0 0;padding-top:18px}.price-examples{margin-top:36px}.price-examples header{margin-bottom:28px}.price-column-headings,.price-example{display:grid;grid-template-columns:1fr 1.2fr .8fr;gap:22px}.price-column-headings{margin-bottom:14px;font-size:14px;font-weight:700}.price-example{padding:24px 0;border-top:1px solid #c9d5d5}.price-example h3{font-size:28px}.price-example h4{font-size:14px;font-family:Manrope,Arial,sans-serif;margin:0 0 6px}.price-example ul{margin:0;padding-left:19px}.price-example li{font-size:15px;line-height:1.65;padding-bottom:5px}.price-range{font-family:Manrope,Arial,sans-serif;font-weight:700;font-size:24px;color:var(--teal);overflow-wrap:anywhere;margin:7px 0}.price-scope-limit{border-top:1px solid #c9d5d5;padding-top:12px}.price-basis{margin-top:22px}.price-mobile-label{display:none}
+@media(max-width:760px){.price-column-headings{display:none}.price-example{grid-template-columns:1fr;gap:18px}.price-range-cell{grid-row:2;background:#ecf0e0;padding:20px;border-radius:12px}.price-mobile-label{display:block}.price-transparency-list{margin-top:40px}}
+@media(max-width:600px){.price-check-groups{grid-template-columns:1fr}.price-inclusions{padding:26px 20px}}
+</style>

@@ -1,0 +1,29 @@
+---
+import {areas} from '../data/catalog.mjs';
+import cityData from '../data/service-map-cities.json';
+import counties from '../data/service-map-counties.json';
+const project=(lon:number,lat:number)=>[110+(lon+105.4)*Math.cos(40.3*Math.PI/180)*700,40+(40.8-lat)*700];
+const cities=cityData.cities.filter(city=>areas.some(area=>area.name===`HVAC Services in ${city.name}`)).map(city=>{const route=areas.find(area=>area.name===`HVAC Services in ${city.name}`);if(!route)throw Error(`Missing city map route: ${city.name}`);const [x,y]=project(city.lon,city.lat);return {...city,x,y,href:route.canonical_route};});
+type Polygon=number[][][];
+const polygons=(geometry:{type:string;coordinates:unknown}):Polygon[]=>geometry.type==='MultiPolygon'?geometry.coordinates as Polygon[]:[geometry.coordinates as Polygon];
+const countyPaths=counties.features.map(feature=>({name:feature.properties.NAME,path:polygons(feature.geometry).flatMap(polygon=>polygon.map(ring=>'M'+ring.map(([lon,lat])=>project(lon,lat).map(n=>n.toFixed(1)).join(',')).join('L')+'Z')).join(' ')}));
+const star=Array.from({length:10},(_,i)=>{const angle=(i*36-90)*Math.PI/180,r=i%2?4.7:11;return `${(Math.cos(angle)*r).toFixed(2)},${(Math.sin(angle)*r).toFixed(2)}`}).join(' ');
+---
+<section class="area-map-section" aria-labelledby="area-map-heading">
+ <div class="area-map-intro"><div><h2 id="area-map-heading">Find your town.</h2></div><p>Select a star or a city name to explore local service information. Contact MGI to confirm service at your address.</p></div>
+ <div class="area-map-grid">
+  <figure class="area-map-figure">
+   <svg class="area-map" viewBox="0 0 720 780" aria-labelledby="area-map-title area-map-description" xmlns="http://www.w3.org/2000/svg">
+    <title id="area-map-title">Northern Colorado city map</title><desc id="area-map-description">Linked stars mark approximate city locations, from Wellington south to Thornton and Broomfield. County outlines provide context. The city list below offers the same links.</desc>
+    <defs><clipPath id="area-map-clip"><rect width="720" height="780" rx="16"/></clipPath></defs>
+    <g clip-path="url(#area-map-clip)"><rect width="720" height="780" fill="#f2f3ed"/>{countyPaths.map((county,i)=><path d={county.path} class="area-map-county" fill={i%2?'#f8f7f0':'#edf0e5'}><title>{county.name}</title></path>)}
+     <g class="area-map-county-labels" aria-hidden="true"><text x="115" y="165">LARIMER</text><text x="580" y="425">WELD</text><text x="60" y="525">BOULDER</text><text x="565" y="740">ADAMS</text></g>
+     <g class="area-map-north" aria-hidden="true"><text x="657" y="54" text-anchor="middle">N</text><path d="M657 98V65M650 76L657 65L664 76"/></g>
+     {cities.map(city=><a href={city.href} class="area-map-city" aria-label={`Explore ${city.name} service information`} data-city={city.name}><title>{city.name}</title><path class="area-map-leader" d={`M${city.x},${city.y}L${city.labelX+(city.anchor==='end'?8:-8)},${city.labelY-6}`} aria-hidden="true"/><circle class="area-map-hit" cx={city.x} cy={city.y} r="18"/><polygon class="area-map-star" points={star} transform={`translate(${city.x} ${city.y})`} aria-hidden="true"/><text class="area-map-city-label" x={city.labelX} y={city.labelY} text-anchor={city.anchor} aria-hidden="true">{city.name}</text></a>)}
+    </g>
+   </svg>
+   <figcaption>Stars show city locations, not service boundaries. <a href={cityData.source} rel="noopener noreferrer">Map data: U.S. Census Bureau</a>.</figcaption>
+  </figure>
+  <nav class="area-map-list" aria-label="Cities on the service map"><h3>Explore a city</h3>{[...cities].sort((a,b)=>a.name.localeCompare(b.name)).map(city=><a href={city.href}><span class="area-list-star" aria-hidden="true">★</span><span>{city.name}</span><span aria-hidden="true">↗</span></a>)}</nav>
+ </div>
+</section>

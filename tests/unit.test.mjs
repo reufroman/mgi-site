@@ -1,0 +1,8 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {isApproved,localEvidenceKeys} from '../src/data/release.mjs';
+const normal={family:'Service'},local={family:'Service-town candidate'};
+const approval={selected:true,approvedBy:'Jessica Hoeye',approvedAt:'2026-10-05',contentHash:'hash',evidence:{sourceGate:true},hold:false};const integrations={ready:true,approvedBy:'Jessica Hoeye'};
+test('missing evidence or exact approval fails closed',()=>{for(const a of [null,{}, {...approval,selected:false},{...approval,approvedBy:'Someone else'},{...approval,hold:true},{...approval,contentHash:''},{...approval,evidence:{}}])assert.equal(isApproved(normal,a,integrations),false);});
+test('integration readiness is independently required',()=>{assert.equal(isApproved(normal,approval,{}),false);assert.equal(isApproved(normal,approval,integrations),true);});
+test('local evidence requires every material gate',()=>{const a={...approval,evidence:Object.fromEntries(localEvidenceKeys.map(k=>[k,true]))};assert.equal(isApproved(local,a,integrations),true);for(const k of localEvidenceKeys)assert.equal(isApproved(local,{...a,evidence:{...a.evidence,[k]:false}},integrations),false);});
+
+test('equipment choices stay with the right system',async()=>{const {allRoutes,relatedServices}=await import('../src/data/catalog.mjs');const row=id=>allRoutes.find(r=>r.page_id===id);assert.deepEqual(relatedServices(row('ST-024')).map(r=>r.page_id),['ST-071','ST-072','ST-073']);assert.deepEqual(relatedServices(row('ST-026')).map(r=>r.page_id),['ST-074','ST-075','ST-076']);assert.ok(relatedServices(row('ST-071')).every(r=>['ST-024','ST-072','ST-073'].includes(r.page_id)));});

@@ -1,0 +1,66 @@
+---
+import type {Route,Content} from '../data/types';
+import Photo from './Photo.astro';
+import FurnaceRepairReference from './FurnaceRepairReference.astro';
+import proof from '../data/home-proof.json';
+import pilot from '../data/family-pilot-services.json';
+import {photos,requestHref} from '../data/catalog.mjs';
+import {familyPilotContent} from '../data/family-pilot-services.mjs';
+interface Props {route:Route;content:Content;}
+interface PilotSection {
+ key:string;heading:string;body:string;rows?:string[][];bullets?:string[];steps?:string[][];
+ review?:string;reviewScope?:string;action?:boolean;source?:string;sourceLabel?:string;
+ links?:string[][];financingInformation?:boolean;
+}
+interface PilotData {
+ title:string;summary:string;label:string;safety:string;sections:PilotSection[];
+ faqs:string[][];close:string;closeBody:string;
+}
+const {route,content}=Astro.props;
+const effective=familyPilotContent(route.page_id,content);
+const data:PilotData=pilot[route.page_id as keyof typeof pilot];
+const relevantReviews:typeof proof.reviews=effective.relevantReviews;
+const pictures=photos(route.page_id);
+const request=requestHref(route);
+const financing='/financing/?'+new URLSearchParams({service:route.name}).toString();
+---
+{route.page_id==='ST-059'?<FurnaceRepairReference route={route} content={content}/>:<article class="family-pilot" data-family-pilot={route.page_id}>
+<section class="hero"><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/services/">Services</a><span aria-hidden="true">/</span><span aria-current="page">{route.name}</span></nav>
+<div class:list={['pilot-opening',{'pilot-opening-photo':pictures.length>0}]}>
+<div><h1>{data.title}</h1>
+{route.page_id!=='ST-059'&&<aside class="pilot-safety" data-safety aria-labelledby="pilot-safety-heading"><h2 id="pilot-safety-heading">Smell gas, suspect carbon monoxide, or face immediate danger?</h2><p>{data.safety}</p><strong>Do not wait for an HVAC visit.</strong></aside>}
+<p class="lede">{data.summary}</p>
+{route.page_id==='ST-063'&&<p>Heat stopped or a new problem appeared? <a class="pilot-link" href="/services/furnace-repair/">Start with furnace repair.</a></p>}
+<div class="actions" data-primary-actions><a class="button" href={request}>{data.label}<span aria-hidden="true"> ↗</span></a><a class="pilot-link" href="#answer">What to know first</a></div>
+{route.page_id==='ST-059'&&<aside class="pilot-safety-note" data-safety aria-label="Emergency safety"><p>{data.safety} <strong>Do not wait for an HVAC visit.</strong></p></aside>}
+</div>
+{pictures[0]&&<div class="pilot-photo"><Photo image={pictures[0]} eager tilt={-2}/></div>}
+</div></div></section>
+{data.sections.map((section,index)=>{
+ const review=relevantReviews.find(record=>record.name===section.review);
+ return <section id={index===0?'answer':`pilot-${section.key}`} class:list={['pilot-section',`pilot-${section.key}`,{'pilot-tint':section.key==='recognition'||section.key==='options'}]} aria-labelledby={`pilot-heading-${index}`} data-journey-stage={section.key}>
+<div class="wrap pilot-editorial"><div class="pilot-heading" data-reveal><span class="pilot-number" aria-hidden="true">{String(index+1).padStart(2,'0')}</span><h2 id={`pilot-heading-${index}`}>{section.heading}</h2></div>
+<div class="pilot-detail"><p class="pilot-intro">{section.body}</p>
+{section.key==='trust'&&<div class="pilot-credentials"><a href={proof.carrier}>Carrier Factory Authorized Dealer</a><a class="pilot-link" href="/about/">Learn about MGI</a></div>}
+{section.rows&&<dl class="pilot-rows">{section.rows.map(([label,body])=><div><dt>{label}</dt><dd>{body}</dd></div>)}</dl>}
+{section.bullets&&<ul>{section.bullets.map(item=><li>{item}</li>)}</ul>}
+{section.steps&&<ol class="pilot-steps" aria-label="Decisions before agreeing to work">{section.steps.map(([label,body])=><li><h3>{label}</h3><p>{body}</p></li>)}</ol>}
+{review&&<figure class="pilot-review"><blockquote>{review.text}</blockquote><figcaption>{review.name} · <a href={review.source}>Read this customer review</a></figcaption></figure>}
+{section.source&&<a class="pilot-link" href={section.source}>{section.sourceLabel}<span aria-hidden="true"> ↗</span></a>}
+{section.links&&<nav class="pilot-paths" aria-label={`${section.heading} reading`}>{section.links.map(([href,label])=><a href={href}>{label}<span aria-hidden="true"> ↗</span></a>)}</nav>}
+{section.financingInformation&&<div class="pilot-finance"><a class="pilot-link" href={financing}>Explore financing information<span aria-hidden="true"> ↗</span></a></div>}
+{section.action&&<aside class="pilot-next" data-context-cta><a class="button" href={request}>{data.label}<span aria-hidden="true"> ↗</span></a></aside>}
+</div></div>
+{section.key==='process'&&pictures[1]&&<div class="wrap pilot-support-photo"><Photo image={pictures[1]} tilt={0}/></div>}
+</section>;
+})}
+<section class="pilot-section"><div class="wrap faq"><h2>Questions about {route.name.toLowerCase()}</h2>{data.faqs.map(([question,answer])=><details><summary>{question}</summary><p>{answer}</p></details>)}</div></section>
+{pictures[2]&&<section class="pilot-section pilot-photo-section"><div class="wrap pilot-support-photo"><Photo image={pictures[2]} tilt={2}/></div></section>}
+<section class="closing"><div class="wrap close-grid"><div><h2>{data.close}</h2><p>{data.closeBody}</p></div><div><div class="actions"><a class="button light" href={request}>{data.label}<span aria-hidden="true"> ↗</span></a></div></div></div></section>
+</article>}
+<style>
+.pilot-opening{display:grid;gap:48px;align-items:start}.pilot-opening-photo{grid-template-columns:1.15fr 1fr}.family-pilot h1{max-width:17ch}.pilot-photo{padding:8px 12px}.pilot-safety{border-left:4px solid var(--teal);background:#f1f3ec;padding:20px 24px;margin:24px 0}.pilot-safety-note{margin-top:24px}.pilot-safety-note p{font-size:15px;line-height:1.6;margin:0;color:var(--ink)}.pilot-safety h2{font-family:Manrope,Arial,sans-serif;font-size:17px;line-height:1.5;margin:0 0 12px}.pilot-safety p,.pilot-safety strong{font-size:15px;line-height:1.6}.pilot-safety p{margin-bottom:12px}.pilot-section{padding:80px 0}.pilot-tint{background:#f2f3ed}.pilot-editorial{display:grid;grid-template-columns:1fr 1.45fr;gap:72px;align-items:start}.pilot-heading h2{font-size:clamp(32px,3.4vw,48px);max-width:19ch}.pilot-number{display:block;color:var(--teal);font:600 56px/1 Cormorant,Georgia,serif;margin-bottom:20px}.pilot-detail{min-width:0}.pilot-intro{font-size:19px}.pilot-rows{margin:28px 0}.pilot-rows>div{display:grid;grid-template-columns:150px 1fr;gap:24px;border-top:1px solid #bcb5aa;padding:22px 0}.pilot-rows dt{font-weight:700;font-size:15px;color:var(--teal)}.pilot-rows dd{margin:0;font-size:16px}.pilot-detail li{margin-bottom:14px}.pilot-trust{background:var(--teal);color:var(--warm)}.pilot-trust h2,.pilot-trust .pilot-number,.pilot-trust a,.pilot-trust .pilot-rows dt{color:var(--warm)}.pilot-trust .button{background:var(--warm);color:var(--teal);border-color:var(--warm)}.pilot-trust a:focus-visible{outline-color:var(--warm)}.pilot-credentials{border-top:1px solid #a0b4ac;padding-top:20px;margin-top:24px}.pilot-credentials>a:first-child{font-weight:700;display:inline-flex;min-height:44px;align-items:center}.pilot-steps{list-style:none;padding:0;counter-reset:decision;display:grid;gap:24px;margin:32px 0}.pilot-steps li{counter-increment:decision;position:relative;padding-left:52px;margin:0}.pilot-steps li::before{content:counter(decision);position:absolute;left:0;top:0;color:var(--teal);font:600 36px/1 Cormorant,Georgia,serif}.pilot-steps h3{font-family:Manrope,Arial,sans-serif;font-size:17px;margin:0 0 8px}.pilot-steps p{font-size:16px;margin:0}.pilot-review{margin:28px 0;padding:24px;border-left:3px solid var(--warm);background:rgba(255,253,251,.08)}.pilot-review blockquote{margin:0 0 20px;font-size:19px}.pilot-review figcaption{font-family:Manrope,Arial,sans-serif;font-size:13px}.pilot-review p{margin:16px 0 0}.pilot-next{margin-top:28px;padding-top:24px;border-top:1px solid #bcb5aa}.pilot-next .small-copy{margin:16px 0 0}.pilot-link,.pilot-paths a{display:inline-flex;align-items:center;min-height:44px;font-weight:600;font-size:15px}.pilot-paths{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:20px}.pilot-finance{margin-top:24px;padding-top:20px;border-top:1px solid #bcb5aa}.pilot-support-photo{max-width:680px;padding:40px 24px 0}.pilot-photo-section{padding:32px 0 64px}.pilot-photo-section .pilot-support-photo{padding-top:0}.family-pilot .closing a:focus-visible{outline-color:var(--warm)}.family-pilot .button{white-space:normal;text-align:left;max-width:100%}
+@media(max-width:1000px){.pilot-opening-photo{grid-template-columns:1fr 1fr;gap:32px}.pilot-editorial{grid-template-columns:1fr 1.3fr;gap:40px}.pilot-rows>div{grid-template-columns:1fr;gap:8px}}
+@media(max-width:767px){.pilot-opening,.pilot-editorial{grid-template-columns:1fr;gap:32px}.pilot-section{padding:48px 0}.pilot-heading h2{margin-bottom:0}.pilot-number{font-size:44px;margin-bottom:16px}.pilot-photo{padding:16px 12px}.pilot-safety{padding:20px}.pilot-intro{font-size:18px}.pilot-review{padding:20px}.pilot-support-photo{padding-top:32px}.pilot-photo-section{padding-top:16px}.family-pilot .actions{gap:16px}.family-pilot h1{max-width:none}.pilot-paths{flex-direction:column;gap:8px}}
+</style>

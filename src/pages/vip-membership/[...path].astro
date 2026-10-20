@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import {familyPaths} from '../../data/page-entrypoints.mjs';
+import VIPMembership from '../../components/VIPMembership.astro';
+export function getStaticPaths(){return familyPaths('vip-membership','vip-membership');}
+const {route,content}=Astro.props;
+---
+<Base route={route} content={content}><VIPMembership route={route} content={content}/></Base>

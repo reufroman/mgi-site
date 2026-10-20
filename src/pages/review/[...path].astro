@@ -1,0 +1,9 @@
+---
+import Base from '../../layouts/Base.astro';
+import {allRoutes,review} from '../../data/catalog.mjs';
+export function getStaticPaths(){return review?[{params:{path:undefined}}]:[];}
+const route={page_id:'REVIEW',canonical_route:'/review/',name:'Review directory',family:'Review',source_publication_gate:'Internal only'};
+const content={title:'Full website review',summary:'All planned routes for private review. No request is sent and no route is approved for publication.'};
+---
+<Base route={route} content={content}><section class="section"><div class="wrap"><span class="eyebrow">Internal review</span><h1>One site. Every planned page.</h1><p>{allRoutes.length} routes: {allRoutes.filter(r=>r.family!=='Service-town candidate').length} base pages and {allRoutes.filter(r=>r.family==='Service-town candidate').length} local review candidates. The local candidates need evidence beyond city-name changes before release.</p><label>Find a page <input id="review-filter" type="search" placeholder="Try furnace or Greeley"/></label><p id="review-count" role="status">{allRoutes.length} pages</p><div class="directory">{allRoutes.map(r=><a data-search={r.name.toLowerCase()+' '+r.family.toLowerCase()} href={r.canonical_route}><small>{r.page_id} · {r.family}</small><br/>{r.name}</a>)}</div></div></section></Base>
+<script>document.querySelector<HTMLInputElement>('#review-filter')?.addEventListener('input',e=>{const v=(e.target as HTMLInputElement).value.toLowerCase();let count=0;document.querySelectorAll<HTMLElement>('[data-search]').forEach(el=>{el.hidden=!el.dataset.search?.includes(v);if(!el.hidden)count++;});document.querySelector('#review-count')!.textContent=`${count} matching pages`;});</script>

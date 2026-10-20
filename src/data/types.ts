@@ -1,0 +1,3 @@
+export interface Route {page_id:string;family:string;name:string;canonical_route:string;source_publication_gate:string;planned_public_state?:string;planned_template?:string;image_strategy?:string;source?:string;source_answer_id?:string;}
+export interface Content {eyebrow:string;title:string;summary:string;answer:string;sections:{heading:string;body:string;bullets?:string[]}[];faqs:{question:string;answer:string}[];ctaLabel:string;reviewNotes:string[];sources:string[];}
+export interface Picture {picture_id:string;placement_id:string;src:string;srcset:string;width:number;height:number;alt:string;}

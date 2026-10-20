@@ -1,0 +1,127 @@
+{
+  "name": "Price transparency list",
+  "status": "Client review draft. MGI must confirm the proposed checks, repair scope, and current prices.",
+  "inclusionsHeading": "What your AC repair quote should explain.",
+  "inclusionsIntro": "Before you approve a repair, ask which checks are included and what any extra work would cost.",
+  "groups": [
+    {
+      "title": "Check how the AC runs",
+      "items": [
+        "Check that the thermostat calls for cooling",
+        "Check indoor blower operation",
+        "Check outdoor fan and equipment operation",
+        "Check the accessible filter and note airflow concerns",
+        "Check the repaired function after the work"
+      ]
+    },
+    {
+      "title": "Look for related concerns",
+      "items": [
+        "Check accessible wiring and connections",
+        "Check accessible cooling coils",
+        "Check visible refrigerant connections for concerns",
+        "Check accessible water drainage",
+        "Note unusual sounds and visible wear",
+        "Complete the applicable equipment safety checks",
+        "Explain anything we could not check and why"
+      ]
+    },
+    {
+      "title": "Explain and complete the repair",
+      "items": [
+        "Show you what supports the recommended repair",
+        "Explain the parts, labor, and full repair price",
+        "Tell you what the repair covers and leaves out",
+        "Get your approval before starting the repair or any additional work",
+        "Use compatible replacement parts when needed"
+      ]
+    },
+    {
+      "title": "Help you know what comes next",
+      "items": [
+        "Explain what was repaired and tested",
+        "Review any other findings from the inspection",
+        "Tell you what needs attention now and what can wait",
+        "Show relevant settings and care steps",
+        "Explain what to watch for if the problem returns",
+        "Leave a service record and a tidy work area"
+      ]
+    }
+  ],
+  "inclusionsLimit": "The checks depend on your AC, its condition, and safe access. Confirm the inspection charge and which checks your visit includes. Any additional repair needs its own price and your approval.",
+  "examplesHeading": "See the work behind an AC repair.",
+  "examplesIntro": "A clear price starts with a clear repair. These examples show what the work covers and what can change the cost.",
+  "exampleLabel": "Illustrative examples, informed by documented repair work. Your quote is based on what we find in your home.",
+  "priceRange": "Price pending confirmation",
+  "priceBasis": "Parts and labor for the listed example repair.",
+  "cases": [
+    {
+      "title": "A motor needs a new capacitor.",
+      "finding": "Example: testing finds a weak or failed capacitor, an electrical part that helps a motor run. A cooling problem can have more than one cause.",
+      "work": [
+        "Check the capacitor test result and explain why replacement is recommended",
+        "Match the replacement to the equipment’s required size and rating",
+        "Remove the capacitor being replaced",
+        "Supply a compatible replacement capacitor",
+        "Install the new part and reconnect its wiring",
+        "Test the replacement capacitor",
+        "Check how the equipment runs after replacement",
+        "Explain any separate cooling concern found during the checks"
+      ],
+      "driver": "The capacitor your equipment uses and any separate problem found during testing.",
+      "limit": "This example covers one capacitor replacement. A motor repair or refrigerant problem is separate work.",
+      "sourceJobs": [
+        "73121507",
+        "74061310"
+      ]
+    },
+    {
+      "title": "The indoor fan needs a new motor.",
+      "finding": "Example: the blower motor needs replacement. It runs the fan that moves cooled air through your home.",
+      "work": [
+        "Confirm which replacement motor fits the equipment",
+        "Remove the existing blower motor",
+        "Supply and install the compatible replacement motor",
+        "Check the capacitor size required by the new motor",
+        "Change the capacitor if the replacement motor requires it",
+        "Reconnect the motor’s wiring",
+        "Test operation and measure the motor’s electrical draw",
+        "Explain any other finding that needs separate work"
+      ],
+      "driver": "Motor type, access, and whether a matching capacitor or separate control repair is needed.",
+      "limit": "The quote must identify whether a matching capacitor is included. Separate control or refrigerant work is outside this example.",
+      "sourceJobs": [
+        "73805502"
+      ]
+    },
+    {
+      "title": "The indoor cooling coil needs replacement.",
+      "finding": "Example: the repair calls for a new indoor coil, where refrigerant takes heat out of the air. The parts connected around it can change the work.",
+      "work": [
+        "Confirm the replacement coil and the work listed in the quote",
+        "Complete the refrigerant recovery needed for coil removal",
+        "Remove the existing indoor coil",
+        "Install the selected replacement coil",
+        "Adjust the connected air box if included in the quote",
+        "Complete any quoted intake, exhaust, or humidifier connection changes",
+        "Connect the refrigerant lines as listed in the scope",
+        "Complete the quoted refrigerant and operating checks",
+        "Explain the checks completed and any remaining work"
+      ],
+      "driver": "Coil type, access, refrigerant, and changes needed to the surrounding connections.",
+      "limit": "The quote must list any surrounding air-box, drain, or other connection work. Other cooling problems need their own repair scope and price.",
+      "sourceJobs": [
+        "72109537"
+      ]
+    }
+  ],
+  "basis": "Before you decide, your quote lists the work, the full price, and whether visit fees, tax, or permit costs are included or separate. If another repair or project task is needed, we explain its cost and get your approval.",
+  "internalEvidence": {
+    "acceptedDesign": "Handoffs/2026-10-07_MGI-Service-Section-Concepts.md",
+    "repairSources": "02_Strategy/Proposals-&-Planning/2026-10-07_INTERNAL_MGI-Real-Replacement-Work.md",
+    "priceStatus": "Current prices being prepared offline; no numeric range verified",
+    "operatingStatus": "Proposed checklist; quote-confirmation guidance, not universal inclusion promise",
+    "publicApproval": "Pending",
+    "scope": "Service/replacement pattern; currently ST-061 and SL-WIN-AC-REP"
+  }
+}

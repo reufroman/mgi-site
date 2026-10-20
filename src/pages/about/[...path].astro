@@ -1,0 +1,9 @@
+---
+import Base from '../../layouts/Base.astro';
+import {familyPaths} from '../../data/page-entrypoints.mjs';
+import UtilityPages from '../../components/UtilityPages.astro';
+import AboutJourney from '../../components/AboutJourney.astro';
+export function getStaticPaths(){return familyPaths('about','about');}
+const {route,content}=Astro.props;
+---
+<Base route={route} content={content}>{route.page_id==='MIGRATION-FAQ'?<UtilityPages route={route} content={content}/>:<AboutJourney route={route} content={content}/>}</Base>

@@ -1,0 +1,11 @@
+---
+import site from '../data/site.json';
+interface Props {page:any;light?:boolean;secondary?:boolean;returnToBooking?:boolean;soft?:boolean;}
+const {page,light=false,secondary=false,returnToBooking=false,soft=false}=Astro.props;
+const phone='tel:+19702871673';
+const request=returnToBooking?'#booking':'/schedule-service/?'+new URLSearchParams({service:page.service,topic:page.title}).toString();
+---
+<div class="lp-actions">
+{page.schedulerSupported!==false?<a class:list={['button',{'light':light,'lp-soft-button':soft}]} href={request} {...(!returnToBooking?{'data-scheduler-open':''}:{})}>{page.cta}<span aria-hidden="true">↗</span></a>:<a class:list={['button',{'light':light,'lp-soft-button':soft}]} href={phone}>{page.cta}<span aria-hidden="true">↗</span></a>}
+{secondary&&page.schedulerSupported!==false&&<a class:list={['button','outline',{'lp-light-outline':light}]} href={phone}>Call {site.phone}</a>}
+</div>
