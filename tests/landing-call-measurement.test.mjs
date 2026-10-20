@@ -13,6 +13,12 @@ function environment(host = 'mgiheatingandair.com') {
   return { window, document, commands, scripts, listeners, values, anchor, number, icon, reloads };
 }
 const callConfigs = env => env.commands.filter(c => c[0] === 'config' && c[1].includes('/'));
+// 2026-10-19 (Reu Yep, live since deployment 5c94fea7): ServiceTitan DNI is the single owner of the
+// /lp/ phone number. The Google Ads website-call forwarding-number swap (phone_conversion_* config and
+// its callback) was removed, so these tests now assert that no swap config is sent and the MGI number
+// and tel link are never rewritten by this module. Earlier versions asserted the removed swap.
+const adsConfigs = env => env.commands.filter(c => c[0] === 'config' && c[1] === config.googleAdsId);
+const unchanged = env => { assert.equal(env.number.nodeValue, 'Call (970) 287-1673'); assert.equal(env.anchor.getAttribute('href'), config.phoneHref); assert.equal(env.anchor.getAttribute('aria-label'), 'Call (970) 287-1673'); assert.equal(env.icon.childNodes[0].nodeValue, '↗'); };
 test('no choice and legacy denial block loading and preserve calling', () => {
   for (const prior of [null, 'off']) {
     const env = environment(); if (prior) { env.values.set(LEGACY_CONSENT_KEY, prior); env.values.set(CALL_CONSENT_KEY, 'granted'); }
@@ -21,36 +27,30 @@ test('no choice and legacy denial block loading and preserve calling', () => {
     controller.deny(); assert.equal(env.anchor.getAttribute('href'), config.phoneHref);
   }
 });
-test('grant configures one Ads loader, exact call destination, no conversion events', () => {
+test('grant configures one Ads loader and Ads config, no forwarding-number swap, no conversion events', () => {
   const env = environment(), controller = installCallMeasurement(config, env);
   controller.grant(); controller.grant();
-  assert.equal(env.scripts.length, 1); assert.equal(callConfigs(env).length, 1);
+  assert.equal(env.scripts.length, 1); assert.equal(callConfigs(env).length, 0);
   assert.deepEqual(env.commands[0], ['consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', analytics_storage: 'denied', ad_personalization: 'denied' }]);
-  assert.equal(callConfigs(env)[0][1], 'AW-123456/fixture-only');
-  assert.equal(callConfigs(env)[0][2].phone_conversion_number, config.phoneDisplay);
+  assert.equal(adsConfigs(env).length, 1); assert.deepEqual(adsConfigs(env)[0][2], { send_page_view: false });
+  assert.equal(env.commands.some(c => c[2] && Object.keys(c[2]).some(k => k.startsWith('phone_conversion'))), false);
   assert.equal(env.commands.some(c => c[0] === 'event'), false);
   assert.equal(installCallMeasurement(config, env), controller);
 });
-test('callback replaces digits and tel together without changing CTA or icon', () => {
+test('grant and withdrawal leave the MGI number, tel link, CTA and icon unchanged', () => {
   const env = environment(), controller = installCallMeasurement(config, env); controller.grant();
-  callConfigs(env)[0][2].phone_conversion_callback('(970) 555-0123', '+19705550123');
-  assert.equal(env.number.nodeValue, 'Call (970) 555-0123'); assert.equal(env.anchor.getAttribute('href'), 'tel:+19705550123');
-  assert.equal(env.anchor.getAttribute('aria-label'), 'Call (970) 555-0123'); assert.equal(env.icon.childNodes[0].nodeValue, '↗');
-  controller.deny(); assert.equal(env.number.nodeValue, 'Call (970) 287-1673'); assert.equal(env.anchor.getAttribute('href'), config.phoneHref);
-  assert.equal(env.anchor.getAttribute('aria-label'), 'Call (970) 287-1673');
+  unchanged(env);
+  controller.deny(); unchanged(env);
 });
-test('withdrawal and regrant reject stale callbacks and malformed dial targets', () => {
+test('withdrawal and regrant keep one loader and never send a forwarding-number swap', () => {
   const env = environment(), controller = installCallMeasurement(config, env); controller.grant();
-  const old = callConfigs(env)[0][2].phone_conversion_callback;
-  controller.deny(); old('(970) 555-0123', '+19705550123'); assert.equal(env.anchor.getAttribute('href'), config.phoneHref);
-  controller.grant(); old('(970) 555-0123', '+19705550123'); assert.equal(env.anchor.getAttribute('href'), config.phoneHref);
-  const current = callConfigs(env)[1][2].phone_conversion_callback;
-  current('(970) 555-0123', 'javascript:evil'); assert.equal(env.anchor.getAttribute('href'), config.phoneHref);
-  current('(970) 555-0123', '+19705550123'); assert.equal(env.anchor.getAttribute('href'), 'tel:+19705550123'); assert.equal(env.scripts.length, 1);
+  controller.deny(); unchanged(env);
+  controller.grant(); unchanged(env);
+  assert.equal(callConfigs(env).length, 0); assert.equal(adsConfigs(env).length, 1); assert.equal(env.scripts.length, 1);
+  assert.equal(env.commands.filter(c => c[0] === 'consent' && c[1] === 'update').at(-1)[2].ad_storage, 'granted');
 });
 test('storage changes withdraw calls and synchronize the preference', () => {
   const env = environment(), controller = installCallMeasurement(config, env); controller.grant();
-  callConfigs(env)[0][2].phone_conversion_callback('(970) 555-0123', '+19705550123');
   env.values.set(LEGACY_CONSENT_KEY, 'off'); env.listeners.get('storage')({ key: LEGACY_CONSENT_KEY });
   assert.equal(controller.consent, 'denied'); assert.equal(env.anchor.getAttribute('href'), config.phoneHref);
   controller.dispose(); assert.equal(env.listeners.has('storage'), false);
@@ -100,7 +100,7 @@ test('withdrawal reloads once after restoration, denied update, and status; init
   };
   const controller = installCallMeasurement(config, { ...env, onChange: choice => order.push(choice) });
   controller.deny(); assert.equal(env.reloads.length, 0);
-  controller.grant(); callConfigs(env)[0][2].phone_conversion_callback('(970) 555-0123', '+19705550123');
+  controller.grant(); unchanged(env);
   controller.deny(); controller.deny(); assert.equal(env.reloads.length, 1);
   const choices = environment(); const preference = installCallMeasurement(config, { ...choices, choicesOnly: true });
   preference.grant(); preference.deny(); assert.equal(choices.reloads.length, 0);
@@ -116,10 +116,9 @@ test('GTM-managed analytics grants consent without direct GA4 configuration and 
  assert.equal(env.scripts[0].src,'https://www.googletagmanager.com/gtag/js?id=AW-123456');
  assert.equal(env.commands.some(c=>c[0]==='config'&&c[1]==='G-FIXTURE123'),false);
  assert.equal(env.commands.find(c=>c[0]==='consent'&&c[1]==='update')[2].analytics_storage,'granted');
- assert.equal(callConfigs(env).length,1);
- callConfigs(env)[0][2].phone_conversion_callback('(970) 555-0123','+19705550123');
- assert.equal(env.anchor.getAttribute('href'),'tel:+19705550123');
- controller.deny();assert.equal(env.anchor.getAttribute('href'),config.phoneHref);assert.equal(env.reloads.length,1);
+ assert.equal(callConfigs(env).length,0);assert.equal(adsConfigs(env).length,1);
+ unchanged(env);
+ controller.deny();unchanged(env);assert.equal(env.reloads.length,1);
  const legacy=environment();installCallMeasurement({...settings,analyticsManagedByTagManager:false},legacy).grant();
  assert.equal(legacy.commands.filter(c=>c[0]==='config'&&c[1]==='G-FIXTURE123').length,1);
  assert.equal(legacy.scripts[0].src,'https://www.googletagmanager.com/gtag/js?id=G-FIXTURE123');
