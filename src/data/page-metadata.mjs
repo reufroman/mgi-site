@@ -11,6 +11,13 @@ const topicTitles={
  'ST-011':'HVAC Guide for New Homeowners',
  'ST-012':'Heating, Cooling, and Hot-Water Answers'
 };
+// Live search/share descriptions for the two privacy pages (deployment dddcd82d). They predate the
+// 2026-10-19 summary rewrite in editorial.json and read as stale. Kept here so a source build matches
+// live exactly; replacing them with the page summaries is a separate change needing its own approval.
+const descriptionOverrides={
+ 'ST-014':'The service scheduler is provided by ServiceTitan. Read the information shown in the scheduler before sharing your details.',
+ 'ST-017':'You can read the equipment guides without opening the service scheduler. Call MGI if you prefer to ask about service by phone.'
+};
 const distinctSafetyDescriptions=new Set([
  'MGI-066','MGI-067','MGI-072','MGI-075','MGI-077','MGI-079',
  'MGI-082','MGI-093','MGI-098','MGI-099','MGI-100'
@@ -18,7 +25,7 @@ const distinctSafetyDescriptions=new Set([
 
 export function pageMetadata(route,content){
  const title=topicTitles[route.page_id] || (route.family==='Service-town candidate'?`${route.name}, CO`:route.family==='Area'?`${route.name}, CO`:route.family==='Service'?route.name:route.family==='Article'&&!route.source_answer_id?route.name:content.title);
- let description=content.summary;
+ let description=descriptionOverrides[route.page_id]||content.summary;
  if(route.family==='Service-town candidate') description=`${route.name}, CO: understand the work and your next steps. Confirm service at your address, visit terms, and availability with MGI.`;
  if(distinctSafetyDescriptions.has(route.source_answer_id)){
   const question=content.title.trim();

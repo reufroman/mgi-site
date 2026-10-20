@@ -10,7 +10,10 @@ test('Colorado request is eligible and cannot be shared-cached',async()=>{
  for(const header of ['Cache-Control','CDN-Cache-Control','Cloudflare-CDN-Cache-Control'])assert.match(res.headers.get(header),/no-store/);
  assert.equal(res.headers.get('Cross-Origin-Resource-Policy'),'same-origin');
 });
-for(const [name,cf] of [['nonCO',{country:'US',regionCode:'CA'}],['foreign',{country:'GB',regionCode:'CO'}],['unknown',undefined]])
+// 2026-10-19 (Reu, live since deployment 337b82d): the initial measurement setting applies to all U.S.
+// visitors, not only Colorado. A U.S. request outside Colorado is now eligible; foreign and unknown stay off.
+test('U.S. request outside Colorado is eligible under the U.S. default',async()=>assert.deepEqual(await (await worker.fetch(request(endpoint,{country:'US',regionCode:'CA'}),env)).json(),{coloradoDefault:true}));
+for(const [name,cf] of [['foreign',{country:'GB',regionCode:'CO'}],['unknown',undefined]])
  test(`${name} request defaults off`,async()=>assert.deepEqual(await (await worker.fetch(request(endpoint,cf),env)).json(),{coloradoDefault:false}));
 test('Client query cannot spoof trusted geography',async()=>assert.deepEqual(await (await worker.fetch(request(endpoint+'?country=US&regionCode=CO',undefined),env)).json(),{coloradoDefault:false}));
 test('Preview hostname cannot enable Colorado default',async()=>assert.deepEqual(await (await worker.fetch(request('https://preview.pages.dev/api/measurement-region',{country:'US',regionCode:'CO'}),env)).json(),{coloradoDefault:false}));

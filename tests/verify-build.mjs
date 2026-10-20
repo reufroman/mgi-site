@@ -12,7 +12,10 @@ const attrs=s=>Object.fromEntries([...s.matchAll(/([\w-]+)=["']([^"']*)["']/g)].
 const files=[];function walk(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){const f=path.join(d,e.name);if(e.isDirectory())walk(f);else files.push(f)}}
 assert(fs.existsSync(out),`${out} missing`);if(!fs.existsSync(out))throw Error(errors.join('\n'));walk(out);
 const html=files.filter(f=>f.endsWith('.html')),byId=new Map(routes.map(r=>[r.page_id,r])),seen=new Map(),used=new Map(),renderedPlacements=new Set(),hashIds=new Map();
-assert(routes.length===739,'Expected 739 inventory records (439 existing plus 300 source-backed homeowner answers plus nine campaign landing pages)');assert(byId.size===739,'Duplicate inventory IDs');assert(new Set(routes.map(r=>r.canonical_route)).size===739,'Duplicate canonical routes');
+// Inventory is 749 governed routes: the count enforced by scripts/validate-content.mjs and shipped in the
+// live public release (749 routes, 738 sitemap URLs). The earlier 739 predates the final route additions.
+const INVENTORY=749;
+assert(routes.length===INVENTORY,`Expected ${INVENTORY} inventory records`);assert(byId.size===INVENTORY,'Duplicate inventory IDs');assert(new Set(routes.map(r=>r.canonical_route)).size===INVENTORY,'Duplicate canonical routes');
 for(const p of pictures){if(!p.src)continue;const f=path.join(out,p.src);assert(fs.existsSync(f),`Missing picture ${p.picture_id}: ${p.src}`);if(fs.existsSync(f)){const hash=crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex');const old=hashIds.get(hash);assert(!old||old===p.picture_id,`Same output picture bytes assigned ${old} and ${p.picture_id}`);hashIds.set(hash,p.picture_id)}assert(!p.source_file||fs.existsSync(path.resolve('../..',p.source_file)),`Missing origin ${p.picture_id}`)}
 for(const f of html){const source=fs.readFileSync(f,'utf8'),body=attrs(source.match(/<body\b[^>]*>/)?.[0]||''),id=body['data-page-id'],r=byId.get(id);
  if(!r){assert(!id||['review-directory','REVIEW'].includes(id),`Unknown emitted page ID ${id}`);continue}
