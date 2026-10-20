@@ -55,13 +55,15 @@ test('late Colorado response cannot override a decline during lookup', async () 
   finish({ ok: true, json: async () => ({ coloradoDefault: true }) }); await policy.ready;
   assert.equal(policy.state.choice, 'denied'); assert.equal(policy.state.basis, 'explicit-decline');
 });
-test('shared policy starts GTM and LP calls together after geography and preserves IDs, ownership, and RDP ordering', async () => {
+test('shared policy starts GTM and LP Ads config together after geography and preserves IDs, ownership, and RDP ordering', async () => {
   const env = environment({ coloradoDefault: true, pathname: '/lp/furnace-repair/' });
   const call = installCallMeasurement(calls, env); const manager = installTagManager(gtm, { ...env, manageConsent: false, reloadOnWithdrawal: false });
   assert.equal(env.scripts.length, 0); await call.ready; await manager.ready;
   assert.equal(env.requests.length, 1); assert.equal(env.scripts.length, 2);
   assert.equal(env.scripts.filter(script => script.src.includes('/gtm.js')).length, 1);
-  assert.equal(env.commands.filter(args => args[0] === 'config' && args[1] === `${calls.googleAdsId}/${calls.callConversionLabel}`).length, 1);
+  // 2026-10-19 (Reu Yep): Google Ads forwarding-number swap removed; ServiceTitan DNI owns the /lp/ number.
+  assert.equal(env.commands.filter(args => args[0] === 'config' && args[1] === `${calls.googleAdsId}/${calls.callConversionLabel}`).length, 0);
+  assert.equal(env.commands.filter(args => args[0] === 'config' && args[1] === calls.googleAdsId).length, 1);
   const rdp = env.commands.findIndex(args => args[0] === 'set' && args[1].restricted_data_processing === true);
   const ads = env.commands.findIndex(args => args[0] === 'config' && args[1] === calls.googleAdsId);
   assert.ok(rdp >= 0 && rdp < ads); assert.equal(env.commands.find(args => args[0] === 'consent' && args[1] === 'update')[2].ad_personalization, 'denied');
