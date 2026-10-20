@@ -38,7 +38,7 @@ const schema=pageSchema(route,metadata,Astro.site,site);
 <script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g,'\u003c')}/>
 </head><body data-page-id={route.page_id} data-build-mode={buildMode} data-replacement-services={JSON.stringify(services.filter(service=>/Replacement|Installation/.test(service.name)).map(service=>service.name))} data-request-towns={JSON.stringify(areas.map(a=>a.name.replace('HVAC Services in ','')))}>
 <a class="skip" href="#main">Skip to content</a>
-{route.page_id!=='ST-017'&&<LandingCallMeasurement sitewide/>}
+{!['ST-004','ST-017'].includes(route.page_id)&&<LandingCallMeasurement sitewide/>}
 {review && <div class="review-bar"><strong>Private review</strong><span>Draft site. The scheduler sends real requests.</span><a href="/review/">Page directory</a></div>}
 <header class:list={["site-header",{"homeowner-shell":isHomeowner||isPilot}]}><div class="wrap masthead"><nav class="desktop-nav" aria-label="Main navigation">{navigation.map(([id,label])=><a href={byId(id)!.canonical_route} aria-current={route.page_id===id?'page':undefined}>{label}</a>)}</nav>
 <a class="brand" href="/" aria-label="MGI Heating and Air home"><img src="/assets/mgi-badge-240.webp" srcset="/assets/mgi-badge-120.webp 120w, /assets/mgi-badge-240.webp 240w" sizes="120px" alt="MGI Heating and Air" width="667" height="667"/></a>
