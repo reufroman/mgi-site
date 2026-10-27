@@ -1,5 +1,7 @@
 # MGI paid tracking repair candidate, October 26, 2026
 
+**October 27 update:** scheduler transport shipped to https://mgiheatingandair.com in Cloudflare deployment `512841d4-d818-4867-8aad-a6cbf511982d`, preserving the live overlays. GTM stays on version 9; real lead/booking/call conversion acceptance remains unknown. [Deployment, evidence, blockers, and one-step rollback](2026-10-27_Deployment.md). The candidate record below is historical.
+
 Status: PARTIAL, branch and local fixtures only. Nothing published or changed in Google Ads, GTM, ServiceTitan, DNS, or the live site. Reu's written approval is required for every live release. No actions deleted. Jesse owns the old contact-number decision.
 
 Branch: `codex/mgi-paid-tracking-repair-2026-10-26`, source base `54800ce`.
