@@ -1,0 +1,18 @@
+{
+  "kind": "review specification, NOT an importable GTM export",
+  "enabled": false,
+  "container": "GTM-5NWW55ZN",
+  "hostname": "mgiheatingandair.com",
+  "adsDestination": "AW-621269572",
+  "ga4": "G-D9DKKJM1MX",
+  "productionApproval": null,
+  "form": { "event": "mgi_form_confirmed", "providerAdapter": null, "conversionLabel": null, "transactionId": "opaque saved receipt only", "enabled": false },
+  "booking": { "event": "mgi_booking_confirmed", "providerAdapter": null, "conversionLabel": null, "transactionId": "opaque saved receipt only", "enabled": false },
+  "fixtureRule": "Never import the local fixture sink into GTM; reject mgi_test=true and mgi_transport=fixture in any future production trigger",
+  "consentRule": "Keep existing policy and personalized-ad denial; verify actual Ads consent requirements before enabling lead events. Do not change consent defaults in this package.",
+  "triggerRule": "Exact event plus exact new hostname plus verified live receipt plus test=false; no All Forms, page views, thank-you paths, clicks, or widget open triggers",
+  "googleLoaderRule": "Use the new container's existing Google tag; no legacy container or additional standalone loader",
+  "callRule": "ST DNI remains number owner. Completed call is the vendor import; phone tap is not a conversion. Do not install Google WCM replacement.",
+  "dedupRule": "One acquisition receipt, one chosen primary action. If the same signal is sent through native import and browser tag, select one path before enabling; a transaction ID is not cross-action deduplication.",
+  "activationGates": ["exact saved provider receipt contract", "exact action ID and label from Ads", "no duplicate native import/browser reporting", "consent verification", "isolated end-to-end acceptance", "Reu written release approval"]
+}

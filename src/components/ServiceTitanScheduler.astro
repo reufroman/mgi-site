@@ -1,18 +1,18 @@
 ---
 import site from '../data/site.json';
 const widgetId = site.schedulerWidgetId;
-const websiteUrl = site.schedulerWebsiteUrl;
 ---
 {widgetId && <>
 <div id="scheduler-help" class="scheduler-help" role="status" hidden> The scheduling window could not load. Please <a href="tel:+19702871673">call MGI at (970) 287-1673</a>.</div>
-<script is:inline define:vars={{widgetId,websiteUrl}}>
-const schedulerOrigin=new URL(websiteUrl).origin;
-const localScheduler=location.origin===schedulerOrigin;
-if(localScheduler)(function(q,w,e,r,t,y,u){q[t]=q[t]||function(){(q[t].q=q[t].q||[]).push(arguments)};
- q[t].l=1*new Date();y=w.createElement(e);u=w.getElementsByTagName(e)[0];y.async=true;
- y.src=r;y.onerror=function(){window.mgiSchedulerFailed=true;};u.parentNode.insertBefore(y,u);
- q[t]('init',widgetId);
-})(window,document,'script','https://static.servicetitan.com/webscheduler/shim.js','STWidgetManager');
+<script>
+// @ts-nocheck
+import site from '../data/site.json';
+import { installSchedulerTransport } from '../data/paid-tracking-repair.mjs';
+import { getMeasurementPolicy } from '../data/measurement-policy.mjs';
+const widgetId = site.schedulerWidgetId;
+const websiteUrl = site.schedulerWebsiteUrl;
+const policy = getMeasurementPolicy(window);
+const scheduler=installSchedulerTransport({window,document,policy,widgetId,websiteUrl});
 // Keep every existing booking link as a usable fallback and open the provider on activation.
 document.addEventListener('click',function(event){
  const target=event.target instanceof Element?event.target.closest('a[href],button[data-scheduler-open]'):null;
@@ -21,10 +21,8 @@ document.addEventListener('click',function(event){
  if(!target.hasAttribute('data-scheduler-open')&&(!url||url.origin!==location.origin||url.pathname.replace(/\/$/,'')!=='/schedule-service'))return;
  if(target instanceof HTMLAnchorElement&&(target.target==='_blank'||target.hasAttribute('download')))return;
  event.preventDefault();
- if(window.mgiSchedulerFailed){document.getElementById('scheduler-help').hidden=false;return;}
  const menu=target.closest('.mobile-menu');if(menu)menu.removeAttribute('open');
- if(!localScheduler){const destination=new URL('/schedule-service/',schedulerOrigin);if(url)destination.search=url.search;destination.searchParams.set('ws-widget','open');location.assign(destination.href);return;}
- window.STWidgetManager('ws-open');
+ void scheduler.open(url?.href||'/schedule-service/');
 });
 </script>
 </>}

@@ -61,7 +61,10 @@ test('shared policy starts GTM and LP calls together after geography and preserv
   assert.equal(env.scripts.length, 0); await call.ready; await manager.ready;
   assert.equal(env.requests.length, 1); assert.equal(env.scripts.length, 2);
   assert.equal(env.scripts.filter(script => script.src.includes('/gtm.js')).length, 1);
-  assert.equal(env.commands.filter(args => args[0] === 'config' && args[1] === `${calls.googleAdsId}/${calls.callConversionLabel}`).length, 1);
+  // October 19 accepted architecture: ST DNI alone replaces phone numbers.
+  // Retain the Ads base tag, never reinstate Google's competing WCM swap.
+  assert.equal(env.commands.filter(args => args[0] === 'config' && args[1] === `${calls.googleAdsId}/${calls.callConversionLabel}`).length, 0);
+  assert.equal(env.commands.some(args => JSON.stringify(args).includes('phone_conversion_')), false);
   const rdp = env.commands.findIndex(args => args[0] === 'set' && args[1].restricted_data_processing === true);
   const ads = env.commands.findIndex(args => args[0] === 'config' && args[1] === calls.googleAdsId);
   assert.ok(rdp >= 0 && rdp < ads); assert.equal(env.commands.find(args => args[0] === 'consent' && args[1] === 'update')[2].ad_personalization, 'denied');

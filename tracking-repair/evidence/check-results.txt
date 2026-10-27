@@ -1,0 +1,146 @@
+
+> mgi-website-astro@0.1.0 check
+> astro check
+
+22:34:05 [content] Syncing content
+22:34:05 [content] Synced content
+22:34:05 [types] Generated 218ms
+22:34:05 [check] Getting diagnostics for Astro files in /Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/01_Projects/Website-Astro-Tracking-Repair-2026-10-26...
+src/content.config.ts:3:400 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                                                                                                                                                                                                                                                                                                 ~
+src/content.config.ts:3:392 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                                                                                                                                                                                                                                                                                         ~
+src/content.config.ts:3:372 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                                                                                                                                                                                                                                                                     ~
+src/content.config.ts:3:364 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                                                                                                                                                                                                                                                             ~
+src/content.config.ts:3:341 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                                                                                                                                                                                                                                      ~
+src/content.config.ts:3:318 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                                                                                                                                                                                                               ~
+src/content.config.ts:3:300 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                                                                                                                                                                                             ~
+src/content.config.ts:3:281 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                                                                                                                                                                          ~
+src/content.config.ts:3:273 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                                                                                                                                                                  ~
+src/content.config.ts:3:242 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                                                                                                                                   ~
+src/content.config.ts:3:234 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                                                                                                                           ~
+src/content.config.ts:3:215 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                                                                                                        ~
+src/content.config.ts:3:199 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                                                                                        ~
+src/content.config.ts:3:181 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                                                                      ~
+src/content.config.ts:3:173 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                                                              ~
+src/content.config.ts:3:153 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                                          ~
+src/content.config.ts:3:135 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                                        ~
+src/content.config.ts:3:116 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                                     ~
+src/content.config.ts:3:99 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                                    ~
+src/content.config.ts:3:81 - warning ts(6385): 'z' is deprecated.
+
+3 const editorial=defineCollection({loader:file('src/data/editorial.json'),schema:z.object({eyebrow:z.string(),title:z.string(),summary:z.string(),answer:z.string(),sections:z.array(z.object({heading:z.string(),body:z.string(),bullets:z.array(z.string()).optional()})),faqs:z.array(z.object({question:z.string(),answer:z.string()})),ctaLabel:z.string(),reviewNotes:z.array(z.string()),sources:z.array(z.string()).min(1)})});
+                                                                                  ~
+src/content.config.ts:1:26 - warning ts(6385): 'z' is deprecated.
+
+1 import {defineCollection,z} from 'astro:content';
+                           ~
+
+src/components/ContactBooking.astro:3:21 - warning ts(6133): 'review' is declared but its value is never read.
+
+3 import {photos,byId,review} from '../data/catalog.mjs';
+                      ~~~~~~
+
+src/components/PageContent.astro:17:1 - warning ts(6133): 'HomeownerGuide' is declared but its value is never read.
+
+17 import HomeownerGuide from './HomeownerGuide.astro';
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/data/landing-call-measurement.mjs:37:12 - warning ts(6133): 'replacePhone' is declared but its value is never read.
+
+37   function replacePhone(formatted, mobile, token) {
+              ~~~~~~~~~~~~
+
+src/layouts/Base.astro:21:7 - warning ts(6133): 'isInfoPilot' is declared but its value is never read.
+
+21 const isInfoPilot=route.page_id==='ST-005';
+         ~~~~~~~~~~~
+
+src/pages/local-hvac/[...path].astro:7:1 - warning ts(6133): 'serviceRolloutIds' is declared but its value is never read.
+
+7 import {serviceRolloutIds} from '../../data/service-family-rollout.mjs';
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/pages/services/[...path].astro:13:7 - warning ts(6133): 'context' is declared but its value is never read.
+
+13 const context=contextFor(route);
+         ~~~~~~~
+
+tests/intake.test.mjs:9:147 - warning ts(6133): 'url' is declared but its value is never read.
+
+9 test('only durable verified provider receipt earns received state',async()=>{const original=globalThis.fetch;const sent=[];globalThis.fetch=async(url,options)=>{sent.push(JSON.parse(options.body));return new Response(JSON.stringify({accepted:true,receiptId:'TEST-RECEIPT'}),{status:200});};try{const r=await onRequestPost({request:req(),env});assert.equal(r.status,202);const result=await r.json();assert.equal(result.receiptId,'TEST-RECEIPT');assert.ok(result.message.includes('not an appointment'));assert.equal(sent[0].appointmentState,'requested');}finally{globalThis.fetch=original;}});
+                                                                                                                                                    ~~~
+
+tests/measurement-policy.test.mjs:16:107 - warning ts(6133): 'type' is declared but its value is never read.
+
+16     addEventListener: (type, fn) => { if (type === 'storage') listeners.add(fn); }, removeEventListener: (type, fn) => listeners.delete(fn),
+                                                                                                             ~~~~
+
+tests/paid-tracking-repair.test.mjs:31:61 - warning ts(6133): 't' is declared but its value is never read.
+
+31  const window={location,history:{state:null,replaceState:(s,t,url)=>{location.href=url;}},STWidgetManager:(...args)=>commands.push(args)};
+                                                               ~
+tests/paid-tracking-repair.test.mjs:31:59 - warning ts(6133): 's' is declared but its value is never read.
+
+31  const window={location,history:{state:null,replaceState:(s,t,url)=>{location.href=url;}},STWidgetManager:(...args)=>commands.push(args)};
+                                                             ~
+
+Result (158 files):
+- 0 errors
+- 0 warnings
+- 31 hints

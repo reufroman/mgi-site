@@ -1,0 +1,47 @@
+✔ committed default has no guessed protocol and performs no measurement (1.214875ms)
+✔ activation requires all evidence and exact HTTPS origin and Google Ads destination (0.343625ms)
+✔ review, localhost, alternate production host, and HTTP cannot activate (0.1225ms)
+✔ unset and denied consent never load Google or queue commands (0.122417ms)
+✔ verified origin and source success queues only opaque receipt conversion (0.749333ms)
+✔ wrong origin/source, synthetic event, opens, incomplete success, and PII-like receipts reject (0.140834ms)
+✔ receipt deduplication works in memory and across installs in one session (0.095584ms)
+✔ storage errors retain explicit consent and current-page deduplication (0.07975ms)
+✔ withdrawal blocks success and disposal removes the listener (0.091708ms)
+✔ Colorado response grants only an effective default, with no stored decision and one uncached same-origin lookup (0.840625ms)
+✔ non-Colorado, malformed response, HTTP error, and lookup failure remain off (0.217708ms)
+✔ GPC and both saved-decline forms outrank older allow and never need geography (0.794584ms)
+✔ explicit decisions record version and time; existing allow resolves without lookup (0.206833ms)
+✔ late Colorado response cannot override a decline during lookup (0.121542ms)
+✔ shared policy starts GTM and LP calls together after geography and preserves IDs, ownership, and RDP ordering (0.495625ms)
+✔ GPC prevents both optional loaders despite an existing allow (0.13825ms)
+✔ privacy choices skip region lookup and load no scripts after explicit choices (0.068916ms)
+✔ wrong hosts and HTTP do not query regional defaults (0.088916ms)
+✔ scheduler preserves current click/source and service context, without identity fields (1.077208ms)
+✔ returning visit restores allowed click cookie, but a new touch never inherits stale click IDs (0.211042ms)
+✔ decline/unset strips attribution from scheduler links and never reads it into destination (0.098208ms)
+✔ external destinations, other paths, malformed cookies, oversized and control-character input fail safely (0.4175ms)
+✔ confirmed fixture form and booking each emit once, without customer data (0.171291ms)
+✔ reload deduplication and missing consent prevent replay, including after consent is later granted (0.061375ms)
+✔ unconfirmed, unlabeled, live-host, disabled, and phone-tap receipts cannot become conversions (0.071917ms)
+✔ storage failure fails closed and delivery failure can be retried (0.089084ms)
+✔ actual shim init waits for policy, removes denied click data before load, and keeps booking functional (0.311875ms)
+✔ actual shim sees cookie attribution on schedule pages and main pages before initialization (0.166083ms)
+✔ local/review/other hosts never load a real provider or navigate into production (0.091958ms)
+✔ ws-widget flag auto-opens once after init and shim failure exposes the call fallback (0.193041ms)
+✔ contextual service links reach a fresh hosting URL and schedule-page buttons retain that context (0.9175ms)
+✔ unset, denied, and legacy denial load no GTM or Google commands (0.607917ms)
+✔ affirmative consent queues denied defaults then analytics only, one GTM loader across repeated installs (0.83875ms)
+✔ wrong host, localhost, HTTP, malformed ID, and privacy choices never load GTM (0.177292ms)
+✔ privacy choices persist grant and denial, load zero tags, and other tabs withdraw once (0.164041ms)
+✔ landing delegates GA4 to GTM while preserving Ads, website call destination, and one extra GTM loader without competing consent (0.567666ms)
+✔ granted saved preference starts once and cross-tab grant honors legacy denial precedence (0.089458ms)
+✔ GTM Page URL trigger includes landing routes and excludes privacy choices and every other host (0.10025ms)
+✔ blocked storage still permits explicit current-page choice and withdrawal (0.082375ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 42.257166

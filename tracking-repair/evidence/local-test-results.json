@@ -1,0 +1,15 @@
+{
+  "scope": "loopback fixtures only",
+  "checks": [
+    "form confirmed once",
+    "booking confirmed once",
+    "reload dedupe",
+    "source/gclid preserved",
+    "no dispatch",
+    "no customer messages",
+    "phone overflow absent",
+    "zero external requests"
+  ],
+  "googleAdsReceipt": "unknown, not contacted",
+  "serviceTitanReceipt": "unknown, not contacted"
+}
