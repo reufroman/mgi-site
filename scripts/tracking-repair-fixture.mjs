@@ -6,8 +6,8 @@ const modulePath=fileURLToPath(new URL('../src/data/paid-tracking-repair.mjs',im
 const html=`<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>MGI tracking test fixture</title>
 <style>body{font:18px system-ui;max-width:850px;margin:40px auto;padding:20px;background:#fffdfb;color:#174e5b}section{border:1px solid #174e5b;padding:20px;margin:20px 0}button{font:inherit;padding:12px;background:#174e5b;color:white;border:0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}label{display:block;margin:10px 0}input{font:inherit;width:90%}</style>
 <h1>MGI tracking test fixture</h1><p>Local mock only. No ServiceTitan lead, job, Google Ads conversion, email, or text will be created.</p>
-<section><h2>1. Labeled test form</h2><form id="form"><label>Test label<input name="marker" value="TEST-MGI-FORM-20261026" readonly></label><button>Submit local test form</button></form></section>
-<section><h2>2. Labeled test booking</h2><form id="booking"><label>Test label<input name="marker" value="TEST-MGI-BOOKING-20261026" readonly></label><button>Confirm local test booking</button></form></section>
+<section><h2>1. Labeled test form</h2><form id="form"><label>Test name<input name="name" value="TEST-CODEX Form" readonly></label><label>Test receipt label<input name="marker" value="TEST-MGI-FORM-20261026" readonly></label><button>Submit local test form</button></form></section>
+<section><h2>2. Labeled test booking</h2><form id="booking"><label>Test name<input name="name" value="TEST-CODEX Booking" readonly></label><label>Test receipt label<input name="marker" value="TEST-MGI-BOOKING-20261026" readonly></label><button>Confirm local test booking</button></form></section>
 <label><input type="checkbox" id="allow" checked style="width:auto">Allow measurement in this local fixture</label><h2>Local test receipts and event output</h2><pre id="result" role="status">No test submitted.</pre>
 <script type="module">
 import{createReceiptReporter,schedulerDestination}from'/repair.mjs';

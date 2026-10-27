@@ -41,6 +41,7 @@ export function installSchedulerTransport({ window: win, document: doc, policy, 
   const ready = (async () => {
     if (!local) return false;
     await policy.ready;
+    policy.refresh?.();
     let cookie = ''; try { cookie = doc.cookie; } catch {}
     const page = new URL(win.location.href);
     const destination = schedulerDestination({ pageUrl: page.href, cookie, measurementAllowed: policy.state.choice === 'granted' });
@@ -62,6 +63,9 @@ export function installSchedulerTransport({ window: win, document: doc, policy, 
   })();
   return { ready, async open(link = '/schedule-service/') {
     if (!await ready || failed) return blocked();
+    // The live consent banner has its own bundled policy instance. Same-tab
+    // storage writes do not emit storage events, so re-read before opening.
+    policy.refresh?.();
     let cookie = ''; try { cookie = doc.cookie; } catch {}
     const destination = schedulerDestination({ pageUrl: win.location.href, link, cookie, measurementAllowed: policy.state.choice === 'granted' });
     const current = new URL(win.location.href);

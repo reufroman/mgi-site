@@ -50,3 +50,7 @@ test('contextual service links reach a fresh hosting URL and schedule-page butto
  const env=schedulerEnv({href:'https://mgiheatingandair.com/'});const scheduler=setup(env);await scheduler.open('/schedule-service/?service=Furnace&town=Windsor&topic=Furnace');assert.equal(env.navigations.length,1);assert.equal(new URL(env.navigations[0]).searchParams.get('town'),'Windsor');assert.deepEqual(env.commands.map(c=>c[0]),['init']);
  const scheduled=schedulerEnv({href:'https://mgiheatingandair.com/schedule-service/?service=Furnace&town=Windsor&topic=Furnace'});await setup(scheduled).open();assert.equal(scheduled.navigations.length,0);assert.equal(scheduled.commands.at(-1)[0],'ws-open');
 });
+test('same-tab consent changes in the frozen live banner are refreshed before open',async()=>{
+ const env=schedulerEnv({href:'https://mgiheatingandair.com/',choice:'denied',cookie:oldCookie});const scheduler=setup(env);await scheduler.ready;
+ env.policy.refresh=()=>{env.policy.state.choice='granted';};await scheduler.open();assert.equal(new URL(env.navigations[0]).searchParams.get('gclid'),'old-click');
+});
