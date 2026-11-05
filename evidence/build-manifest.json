@@ -1,0 +1,3756 @@
+{
+  "mode": "public",
+  "builtAt": "2026-10-20T16:25:54.265Z",
+  "routes": [
+    {
+      "page_id": "ST-001",
+      "route": "/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-002",
+      "route": "/about/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-003",
+      "route": "/contact/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-004",
+      "route": "/schedule-service/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-005",
+      "route": "/services/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-006",
+      "route": "/service-area/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-007",
+      "route": "/financing/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-008",
+      "route": "/rebates/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-009",
+      "route": "/rebates/calculator/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-010",
+      "route": "/vip-membership/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-011",
+      "route": "/new-homeowners/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-012",
+      "route": "/answers/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-013",
+      "route": "/blog/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-014",
+      "route": "/privacy-policy/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-015",
+      "route": "/terms/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-016",
+      "route": "/accessibility/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-017",
+      "route": "/privacy-choices/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-018",
+      "route": "/request-received/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-019",
+      "route": "/404/",
+      "family": "Core"
+    },
+    {
+      "page_id": "ST-020",
+      "route": "/services/furnace/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-059",
+      "route": "/services/furnace-repair/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-060",
+      "route": "/services/furnace-replacement/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-063",
+      "route": "/services/furnace-maintenance/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-021",
+      "route": "/services/air-conditioning/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-061",
+      "route": "/services/ac-repair/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-062",
+      "route": "/services/ac-replacement/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-064",
+      "route": "/services/ac-maintenance/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-022",
+      "route": "/services/heat-pumps/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-065",
+      "route": "/services/heat-pump-repair/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-066",
+      "route": "/services/heat-pump-installation/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-067",
+      "route": "/services/heat-pump-maintenance/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-023",
+      "route": "/services/water-heaters/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-068",
+      "route": "/services/water-heater-repair/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-069",
+      "route": "/services/water-heater-replacement/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-070",
+      "route": "/services/water-heater-maintenance/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-024",
+      "route": "/services/heat-pump-water-heaters/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-071",
+      "route": "/services/heat-pump-water-heater-repair/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-072",
+      "route": "/services/heat-pump-water-heater-installation/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-073",
+      "route": "/services/heat-pump-water-heater-maintenance/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-026",
+      "route": "/services/mini-splits/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-074",
+      "route": "/services/mini-split-repair/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-075",
+      "route": "/services/mini-split-installation/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-076",
+      "route": "/services/mini-split-maintenance/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-025",
+      "route": "/services/indoor-air-quality/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-077",
+      "route": "/services/indoor-air-quality-assessment/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-078",
+      "route": "/services/air-purification-systems/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-027",
+      "route": "/services/hvac-maintenance/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-079",
+      "route": "/services/emergency-hvac-service/",
+      "family": "Service"
+    },
+    {
+      "page_id": "ST-028",
+      "route": "/service-area/wellington/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-029",
+      "route": "/service-area/greeley/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-030",
+      "route": "/service-area/loveland/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-031",
+      "route": "/service-area/berthoud/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-032",
+      "route": "/service-area/windsor/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-033",
+      "route": "/service-area/longmont/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-034",
+      "route": "/service-area/boulder/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-035",
+      "route": "/service-area/erie/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-036",
+      "route": "/service-area/frederick/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-037",
+      "route": "/service-area/firestone/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-038",
+      "route": "/service-area/thornton/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-039",
+      "route": "/service-area/broomfield/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-040",
+      "route": "/service-area/fort-collins/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-041",
+      "route": "/service-area/johnstown/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-042",
+      "route": "/service-area/timnath/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-043",
+      "route": "/service-area/severance/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-044",
+      "route": "/service-area/dacono/",
+      "family": "Area"
+    },
+    {
+      "page_id": "ST-045",
+      "route": "/answers/furnaces/",
+      "family": "Answer category"
+    },
+    {
+      "page_id": "ST-046",
+      "route": "/answers/air-conditioning/",
+      "family": "Answer category"
+    },
+    {
+      "page_id": "ST-047",
+      "route": "/answers/heat-pumps/",
+      "family": "Answer category"
+    },
+    {
+      "page_id": "ST-048",
+      "route": "/answers/water-heaters/",
+      "family": "Answer category"
+    },
+    {
+      "page_id": "ST-049",
+      "route": "/answers/indoor-air-quality/",
+      "family": "Answer category"
+    },
+    {
+      "page_id": "ST-050",
+      "route": "/answers/mini-splits/",
+      "family": "Answer category"
+    },
+    {
+      "page_id": "ST-051",
+      "route": "/blog/most-common-ac-problems-in-colorado/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ST-052",
+      "route": "/blog/what-to-know-about-colorado-heat-pump-rebates/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ST-053",
+      "route": "/blog/why-heat-pumps-are-a-great-choice-for-coloradans/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ST-054",
+      "route": "/blog/furnace-will-not-start/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ST-055",
+      "route": "/blog/repair-or-replace-furnace/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ST-056",
+      "route": "/blog/heat-pump-water-heater-guide/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ST-057",
+      "route": "/blog/mini-split-or-ducted-system/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ST-058",
+      "route": "/blog/indoor-air-quality-observations/",
+      "family": "Article"
+    },
+    {
+      "page_id": "SL-WEL-FUR-REP",
+      "route": "/local-hvac/wellington-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-FUR-RPL",
+      "route": "/local-hvac/wellington-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-FUR-MNT",
+      "route": "/local-hvac/wellington-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-AC-REP",
+      "route": "/local-hvac/wellington-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-AC-RPL",
+      "route": "/local-hvac/wellington-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-AC-MNT",
+      "route": "/local-hvac/wellington-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-HP-REP",
+      "route": "/local-hvac/wellington-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-HP-INS",
+      "route": "/local-hvac/wellington-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-HP-MNT",
+      "route": "/local-hvac/wellington-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-WH-REP",
+      "route": "/local-hvac/wellington-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-WH-RPL",
+      "route": "/local-hvac/wellington-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-WH-MNT",
+      "route": "/local-hvac/wellington-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-HPWH-REP",
+      "route": "/local-hvac/wellington-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-HPWH-INS",
+      "route": "/local-hvac/wellington-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-HPWH-MNT",
+      "route": "/local-hvac/wellington-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-MS-REP",
+      "route": "/local-hvac/wellington-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-MS-INS",
+      "route": "/local-hvac/wellington-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-MS-MNT",
+      "route": "/local-hvac/wellington-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-IAQ-ASM",
+      "route": "/local-hvac/wellington-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-AIR-PUR",
+      "route": "/local-hvac/wellington-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WEL-EMR",
+      "route": "/local-hvac/wellington-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-FUR-REP",
+      "route": "/local-hvac/greeley-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-FUR-RPL",
+      "route": "/local-hvac/greeley-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-FUR-MNT",
+      "route": "/local-hvac/greeley-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-AC-REP",
+      "route": "/local-hvac/greeley-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-AC-RPL",
+      "route": "/local-hvac/greeley-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-AC-MNT",
+      "route": "/local-hvac/greeley-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-HP-REP",
+      "route": "/local-hvac/greeley-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-HP-INS",
+      "route": "/local-hvac/greeley-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-HP-MNT",
+      "route": "/local-hvac/greeley-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-WH-REP",
+      "route": "/local-hvac/greeley-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-WH-RPL",
+      "route": "/local-hvac/greeley-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-WH-MNT",
+      "route": "/local-hvac/greeley-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-HPWH-REP",
+      "route": "/local-hvac/greeley-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-HPWH-INS",
+      "route": "/local-hvac/greeley-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-HPWH-MNT",
+      "route": "/local-hvac/greeley-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-MS-REP",
+      "route": "/local-hvac/greeley-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-MS-INS",
+      "route": "/local-hvac/greeley-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-MS-MNT",
+      "route": "/local-hvac/greeley-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-IAQ-ASM",
+      "route": "/local-hvac/greeley-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-AIR-PUR",
+      "route": "/local-hvac/greeley-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-GRE-EMR",
+      "route": "/local-hvac/greeley-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-FUR-REP",
+      "route": "/local-hvac/loveland-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-FUR-RPL",
+      "route": "/local-hvac/loveland-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-FUR-MNT",
+      "route": "/local-hvac/loveland-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-AC-REP",
+      "route": "/local-hvac/loveland-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-AC-RPL",
+      "route": "/local-hvac/loveland-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-AC-MNT",
+      "route": "/local-hvac/loveland-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-HP-REP",
+      "route": "/local-hvac/loveland-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-HP-INS",
+      "route": "/local-hvac/loveland-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-HP-MNT",
+      "route": "/local-hvac/loveland-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-WH-REP",
+      "route": "/local-hvac/loveland-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-WH-RPL",
+      "route": "/local-hvac/loveland-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-WH-MNT",
+      "route": "/local-hvac/loveland-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-HPWH-REP",
+      "route": "/local-hvac/loveland-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-HPWH-INS",
+      "route": "/local-hvac/loveland-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-HPWH-MNT",
+      "route": "/local-hvac/loveland-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-MS-REP",
+      "route": "/local-hvac/loveland-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-MS-INS",
+      "route": "/local-hvac/loveland-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-MS-MNT",
+      "route": "/local-hvac/loveland-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-IAQ-ASM",
+      "route": "/local-hvac/loveland-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-AIR-PUR",
+      "route": "/local-hvac/loveland-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LOV-EMR",
+      "route": "/local-hvac/loveland-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-FUR-REP",
+      "route": "/local-hvac/berthoud-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-FUR-RPL",
+      "route": "/local-hvac/berthoud-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-FUR-MNT",
+      "route": "/local-hvac/berthoud-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-AC-REP",
+      "route": "/local-hvac/berthoud-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-AC-RPL",
+      "route": "/local-hvac/berthoud-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-AC-MNT",
+      "route": "/local-hvac/berthoud-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-HP-REP",
+      "route": "/local-hvac/berthoud-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-HP-INS",
+      "route": "/local-hvac/berthoud-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-HP-MNT",
+      "route": "/local-hvac/berthoud-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-WH-REP",
+      "route": "/local-hvac/berthoud-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-WH-RPL",
+      "route": "/local-hvac/berthoud-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-WH-MNT",
+      "route": "/local-hvac/berthoud-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-HPWH-REP",
+      "route": "/local-hvac/berthoud-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-HPWH-INS",
+      "route": "/local-hvac/berthoud-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-HPWH-MNT",
+      "route": "/local-hvac/berthoud-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-MS-REP",
+      "route": "/local-hvac/berthoud-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-MS-INS",
+      "route": "/local-hvac/berthoud-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-MS-MNT",
+      "route": "/local-hvac/berthoud-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-IAQ-ASM",
+      "route": "/local-hvac/berthoud-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-AIR-PUR",
+      "route": "/local-hvac/berthoud-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BER-EMR",
+      "route": "/local-hvac/berthoud-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-FUR-REP",
+      "route": "/local-hvac/windsor-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-FUR-RPL",
+      "route": "/local-hvac/windsor-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-FUR-MNT",
+      "route": "/local-hvac/windsor-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-AC-REP",
+      "route": "/local-hvac/windsor-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-AC-RPL",
+      "route": "/local-hvac/windsor-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-AC-MNT",
+      "route": "/local-hvac/windsor-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-HP-REP",
+      "route": "/local-hvac/windsor-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-HP-INS",
+      "route": "/local-hvac/windsor-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-HP-MNT",
+      "route": "/local-hvac/windsor-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-WH-REP",
+      "route": "/local-hvac/windsor-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-WH-RPL",
+      "route": "/local-hvac/windsor-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-WH-MNT",
+      "route": "/local-hvac/windsor-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-HPWH-REP",
+      "route": "/local-hvac/windsor-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-HPWH-INS",
+      "route": "/local-hvac/windsor-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-HPWH-MNT",
+      "route": "/local-hvac/windsor-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-MS-REP",
+      "route": "/local-hvac/windsor-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-MS-INS",
+      "route": "/local-hvac/windsor-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-MS-MNT",
+      "route": "/local-hvac/windsor-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-IAQ-ASM",
+      "route": "/local-hvac/windsor-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-AIR-PUR",
+      "route": "/local-hvac/windsor-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-WIN-EMR",
+      "route": "/local-hvac/windsor-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-FUR-REP",
+      "route": "/local-hvac/longmont-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-FUR-RPL",
+      "route": "/local-hvac/longmont-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-FUR-MNT",
+      "route": "/local-hvac/longmont-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-AC-REP",
+      "route": "/local-hvac/longmont-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-AC-RPL",
+      "route": "/local-hvac/longmont-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-AC-MNT",
+      "route": "/local-hvac/longmont-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-HP-REP",
+      "route": "/local-hvac/longmont-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-HP-INS",
+      "route": "/local-hvac/longmont-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-HP-MNT",
+      "route": "/local-hvac/longmont-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-WH-REP",
+      "route": "/local-hvac/longmont-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-WH-RPL",
+      "route": "/local-hvac/longmont-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-WH-MNT",
+      "route": "/local-hvac/longmont-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-HPWH-REP",
+      "route": "/local-hvac/longmont-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-HPWH-INS",
+      "route": "/local-hvac/longmont-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-HPWH-MNT",
+      "route": "/local-hvac/longmont-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-MS-REP",
+      "route": "/local-hvac/longmont-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-MS-INS",
+      "route": "/local-hvac/longmont-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-MS-MNT",
+      "route": "/local-hvac/longmont-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-IAQ-ASM",
+      "route": "/local-hvac/longmont-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-AIR-PUR",
+      "route": "/local-hvac/longmont-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-LON-EMR",
+      "route": "/local-hvac/longmont-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-FUR-REP",
+      "route": "/local-hvac/boulder-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-FUR-RPL",
+      "route": "/local-hvac/boulder-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-FUR-MNT",
+      "route": "/local-hvac/boulder-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-AC-REP",
+      "route": "/local-hvac/boulder-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-AC-RPL",
+      "route": "/local-hvac/boulder-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-AC-MNT",
+      "route": "/local-hvac/boulder-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-HP-REP",
+      "route": "/local-hvac/boulder-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-HP-INS",
+      "route": "/local-hvac/boulder-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-HP-MNT",
+      "route": "/local-hvac/boulder-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-WH-REP",
+      "route": "/local-hvac/boulder-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-WH-RPL",
+      "route": "/local-hvac/boulder-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-WH-MNT",
+      "route": "/local-hvac/boulder-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-HPWH-REP",
+      "route": "/local-hvac/boulder-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-HPWH-INS",
+      "route": "/local-hvac/boulder-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-HPWH-MNT",
+      "route": "/local-hvac/boulder-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-MS-REP",
+      "route": "/local-hvac/boulder-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-MS-INS",
+      "route": "/local-hvac/boulder-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-MS-MNT",
+      "route": "/local-hvac/boulder-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-IAQ-ASM",
+      "route": "/local-hvac/boulder-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-AIR-PUR",
+      "route": "/local-hvac/boulder-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BOU-EMR",
+      "route": "/local-hvac/boulder-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-FUR-REP",
+      "route": "/local-hvac/erie-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-FUR-RPL",
+      "route": "/local-hvac/erie-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-FUR-MNT",
+      "route": "/local-hvac/erie-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-AC-REP",
+      "route": "/local-hvac/erie-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-AC-RPL",
+      "route": "/local-hvac/erie-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-AC-MNT",
+      "route": "/local-hvac/erie-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-HP-REP",
+      "route": "/local-hvac/erie-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-HP-INS",
+      "route": "/local-hvac/erie-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-HP-MNT",
+      "route": "/local-hvac/erie-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-WH-REP",
+      "route": "/local-hvac/erie-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-WH-RPL",
+      "route": "/local-hvac/erie-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-WH-MNT",
+      "route": "/local-hvac/erie-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-HPWH-REP",
+      "route": "/local-hvac/erie-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-HPWH-INS",
+      "route": "/local-hvac/erie-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-HPWH-MNT",
+      "route": "/local-hvac/erie-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-MS-REP",
+      "route": "/local-hvac/erie-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-MS-INS",
+      "route": "/local-hvac/erie-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-MS-MNT",
+      "route": "/local-hvac/erie-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-IAQ-ASM",
+      "route": "/local-hvac/erie-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-AIR-PUR",
+      "route": "/local-hvac/erie-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-ERI-EMR",
+      "route": "/local-hvac/erie-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-FUR-REP",
+      "route": "/local-hvac/frederick-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-FUR-RPL",
+      "route": "/local-hvac/frederick-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-FUR-MNT",
+      "route": "/local-hvac/frederick-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-AC-REP",
+      "route": "/local-hvac/frederick-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-AC-RPL",
+      "route": "/local-hvac/frederick-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-AC-MNT",
+      "route": "/local-hvac/frederick-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-HP-REP",
+      "route": "/local-hvac/frederick-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-HP-INS",
+      "route": "/local-hvac/frederick-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-HP-MNT",
+      "route": "/local-hvac/frederick-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-WH-REP",
+      "route": "/local-hvac/frederick-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-WH-RPL",
+      "route": "/local-hvac/frederick-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-WH-MNT",
+      "route": "/local-hvac/frederick-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-HPWH-REP",
+      "route": "/local-hvac/frederick-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-HPWH-INS",
+      "route": "/local-hvac/frederick-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-HPWH-MNT",
+      "route": "/local-hvac/frederick-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-MS-REP",
+      "route": "/local-hvac/frederick-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-MS-INS",
+      "route": "/local-hvac/frederick-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-MS-MNT",
+      "route": "/local-hvac/frederick-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-IAQ-ASM",
+      "route": "/local-hvac/frederick-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-AIR-PUR",
+      "route": "/local-hvac/frederick-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FRE-EMR",
+      "route": "/local-hvac/frederick-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-FUR-REP",
+      "route": "/local-hvac/firestone-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-FUR-RPL",
+      "route": "/local-hvac/firestone-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-FUR-MNT",
+      "route": "/local-hvac/firestone-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-AC-REP",
+      "route": "/local-hvac/firestone-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-AC-RPL",
+      "route": "/local-hvac/firestone-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-AC-MNT",
+      "route": "/local-hvac/firestone-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-HP-REP",
+      "route": "/local-hvac/firestone-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-HP-INS",
+      "route": "/local-hvac/firestone-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-HP-MNT",
+      "route": "/local-hvac/firestone-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-WH-REP",
+      "route": "/local-hvac/firestone-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-WH-RPL",
+      "route": "/local-hvac/firestone-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-WH-MNT",
+      "route": "/local-hvac/firestone-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-HPWH-REP",
+      "route": "/local-hvac/firestone-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-HPWH-INS",
+      "route": "/local-hvac/firestone-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-HPWH-MNT",
+      "route": "/local-hvac/firestone-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-MS-REP",
+      "route": "/local-hvac/firestone-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-MS-INS",
+      "route": "/local-hvac/firestone-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-MS-MNT",
+      "route": "/local-hvac/firestone-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-IAQ-ASM",
+      "route": "/local-hvac/firestone-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-AIR-PUR",
+      "route": "/local-hvac/firestone-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FIR-EMR",
+      "route": "/local-hvac/firestone-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-FUR-REP",
+      "route": "/local-hvac/thornton-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-FUR-RPL",
+      "route": "/local-hvac/thornton-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-FUR-MNT",
+      "route": "/local-hvac/thornton-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-AC-REP",
+      "route": "/local-hvac/thornton-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-AC-RPL",
+      "route": "/local-hvac/thornton-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-AC-MNT",
+      "route": "/local-hvac/thornton-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-HP-REP",
+      "route": "/local-hvac/thornton-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-HP-INS",
+      "route": "/local-hvac/thornton-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-HP-MNT",
+      "route": "/local-hvac/thornton-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-WH-REP",
+      "route": "/local-hvac/thornton-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-WH-RPL",
+      "route": "/local-hvac/thornton-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-WH-MNT",
+      "route": "/local-hvac/thornton-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-HPWH-REP",
+      "route": "/local-hvac/thornton-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-HPWH-INS",
+      "route": "/local-hvac/thornton-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-HPWH-MNT",
+      "route": "/local-hvac/thornton-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-MS-REP",
+      "route": "/local-hvac/thornton-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-MS-INS",
+      "route": "/local-hvac/thornton-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-MS-MNT",
+      "route": "/local-hvac/thornton-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-IAQ-ASM",
+      "route": "/local-hvac/thornton-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-AIR-PUR",
+      "route": "/local-hvac/thornton-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-THO-EMR",
+      "route": "/local-hvac/thornton-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-FUR-REP",
+      "route": "/local-hvac/broomfield-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-FUR-RPL",
+      "route": "/local-hvac/broomfield-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-FUR-MNT",
+      "route": "/local-hvac/broomfield-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-AC-REP",
+      "route": "/local-hvac/broomfield-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-AC-RPL",
+      "route": "/local-hvac/broomfield-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-AC-MNT",
+      "route": "/local-hvac/broomfield-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-HP-REP",
+      "route": "/local-hvac/broomfield-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-HP-INS",
+      "route": "/local-hvac/broomfield-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-HP-MNT",
+      "route": "/local-hvac/broomfield-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-WH-REP",
+      "route": "/local-hvac/broomfield-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-WH-RPL",
+      "route": "/local-hvac/broomfield-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-WH-MNT",
+      "route": "/local-hvac/broomfield-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-HPWH-REP",
+      "route": "/local-hvac/broomfield-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-HPWH-INS",
+      "route": "/local-hvac/broomfield-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-HPWH-MNT",
+      "route": "/local-hvac/broomfield-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-MS-REP",
+      "route": "/local-hvac/broomfield-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-MS-INS",
+      "route": "/local-hvac/broomfield-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-MS-MNT",
+      "route": "/local-hvac/broomfield-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-IAQ-ASM",
+      "route": "/local-hvac/broomfield-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-AIR-PUR",
+      "route": "/local-hvac/broomfield-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-BRO-EMR",
+      "route": "/local-hvac/broomfield-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-FUR-REP",
+      "route": "/local-hvac/fort-collins-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-FUR-RPL",
+      "route": "/local-hvac/fort-collins-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-FUR-MNT",
+      "route": "/local-hvac/fort-collins-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-AC-REP",
+      "route": "/local-hvac/fort-collins-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-AC-RPL",
+      "route": "/local-hvac/fort-collins-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-AC-MNT",
+      "route": "/local-hvac/fort-collins-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-HP-REP",
+      "route": "/local-hvac/fort-collins-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-HP-INS",
+      "route": "/local-hvac/fort-collins-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-HP-MNT",
+      "route": "/local-hvac/fort-collins-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-WH-REP",
+      "route": "/local-hvac/fort-collins-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-WH-RPL",
+      "route": "/local-hvac/fort-collins-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-WH-MNT",
+      "route": "/local-hvac/fort-collins-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-HPWH-REP",
+      "route": "/local-hvac/fort-collins-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-HPWH-INS",
+      "route": "/local-hvac/fort-collins-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-HPWH-MNT",
+      "route": "/local-hvac/fort-collins-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-MS-REP",
+      "route": "/local-hvac/fort-collins-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-MS-INS",
+      "route": "/local-hvac/fort-collins-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-MS-MNT",
+      "route": "/local-hvac/fort-collins-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-IAQ-ASM",
+      "route": "/local-hvac/fort-collins-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-AIR-PUR",
+      "route": "/local-hvac/fort-collins-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-FCO-EMR",
+      "route": "/local-hvac/fort-collins-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-FUR-REP",
+      "route": "/local-hvac/johnstown-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-FUR-RPL",
+      "route": "/local-hvac/johnstown-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-FUR-MNT",
+      "route": "/local-hvac/johnstown-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-AC-REP",
+      "route": "/local-hvac/johnstown-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-AC-RPL",
+      "route": "/local-hvac/johnstown-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-AC-MNT",
+      "route": "/local-hvac/johnstown-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-HP-REP",
+      "route": "/local-hvac/johnstown-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-HP-INS",
+      "route": "/local-hvac/johnstown-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-HP-MNT",
+      "route": "/local-hvac/johnstown-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-WH-REP",
+      "route": "/local-hvac/johnstown-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-WH-RPL",
+      "route": "/local-hvac/johnstown-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-WH-MNT",
+      "route": "/local-hvac/johnstown-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-HPWH-REP",
+      "route": "/local-hvac/johnstown-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-HPWH-INS",
+      "route": "/local-hvac/johnstown-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-HPWH-MNT",
+      "route": "/local-hvac/johnstown-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-MS-REP",
+      "route": "/local-hvac/johnstown-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-MS-INS",
+      "route": "/local-hvac/johnstown-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-MS-MNT",
+      "route": "/local-hvac/johnstown-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-IAQ-ASM",
+      "route": "/local-hvac/johnstown-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-AIR-PUR",
+      "route": "/local-hvac/johnstown-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-JOH-EMR",
+      "route": "/local-hvac/johnstown-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-FUR-REP",
+      "route": "/local-hvac/timnath-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-FUR-RPL",
+      "route": "/local-hvac/timnath-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-FUR-MNT",
+      "route": "/local-hvac/timnath-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-AC-REP",
+      "route": "/local-hvac/timnath-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-AC-RPL",
+      "route": "/local-hvac/timnath-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-AC-MNT",
+      "route": "/local-hvac/timnath-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-HP-REP",
+      "route": "/local-hvac/timnath-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-HP-INS",
+      "route": "/local-hvac/timnath-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-HP-MNT",
+      "route": "/local-hvac/timnath-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-WH-REP",
+      "route": "/local-hvac/timnath-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-WH-RPL",
+      "route": "/local-hvac/timnath-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-WH-MNT",
+      "route": "/local-hvac/timnath-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-HPWH-REP",
+      "route": "/local-hvac/timnath-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-HPWH-INS",
+      "route": "/local-hvac/timnath-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-HPWH-MNT",
+      "route": "/local-hvac/timnath-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-MS-REP",
+      "route": "/local-hvac/timnath-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-MS-INS",
+      "route": "/local-hvac/timnath-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-MS-MNT",
+      "route": "/local-hvac/timnath-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-IAQ-ASM",
+      "route": "/local-hvac/timnath-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-AIR-PUR",
+      "route": "/local-hvac/timnath-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-TIM-EMR",
+      "route": "/local-hvac/timnath-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-FUR-REP",
+      "route": "/local-hvac/severance-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-FUR-RPL",
+      "route": "/local-hvac/severance-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-FUR-MNT",
+      "route": "/local-hvac/severance-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-AC-REP",
+      "route": "/local-hvac/severance-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-AC-RPL",
+      "route": "/local-hvac/severance-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-AC-MNT",
+      "route": "/local-hvac/severance-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-HP-REP",
+      "route": "/local-hvac/severance-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-HP-INS",
+      "route": "/local-hvac/severance-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-HP-MNT",
+      "route": "/local-hvac/severance-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-WH-REP",
+      "route": "/local-hvac/severance-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-WH-RPL",
+      "route": "/local-hvac/severance-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-WH-MNT",
+      "route": "/local-hvac/severance-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-HPWH-REP",
+      "route": "/local-hvac/severance-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-HPWH-INS",
+      "route": "/local-hvac/severance-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-HPWH-MNT",
+      "route": "/local-hvac/severance-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-MS-REP",
+      "route": "/local-hvac/severance-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-MS-INS",
+      "route": "/local-hvac/severance-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-MS-MNT",
+      "route": "/local-hvac/severance-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-IAQ-ASM",
+      "route": "/local-hvac/severance-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-AIR-PUR",
+      "route": "/local-hvac/severance-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-SEV-EMR",
+      "route": "/local-hvac/severance-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-FUR-REP",
+      "route": "/local-hvac/dacono-furnace-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-FUR-RPL",
+      "route": "/local-hvac/dacono-furnace-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-FUR-MNT",
+      "route": "/local-hvac/dacono-furnace-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-AC-REP",
+      "route": "/local-hvac/dacono-ac-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-AC-RPL",
+      "route": "/local-hvac/dacono-ac-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-AC-MNT",
+      "route": "/local-hvac/dacono-ac-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-HP-REP",
+      "route": "/local-hvac/dacono-heat-pump-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-HP-INS",
+      "route": "/local-hvac/dacono-heat-pump-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-HP-MNT",
+      "route": "/local-hvac/dacono-heat-pump-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-WH-REP",
+      "route": "/local-hvac/dacono-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-WH-RPL",
+      "route": "/local-hvac/dacono-water-heater-replacement/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-WH-MNT",
+      "route": "/local-hvac/dacono-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-HPWH-REP",
+      "route": "/local-hvac/dacono-heat-pump-water-heater-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-HPWH-INS",
+      "route": "/local-hvac/dacono-heat-pump-water-heater-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-HPWH-MNT",
+      "route": "/local-hvac/dacono-heat-pump-water-heater-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-MS-REP",
+      "route": "/local-hvac/dacono-mini-split-repair/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-MS-INS",
+      "route": "/local-hvac/dacono-mini-split-installation/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-MS-MNT",
+      "route": "/local-hvac/dacono-mini-split-maintenance/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-IAQ-ASM",
+      "route": "/local-hvac/dacono-indoor-air-quality-assessment/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-AIR-PUR",
+      "route": "/local-hvac/dacono-air-purification-systems/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "SL-DAC-EMR",
+      "route": "/local-hvac/dacono-emergency-hvac-service/",
+      "family": "Service-town candidate"
+    },
+    {
+      "page_id": "ST-080",
+      "route": "/blog/repair-or-replace-air-conditioner/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ST-081",
+      "route": "/blog/repair-or-replace-water-heater/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ST-082",
+      "route": "/answers/find-furnace-filter/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ST-083",
+      "route": "/answers/repair-before-replacement/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-001",
+      "route": "/answers/my-furnace-smells-like-gas-each-time-it-starts-is-that-normal/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-002",
+      "route": "/answers/the-gas-smell-returns-after-four-service-visits-and-a-replaced-gas-valve/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-003",
+      "route": "/answers/the-furnace-gives-a-strong-whoosh-after-gas-seems-to-flow-before-ignition/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-004",
+      "route": "/answers/the-blower-keeps-running-after-the-heat-shuts-off-on-a-very-old-furnace/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-006",
+      "route": "/answers/two-furnace-replacement-quotes-differ-sharply-for-comparable-models/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-007",
+      "route": "/answers/how-much-of-an-installed-furnace-quote-is-equipment-versus-installation-work/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-008",
+      "route": "/answers/a-failed-furnace-blower-also-stopped-my-air-conditioning-before-a-heat-wave/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-009",
+      "route": "/answers/south-facing-upstairs-bedrooms-are-colder-in-winter-than-the-rest-of-the-home/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-010",
+      "route": "/answers/the-furnace-in-a-home-i-may-buy-was-made-in-1988-what-should-i-investigate/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-011",
+      "route": "/answers/the-high-altitude-furnace-manual-does-not-match-the-gas-heat-value-number-i-found-online/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-012",
+      "route": "/answers/a-working-furnace-is-called-defective-because-it-was-built-with-bad-parts/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-013",
+      "route": "/answers/does-a-colorado-emissions-law-change-mean-i-must-replace-my-working-furnace/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-014",
+      "route": "/answers/can-i-replace-two-heating-systems-in-stages-rather-than-all-four-hvac-units-at-once/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-015",
+      "route": "/answers/financing-seems-to-increase-the-quoted-installed-system-price/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-016",
+      "route": "/answers/are-older-furnace-models-being-priced-higher-because-of-new-colorado-rules/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-017",
+      "route": "/answers/how-do-i-tell-a-real-heating-diagnosis-from-a-replacement-sales-pitch/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-018",
+      "route": "/answers/should-a-heating-replacement-be-sized-larger-for-colorado-cold-snaps/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-019",
+      "route": "/answers/the-furnace-fails-for-hours-or-days-but-works-when-the-technician-arrives/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-020",
+      "route": "/answers/i-bypassed-furnace-limit-switches-while-chasing-repeated-shutdowns/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-021",
+      "route": "/answers/the-furnace-shuts-down-only-when-the-thermostat-calls-for-second-stage-heat/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-022",
+      "route": "/answers/the-furnace-stops-below-target-but-shows-a-normal-status-light/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-023",
+      "route": "/answers/the-furnace-fan-ramps-up-repeatedly-even-after-the-thermostat-is-disconnected/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-024",
+      "route": "/answers/the-furnace-starts-again-briefly-after-reaching-the-thermostat-target/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-025",
+      "route": "/answers/a-new-two-stage-furnace-cycles-every-few-minutes-from-its-first-day/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-026",
+      "route": "/answers/heating-trouble-returned-after-a-condensate-related-fault-was-cleared/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-027",
+      "route": "/answers/the-burners-go-out-before-the-blower-starts-why-does-the-furnace-keep-retrying/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-028",
+      "route": "/answers/why-do-i-smell-gas-outside-near-the-furnace-exhaust-on-very-cold-days/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-029",
+      "route": "/answers/the-utility-found-no-leak-why-does-the-furnace-exhaust-still-smell-unusually-strong/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-030",
+      "route": "/answers/the-gas-utility-and-hvac-company-disagree-who-decides-whether-my-furnace-is-safe/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-031",
+      "route": "/answers/the-furnace-runs-poorly-and-we-get-headaches-but-our-co-alarm-reads-zero-can-we-keep-using-it/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-032",
+      "route": "/answers/a-new-furnace-still-has-a-strong-gas-like-smell-is-that-a-normal-new-equipment-smell/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-033",
+      "route": "/answers/my-old-furnace-was-red-tagged-could-cleaning-the-heat-exchanger-make-it-usable-again/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-034",
+      "route": "/answers/a-technician-said-the-heat-exchanger-was-safe-because-the-flame-looked-fine-is-that-enough/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-035",
+      "route": "/answers/do-these-photos-prove-my-furnace-has-a-cracked-heat-exchanger/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-036",
+      "route": "/answers/the-technician-says-the-heat-exchanger-is-cracked-can-i-wait-until-summer/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-037",
+      "route": "/answers/my-furnace-light-keeps-blinking-red-but-the-heat-works-is-it-a-warning/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-038",
+      "route": "/answers/the-heat-exchanger-is-under-warranty-why-am-i-being-charged-for-the-repair/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-039",
+      "route": "/answers/the-manufacturer-says-my-furnace-is-registered-at-another-address-how-do-i-fix-that/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-040",
+      "route": "/answers/a-furnace-problem-turned-into-a-quote-for-a-furnace-ac-and-water-heater-do-i-need-all-three/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-041",
+      "route": "/answers/the-home-inspector-said-the-furnace-was-healthy-why-did-a-later-technician-condemn-it/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-042",
+      "route": "/answers/my-warranty-heat-exchanger-will-take-months-to-arrive-do-i-have-to-buy-a-furnace-now/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-044",
+      "route": "/answers/are-modern-air-filters-only-suitable-for-high-efficiency-furnaces/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-045",
+      "route": "/answers/i-did-not-know-the-furnace-filter-needed-changing-have-i-damaged-the-system/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-046",
+      "route": "/answers/the-furnace-hits-its-temperature-limit-after-i-install-a-higher-rated-filter-is-the-filter-the-problem/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-047",
+      "route": "/answers/can-my-older-furnace-use-a-thick-media-filter-cabinet/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-048",
+      "route": "/answers/which-way-should-the-arrow-on-my-furnace-filter-point/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-049",
+      "route": "/answers/should-i-change-the-filter-monthly-or-every-three-months/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-050",
+      "route": "/answers/does-the-furnace-need-a-different-filter-from-the-ac/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-051",
+      "route": "/answers/what-care-does-a-brand-new-furnace-need/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-052",
+      "route": "/answers/a-replacement-filter-with-the-same-printed-size-does-not-fit-the-cabinet/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-053",
+      "route": "/answers/what-does-a-professional-furnace-check-include-that-i-cannot-do-myself/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-054",
+      "route": "/answers/a-maintenance-visit-lasted-only-minutes-and-included-no-tests-was-it-useful/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-055",
+      "route": "/answers/should-a-furnace-check-specifically-inspect-combustion-safety-on-an-old-unit/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-056",
+      "route": "/answers/is-a-maintenance-membership-better-value-than-individual-visits/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-057",
+      "route": "/answers/there-is-a-c-terminal-at-the-furnace-but-no-common-wire-at-my-thermostat/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-058",
+      "route": "/answers/my-smart-thermostats-remote-temperature-sensor-stopped-connecting-after-installation/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-059",
+      "route": "/answers/the-furnace-works-but-my-smart-thermostat-keeps-using-up-batteries/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-060",
+      "route": "/answers/heating-passed-a-thermostat-installation-test-months-ago-but-fails-when-winter-arrives/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-061",
+      "route": "/answers/my-electric-heating-equipment-has-no-labeled-common-terminal-for-a-smart-thermostat/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-062",
+      "route": "/answers/the-thermostat-reports-loss-of-power-around-a-utility-installed-control-switch/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-063",
+      "route": "/answers/reusing-the-fan-wire-powered-the-thermostat-but-i-lost-independent-fan-control/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-064",
+      "route": "/answers/why-are-the-two-wires-that-run-my-old-furnace-not-enough-to-power-a-smart-thermostat/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-065",
+      "route": "/answers/will-a-new-thermostat-work-with-my-existing-equipment-interface-module/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-066",
+      "route": "/answers/a-loud-furnace-sound-starts-when-heating-ends-and-lasts-about-a-minute/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-067",
+      "route": "/answers/a-boom-at-the-vents-appeared-after-a-larger-replacement-furnace-was-installed/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-068",
+      "route": "/answers/the-furnace-is-so-loud-we-have-to-shout-to-talk-at-home/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-069",
+      "route": "/answers/how-can-i-tell-whether-the-loud-motor-noise-is-the-inducer-or-the-blower/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-070",
+      "route": "/answers/the-furnace-squeals-and-rattles-as-its-fans-slow-down/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-071",
+      "route": "/answers/can-i-quiet-the-furnace-closet-without-blocking-the-air-it-needs/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-072",
+      "route": "/answers/a-strange-furnace-noise-starts-before-heating-in-extreme-cold-and-advice-conflicts/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-073",
+      "route": "/answers/correcting-the-filter-direction-made-the-furnace-suddenly-much-louder/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-074",
+      "route": "/answers/i-turned-down-the-blower-speed-to-reduce-noise-but-it-barely-helped/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-075",
+      "route": "/answers/my-furnace-intake-freezes-solid-again-soon-after-i-clear-a-small-opening/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-076",
+      "route": "/answers/a-condensate-drain-froze-inside-a-warm-basement/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-077",
+      "route": "/answers/a-repair-stopped-freezing-by-closing-the-combustion-air-duct-is-that-safe/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-078",
+      "route": "/answers/snow-buries-the-furnace-intake-and-the-house-loses-heat/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-079",
+      "route": "/answers/wind-pushes-furnace-exhaust-toward-the-intake-and-creates-frost/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-080",
+      "route": "/answers/power-came-back-after-a-winter-storm-but-the-furnace-will-not-heat/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-081",
+      "route": "/answers/a-new-furnace-repeatedly-locks-out-because-frost-covers-its-intake/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-082",
+      "route": "/answers/water-seems-to-leak-from-furnace-exhaust-or-intake-pipe-joints/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-083",
+      "route": "/answers/will-a-variable-speed-furnace-fix-uneven-temperatures-between-floors/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-084",
+      "route": "/answers/is-a-high-efficiency-furnace-more-complicated-to-maintain/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-085",
+      "route": "/answers/how-do-i-compare-a-two-stage-standard-furnace-with-a-single-stage-high-efficiency-one/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-086",
+      "route": "/answers/is-two-stage-heat-worth-paying-for-if-we-may-move-in-five-years/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-087",
+      "route": "/answers/the-contractor-quoted-a-smaller-furnace-than-an-online-calculator-suggests/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-088",
+      "route": "/answers/furnace-bids-include-different-filter-cabinets-warranties-and-first-year-care/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-089",
+      "route": "/answers/contractors-give-widely-different-furnace-sizes-for-the-same-home/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-090",
+      "route": "/answers/should-a-replacement-match-the-old-furnaces-btu-input-or-its-heat-output/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-091",
+      "route": "/answers/a-larger-furnace-quote-is-cheaper-is-oversizing-still-a-problem/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-092",
+      "route": "/answers/adding-ac-came-with-a-recommendation-for-a-larger-furnace/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-093",
+      "route": "/answers/i-replaced-the-igniter-and-flame-sensor-but-the-furnace-still-will-not-start/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-094",
+      "route": "/answers/the-small-exhaust-fan-runs-but-the-igniter-never-glows/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-095",
+      "route": "/answers/are-pressure-switches-with-the-same-printed-rating-interchangeable/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-096",
+      "route": "/answers/my-furnace-makes-startup-noises-but-the-inducer-does-not-seem-to-start/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-097",
+      "route": "/answers/bypassing-a-pressure-switch-caused-forceful-ignition-and-a-gas-smell/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-098",
+      "route": "/answers/burners-light-but-the-main-blower-never-starts-and-heating-shuts-down/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-099",
+      "route": "/answers/the-furnace-keeps-heating-after-the-thermostat-is-set-to-off/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-100",
+      "route": "/answers/i-came-home-from-vacation-to-no-heat-despite-leaving-the-thermostat-on-hold/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-101",
+      "route": "/answers/the-outdoor-fan-runs-but-the-ac-is-not-cold-at-the-first-spring-startup/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-102",
+      "route": "/answers/my-ac-pipe-is-frozen-do-i-really-need-a-whole-new-air-conditioner/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-103",
+      "route": "/answers/why-does-my-ac-airflow-get-weak-after-a-few-hours/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-104",
+      "route": "/answers/why-does-my-new-ac-keep-freezing-after-repeated-service-visits/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-105",
+      "route": "/answers/why-does-my-new-variable-speed-ac-run-in-five-minute-bursts/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-106",
+      "route": "/answers/should-i-worry-about-shorter-ac-cycles-after-replacing-my-windows/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-107",
+      "route": "/answers/why-does-my-ac-stop-cooling-for-days-then-work-again/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-108",
+      "route": "/answers/how-can-i-cool-upstairs-bedrooms-when-downstairs-is-comfortable/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-109",
+      "route": "/answers/why-is-my-attic-ac-leaking-onto-the-ceiling-when-the-visible-pan-is-dry/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-110",
+      "route": "/answers/is-water-from-my-outdoor-ac-drain-a-risk-to-the-foundation/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-111",
+      "route": "/answers/why-does-my-indoor-ac-keep-leaking-at-night-and-humming-loudly/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-112",
+      "route": "/answers/what-should-i-do-if-my-ac-trips-a-breaker-whines-and-produces-smoke/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-113",
+      "route": "/answers/what-should-i-do-about-hissing-and-a-burning-smell-after-an-ac-repair/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-114",
+      "route": "/answers/does-a-leaking-coil-mean-my-six-year-old-ac-needs-replacement/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-115",
+      "route": "/answers/can-i-replace-an-r22-coil-or-is-r22-banned-in-colorado/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-116",
+      "route": "/answers/did-my-ac-really-need-yearly-refrigerant-if-a-different-fault-was-found/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-117",
+      "route": "/answers/how-can-i-confirm-r22-service-before-paying-for-a-diagnostic-visit/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-118",
+      "route": "/answers/what-if-i-cannot-afford-an-ac-replacement-after-freezing-in-denver/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-119",
+      "route": "/answers/should-i-pay-a-large-deposit-for-a-low-ac-quote/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-120",
+      "route": "/answers/how-should-i-compare-ac-and-furnace-bundles-with-financing-in-longmont/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-121",
+      "route": "/answers/which-refrigerant-model-should-i-buy-for-a-new-ac-in-denver/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-122",
+      "route": "/answers/does-hail-damage-to-my-nearly-new-condenser-need-repair/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-123",
+      "route": "/answers/what-evidence-helps-when-an-insurer-disputes-a-hail-related-ac-leak/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-124",
+      "route": "/answers/how-can-i-safely-clean-cottonwood-trapped-behind-condenser-panels/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-125",
+      "route": "/answers/how-can-i-reduce-recurring-cottonwood-buildup-on-my-ac/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-126",
+      "route": "/answers/why-was-condenser-cleaning-charged-during-a-warranty-callback/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-127",
+      "route": "/answers/is-one-combined-furnace-and-ac-visit-enough-for-seasonal-care/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-128",
+      "route": "/answers/my-ac-has-gone-years-without-maintenance-is-every-other-year-enough/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-129",
+      "route": "/answers/im-new-to-central-ac-should-i-run-it-cover-it-or-switch-its-power-off-for-winter/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-130",
+      "route": "/answers/a-tune-up-found-a-bad-compressor-test-worn-pipe-insulation-and-a-sinking-ac-pad-do-i-need-replacement/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-131",
+      "route": "/answers/my-old-ac-failed-but-the-label-is-unreadable-and-the-home-warranty-wants-a-make-and-model-what-now/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-132",
+      "route": "/answers/can-my-ac-really-cool-only-20-degrees-below-the-outdoor-temperature/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-133",
+      "route": "/answers/my-new-ac-runs-all-day-at-the-set-temperature-and-a-tune-up-found-installation-gaps-is-that-normal/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-134",
+      "route": "/answers/is-buying-a-denver-home-without-central-ac-manageable/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-135",
+      "route": "/answers/in-denver-should-we-choose-central-ac-or-evaporative-cooling/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-136",
+      "route": "/answers/could-an-air-source-heat-pump-work-at-8000-feet-in-a-cold-windy-colorado-home/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-137",
+      "route": "/answers/without-solar-will-a-heat-pump-make-my-denver-winter-bills-much-higher/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-138",
+      "route": "/answers/does-my-small-denver-condo-need-a-large-heat-pump-and-built-in-backup-or-can-i-use-space-heaters/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-139",
+      "route": "/answers/denver-installers-disagree-about-keeping-gas-backup-in-my-older-home-who-is-right/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-140",
+      "route": "/answers/the-cold-weather-performance-tables-are-overwhelming-how-do-i-choose-a-heat-pump-for-my-colorado-a-frame/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-141",
+      "route": "/answers/my-denver-heat-pump-quote-promises-summer-and-winter-savings-how-should-i-check-each-claim/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-142",
+      "route": "/answers/why-do-denver-installers-recommend-different-temperatures-for-switching-a-heat-pump-to-the-furnace/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-143",
+      "route": "/answers/should-i-keep-a-heat-pump-at-one-temperature-or-turn-it-down-at-night-and-when-away/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-144",
+      "route": "/answers/can-i-add-a-heat-pump-in-longmont-and-keep-my-four-year-old-furnace/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-145",
+      "route": "/answers/should-i-take-an-upfront-heat-pump-rebate-discount-or-pay-first-and-wait-for-the-paperwork/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-146",
+      "route": "/answers/i-have-longmont-electricity-and-xcel-gas-could-i-still-get-an-xcel-heat-pump-incentive/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-147",
+      "route": "/answers/is-a-remote-photo-estimate-enough-for-my-longmont-heat-pump-project/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-148",
+      "route": "/answers/how-do-i-find-someone-who-can-properly-retune-my-longmont-heat-pump-installation/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-149",
+      "route": "/answers/does-every-heat-pump-need-pipes-buried-in-the-yard/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-150",
+      "route": "/answers/with-existing-ducts-in-my-denver-home-should-i-choose-a-central-heat-pump-or-ductless-units/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-151",
+      "route": "/answers/why-is-my-heat-pump-defrosting-when-it-is-above-freezing-outside/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-152",
+      "route": "/answers/my-new-heat-pump-keeps-defrosting-for-hours-with-short-breaks-is-that-normal/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-153",
+      "route": "/answers/why-does-my-heat-pump-get-so-loud-during-defrost/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-154",
+      "route": "/answers/what-care-does-my-ducted-heat-pump-need-beyond-a-filter-change/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-155",
+      "route": "/answers/did-my-heat-pump-maintenance-visit-miss-useful-checks/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-156",
+      "route": "/answers/do-i-need-to-be-handy-to-own-a-heat-pump/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-157",
+      "route": "/answers/does-my-outdoor-heat-pump-need-risers-for-snow/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-158",
+      "route": "/answers/can-my-generator-power-a-replacement-central-heat-pump/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-159",
+      "route": "/answers/how-will-solar-and-batteries-heat-my-home-during-an-outage/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-160",
+      "route": "/answers/why-does-emergency-heat-blow-room-temperature-air-when-auxiliary-heat-works/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-161",
+      "route": "/answers/why-does-my-heat-pump-run-nearly-nonstop-and-cost-more-after-a-nest-installation/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-162",
+      "route": "/answers/why-does-auxiliary-heat-still-run-after-i-added-attic-insulation/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-163",
+      "route": "/answers/why-is-my-basement-colder-after-switching-to-a-heat-pump/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-164",
+      "route": "/answers/why-does-my-new-heat-pump-cool-quickly-but-leave-the-house-humid/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-165",
+      "route": "/answers/why-does-my-hybrid-system-cost-more-and-lack-the-expected-thermostat-setting/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-166",
+      "route": "/answers/why-wont-my-heat-pump-reach-its-published-minimum-power/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-167",
+      "route": "/answers/why-do-two-technicians-disagree-about-my-heat-pumps-refrigerant-charge/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-168",
+      "route": "/answers/should-i-remove-my-newer-furnace-when-adding-a-heat-pump/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-169",
+      "route": "/answers/my-electric-bill-tripled-after-a-heat-pump-conversion-did-i-make-a-mistake/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-170",
+      "route": "/answers/can-an-efficient-heat-pump-cost-more-to-run-than-my-furnace/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-171",
+      "route": "/answers/can-one-mini-split-cool-bedrooms-with-the-doors-closed-at-night/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-172",
+      "route": "/answers/is-the-smallest-mini-split-head-still-too-large-for-my-tiny-bedroom/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-173",
+      "route": "/answers/what-mini-split-options-fit-a-room-with-low-ceilings/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-174",
+      "route": "/answers/can-i-mount-a-mini-split-low-on-the-wall-in-northwest-colorado/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-175",
+      "route": "/answers/can-ductless-mini-splits-replace-failed-central-ac-in-my-large-denver-home/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-176",
+      "route": "/answers/how-should-i-add-cooling-to-a-century-old-denver-home-with-a-hot-converted-attic/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-177",
+      "route": "/answers/can-a-mini-split-warm-one-cold-room-in-longmont-while-i-keep-my-furnace/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-178",
+      "route": "/answers/where-should-our-mini-split-heads-and-outdoor-lines-go/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-179",
+      "route": "/answers/can-i-install-my-own-mini-split-in-denver-and-still-get-a-rebate/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-180",
+      "route": "/answers/is-this-denver-mini-split-quote-fair-when-it-includes-so-much-work/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-181",
+      "route": "/answers/are-ceiling-cassettes-less-reliable-than-wall-mounted-mini-splits/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-182",
+      "route": "/answers/is-the-more-expensive-mini-split-brand-worth-paying-for/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-183",
+      "route": "/answers/my-mini-split-is-leaking-onto-the-floor-what-can-i-safely-check/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-184",
+      "route": "/answers/why-does-my-mini-split-still-drip-after-the-drain-was-cleared/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-185",
+      "route": "/answers/my-new-mini-split-drains-only-after-suction-should-the-installer-add-a-pump/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-186",
+      "route": "/answers/oily-fluid-came-from-the-mini-split-in-my-childs-room-what-should-i-do/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-187",
+      "route": "/answers/my-diy-mini-split-will-not-cool-and-now-freezes-and-spits-water-what-next/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-188",
+      "route": "/answers/my-mini-split-still-smells-musty-after-a-deep-cleaning-is-it-mold/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-189",
+      "route": "/answers/cleaning-and-a-uv-light-have-not-stopped-my-mini-split-odor-what-should-i-try/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-190",
+      "route": "/answers/i-neglected-my-mini-split-filters-all-winter-could-that-explain-dust-and-high-heating-use/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-191",
+      "route": "/answers/why-does-one-bedroom-get-much-hotter-than-its-mini-split-setting/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-192",
+      "route": "/answers/why-must-i-set-the-remote-so-high-to-get-the-room-warm/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-193",
+      "route": "/answers/why-will-my-mini-split-not-give-more-heat-as-the-room-gets-colder/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-194",
+      "route": "/answers/dry-mode-feels-better-than-cooling-will-it-cost-more-or-wear-out-the-compressor/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-195",
+      "route": "/answers/how-should-i-switch-my-multi-head-mini-split-between-warm-days-and-cold-nights/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-196",
+      "route": "/answers/i-have-one-remote-and-three-mini-split-heads-what-is-each-unit-actually-set-to/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-197",
+      "route": "/answers/my-mini-split-shows-a-code-that-is-not-in-the-user-manual-is-it-a-fault/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-198",
+      "route": "/answers/my-mini-split-shuts-down-with-e1-the-installer-says-it-is-normal-but-the-manual-disagrees-who-is-right/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-199",
+      "route": "/answers/my-mini-split-coil-is-covered-but-the-repair-and-parts-delay-are-costly-should-i-replace-the-unit/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-200",
+      "route": "/answers/is-a-very-long-installer-labor-warranty-worth-paying-extra-for/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-201",
+      "route": "/answers/a-water-heater-leak-is-coming-through-the-ceiling-near-lights-what-should-i-do-first/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-202",
+      "route": "/answers/my-water-heater-replacement-quote-seems-very-high-how-should-i-compare-it/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-203",
+      "route": "/answers/why-am-i-being-offered-a-commercial-water-heater-for-my-home/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-204",
+      "route": "/answers/why-have-my-water-heaters-needed-repeated-replacement-over-eight-years/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-205",
+      "route": "/answers/why-is-the-relief-valve-dripping-again-days-after-replacement/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-206",
+      "route": "/answers/why-does-my-gas-water-heater-pilot-keep-going-out/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-207",
+      "route": "/answers/can-i-trust-a-normal-status-light-when-my-water-heater-flame-looks-wrong/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-208",
+      "route": "/answers/my-water-heater-has-burned-looking-insulation-and-no-hot-water-what-comes-first/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-209",
+      "route": "/answers/what-should-i-do-about-scorch-marks-near-my-water-heater-exhaust/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-210",
+      "route": "/answers/why-does-hot-water-still-smell-like-rotten-eggs-after-several-anode-replacements/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-211",
+      "route": "/answers/can-removing-the-anode-to-stop-an-odor-create-another-problem/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-212",
+      "route": "/answers/how-can-i-tell-whether-hot-water-odor-comes-from-the-heater-or-the-well/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-213",
+      "route": "/answers/why-does-my-water-heater-still-pop-after-its-yearly-flush/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-214",
+      "route": "/answers/should-an-older-water-heater-that-has-never-been-flushed-be-flushed-now/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-215",
+      "route": "/answers/is-household-descaler-safe-inside-a-drinking-water-heater/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-216",
+      "route": "/answers/does-water-near-the-drain-valve-mean-my-tank-has-failed/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-217",
+      "route": "/answers/how-should-i-manage-a-leaking-old-heater-while-waiting-for-replacement/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-218",
+      "route": "/answers/why-is-my-new-water-heater-leaking-at-the-drain-valve-threads/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-219",
+      "route": "/answers/why-does-the-drain-pan-fill-when-the-cup-below-the-valve-stays-dry/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-220",
+      "route": "/answers/why-is-water-leaking-near-both-the-heating-element-and-drain/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-221",
+      "route": "/answers/why-is-my-electric-water-heater-lukewarm-when-its-breaker-has-not-tripped/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-222",
+      "route": "/answers/why-does-my-new-electric-heater-make-warm-water-and-trip-its-breaker/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-223",
+      "route": "/answers/can-i-restart-a-new-water-heater-after-a-breaker-trip-and-possible-wire-burns/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-224",
+      "route": "/answers/why-did-replacing-an-element-fail-to-fix-my-heaters-lukewarm-water/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-225",
+      "route": "/answers/why-did-my-electric-water-heater-stop-heating-after-a-thermostat-adjustment/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-226",
+      "route": "/answers/why-does-my-water-heater-overheat-and-need-resetting-after-a-repair/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-227",
+      "route": "/answers/why-does-turning-up-my-new-heater-not-make-the-tap-water-hotter/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-228",
+      "route": "/answers/how-can-my-tankless-heater-be-maintained-without-service-valves/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-229",
+      "route": "/answers/why-does-my-tankless-water-turn-cold-when-i-barely-open-the-tap/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-230",
+      "route": "/answers/why-does-my-new-tankless-heater-alternate-between-hot-and-cold/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-231",
+      "route": "/answers/why-did-my-tankless-hot-water-flow-slow-again-just-weeks-after-descaling/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-232",
+      "route": "/answers/how-often-should-my-tankless-water-heater-be-descaled/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-233",
+      "route": "/answers/can-a-dirty-tankless-air-filter-cause-a-startup-error/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-234",
+      "route": "/answers/what-should-i-do-with-an-outdoor-tankless-heater-during-a-freezing-power-outage/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-235",
+      "route": "/answers/how-should-a-drained-tankless-heater-be-restarted-after-power-returns/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-236",
+      "route": "/answers/how-does-high-altitude-affect-propane-tankless-selection/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-237",
+      "route": "/answers/what-replacement-fits-a-crawl-space-too-short-for-a-standard-water-heater-tank/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-238",
+      "route": "/answers/why-do-tankless-installers-disagree-about-needing-a-bigger-gas-line/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-239",
+      "route": "/answers/why-does-a-home-warranty-cover-the-tank-but-leave-large-replacement-charges/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-240",
+      "route": "/answers/who-handles-water-damage-after-a-water-heater-leak-and-who-replaces-the-heater/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-241",
+      "route": "/answers/will-a-heat-pump-water-heater-disturb-nearby-bedrooms/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-242",
+      "route": "/answers/can-heat-pump-water-heater-exhaust-go-into-an-attic-or-near-soffit-vents/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-243",
+      "route": "/answers/is-a-garage-that-drops-below-freezing-a-workable-heat-pump-water-heater-location/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-244",
+      "route": "/answers/should-i-choose-a-larger-tank-when-switching-to-a-heat-pump-water-heater/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-245",
+      "route": "/answers/will-a-heat-pump-water-heater-make-my-finished-basement-uncomfortable/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-246",
+      "route": "/answers/does-a-heat-pump-water-heater-add-to-my-homes-winter-heating-use/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-247",
+      "route": "/answers/will-a-heat-pump-water-heater-lower-basement-humidity-enough-to-help/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-248",
+      "route": "/answers/could-my-heat-pump-water-heaters-outside-condensate-line-freeze/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-249",
+      "route": "/answers/why-is-my-new-heat-pump-water-heater-alarming-and-spilling-water-from-its-side/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-250",
+      "route": "/answers/why-does-my-heat-pump-water-heater-ask-me-to-clean-the-condensate-line-every-few-weeks/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-251",
+      "route": "/answers/what-if-the-heat-pump-section-fails-but-electric-mode-still-heats-water/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-252",
+      "route": "/answers/why-can-i-still-pay-labor-when-a-heat-pump-water-heater-fails-under-warranty/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-253",
+      "route": "/answers/why-does-my-water-heater-wait-for-a-schedule-change-before-reheating/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-254",
+      "route": "/answers/why-does-my-heat-pump-water-heater-work-again-only-after-a-power-reset/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-255",
+      "route": "/answers/how-do-i-find-an-installer-who-understands-heat-pump-water-heaters/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-256",
+      "route": "/answers/can-workshop-dust-affect-a-garage-heat-pump-water-heater/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-257",
+      "route": "/answers/will-moving-my-water-heater-farther-away-make-hot-water-waits-worse/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-258",
+      "route": "/answers/how-should-a-denver-water-heater-replacement-fit-a-planned-solar-installation/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-259",
+      "route": "/answers/will-cold-incoming-water-reduce-heat-pump-hot-water-delivery-in-denver/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-260",
+      "route": "/answers/what-changes-when-my-crawl-space-loses-warmth-from-its-old-gas-furnace/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-261",
+      "route": "/answers/can-a-heat-pump-water-heater-get-enough-air-in-a-narrow-dirt-niche/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-262",
+      "route": "/answers/how-should-i-size-a-new-water-heater-when-a-tenant-will-increase-hot-water-use/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-263",
+      "route": "/answers/how-do-i-check-whether-an-online-colorado-water-heater-rebate-claim-applies-now/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-264",
+      "route": "/answers/why-would-a-120-volt-heat-pump-water-heater-need-a-panel-upgrade/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-265",
+      "route": "/answers/can-i-leave-backup-element-wires-unconnected-to-reduce-electrical-demand/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-266",
+      "route": "/answers/what-temporary-electrical-supply-can-i-use-before-the-panel-upgrade/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-267",
+      "route": "/answers/why-does-my-generator-overload-when-it-powers-only-the-heat-pump-water-heater/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-268",
+      "route": "/answers/why-does-the-supply-look-different-from-my-heaters-single-phase-wiring-diagram/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-269",
+      "route": "/answers/how-long-will-a-120-volt-heater-take-to-provide-a-shower-after-a-long-outage/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-270",
+      "route": "/answers/how-do-i-prevent-gaps-between-the-plumber-electrician-and-room-contractor/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-271",
+      "route": "/answers/does-filter-access-leave-enough-room-to-service-the-fan-or-motor/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-272",
+      "route": "/answers/does-hard-well-water-change-heat-pump-water-heater-maintenance-or-life/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-273",
+      "route": "/answers/is-filter-cleaning-the-only-care-a-heat-pump-water-heater-needs/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-274",
+      "route": "/answers/why-does-the-dirty-filter-warning-return-mainly-in-summer/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-275",
+      "route": "/answers/is-four-hour-recovery-after-a-short-shower-normal/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-276",
+      "route": "/answers/why-is-there-dust-inside-the-furnace-after-the-filter/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-277",
+      "route": "/answers/what-should-i-address-first-when-my-home-is-dusty-and-very-dry/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-278",
+      "route": "/answers/how-do-i-compare-an-electronic-air-cleaner-a-regular-filter-and-an-ionizer/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-279",
+      "route": "/answers/what-care-should-i-expect-from-an-electronic-air-cleaner/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-280",
+      "route": "/answers/how-can-i-add-humidity-in-colorado-without-creating-mold-conditions/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-281",
+      "route": "/answers/how-can-i-reduce-smoke-inside-my-home-during-colorado-wildfire-season/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-282",
+      "route": "/answers/why-does-my-humidifier-leave-white-powder-around-the-house/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-283",
+      "route": "/answers/is-a-whole-home-humidifier-worth-repairing-after-repeated-basement-leaks/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-284",
+      "route": "/answers/how-should-i-change-an-existing-whole-home-humidifier-for-the-seasons/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-285",
+      "route": "/answers/is-my-whole-home-humidifier-using-too-much-water-or-hot-water/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-286",
+      "route": "/answers/should-i-wait-for-hvac-replacement-before-replacing-my-humidifier/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-287",
+      "route": "/answers/will-an-air-purifier-fix-stale-or-unpleasant-basement-or-crawlspace-air/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-288",
+      "route": "/answers/how-can-i-stop-cat-litter-odor-from-spreading-through-the-hvac-system/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-289",
+      "route": "/answers/will-a-whole-home-air-cleaner-remove-paint-or-wood-stain-smells/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-290",
+      "route": "/answers/is-an-ultraviolet-air-cleaning-add-on-worth-the-cost/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-291",
+      "route": "/answers/which-air-cleaner-fits-dust-and-mold-spore-concerns-after-moisture-remediation/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-292",
+      "route": "/answers/which-indoor-air-measurements-are-useful-and-can-i-trust-my-monitor/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-293",
+      "route": "/answers/how-can-i-get-fresh-air-when-wildfire-smoke-makes-opening-windows-difficult/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-294",
+      "route": "/answers/where-should-i-start-with-dust-pet-dander-and-musty-rooms-in-an-older-home/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-295",
+      "route": "/answers/will-a-higher-rated-furnace-filter-restrict-my-hvac-airflow/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-296",
+      "route": "/answers/why-doesnt-my-small-purifier-clear-smoke-across-the-rest-of-the-house/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-297",
+      "route": "/answers/how-do-i-compare-quiet-room-purifiers-with-a-whole-home-air-cleaner/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-298",
+      "route": "/answers/how-do-i-verify-that-a-proposed-air-cleaner-does-not-add-ozone/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-299",
+      "route": "/answers/what-if-mold-and-chemical-tests-find-nothing-but-an-air-concern-continues/",
+      "family": "Article"
+    },
+    {
+      "page_id": "ANSWER-MGI-300",
+      "route": "/answers/how-can-i-judge-the-installed-cost-and-value-of-a-whole-home-air-cleaner/",
+      "family": "Article"
+    },
+    {
+      "page_id": "BLOG-MANUAL-J",
+      "route": "/blog/what-is-a-manual-j-calculation-and-why-is-it-important/",
+      "family": "Article"
+    },
+    {
+      "page_id": "MIGRATION-FAQ",
+      "route": "/about/faqs/",
+      "family": "Core"
+    },
+    {
+      "page_id": "LP-001",
+      "route": "/lp/furnace-repair/",
+      "family": "Campaign landing"
+    },
+    {
+      "page_id": "LP-002",
+      "route": "/lp/furnace-replacement/",
+      "family": "Campaign landing"
+    },
+    {
+      "page_id": "LP-003",
+      "route": "/lp/ac-repair/",
+      "family": "Campaign landing"
+    },
+    {
+      "page_id": "LP-004",
+      "route": "/lp/ac-replacement/",
+      "family": "Campaign landing"
+    },
+    {
+      "page_id": "LP-005",
+      "route": "/lp/heat-pumps/",
+      "family": "Campaign landing"
+    },
+    {
+      "page_id": "LP-006",
+      "route": "/lp/water-heaters/",
+      "family": "Campaign landing"
+    },
+    {
+      "page_id": "LP-007",
+      "route": "/lp/indoor-air-quality/",
+      "family": "Campaign landing"
+    },
+    {
+      "page_id": "LP-008",
+      "route": "/lp/mgi/",
+      "family": "Campaign landing"
+    },
+    {
+      "page_id": "LP-009",
+      "route": "/lp/hvac/",
+      "family": "Campaign landing"
+    }
+  ],
+  "counts": {
+    "base": 392,
+    "localCandidates": 357,
+    "total": 749
+  }
+}

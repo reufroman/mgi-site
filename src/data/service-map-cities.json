@@ -1,0 +1,23 @@
+{
+  "source": "https://tigerweb.geo.census.gov/tigerwebmain/Files/acs25/tigerweb_acs25_incplace_co.html",
+  "coordinateMeaning": "ACS25 municipality centroid, approximate city location, not a service boundary",
+  "cities": [
+    {"name":"Wellington","lat":40.6974610,"lon":-105.0070391,"labelX":340,"labelY":112,"anchor":"start"},
+    {"name":"Greeley","lat":40.4156600,"lon":-104.7721515,"labelX":485,"labelY":330,"anchor":"start"},
+    {"name":"Loveland","lat":40.4171242,"lon":-105.0628398,"labelX":265,"labelY":307,"anchor":"end"},
+    {"name":"Berthoud","lat":40.3072461,"lon":-105.0431799,"labelX":265,"labelY":390,"anchor":"end"},
+    {"name":"Windsor","lat":40.4690189,"lon":-104.9200257,"labelX":485,"labelY":285,"anchor":"start"},
+    {"name":"Longmont","lat":40.1689036,"lon":-105.1011442,"labelX":245,"labelY":482,"anchor":"end"},
+    {"name":"Boulder","lat":40.0238948,"lon":-105.2519014,"labelX":165,"labelY":615,"anchor":"end"},
+    {"name":"Erie","lat":40.0405440,"lon":-105.0378385,"labelX":245,"labelY":585,"anchor":"end"},
+    {"name":"Frederick","lat":40.1088425,"lon":-104.9702390,"labelX":265,"labelY":532,"anchor":"end"},
+    {"name":"Firestone","lat":40.1566627,"lon":-104.9489553,"labelX":460,"labelY":480,"anchor":"start"},
+    {"name":"Thornton","lat":39.9206425,"lon":-104.9441949,"labelX":460,"labelY":676,"anchor":"start"},
+    {"name":"Broomfield","lat":39.9541286,"lon":-105.0527075,"labelX":270,"labelY":660,"anchor":"end"},
+    {"name":"Fort Collins","lat":40.5475882,"lon":-105.0657508,"labelX":265,"labelY":209,"anchor":"end"},
+    {"name":"Johnstown","lat":40.3466371,"lon":-104.9473518,"labelX":460,"labelY":375,"anchor":"start"},
+    {"name":"Timnath","lat":40.5366655,"lon":-104.9627620,"labelX":475,"labelY":243,"anchor":"start"},
+    {"name":"Severance","lat":40.5543802,"lon":-104.8649113,"labelX":500,"labelY":200,"anchor":"start"},
+    {"name":"Dacono","lat":40.0623138,"lon":-104.9468861,"labelX":460,"labelY":559,"anchor":"start"}
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "brand": "MGI Heating and Air",
+  "legalName": "MGI Mechanical Services Inc",
+  "address": "266 Basher Dr Unit 1, Berthoud, CO 80513",
+  "phone": "(970) 287-1673",
+  "phoneApproval": null,
+  "schedulerUrl": null,
+  "requestEndpoint": "/api/service-request",
+  "trackingEnabled": false,
+  "phase": "English Phase 1",
+  "contentReviewDate": "2026-10-05",
+  "phoneSource": "Business homepage and BBB profile, verified 2026-10-05. Dial routing and DNI not tested.",
+  "postalAddress": {
+    "@type": "PostalAddress",
+    "streetAddress": "266 Basher Dr Unit 1",
+    "addressLocality": "Berthoud",
+    "addressRegion": "CO",
+    "postalCode": "80513",
+    "addressCountry": "US"
+  },
+  "schedulerWidgetId": "73995714-0241-4b8a-a89d-e81f8b1dfef6",
+  "schedulerWebsiteUrl": "https://mgiheatingandair.com"
+}

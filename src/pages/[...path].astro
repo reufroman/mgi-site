@@ -1,0 +1,9 @@
+---
+import Base from '../layouts/Base.astro';
+import Home from '../components/Home.astro';
+import UtilityPages from '../components/UtilityPages.astro';
+import {familyPaths} from '../data/page-entrypoints.mjs';
+export function getStaticPaths(){return familyPaths('core','');}
+const {route,content}=Astro.props;
+---
+<Base route={route} content={content}>{route.page_id==='ST-001'?<Home route={route} content={content}/>:<UtilityPages route={route} content={content}/>}</Base>

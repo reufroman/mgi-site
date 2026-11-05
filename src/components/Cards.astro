@@ -1,0 +1,11 @@
+---
+import type {Picture} from "../data/types";
+interface Props {items?:{title:string;href:string;body?:string;eyebrow?:string;image?:Picture|null;label?:string}[];compact?:boolean;}
+import Photo from './Photo.astro';
+const {items=[],compact=false}=Astro.props;
+---
+<div class:list={['card-grid',{'compact':compact}]}>{items.map((item,i)=><a class="link-card" href={item.href} data-reveal style={`--delay:${i%4*65}ms`}>
+ {item.image && <Photo image={item.image} tilt={i%2===0?-2:2} sizes="(max-width: 767px) calc(100vw - 124px), (max-width: 1100px) calc((100vw - 208px) / 2), 224px"/>}
+ 
+ <h3>{item.title}</h3>{item.body && <p>{item.body}</p>}<span class="card-action">{item.label||'Learn more'} <span aria-hidden="true">↗</span></span>
+</a>)}</div>

@@ -1,0 +1,10 @@
+---
+import Base from '../../layouts/Base.astro';
+import {familyPaths} from '../../data/page-entrypoints.mjs';
+import LibraryAnswer from '../../components/LibraryAnswer.astro';
+import AnswerCategory from '../../components/AnswerCategory.astro';
+import HomeownerHub from '../../components/HomeownerHub.astro';
+export function getStaticPaths(){return familyPaths('answers','answers');}
+const {route,content}=Astro.props;
+---
+<Base route={route} content={content}>{route.source_answer_id?<LibraryAnswer route={route}/>:route.page_id==='ST-012'?<HomeownerHub route={route} content={content}/>:<AnswerCategory route={route} content={content}/>}</Base>

@@ -1,0 +1,41 @@
+---
+import type {Route,Content} from "../data/types";
+interface Props {route:Route;content:Content;}
+import Photo from './Photo.astro';
+import Cards from './Cards.astro';
+import ServiceIcon from './ServiceIcon.astro';
+import PrimaryActions from './PrimaryActions.astro';
+import CredentialLogos from './CredentialLogos.astro';
+import proof from '../data/home-proof.json';
+import {photo,byId} from '../data/catalog.mjs';
+const {route}=Astro.props;
+const choices=[
+ {title:'Something stopped working',body:'Start with the symptom. Explore repair help for your equipment.',href:'/services/?need=repair#answer',image:photo(route.page_id,'service-furnace-repair'),label:'Find repair help'},
+ {title:'Planning a replacement',body:'Compare what changes, the full project and your home’s needs.',href:'/services/?need=replacement#answer',image:photo(route.page_id,'service-furnace-replacement'),label:'Explore replacement options'},
+ {title:'Keeping up with care',body:'Understand the care your equipment needs and the visit scope.',href:byId('ST-027')!.canonical_route,image:photo(route.page_id,'service-ac-repair'),label:'Explore maintenance'},
+ {title:'Questions about indoor air',body:'Describe the concern before choosing an air-quality product.',href:byId('ST-025')!.canonical_route,image:photo(route.page_id,'service-ac-replacement'),label:'Explore air-quality solutions'}
+];
+const concerns=[
+ ['guide-uneven-room','Something feels different in the air','ST-025','Explore air-quality solutions'],
+ ['guide-long-runtime','Your AC is not cooling as expected','ST-061','Explore AC repair'],
+ ['guide-partial-heat','Heat comes and goes','ST-059','Explore furnace repair'],
+ ['guide-unusual-noise','Your furnace sounds different','ST-059','Explore furnace repair']
+].map(([p,title,id,label])=>({title,href:byId(id)!.canonical_route,image:photo(route.page_id,p),label}));
+const serviceButtons=[['ST-020','Furnaces','heat'],['ST-021','Air conditioning','cool'],['ST-022','Heat pumps','pump'],['ST-023','Water heaters','water'],['ST-024','Heat-pump water heaters','water'],['ST-026','Mini splits','split'],['ST-025','Indoor air quality','air'],['ST-027','Maintenance','care']].filter(([id])=>byId(id));
+
+---
+<div class="home-page">
+<section class="hero home"><div class="wrap hero-grid"><div data-reveal><h1>We fix it.<br/>You get back<br/>to life.</h1><p class="lede">MGI Heating and Air helps with repairs, replacements, and care for your Northern Colorado home, so you can get back to kitchen dances, slow Sundays, and the moments that matter to you.</p>
+<div class="hero-proof"><a href="#customer-reviews"><span class="stars" aria-hidden="true">★★★★★</span><strong>{proof.googleRating} stars on Google</strong><span>{proof.googleReviewCountLabel}</span></a></div>
+<PrimaryActions rebates/></div><div class="hero-photos"><Photo image={photo('ST-001','hero-back')} sizes="(max-width: 1100px) 0px, 520px"/><Photo image={photo('ST-001','hero-front')} eager sizes="(max-width: 767px) calc(100vw - 72px), (max-width: 1100px) 45vw, 360px"/></div></div>
+<div class="wrap"><CredentialLogos reviewHref="#customer-reviews"/></div></section>
+
+<section class="section dark home-needs"><div class="wrap"><div class="section-heading"><div><h2 class="needs-heading">What does your home need?</h2></div><p>Choose the concern closest to yours. You do not have to diagnose the problem first.</p></div><Cards items={choices}/><div class="service-buttons" aria-label="Services">{serviceButtons.map(([id,label,icon])=><a href={byId(id)!.canonical_route}><ServiceIcon name={icon}/><span>{label}</span><span aria-hidden="true">↗</span></a>)}</div></div></section>
+<section class="band green home-financing"><div class="wrap split"><div><h2>Get back to life at home. Spread out the cost.</h2></div><div><p>Financing can spread the cost of a new system over monthly payments, so you can focus on getting your home back on track. Compare the monthly payment, total cost, and terms before you choose. Financing is subject to approval.</p><a class="button" href="/financing/">Explore financing <span aria-hidden="true">↗</span></a></div></div></section>
+<section class="section reviews-section" id="customer-reviews"><div class="wrap"><div class="section-heading"><h2>What our customers say.</h2><p>Repair help, new systems and the people who do the work. These homeowners shared their experience on Google.</p></div><div class="review-grid">{proof.reviews.map(review=><figure class="review-card"><span class="stars" aria-label={`${review.rating} out of 5 stars`}>★★★★★</span><blockquote>{review.text}</blockquote><figcaption><div class="reviewer-identity"><img class="reviewer-avatar" src={review.reviewerImage} alt="" width="48" height="48" loading="lazy" referrerpolicy="no-referrer"/><strong>{review.name}</strong></div><span>Google review · {new Date(review.date+'T12:00:00').toLocaleDateString('en-US',{month:'short',year:'numeric'})}</span><a href={review.source} target="_blank" rel="noopener noreferrer">Read on Google ↗</a></figcaption></figure>)}</div><div class="review-action"><p>Let’s get your home back on track.</p><PrimaryActions/></div></div></section>
+<section class="section"><div class="wrap"><div class="section-heading"><div><h2>Useful answers. Room to decide.</h2></div><p>A sound decision starts with the concern, the findings and what each option includes.</p></div><div class="trust-grid"><div class="trust-item"><span class="step-number" aria-hidden="true">01</span><h3>Name the concern.</h3><p>Tell us when it happens and which part of the home you notice it in.</p></div><div class="trust-item"><span class="step-number" aria-hidden="true">02</span><h3>Understand the finding.</h3><p>Ask what was checked, what was found and what still needs to be understood.</p></div><div class="trust-item"><span class="step-number" aria-hidden="true">03</span><h3>Choose the next step.</h3><p>Review the scope, total price and conditions before you approve work.</p></div></div></div></section>
+<section class="section"><div class="wrap split reverse"><Photo image={photo('ST-001','concern-support')} tilt={-2} caption="A little room to just be."/><div><h2>Not sure which service you need?</h2><p>A chilly room, a longer cooling cycle or a new sound is worth describing. It does not tell the whole story by itself.</p><p>Tell MGI what you notice. The office can help you find the right service and explain the next step.</p><p class="decision-proof"><a href={proof.bbb}>BBB Accredited · A+ rating</a></p><div class="actions"><a class="button" href="tel:+19702871673">Call MGI</a><a href="/answers/">Explore homeowner answers ↗</a></div></div></div></section>
+<section class="section home-concerns"><div class="wrap"><div class="section-heading"><div><h2>Noticing a difference?</h2></div><p>Find the service that fits what you notice. You do not have to diagnose the problem first.</p></div><Cards items={concerns}/></div></section>
+<section class="section green"><div class="wrap split"><div><h2>Let’s get your home back on track.</h2><ol class="process"><li><h3>Tell us what you need.</h3><p>Share the concern, your address and how to reach you.</p></li><li><h3>Choose the next step.</h3><p>Talk through the service, visit terms and current availability.</p></li><li><h3>Get back to your day.</h3><p>With the agreed work done, make room for the moments you love at home.</p></li></ol><PrimaryActions/></div><Photo image={photo('ST-001','next-step-support')} tilt={2}/></div></section>
+
+</div>

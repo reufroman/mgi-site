@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dist-*/
+dist-public/
+dist-review/
+dist-release/
+.astro/
+.env
+.env.*
+.DS_Store
+._*
+.local-preview/

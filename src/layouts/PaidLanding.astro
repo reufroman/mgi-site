@@ -1,0 +1,77 @@
+---
+import '../styles/site.css';
+import '../styles/landing.css';
+import Photo from '../components/Photo.astro';
+import CredentialLogos from '../components/CredentialLogos.astro';
+import LandingAction from '../components/LandingAction.astro';
+import LandingMeasurement from '../components/LandingMeasurement.astro';
+import LandingCallMeasurement from '../components/LandingCallMeasurement.astro';
+import ServiceIcon from '../components/ServiceIcon.astro';
+import site from '../data/site.json';
+import landingReviews from '../data/landing-reviews.json';
+import {photos,review,byId} from '../data/catalog.mjs';
+interface Props {route:any;page:any;}
+const {route,page}=Astro.props;
+const pictures=photos(route.page_id);
+const themeReviews=landingReviews[page.slug as keyof typeof landingReviews]||[];
+const urgent=page.journey.includes('J01');
+const canonical=new URL(route.canonical_route,'https://mgiheatingandair.com').href;
+const service=byId(page.sourceServiceId);
+const requestNote=page.schedulerSupported===false?'Call to discuss the work, your address, and current availability.':'Your request starts the conversation. Your appointment is pending confirmation.';
+---
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>{page.title} | MGI Heating and Air</title><meta name="description" content={page.description}/>
+<meta name="robots" content={review?'noindex, nofollow':'noindex, follow'}/><link rel="canonical" href={canonical}/>
+<meta name="theme-color" content="#174e5b"/><link rel="icon" href="/assets/mgi-badge.png"/>
+<link rel="preload" href="/assets/manrope.woff2" as="font" type="font/woff2" crossorigin/><link rel="preload" href="/assets/cormorant.woff2" as="font" type="font/woff2" crossorigin/>
+<meta property="og:title" content={`${page.title} | MGI Heating and Air`}/><meta property="og:description" content={page.description}/><meta property="og:url" content={canonical}/><meta property="og:type" content="website"/>
+<script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@type':'WebPage',name:page.title,description:page.description,url:canonical}).replace(/</g,'\\u003c')}/>
+</head><body class="paid-landing" data-page-id={route.page_id} data-build-mode={review?'review':'release'} data-landing-slug={page.slug}>
+<a class="skip" href="#main">Skip to content</a>
+{review&&<div class="review-bar"><strong>Private review</strong><span>Draft site. The scheduler sends real requests.</span><a href="/review/">Page directory</a></div>}
+<header class="lp-header"><div class="wrap lp-masthead"><a class="lp-brand" href="/" aria-label="MGI Heating and Air home"><img src="/assets/mgi-badge-240.webp" width="120" height="120" alt="MGI Heating and Air"/></a><div class="lp-header-contact"><a href="tel:+19702871673">{site.phone}</a><LandingAction page={page}/></div></div></header>
+<LandingCallMeasurement/>
+<main id="main" tabindex="-1">
+<section class="lp-hero" id="booking"><div class="wrap lp-hero-grid"><div class="lp-hero-copy"><p class="lp-service-label">{page.service}</p><h1>{page.heading}</h1><p class="lp-lead">{page.lead}</p><LandingAction page={page} secondary/><p class="lp-request-note">{urgent?'For immediate danger, leave the area and contact emergency services or your utility from a safe place. Do not wait for an online request.':requestNote}</p>{page.slug==='mgi'&&<p class="lp-request-note">For water-heater or indoor-air help, <a href="tel:+19702871673">call MGI</a>.</p>}</div><div class="lp-hero-art"><Photo image={pictures[0]} eager caption={page.journey==='J04'?'Room for the next chapter.':'The day has more in it.'} tilt={-3}/><p class="lp-photo-note">Life at home, worth looking after.</p></div></div></section>
+<section class="lp-proof" aria-label="MGI credentials"><div class="wrap"><CredentialLogos/></div></section>
+
+<section class="lp-section">{themeReviews.length>0&&<div class="wrap lp-theme-reviews"><h2>{page.slug==='furnace-repair'?'Furnace concerns, in their own words.':`${page.service}, in their own words.`}</h2><div class="lp-review-grid">{themeReviews.map(record=><figure class="lp-review"><span class="lp-review-stars" aria-label={`${record.rating} out of 5 stars`}>★★★★★</span><blockquote>{record.text}</blockquote><figcaption><div class="lp-review-person"><img src={record.reviewerImage} alt="" width="44" height="44" loading="lazy"/><div><strong>{record.name}</strong><span>Google review · {new Date(record.date+'T12:00:00').toLocaleDateString('en-US',{month:'short',year:'numeric'})}{record.excerpt?' · Excerpt':''}</span></div></div><a href={record.source} target="_blank" rel="noopener noreferrer">Read full review on Google <span aria-hidden="true">↗</span></a></figcaption></figure>)}</div></div>}<div class="wrap lp-split"><div class="lp-photo-column"><Photo image={pictures[1]} caption="A little more room for life." tilt={2}/></div><div><h2>{page.introTitle}</h2><p class="lp-body-lead">{page.intro}</p><div class="lp-choice-list">{page.choices.map((choice:any,index:number)=><div class="lp-choice"><span class="lp-number" aria-hidden="true">0{index+1}</span><div><h3>{choice.title}</h3><p>{choice.body}</p></div></div>)}</div><LandingAction page={page}/></div></div></section>
+<section class="lp-section lp-teal"><div class="wrap lp-split"><div><h2>{page.journey==='J04'?'Make the whole project clear.':'A useful next step starts with what you notice.'}</h2><p class="lp-body-lead">{page.journey==='J04'?'Bring the questions you want answered before you choose. Equipment, installation work, and the full price belong in the same conversation.':'You do not need to name a part or decide on new equipment before asking for help.'}</p><ol class="lp-steps"><li><strong>Tell us about your home.</strong><span>Describe what changed or what you are planning.</span></li><li><strong>Confirm the visit details.</strong><span>Ask about service at your address, availability, and visit terms.</span></li><li><strong>Choose after the findings.</strong><span>Compare the recommended work, its price, and what still needs checking.</span></li></ol><LandingAction page={page} light/></div><div class="lp-photo-column"><Photo image={pictures[2]} caption="Take time for a clear choice." tilt={-2}/></div></div></section>
+<section class="lp-section"><div class="wrap lp-split"><div class="lp-photo-column"><Photo image={pictures[3]} caption="Home has its own plans." tilt={3}/></div><div><ServiceIcon name="care"/><h2>A few details help.</h2><p>Have these ready when you get in touch. It is fine if you do not know every answer.</p><ul class="lp-prepare">{page.prepare.map((item:string)=><li>{item}</li>)}</ul><div class="lp-visit-terms"><h3>Before you agree to the work</h3><p>Ask what the visit includes, what it costs, and which work needs your approval. A request does not commit you to a replacement.</p></div>{<div class="lp-soft-cta"><h3>Ready to ask about a visit?</h3><p>{page.schedulerSupported===false?'Start with what you know. You do not need every detail before calling.':'Start with what you know. You do not need every detail to request service.'}</p><LandingAction page={page} soft/></div>}</div></div></section>
+<section class="lp-section lp-faq-section"><div class="wrap lp-faq-grid"><div><h2>Before you reach out.</h2><p>Clear answers help you choose the next step.</p>{service&&<a class="lp-detail-link" href={service.canonical_route}>More about {page.service.toLowerCase()} <span aria-hidden="true">↗</span></a>}</div><div>{page.questions.map((item:any)=><details class="lp-faq"><summary>{item.q}<span aria-hidden="true">+</span></summary><p>{item.a}</p></details>)}</div></div></section>
+<section class="lp-section lp-close"><div class="wrap lp-split"><div><h2>{page.closeHeading}</h2><p class="lp-body-lead">{page.closeBody}</p><LandingAction page={page} light secondary/><p class="lp-request-note">{requestNote}</p></div><div class="lp-photo-column"><Photo image={pictures[4]} caption="More than a comfortable room." tilt={-3}/></div></div></section>
+</main>
+<footer class="lp-footer"><div class="wrap"><div class="lp-footer-row"><p><strong>MGI Heating and Air</strong><br/>{site.address}</p><a href="tel:+19702871673">{site.phone}</a></div><p>Contact MGI to confirm service at your address and current availability.</p><div class="lp-footer-row"><small>© 2026 {site.legalName}</small><nav aria-label="Policies"><a href="/privacy-policy/">Privacy</a><a href="/terms/">Terms</a><a href="/accessibility/">Accessibility</a></nav></div><p class="image-disclaimer">Lifestyle images are AI-generated illustrations. They do not show actual MGI customers, employees, or completed work.</p></div></footer>
+<div class="lp-mobile-action"><LandingAction page={page}/></div>
+<script>
+// Retain ad attribution through site-side fallback navigation without storing it.
+const incoming=new URLSearchParams(location.search);
+const attribution=['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign','utm_id','utm_content','utm_term','campaign','campaignid','adgroupid','network','device','keyword','matchtype'];
+document.querySelectorAll<HTMLAnchorElement>('a[href^="/schedule-service/"],a.lp-detail-link').forEach(link=>{
+ const url=new URL(link.href);
+ for(const key of attribution){const value=incoming.get(key);if(value&&!url.searchParams.has(key))url.searchParams.set(key,value);}
+ link.href=url.pathname+url.search+url.hash;
+});
+</script>
+{page.schedulerSupported!==false&&<dialog aria-label={`${page.service} request`} class="lp-scheduler-modal" data-scheduler-origin={site.schedulerWebsiteUrl}><button class="lp-modal-close" type="button" data-close-booking aria-label="Close booking window">Close <span aria-hidden="true">×</span></button><iframe title="MGI service request widget" referrerpolicy="strict-origin-when-cross-origin"></iframe></dialog>}
+<script>
+const bookingDialog=document.querySelector<HTMLDialogElement>('.lp-scheduler-modal');
+if(bookingDialog){
+ document.addEventListener('click',event=>{
+  const target=event.target instanceof Element?event.target.closest<HTMLAnchorElement>('a[data-scheduler-open]'):null;
+  if(!target||event.defaultPrevented||event.button!==0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+  event.preventDefault();event.stopImmediatePropagation();
+  const source=new URL(target.href);const destination=new URL('/schedule-service/',bookingDialog.dataset.schedulerOrigin);
+  destination.search=source.search;destination.searchParams.set('ws-widget','open');
+  bookingDialog.querySelector('iframe')!.src=destination.href;bookingDialog.showModal();
+ },true);
+ bookingDialog.querySelector('[data-close-booking]')?.addEventListener('click',()=>bookingDialog.close());
+ bookingDialog.addEventListener('click',event=>{if(event.target===bookingDialog)bookingDialog.close();});
+ bookingDialog.addEventListener('close',()=>bookingDialog.querySelector('iframe')!.removeAttribute('src'));
+}
+</script>
+<LandingMeasurement/>
+
+
+</body></html>

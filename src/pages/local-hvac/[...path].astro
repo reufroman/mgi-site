@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+import {familyPaths} from '../../data/page-entrypoints.mjs';
+import ServiceFamily from '../../components/ServiceFamily.astro';
+import ACRepair from '../../components/ACRepair.astro';
+import EmergencyHVAC from '../../components/EmergencyHVAC.astro';
+import {serviceRolloutIds} from '../../data/service-family-rollout.mjs';
+import {contextFor} from '../../data/catalog.mjs';
+export function getStaticPaths(){return familyPaths('local-hvac','local-hvac');}
+const {route,content}=Astro.props;
+const context=contextFor(route);
+if(!context)throw Error(`Missing local route context: ${route.page_id}`);
+---
+<Base route={route} content={content}>{context.service.page_id==='ST-079'?<EmergencyHVAC route={route} content={content}/>:context.service.page_id==='ST-061'||route.page_id==='SL-WIN-AC-REP'?<ACRepair route={route} content={content}/>:<ServiceFamily route={route} content={content}/>}</Base>

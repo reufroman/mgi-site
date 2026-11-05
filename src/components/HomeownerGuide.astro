@@ -1,0 +1,39 @@
+---
+import type {Route,Content} from '../data/types';
+import {guideById,qualifiedReviewer} from '../data/homeowner-guides.mjs';
+interface Props {route:Route;content?:Content;}
+const {route}=Astro.props;
+const guide=guideById[route.page_id];
+if(!guide)throw new Error(`No source-backed homeowner guide for ${route.page_id}`);
+---
+<article class="homeowner-guide" data-homeowner-guide={guide.sourceId} data-source-hash={guide.sha256}>
+<div class="wrap guide-reading">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/answers/">Homeowner answers</a><span aria-hidden="true">/</span><span aria-current="page">{guide.sourceId==='MGI-043'?'Find the furnace filter':'Repair before replacement'}</span></nav>
+{guide.urgentHtml&&<aside class="guide-safety" data-guide-safety aria-labelledby="guide-safety-title"><h2 id="guide-safety-title">Gas smell or a carbon monoxide alarm comes first</h2><div set:html={guide.urgentHtml}/></aside>}
+<header class="guide-opening" data-guide-opening>
+
+<h1>{guide.title}</h1>
+<div class="guide-direct-answer" data-guide-answer set:html={guide.openingHtml}/>
+{qualifiedReviewer(guide)&&<p class="guide-accountability" data-qualified-reviewer>Reviewed by {guide.reviewState.reviewer_name}, {guide.reviewState.reviewer_qualifications}. Review date: {guide.reviewState.review_date}. Approved for the stated application.</p>}
+
+</header>
+{guide.sections.map((section:{anchor:string;heading:string;html:string})=><>
+<section id={section.anchor} data-guide-section={section.anchor} aria-labelledby={`${section.anchor}-heading`}>
+<h2 id={`${section.anchor}-heading`}>{section.heading}</h2>
+<div class="guide-source-text" set:html={section.html}/>
+</section>
+{guide.action.anchor===section.anchor&&<aside id={`${section.anchor}-help`} class="guide-help" data-guide-action={section.anchor} aria-labelledby="guide-help-title">
+<h2 id="guide-help-title">{guide.action.heading}</h2><p>{guide.action.body}</p>
+<a class="guide-link" href={guide.action.destination} data-commitment="reading">{guide.action.label} <span aria-hidden="true">↗</span></a>
+{guide.alternateAction&&<p class="guide-alternate">{guide.alternateAction.body} <a href={guide.alternateAction.destination} data-commitment="reading">{guide.alternateAction.label}</a></p>}
+</aside>}
+{guide.related.anchor===section.anchor&&<nav class="guide-related" data-guide-related aria-label="Related reading"><a href={guide.related.destination} data-commitment="reading">{guide.related.label} <span aria-hidden="true">↗</span></a></nav>}
+</>)}
+<section id="equipment-record" class="guide-task" data-guide-task aria-label="Your next task"><div set:html={guide.closingHtml}/></section>
+{guide.related.anchor==='equipment-record'&&<nav class="guide-related" data-guide-related aria-label="Related reading"><a href={guide.related.destination} data-commitment="reading">{guide.related.label} <span aria-hidden="true">↗</span></a></nav>}
+<nav class="guide-return" aria-label="More homeowner answers"><a href="/answers/">Back to homeowner answers <span aria-hidden="true">↗</span></a></nav>
+</div>
+</article>
+<style>
+.homeowner-guide{background:var(--warm,#fffdfb);color:var(--charcoal,#1a1a1a);padding:36px 0 88px}.guide-reading{max-width:820px}.homeowner-guide .breadcrumb{font-size:13px;flex-wrap:wrap;gap:10px;margin-bottom:40px}.guide-opening h1{font-size:clamp(36px,5vw,60px);line-height:1.07;max-width:22ch;margin-bottom:32px}.guide-opening .eyebrow{margin-bottom:18px}.homeowner-guide :global(p),.homeowner-guide :global(li){font-size:18px;line-height:1.8}.homeowner-guide :global(p){margin:0 0 22px}.homeowner-guide :global(a){text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}.homeowner-guide :global(a:hover){color:#103c46}.homeowner-guide :global(a:focus-visible){outline:3px solid #174e5b;outline-offset:5px;border-radius:2px}.homeowner-guide :global(strong){font-weight:750}.homeowner-guide :global(ul){padding-left:24px;margin:20px 0 24px}.homeowner-guide :global(li){padding-left:4px;margin-bottom:12px}.homeowner-guide section{padding-top:36px;scroll-margin-top:110px}.homeowner-guide section h2{font-size:clamp(30px,3.6vw,40px);line-height:1.18;margin-bottom:24px;max-width:28ch}.guide-direct-answer{max-width:68ch}.guide-accountability{font-size:14px!important}.guide-review-disclosure{margin:24px 0;color:#484b47;font:14px/1.7 Manrope,Arial,sans-serif}.guide-review-disclosure summary{cursor:pointer;min-height:44px;padding:10px 0}.guide-review-disclosure p{font-size:14px!important}.guide-review-disclosure dl{margin:0}.guide-review-disclosure dt{font-weight:700}.guide-review-disclosure dd{margin:0 0 10px;overflow-wrap:anywhere}.guide-safety{border-left:5px solid #174e5b;background:#f2f3ed;padding:24px 28px;margin:0 0 42px}.guide-safety h2{font:700 18px/1.5 Manrope,Arial,sans-serif;margin:0 0 18px}.guide-safety :global(p){font-size:16px;line-height:1.8}.guide-safety :global(p:last-child){margin-bottom:0}.guide-help{border-top:1px solid #bcb5aa;border-bottom:1px solid #bcb5aa;padding:26px 0;margin:22px 0 6px}.guide-help h2{font-size:30px;line-height:1.2;margin:0 0 16px}.guide-help .eyebrow{font-size:12px;margin-bottom:12px}.guide-help :global(p){font-size:16px}.guide-link,.guide-related a,.guide-return a{display:inline-block;min-height:44px;padding:10px 0;font-size:15px;font-weight:700}.guide-help .guide-alternate{font-size:14px;line-height:1.8;margin:16px 0 0}.guide-task{border-top:1px solid #bcb5aa;margin-top:30px}.guide-task :global(p){margin-bottom:0}.guide-related{margin-top:16px}.guide-return{margin-top:32px;padding-top:20px;border-top:1px solid #bcb5aa}@media(max-width:767px){.homeowner-guide{padding:24px 0 56px}.homeowner-guide .breadcrumb{margin-bottom:28px}.guide-opening h1{font-size:38px}.homeowner-guide :global(p),.homeowner-guide :global(li){font-size:17px;line-height:1.75}.guide-safety{padding:20px;margin-bottom:32px}.homeowner-guide section{padding-top:28px}.guide-help{padding:22px 0}.homeowner-guide section h2{font-size:32px}.guide-safety :global(p){font-size:15px}}
+</style>

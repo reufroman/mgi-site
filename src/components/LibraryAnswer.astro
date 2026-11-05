@@ -1,0 +1,10 @@
+---
+import type {Route} from '../data/types';
+import AnswerArticle from './AnswerArticle.astro';
+import {libraryAnswerById} from '../data/answer-library.mjs';
+interface Props {route:Route;}
+const {route}=Astro.props;
+const answer=libraryAnswerById[route.page_id];
+if(!answer)throw new Error(`Missing source-backed library answer: ${route.page_id}`);
+---
+<AnswerArticle answer={answer} presentation={answer.presentation}/>

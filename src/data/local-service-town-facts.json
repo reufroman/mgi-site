@@ -1,0 +1,296 @@
+[
+  {
+    "town": "Wellington",
+    "places": [
+      "Downtown Wellington",
+      "Centennial Park",
+      "Harvest Park"
+    ],
+    "character": "Centennial Park is a gathering place in Downtown Wellington; Harvest Park offers another town park setting.",
+    "propertyDetail": "Wellington lists air conditioners, combined AC and furnace work, furnace replacement, and water heaters in its One Stop permit chart. For equipment work, confirm the applicable permit, applicant, inspections, and fees before approving the scope.",
+    "sourceURLs": [
+      "https://www.wellingtoncolorado.gov/640/Park-and-Facility-Rentals",
+      "https://www.wellingtoncolorado.gov/Facilities",
+      "https://www.wellingtoncolorado.gov/DocumentCenter/View/4096"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local job proof. No home equipment, utility account, pricing, or public-use approval established. Confirm the property jurisdiction and current project-specific rules."
+  },
+  {
+    "town": "Greeley",
+    "places": [
+      "Island Grove Regional Park",
+      "Centennial Village",
+      "Poudre River Trail"
+    ],
+    "character": "Island Grove combines a regional park and event grounds with the Centennial Village museum and a trailhead for the Poudre River Trail.",
+    "propertyDetail": "Greeley provides public permit search through its community development portal. For a home with past equipment changes, ask what permit and service records are available; confirm current project requirements and who handles any permit before approving new work.",
+    "sourceURLs": [
+      "https://poudretrail.org/island-grove-park/",
+      "https://trakit.greeleygov.com/eTRAKiT/"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local job proof. No home equipment, utility account, pricing, or public-use approval established. Confirm the property jurisdiction and current project-specific rules. The main municipal building page was inaccessible; the readable official portal supports permit search only, not a claim that every repair needs a permit."
+  },
+  {
+    "town": "Loveland",
+    "places": [
+      "Benson Sculpture Garden",
+      "The Lakes at Centerra"
+    ],
+    "character": "Loveland has a public sculpture garden at Benson Park and a distinct master-planned community at The Lakes at Centerra in the northeast part of the city.",
+    "propertyDetail": "The Lakes at Centerra district lists covenant enforcement among its allowed services. If an outdoor unit will change at a home in this community, ask which current property rules apply and who checks them, along with the separate city permit requirements.",
+    "sourceURLs": [
+      "https://bensonsculpturegarden.org/history/",
+      "https://www.lakesatcenterramd.live/",
+      "https://www.lakesatcenterramd.live/metropolitan-district-general-explanation"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local job proof. No home equipment, utility account, pricing, or public-use approval established. Confirm the property jurisdiction and current project-specific rules. Municipal building and utility pages returned HTTP 403. Property guidance is specific to The Lakes at Centerra district and does not establish an equipment approval rule or apply citywide."
+  },
+  {
+    "town": "Berthoud",
+    "places": [
+      "Fickel Park",
+      "Pioneer Park",
+      "Roberts Lake"
+    ],
+    "character": "Berthoud has town parks and open spaces that include Fickel Park, Pioneer Park, and Roberts Lake.",
+    "propertyDetail": "Berthoud requires contractors to be licensed with the town before applying for a building permit. For replacement or installation work, identify who handles any permit and inspection, whether their fees are included, and which requirements apply to the actual property.",
+    "sourceURLs": [
+      "https://www.berthoud.org/1454/Pets-in-Parks-and-Open-Spaces",
+      "https://berthoud.org/169/Building-Department"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local job proof. No home equipment, utility account, pricing, or public-use approval established. Confirm the property jurisdiction and current project-specific rules."
+  },
+  {
+    "town": "Fort Collins",
+    "places": [
+      "City Park",
+      "Sheldon Lake",
+      "Lee Martinez Park"
+    ],
+    "character": "Fort Collins has a connected park and trail system, with places for outdoor time at City Park, Sheldon Lake, and Lee Martinez Park.",
+    "propertyDetail": "Fort Collins lists heating, cooling, mini-splits, heat pumps, air handlers, AC, and furnaces under mechanical permits. Its guidance says projects involving more than one trade use a remodel or alteration permit. If equipment work also needs electrical or plumbing work, confirm the right permit path and who includes those costs.",
+    "sourceURLs": [
+      "https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Parks",
+      "https://www.fortcollins.gov/Activities/Recreation-Facilities-and-Pools?mobile_pref=0",
+      "https://www.fortcollins.gov/Business/Permits-and-Licensing/Building-Permits"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local job proof. No home equipment, utility account, pricing, or public-use approval established. Confirm the property jurisdiction and current project-specific rules."
+  },
+  {
+    "town": "Timnath",
+    "places": [
+      "Timnath Community Park",
+      "Timnath Reservoir",
+      "Wildwing Park"
+    ],
+    "character": "Timnath maintains parks, open spaces, and trails, including its community park and reservoir.",
+    "propertyDetail": "Timnath provides separate homeowner permit paths for air conditioning, furnace replacement, and water heaters, with inspection links. For a project at a Timnath address, confirm the applicable permit path, the applicant, inspection responsibility, and fees in the written scope.",
+    "sourceURLs": [
+      "https://timnath.org/parks/",
+      "https://timnath.org/timnath-community-park/",
+      "https://timnath.org/homeowner-building-and-construction-services/"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local job proof. No home equipment, utility account, pricing, or public-use approval established. Confirm the property jurisdiction and current project-specific rules. Existing strategy hold remains; this research does not activate a page or establish service coverage."
+  },
+  {
+    "town": "Severance",
+    "places": [
+      "Tailholt Park",
+      "Overlook Park",
+      "Severance Shores Park"
+    ],
+    "character": "Severance has public parks within several subdivisions, including Tailholt, Overlook, and Severance Shores.",
+    "propertyDetail": "Severance names Xcel Energy and Poudre Valley REA as electric providers for most locations. Check the actual electric bill before comparing an electric equipment change or a utility incentive; a town name alone does not identify the account or establish eligibility.",
+    "sourceURLs": [
+      "https://www.townofseverance.org/209/Parks-Recreation",
+      "https://www.townofseverance.org/264/Electric"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local job proof. No home equipment, utility account, pricing, or public-use approval established. Confirm the property jurisdiction and current project-specific rules. Existing strategy hold remains; this research does not activate a page or establish service coverage."
+  },
+  {
+    "town": "Longmont",
+    "places": [
+      "Roosevelt Community Park",
+      "McIntosh Lake Nature Area"
+    ],
+    "character": "Longmont pairs historic civic parks with lakeside recreation; Roosevelt Park is one of its original planned parks.",
+    "propertyDetail": "Longmont Power & Communications is the city’s public electric utility. Check the actual electric account before comparing equipment running costs or utility-program eligibility.",
+    "sourceURLs": [
+      "https://longmontcolorado.gov/facilities/roosevelt-community-park/",
+      "https://longmontcolorado.gov/facilities/mcintosh-lake-nature-area/",
+      "https://longmontcolorado.gov/longmont-power-communications/"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local-job proof. Landmark names do not establish the age, equipment, or service needs of a home. Utility territory and program eligibility require an account check."
+  },
+  {
+    "town": "Boulder",
+    "places": [
+      "Chautauqua Park",
+      "Chautauqua Auditorium",
+      "Pearl Street"
+    ],
+    "character": "Boulder’s Chautauqua area combines trail access with cultural and historic places.",
+    "propertyDetail": "Boulder’s permit portal instructs applicants to identify a licensed mechanical contractor on a mechanical permit. For proposed work, confirm whether a permit applies and who obtains it, pays its fees, and arranges inspections.",
+    "sourceURLs": [
+      "https://bouldercolorado.gov/trailhead/chautauqua",
+      "https://bouldercolorado.gov/historic-propertylandmark-search",
+      "https://bouldercolorado.gov/services/energov-customer-self-service-portal"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local-job proof. Historic landmarks do not establish that a customer property is designated historic or needs a particular heating system."
+  },
+  {
+    "town": "Erie",
+    "places": [
+      "Old Town",
+      "Colliers Hill",
+      "Vista Ridge"
+    ],
+    "character": "Erie includes Old Town and planned neighborhoods such as Colliers Hill and Vista Ridge.",
+    "propertyDetail": "Erie’s HVAC permit instructions ask which equipment is included, whether it is a replacement or addition, its fuel, and its location. Installation inspections use the normal inspection process. Confirm the permit and inspection owner for the proposed project.",
+    "sourceURLs": [
+      "https://www.erieco.gov/2368/Coal-Creek-Open-Space",
+      "https://erieco.gov/2407/Zoning-Subdivisions",
+      "https://erieco.gov/1627/Colliers-Hill-Daybreak-URA",
+      "https://erieco.gov/2002/HVAC"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local-job proof. Neighborhood recognition does not establish home age, construction quality, HVAC problems, utility provider, or exact permit applicability."
+  },
+  {
+    "town": "Frederick",
+    "places": [
+      "Downtown Frederick",
+      "Crist Park",
+      "Centennial Park"
+    ],
+    "character": "Frederick’s downtown includes walkable streets, local businesses, and gathering places such as Crist Park.",
+    "propertyDetail": "Frederick’s Building Department oversees permits, inspections, and contractor licensing. Before agreeing to installation work, confirm which approvals apply to the actual scope and who arranges and pays for them.",
+    "sourceURLs": [
+      "https://frederickco.gov/1292/Downtown-Urban-Renewal-Area",
+      "https://www.frederickco.gov/Facilities/Facility/Details/Crist-Park-7",
+      "https://www.frederickco.gov/facilities/facility/details/Centennial-Park-8",
+      "https://frederickco.gov/416/Building-Department"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local-job proof. Town permit administration does not establish that every repair needs a permit or that MGI holds a particular license."
+  },
+  {
+    "town": "Firestone",
+    "places": [
+      "Central Park",
+      "Firestone Trail",
+      "Sagebrush Park"
+    ],
+    "character": "Firestone’s mining history is reflected in the former rail corridor now used by the Firestone Trail.",
+    "propertyDetail": "Firestone publishes building-permit fee schedules and states that total valuation includes labor and materials. For a proposed installation, confirm applicable permits, included fees, and the owner of inspections before approving the project.",
+    "sourceURLs": [
+      "https://www.firestoneco.gov/281/History-of-Firestone",
+      "https://firestoneco.gov/632/Central-Park",
+      "https://firestoneco.gov/Facilities/Facility/Details/Firestone-Trail-3",
+      "https://www.firestoneco.gov/CivicSend/ViewMessage/message/281777",
+      "https://www.firestoneco.gov/425/Building-Permits-Fees"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local-job proof. Central Park development is ongoing; do not imply planned amenities are complete. Trail history and park names do not establish residential HVAC needs."
+  },
+  {
+    "town": "Thornton",
+    "places": [
+      "Eastlake",
+      "Eastlake Nature Area",
+      "Hunters Glen Lake",
+      "Woodglen Park Pond"
+    ],
+    "character": "Thornton includes the railway roots of Eastlake and several city lakes and nature areas.",
+    "propertyDetail": "Thornton lists furnace, AC, and water-heater installation or replacement among work requiring a permit. Before approving that work, confirm the actual permit scope and who obtains the permit, pays its fees, and arranges inspections.",
+    "sourceURLs": [
+      "https://www.thorntonco.gov/business-development/city-development/long-range-planning/plans/subarea-plans",
+      "https://www.thorntonco.gov/parks-recreation/parks-planning/thornton-lakes-ponds",
+      "https://www.thorntonco.gov/media/file/required-building-permit"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local-job proof. Eastlake history does not establish a home’s age or equipment. The city prohibits fishing at Eastlake Nature Area; do not invent recreation access or household characteristics."
+  },
+  {
+    "town": "Broomfield",
+    "places": [
+      "Anthem Community Park",
+      "Broadlands East Park",
+      "Brandywine Parks"
+    ],
+    "character": "Broomfield is both a city and a county, with parks, trails, and preserved open space.",
+    "propertyDetail": "Broomfield publishes separate permit-review guidance for like-for-like equipment replacement and other installations. Ask Building to confirm the applicable category and current review time, then name the permit and inspection owner in the project scope.",
+    "sourceURLs": [
+      "https://www.broomfield.org/Facilities",
+      "https://broomfield.org/27/About-Broomfield",
+      "https://www.broomfield.org/178/Homeowner-Permits-and-Building-Guides",
+      "https://www.broomfield.org/3061/Review-Timelines"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local-job proof. Current city pages conflict on unchanged equipment replacement review times: one to two business days versus a one-week goal. No processing or service-time promise is supported. Park names do not establish HOA rules or equipment."
+  },
+  {
+    "town": "Johnstown",
+    "places": [
+      "Stroh Farm",
+      "Pioneer Ridge Park",
+      "Rolling Hills Ranch"
+    ],
+    "character": "Johnstown has named residential communities with local gathering places, including Pioneer Ridge Park in Stroh Farm and the park in Rolling Hills Ranch.",
+    "propertyDetail": "Johnstown’s utility directory lists Xcel Energy, United Power, and Poudre Valley REA as electric providers for different parts of town. Check the actual electric account before comparing equipment costs or utility-program eligibility.",
+    "sourceURLs": [
+      "https://www.johnstownco.gov/576/Pioneer-Ridge-Park",
+      "https://www.johnstownco.gov/616/Rolling-Hills-Ranch-Park",
+      "https://www.johnstownco.gov/510/Utility-Service-Providers"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local-job proof. Existing Equity Hold remains in force; research does not activate a public route. General utility geography is not an account determination, and neighborhood names do not establish equipment or home age."
+  },
+  {
+    "town": "Dacono",
+    "places": [
+      "Sweetgrass",
+      "Clem Dufour Park"
+    ],
+    "character": "Dacono is part of the Carbon Valley Parks and Recreation District, alongside Frederick, Firestone, and nearby rural communities.",
+    "propertyDetail": "Dacono lists replacement or installation of heating units, AC units, and water heaters as permit work. Spell out who obtains the applicable permit, pays the fee, and arranges inspections before approving the project.",
+    "sourceURLs": [
+      "https://www.daconoco.gov/DocumentCenter/View/3755/Sweetgrass-Statement-of-Intent",
+      "https://www.daconoco.gov/1100/Splash-Pad",
+      "https://www.daconoco.gov/253/Parks-Recreation",
+      "https://www.daconoco.gov/875/Building-Codes-Permits"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local-job proof. Conditional Saturation Hold remains in force; research does not activate a public route. Sweetgrass planning documents do not prove current amenity operation. Clem Dufour Park’s splash pad is seasonal, not an October activity. Recreation-district coverage is not MGI coverage."
+  },
+  {
+    "town": "Windsor",
+    "places": [
+      "Downtown Main Street",
+      "Water Valley",
+      "RainDance",
+      "Boardwalk Community Park"
+    ],
+    "character": "Windsor has a downtown along Main Street, communities such as Water Valley and RainDance, and Boardwalk Community Park by Windsor Lake.",
+    "propertyDetail": "For a replacement or other equipment change at a Windsor home, check the electric utility on your own account before considering rebates. A Windsor address alone does not identify the provider or which rebates apply.",
+    "sourceURLs": [
+      "https://www.windsorco.gov/537/Windsor-History",
+      "https://www.recreationliveshere.com/Facilities/Facility/Details/Boardwalk-Community-Park-4",
+      "https://www.poudretechmetro.org/golf-carts-and-lsev",
+      "https://raindancecolorado.com/",
+      "https://poudretrail.org/",
+      "https://register.windsorgov.com/m/FAQ"
+    ],
+    "checkedOn": "2026-10-07",
+    "limitations": "No MGI coverage or local job proof. Adapted from locked Windsor owner data and its verified source register. Utility accounts, prices, operating claims, and public approval remain separate checks."
+  }
+]

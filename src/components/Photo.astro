@@ -1,0 +1,9 @@
+---
+import type {Picture} from "../data/types";
+interface Props {image?:Picture|null;eager?:boolean;caption?:string;tilt?:number;sizes?:string;}
+const { image, eager=false, caption='', tilt=-2, sizes='(max-width: 767px) calc(100vw - 72px), (max-width: 1100px) 45vw, 560px' } = Astro.props;
+---
+{image && <figure class="polaroid" style={`--tilt:${tilt}deg`} data-picture-id={image.picture_id} data-placement-id={image.placement_id}>
+ <img src={image.src} srcset={image.srcset} sizes={sizes} width={image.width} height={image.height} loading={eager?'eager':'lazy'} decoding="async" fetchpriority={eager?'high':'auto'} alt={image.alt} />
+ {caption && <figcaption>{caption}</figcaption>}
+</figure>}

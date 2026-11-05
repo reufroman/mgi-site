@@ -1,0 +1,77 @@
+{
+  "verifiedDate": "2026-10-05",
+  "carrier": "https://www.carrier.com/us/en/residential/dealers/co/berthoud/246-basher-drive-9041353-loc",
+  "bbb": "https://www.bbb.org/us/co/berthoud/profile/heating-and-air-conditioning/mgi-mechanical-services-0805-46108102",
+  "carrierRating": "5/5",
+  "carrierReviewCount": 10,
+  "reviews": [
+    {
+      "name": "Sara Mitchell",
+      "text": "Michael and Christian were awesome and did a great job of installing a whole new AC/heating system for us.",
+      "rating": 5,
+      "date": "2026-09-25",
+      "source": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsMU9HTndNbTVOV0dOMlJHTXRUemROZEdsdlIyYxAB!2m1!1s0x0:0xa10d984a37bbd448!3m1!1s2@1:CAIQACodChtycF9oOkl1OGNwMm5NWGN2RGMtTzdNdGlvR2c%7C%7C?hl=en",
+      "releaseApproval": "Pending Jesse approval; restored to Reu-authorized review demo only",
+      "reviewerImage": "https://cdn.prod.website-files.com/6aac42340aa2384b006481bc/6abafca7524fde675a8531a2_ALV-UjX_lEwJVZVL0Nv5KtC9aFJymHlEeBjUGFaKe_CRqq93oVKaqOTV%3Ds256-c-rp-mo-br100.png",
+      "reviewerImageEvidence": {
+        "source": "02_Strategy/Proposals-&-Planning/2026-09-28_INTERNAL_MGI-Proof-Records-Reviewer-Images-Verified-Webflow-Export.csv",
+        "verifiedDate": "2026-09-28",
+        "association": "Exact reviewer name, review text, and Google review ID match",
+        "permissionState": "Pending"
+      }
+    },
+    {
+      "name": "Ty Fuller",
+      "text": "MGI was very professional and thorough. Got us into the schedule quickly and had the install done in a timely manner. Javier and Ryan did fantastic on the install.",
+      "rating": 5,
+      "date": "2026-09-25",
+      "source": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210c01XaHhiakEwZG5Wd2RYRnFVVlIwYlMxbFpWRRAB!2m1!1s0x0:0xa10d984a37bbd448!3m1!1s2@1:CAIQACodChtycF9oOmtsMWhxbjA0dnVwdXFqUVR0bS1lZVE%7C%7C?hl=en",
+      "releaseApproval": "Pending Jesse approval; restored to Reu-authorized review demo only",
+      "reviewerImage": "https://cdn.prod.website-files.com/6aac42340aa2384b006481bc/6abafca826b71925f7633626_ALV-UjUNSsOlekd7Cnr-IStKD2a3niVar3ryhWY-HO2qZ3bMevN17-Q%3Ds256-c-rp-mo-br100.png",
+      "reviewerImageEvidence": {
+        "source": "02_Strategy/Proposals-&-Planning/2026-09-28_INTERNAL_MGI-Proof-Records-Reviewer-Images-Verified-Webflow-Export.csv",
+        "verifiedDate": "2026-09-28",
+        "association": "Exact reviewer name, review text, and Google review ID match",
+        "permissionState": "Pending"
+      }
+    },
+    {
+      "name": "John Beilman",
+      "text": "Competent and knowledgeable at very competitive prices!  This company brings honor to furnace work!  No up selling or doing unnecessary repairs!  Will make them my go to hvac contractor!",
+      "rating": 5,
+      "date": "2026-09-22",
+      "source": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xONVNETmFWRFZQTjBoNVJHeHZVMDgxWm0xd2FIYxAB!2m1!1s0x0:0xa10d984a37bbd448!3m1!1s2@1:CAIQACodChtycF9oOlN5SDNaVDVPN0h5RGxvU081Zm1waHc%7C%7C?hl=en",
+      "releaseApproval": "Pending Jesse approval; restored to Reu-authorized review demo only",
+      "reviewerImage": "https://cdn.prod.website-files.com/6aac42340aa2384b006481bc/6abafcaabaf994c3947fb0b3_ACg8ocLdDaz7m1q9bjB1Os-f9v3DUZYhJXP5VbXC5Hm70YjvF5nMWw%3Ds256-c-rp-mo-br100.png",
+      "reviewerImageEvidence": {
+        "source": "02_Strategy/Proposals-&-Planning/2026-09-28_INTERNAL_MGI-Proof-Records-Reviewer-Images-Verified-Webflow-Export.csv",
+        "verifiedDate": "2026-09-28",
+        "association": "Exact reviewer name, review text, and Google review ID match",
+        "permissionState": "Pending"
+      }
+    }
+  ],
+  "googleRating": "4.9",
+  "googleReviewCountLabel": "248 reviews",
+  "googleAggregateSource": {
+    "origin": "Direct Google Maps business listing, checked 2026-10-12",
+    "verifiedDate": "2026-10-12",
+    "rating": "4.9",
+    "reviewCount": 248,
+    "verification": "Live Google Maps listing header and review summary both displayed 4.9 stars and 248 reviews. Browser screenshot confirmed the header. This is the full platform total displayed at the check date, not the internal positive-review archive.",
+    "primarySource": "https://www.google.com/maps?cid=11605099259333694536",
+    "historicalDiscrepancy": {
+      "origin": "Reu browser comment 2, 2026-10-06",
+      "requestedRating": "4.8",
+      "requestedReviewCountLabel": "Over 300 reviews",
+      "priorObservation": "Direct Google Maps limited view on 2026-10-06 showed 4.9 stars and no count. The unsupported requested aggregate is superseded by the direct 2026-10-12 platform check."
+    }
+  },
+  "eebc": "https://www.eebco.org/Sys/PublicProfile/97677091",
+  "eebcSource": {
+    "verifiedDate": "2026-10-12",
+    "primarySource": "https://www.eebco.org/Sys/PublicProfile/97677091",
+    "verification": "EEBC public member profile lists Organization MGI Mechanical Services and Membership level Energy Service Professional >6 Employees. Direct browser verification confirms the listing.",
+    "claimLimit": "Supports EEBC member wording. Does not establish certification, dues status, or logo licensing."
+  }
+}

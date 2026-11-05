@@ -1,0 +1,144 @@
+{
+  "ST-080": {
+    "eyebrow": "Homeowner guide",
+    "title": "Repair or replace your air conditioner?",
+    "summary": "Start with the cause, the condition and what each option would change. Compare a complete repair with a complete replacement project.",
+    "answer": "An AC symptom or age alone does not settle the choice. Find the cause, then compare repair scope, parts, condition and the full replacement work.",
+    "sections": [
+      {
+        "heading": "Start with the cooling problem you want to solve",
+        "body": "The house is warm, the AC stopped again or a repair quote has you wondering about a new system. Start with that concern. Write one sentence about what changed, which rooms are affected and when it happens. “The upstairs stays warm each afternoon” is a different question from “the whole house stopped cooling yesterday.” Neither description proves that replacement is needed. Keep the original concern beside the options so you can ask what each one would address. If the system still works and you are planning ahead, say that too. A planned comparison and a current failure can need different next steps."
+      },
+      {
+        "heading": "Ask what supports the diagnosis",
+        "body": "Before comparing prices, ask what was checked and what the results showed. Warm air, ice and water can have different causes. Restricted airflow or a refrigerant problem can both lead to ice on the indoor coil. The same symptom does not establish the same repair in every home. If ice appears, stop cooling and arrange a qualified assessment; thawing alone does not explain the cause. Do not open electrical panels, repeatedly reset a tripping breaker or try to add refrigerant. A useful explanation separates the confirmed finding, the possible contributors and anything that still needs checking."
+      },
+      {
+        "heading": "Make the repair option clear",
+        "body": "Ask exactly what the proposed repair includes and what it is expected to restore. Which component or problem is being addressed? Are the needed parts available? Is further investigation required before a complete price is known? Check the actual equipment warranty and the proposed repair terms rather than assuming that every part or return visit is covered. Keep those questions with the written repair scope. If the issue has happened before, share the past service record if available. A recurring problem deserves an explanation, but the number of visits alone does not tell you whether repair or replacement is the sound choice."
+      },
+      {
+        "heading": "Refrigerant type is one factor, not a replacement order",
+        "body": "If the air conditioner uses R-22, ask how that affects the actual repair. EPA says the phaseout alone does not require replacing or converting an existing R-22 system. That does not promise that a repair will be practical: refrigerant availability, the location and extent of a leak, parts, condition and cost still matter. Ask which of those factors was checked. Keep refrigerant handling with a qualified technician. Do not treat a refrigerant label as proof that an otherwise unexplained replacement recommendation is necessary, or as proof that keeping the old system must be the better choice."
+      },
+      {
+        "heading": "Compare a complete replacement system",
+        "body": "An outdoor unit is only part of a replacement proposal. Ask which indoor equipment is matched with it, which furnace and fan remain and whether controls or wiring change. The appropriate cooling capacity should follow the home’s cooling needs and the model’s performance data. ACCA’s Manual S describes equipment selection using home loads and design conditions. Ask how the proposal applies that reasoning to your home. A larger unit is not automatically the answer to a hot room. Keep the room concern visible and ask which checks support the proposed size and what remains outside the replacement scope."
+      },
+      {
+        "heading": "Keep efficiency separate from a savings promise",
+        "body": "SEER2 is a cooling efficiency rating under a test method. It helps compare equipment, but it does not predict the bill at your home. Equipment fit, actual use, energy prices and the home itself affect running cost. If you receive a cost estimate, ask which assumptions it uses and how uncertainty is shown. Do not compare an old SEER number with SEER2 as though the test methods were identical. A higher advertised rating does not establish a fixed savings amount or payback date. Ask for the rating of the exact proposed equipment combination, not only an “up to” figure."
+      },
+      {
+        "heading": "Put both options on the same page",
+        "body": "Place the full repair scope beside the full replacement scope. For each, note the price, excluded work, open costs, parts or equipment availability and what concern the option is expected to address. Ask who arranges any permits, electrical work and final inspection, and whether those items are included. Keep possible incentives separate from confirmed reductions and the amount due. Financing has separate approval, repayment and cost terms. A monthly payment is not the project price. If one proposal leaves work to another trade, clarify the responsibility and cost before treating its total as directly comparable with another proposal."
+      },
+      {
+        "heading": "Age and past repairs help describe the situation",
+        "body": "An older system can still have a repair worth considering, and a newer system can have a problem that deserves a careful assessment. Avoid a birthday rule or a fixed repair-price percentage as the whole decision. Ask what the current condition, repair history and available support mean for these particular choices. In a hypothetical example, a control repair that restores cooling and a replacement intended to address an ongoing room complaint are not yet equivalent options. Ask whether they answer the same question. That example is a comparison aid, not an MGI customer story or evidence of a predicted result."
+      },
+      {
+        "heading": "Choose the next useful step",
+        "body": "You may have enough information to authorize a supported repair, compare a complete replacement, seek a second assessment or wait for a missing answer. Ask what could change the recommendation and which question needs an answer before you decide. If replacement is the chosen path, ask about startup checks, control guidance and who owns any unfinished item. If you need a visit, share the address, main concern and any useful past work record. Confirm the available service, assessment scope, charges and scheduling. A request does not confirm an appointment, and general guidance does not diagnose your air conditioner."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does an older AC have to be replaced?",
+        "answer": "No universal age rule decides the answer. The actual finding, condition, parts support, home needs and full costs matter."
+      },
+      {
+        "question": "Does R-22 mean replacement is required?",
+        "answer": "EPA says the phaseout alone does not require replacing or converting an existing R-22 system. Actual repair feasibility, refrigerant availability and cost still need checking."
+      },
+      {
+        "question": "Can a new AC fix a hot room?",
+        "answer": "It may address a supported equipment problem, but a room complaint alone does not establish that replacement or a larger unit is the answer. Ask what the assessment explains."
+      }
+    ],
+    "ctaLabel": "Ask about your options",
+    "reviewNotes": [
+      "Internal educational draft for repair-versus-replacement comparison. No model-specific diagnosis, MGI operating promise, price, warranty coverage or savings result established.",
+      "Audience: residential homeowner comparing a current problem or planned change, journeys J01/J04/J07. Canonical MGI-Brand-Guide.md Chapters02,06,10,13,14 checked.",
+      "Derived from source-audited October2 dossiers and current editorial records. October6 spot-check of EPA R22 guidance, ACCA ManualS, A.O.Smith maintenance checklist and DOE residential-water-heater guide. No exhaustive new claim-by-claim audit. Qualified technical reviewer, current named reviewer/date and Jesse Hoeye publication approval remain required."
+    ],
+    "sources": [
+      "02_Strategy/Proposals-&-Planning/2026-10-02_INTERNAL_MGI-Monday-Research/Services.md",
+      "https://www.carrier.com/us/en/residential/hvac-resources/air-conditioners/troubleshoot-an-ac-not-working/",
+      "https://www.epa.gov/ods-phaseout/purchasing-and-repairing-home-air-conditioners-or-heat-pumps",
+      "https://www.acca.org/standards/technical-manuals/manual-s",
+      "https://www.energystar.gov/sites/default/files/2024-12/ENERGY%20STAR%20Version%206.2%20Central%20Air%20Conditioner%20and%20Heat%20Pump%20Final%20Specification_1.pdf"
+    ]
+  },
+  "ST-081": {
+    "eyebrow": "Homeowner guide",
+    "title": "Repair or replace your water heater?",
+    "summary": "No hot water or a leak does not tell the whole story. Compare the finding, tank condition, hot-water delivery and complete installation scope.",
+    "answer": "Identify why hot water changed or where a leak starts. Then compare a supported repair with replacement that fits the home’s hot-water needs and installation requirements.",
+    "sections": [
+      {
+        "heading": "Begin with what changed at the tap",
+        "body": "No hot water, shorter showers or water near the heater can all start a repair-or-replace question. Write down what changed and whether it affects every fixture or only one. Note whether the problem appeared suddenly or has become more noticeable over time. You do not need to know the failed part before asking for help. For a gas smell or suspected carbon-monoxide emergency, leave and contact emergency services or the gas utility from safety. Do not wait for an equipment request. For a hot-water problem without immediate danger, use the observations to start an assessment of the actual heater."
+      },
+      {
+        "heading": "Distinguish the symptom from the cause",
+        "body": "A water heater that provides less hot water does not automatically have a failed tank. On some electric tanks with two heating elements, a failed element can reduce available hot water. Controls, fuel or power and the household’s hot-water use can also affect the conversation. Ask which checks establish the problem for the actual model. Keep internal electrical, burner and gas work with a qualified person. Do not change settings or open equipment to test a guess. A useful finding explains what was checked, what was found and why the proposed work addresses the reported symptom."
+      },
+      {
+        "heading": "A wet area needs its own explanation",
+        "body": "Water near a heater can come from a fitting, the temperature-and-pressure relief device or the tank itself. Those findings can lead to different choices. Ask where the moisture starts and what evidence distinguishes the source. The relief device has a protective discharge role; do not plug its outlet or treat discharge as something to hide. A wet floor alone cannot tell you whether a connection can be repaired or the tank condition supports replacement. Describe the location and timing without reaching into the equipment. Let a qualified assessment explain the leak and the appropriate work before comparing options."
+      },
+      {
+        "heading": "Understand what a repair would change",
+        "body": "Ask for the specific repair scope, parts availability and any questions that remain open. What would the work restore, and how would its result be checked? Which actual warranty or service terms apply? Do not assume a parts warranty includes every labor charge or that a repair includes unrelated work. If the concern has returned, share the earlier record and ask whether the current finding explains the recurrence. Repair may be a useful option when the cause and condition support it. Replacement may deserve comparison when they do not. Neither conclusion follows from the word “leak” or the heater’s age alone."
+      },
+      {
+        "heading": "Match replacement delivery to the busiest use",
+        "body": "For a conventional storage water heater, tank volume tells you only part of the delivery story. First-hour rating estimates the hot water delivered in the first hour when the tank begins fully heated. Compare that information with when the household uses hot water: showers close together, laundry or other overlapping needs. Ask how the proposed model’s delivery fits that pattern. A larger tank is not automatically the right answer, and a repeated shortage is not proof that size alone caused it. Fuel, recovery, space and the findings on the existing heater belong in the comparison too."
+      },
+      {
+        "heading": "Compare the whole installation job",
+        "body": "Ask what removal, new equipment, connections and final checks are included in the proposal. If fuel, electrical supply, venting or the installation location changes, clarify the additional work and who performs it. Define permit and inspection responsibilities and any costs left outside the quote. An unexplained “by others” note leaves an important question open. Ask what must happen before the heater can be installed and which owner confirms completion. Identifying a plumbing or electrical dependency does not establish that MGI offers general plumbing or every trade. The actual service scope and project agreement must define the supported work."
+      },
+      {
+        "heading": "Treat efficiency and alternatives as separate questions",
+        "body": "Uniform Energy Factor, or UEF, is a water-heater efficiency measure. Compare equipment using the appropriate product and hot-water-use categories; the rating is not a guarantee of a household bill. Fuel prices, use and installation conditions matter when comparing operating costs. If someone proposes a tankless or heat-pump water heater instead of a conventional tank, ask for a separate fit and project comparison. Different technologies can have different space, power, drainage and care requirements. Do not assume that a technology label, incentive possibility or efficiency figure proves it fits the home or that MGI supports every model."
+      },
+      {
+        "heading": "Use condition, records and costs together",
+        "body": "Gather the model information and service history if you have them. The equipment’s age helps describe the situation but cannot replace a condition check. Put the full repair beside the full replacement project, including exclusions and unresolved costs. Keep financing, any possible incentive and the amount due as separate items until the actual terms are confirmed. A cheaper monthly payment is not necessarily a smaller total commitment. Ask which findings make repair viable, which support replacement and what would change the answer. You can request clarification before choosing, without relying on a universal age limit or repair-price rule."
+      },
+      {
+        "heading": "Leave with a clear decision and owner",
+        "body": "The next useful step may be a supported repair, a replacement assessment or an answer about an unresolved leak or installation dependency. Ask what needs attention now and what can be planned later. Before authorizing installation, ask about the actual model’s controls, appropriate temperature guidance, care instructions and operating checks. Water temperature has safety implications; use qualified advice for the system rather than a generic setting as a personal prescription. For a service inquiry, describe the concern and address, then confirm scope, charges and availability. An inquiry is not an appointment. Keep the findings and agreement so the result can be compared with the original hot-water concern."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does no hot water mean I need a new tank?",
+        "answer": "Not necessarily. Controls, fuel or power, heating parts and demand can matter. A qualified assessment should establish the cause."
+      },
+      {
+        "question": "Is every water-heater leak a failed tank?",
+        "answer": "No. Moisture can come from connections, a relief device or the tank. The source needs checking before choosing a repair or replacement."
+      },
+      {
+        "question": "Should I buy the same tank size again?",
+        "answer": "Compare hot-water use and first-hour delivery as well as tank volume. The existing size alone does not prove the next model will meet the household’s needs."
+      }
+    ],
+    "ctaLabel": "Ask about your options",
+    "reviewNotes": [
+      "Internal educational draft for repair-versus-replacement comparison. No model-specific diagnosis, MGI operating promise, price, warranty coverage or savings result established.",
+      "Audience: residential homeowner comparing a current problem or planned change, journeys J01/J04/J07. Canonical MGI-Brand-Guide.md Chapters02,06,10,13,14 checked.",
+      "Derived from source-audited October2 dossiers and current editorial records. October6 spot-check of EPA R22 guidance, ACCA ManualS, A.O.Smith maintenance checklist and DOE residential-water-heater guide. No exhaustive new claim-by-claim audit. Qualified technical reviewer, current named reviewer/date and Jesse Hoeye publication approval remain required.",
+      "October6 direct DOE table readback confirms UEF and FHR definitions in water-heating footnotes. Federal purchasing thresholds are not used as homeowner equipment requirements. A.O.Smith commercial language about prevented failure, fixed care intervals and warranty validity is not carried into this guide."
+    ],
+    "sources": [
+      "02_Strategy/Proposals-&-Planning/2026-10-02_INTERNAL_MGI-Monday-Research/Services.md",
+      "https://www.hotwater.com/info-center/water-heater-maintenance-checklist.html",
+      "https://www.energy.gov/cmei/femp/incorporate-minimum-efficiency-requirements-heating-and-cooling-products-federal",
+      "https://www.energy.gov/cmei/femp/purchasing-energy-efficient-residential-water-heaters"
+    ]
+  }
+}

@@ -1,0 +1,527 @@
+{
+  "ST-063": {
+    "kind": "maintenance",
+    "financing": false,
+    "heroHeading": "Furnace care. Make room for life at home.",
+    "heroBody": "Planning care for a working furnace? MGI Heating and Air helps you get the visit tasks and price clear, so furnace care can fit around the rest of your day.",
+    "label": "Request furnace maintenance",
+    "preparationHeading": "Start with your furnace and its care history.",
+    "preparationBody": "Share what you know. You can ask about a care visit without finding the model number first.",
+    "preparation": [
+      {
+        "title": "Working heat or a new problem",
+        "body": "Tell us if the heat has stopped, an error keeps returning, or a new noise has started. A current problem needs its own assessment."
+      },
+      {
+        "title": "Past care and supplies",
+        "body": "Share the last known care visit and filter details if you have them. Ask which supplies the visit includes."
+      },
+      {
+        "title": "Your home and access",
+        "body": "Share your address and how to reach the furnace. Confirm the agreed tasks, visit charge, and appointment."
+      }
+    ],
+    "technicalHeading": "Understand the care before choosing the visit.",
+    "technicalTitles": [
+      "Planning a seasonal check",
+      "Inspecting the filter",
+      "Professional electrical checks",
+      "Drain and control checks"
+    ],
+    "findingsHeading": "Furnace care and furnace repair are separate choices.",
+    "processHeading": "One clear care visit. Then back to your day.",
+    "processBody": "Agree on the care, review what was done, and keep any repair decision separate.",
+    "steps": [
+      [
+        "Choose the care visit.",
+        "Confirm the furnace, included tasks and supplies, full visit price, and appointment."
+      ],
+      [
+        "Review the completed care.",
+        "Ask what was checked, what was found, and what could not be checked. Any recommended repair needs its own scope, price, and approval."
+      ],
+      [
+        "Make room for home life.",
+        "Keep the care record and any open next step. After the agreed care, turn your attention back to the parts of your day you enjoy."
+      ]
+    ],
+    "closeHeading": "Let’s plan the furnace care and get on with your day.",
+    "closeBody": "A quiet morning. Time for a game. Ask about a defined furnace care visit, with the tasks and price clear before you agree.",
+    "comparisonHref": "/services/furnace-repair/",
+    "comparisonLabel": "Explore furnace repair",
+    "replacementHref": "/answers/find-furnace-filter/",
+    "replacementLabel": "Read furnace filter guidance",
+    "safety": "If you smell gas, leave the area. From a safe place, call 911 and your gas utility. Do not use switches or try to relight the furnace. If you suspect carbon monoxide, get outside to fresh air and call 911. For smoke or other immediate danger, leave the area and call 911 from a safe place.",
+    "quoteHeading": "What your furnace care quote should explain.",
+    "quoteIntro": "Choose a defined care visit with its tasks, supplies, and full price clear.",
+    "quoteLimit": "The agreed care tasks and visit price define this visit. A finding does not authorize a repair. Any extra work needs its own scope, price, and your approval. A care request does not enroll you in a membership.",
+    "quoteQuestions": [
+      {
+        "title": "The furnace and tasks",
+        "body": "Which furnace and care tasks does the visit cover? Does it include a filter or other supplies?"
+      },
+      {
+        "title": "The full visit charge",
+        "body": "What is the full care price? Which supplies or other tasks cost extra?"
+      },
+      {
+        "title": "Access and checks not completed",
+        "body": "What access is needed? If a task cannot be completed, how will its reason and next step be recorded?"
+      },
+      {
+        "title": "Any separate repair",
+        "body": "What does a finding mean? Get the recommended repair and its full price clear before approving extra work."
+      }
+    ]
+  },
+  "ST-064": {
+    "kind": "maintenance",
+    "financing": false,
+    "heroHeading": "AC care. Get back to enjoying home.",
+    "heroBody": "Planning an AC check before warmer weather? MGI Heating and Air helps you get the care tasks, visit price, and any separate repair clear before you choose.",
+    "label": "Request AC maintenance",
+    "preparationHeading": "Plan care for the AC you use.",
+    "preparationBody": "Share the equipment and its last known care. A cooling problem needs a different conversation from routine care.",
+    "preparation": [
+      {
+        "title": "Care or a cooling problem",
+        "body": "Tell us if cooling has stopped, ice appears, or a breaker trips. Those concerns may need diagnosis rather than routine care."
+      },
+      {
+        "title": "Equipment and last care",
+        "body": "Share the model or last care record if you have it. Ask which cleaning and operating checks are included."
+      },
+      {
+        "title": "Your address and access",
+        "body": "Share your address and how to reach the indoor and outdoor equipment. Confirm the tasks, visit charge, and appointment."
+      }
+    ],
+    "technicalHeading": "What the general AC care guidance covers.",
+    "technicalTitles": [
+      "Planning a seasonal check",
+      "Inspecting the filter",
+      "Professional electrical checks",
+      "Drain and control checks"
+    ],
+    "findingsHeading": "Keep AC care separate from an active cooling fault.",
+    "processHeading": "From planned AC care to the rest of your day.",
+    "processBody": "Choose the care tasks, review the findings, and decide about any extra work separately.",
+    "steps": [
+      [
+        "Arrange the care visit.",
+        "Confirm the equipment, care tasks, full visit charge, and appointment."
+      ],
+      [
+        "Review the work and findings.",
+        "Ask what was completed, what was found, and what was not checked. Review any separate repair recommendation and its price before approving it."
+      ],
+      [
+        "Get back to your plans.",
+        "Keep the care record and any agreed follow-up. With the care visit complete, make room for everyday life at home."
+      ]
+    ],
+    "closeHeading": "Let’s get the AC care on your calendar.",
+    "closeBody": "A slow afternoon. Dinner without a rush. Ask about an AC care visit and what it includes, so the equipment has a clear place in your plans.",
+    "comparisonHref": "/services/ac-repair/",
+    "comparisonLabel": "Explore AC repair",
+    "replacementHref": "/services/air-conditioning/",
+    "replacementLabel": "Explore air conditioning services",
+    "safety": "",
+    "quoteHeading": "What your AC care quote should explain.",
+    "quoteIntro": "Ask which care tasks the price covers and which work would be a separate choice.",
+    "quoteLimit": "The agreed care tasks and full visit price define this visit. Access or conditions may limit some checks. Any separate diagnosis or repair needs a clear scope, price, and your approval.",
+    "quoteQuestions": [
+      {
+        "title": "The equipment and care",
+        "body": "Which indoor and outdoor equipment is covered? Which cleaning, drain, control, or operating checks are included?"
+      },
+      {
+        "title": "The full care price",
+        "body": "What does the visit cost? Are filters, supplies, or other tasks charged separately?"
+      },
+      {
+        "title": "Access and weather limits",
+        "body": "What access is needed? Could the weather limit a planned operating check, and how will any unfinished task be recorded?"
+      },
+      {
+        "title": "Extra diagnosis or repair",
+        "body": "If a problem is found, what needs another check or repair? Confirm its price and give separate approval before added work starts."
+      }
+    ]
+  },
+  "ST-067": {
+    "kind": "maintenance",
+    "financing": false,
+    "heroHeading": "Heat pump care. Make room for the rest of your day.",
+    "heroBody": "Your heat pump serves heating and cooling needs. MGI Heating and Air helps you plan care for the actual equipment, with the tasks, visit price, and limits clear.",
+    "label": "Request heat pump maintenance",
+    "preparationHeading": "Share how you use the heat pump.",
+    "preparationBody": "Heating, cooling, and any backup heat help define the care visit. A current fault needs its own assessment.",
+    "preparation": [
+      {
+        "title": "The equipment and modes",
+        "body": "Share the heat pump model and any backup heat if you know them. Tell us which modes you use."
+      },
+      {
+        "title": "Care history or a new concern",
+        "body": "Share the last known care visit. Report ice that stays or a problem in heating or cooling before arranging routine care."
+      },
+      {
+        "title": "Your home and access",
+        "body": "Share your address and how to reach the equipment. Confirm the care tasks, visit price, and appointment."
+      }
+    ],
+    "technicalHeading": "Understand the general guidance behind heat pump care.",
+    "technicalTitles": [
+      "Planning seasonal care",
+      "Inspecting the filter",
+      "Professional electrical checks",
+      "Drain and control checks"
+    ],
+    "findingsHeading": "Separate heat pump care from a problem in either mode.",
+    "processHeading": "A defined care visit for your heat pump.",
+    "processBody": "Keep the equipment, agreed checks, and any separate repair decision clear.",
+    "steps": [
+      [
+        "Choose the care scope.",
+        "Confirm which heating, cooling, and control tasks are included, along with the price and appointment."
+      ],
+      [
+        "Review the completed visit.",
+        "Ask which checks were done and what weather or access prevented. A finding may need separate assessment or repair approval."
+      ],
+      [
+        "Return to the rest of your day.",
+        "Keep the care record and any agreed next step. After the defined care, give your attention back to home life."
+      ]
+    ],
+    "closeHeading": "Let’s make a clear plan for heat pump care.",
+    "closeBody": "Time with your people. A quiet corner to yourself. Ask about a care visit for your heat pump, with the equipment and tasks clear before you agree.",
+    "comparisonHref": "/services/heat-pump-repair/",
+    "comparisonLabel": "Explore heat pump repair",
+    "replacementHref": "/services/heat-pumps/",
+    "replacementLabel": "Explore heat pump services",
+    "safety": "",
+    "quoteHeading": "What your heat pump care quote should explain.",
+    "quoteIntro": "Match the care scope to the equipment and the checks that can be completed.",
+    "quoteLimit": "The agreed care tasks and visit price define this visit. Weather and access can limit checks. Get any unfinished task clear. Separate assessment or repair needs its own scope, price, and your approval.",
+    "quoteQuestions": [
+      {
+        "title": "Equipment and care tasks",
+        "body": "Which heating, cooling, control, or backup-heat tasks are included for this equipment?"
+      },
+      {
+        "title": "The full visit price",
+        "body": "What is the care charge? Which filters, supplies, or other work cost extra?"
+      },
+      {
+        "title": "Weather and access limits",
+        "body": "Which checks can the visit complete in the expected weather? What access is needed, and how will any unchecked function be recorded?"
+      },
+      {
+        "title": "Separate findings and work",
+        "body": "Does a finding need more assessment or a repair? Get that work and price clear before approving it."
+      }
+    ]
+  },
+  "ST-070": {
+    "kind": "maintenance",
+    "financing": false,
+    "heroHeading": "Water heater care. Make room for your routine.",
+    "heroBody": "Not sure what care your water heater needs? MGI Heating and Air helps you match the visit to the heater you own, with the tasks and price clear before you agree.",
+    "label": "Request water heater maintenance",
+    "preparationHeading": "Start with the heater you own.",
+    "preparationBody": "Tank and tankless heaters can need different care. The model and past service help define the visit.",
+    "preparation": [
+      {
+        "title": "The model and type",
+        "body": "Share whether you have a tank or tankless heater, plus the model if you have it. Ask whether the equipment and requested care can be served."
+      },
+      {
+        "title": "Past care and present condition",
+        "body": "Share the last known service. Mention an active leak, error, or loss of hot water so a current problem gets its own assessment."
+      },
+      {
+        "title": "Your home and access",
+        "body": "Share your address and how to reach the heater. Confirm the model-specific care tasks, full visit price, and appointment."
+      }
+    ],
+    "technicalHeading": "Different heaters need different care tasks.",
+    "technicalTitles": [
+      "The metal rod inside a tank",
+      "When tank flushing may apply",
+      "Safe shutdown and startup",
+      "Care for a tankless heater"
+    ],
+    "findingsHeading": "Choose the care that fits this water heater.",
+    "processHeading": "A defined care visit for your water heater.",
+    "processBody": "Agree on the tasks, review the completed work, and keep repairs separate.",
+    "steps": [
+      [
+        "Choose the model-specific care.",
+        "Confirm the heater, applicable tasks, supplies, full visit charge, and appointment."
+      ],
+      [
+        "Review what was completed.",
+        "Ask what was done, what was found, and what was not checked. Any recommended repair needs its own price and approval."
+      ],
+      [
+        "Get back to your routine.",
+        "Keep the service record and any agreed next step. After the defined care, make room for the everyday parts of home life."
+      ]
+    ],
+    "closeHeading": "Let’s get the water heater care clear.",
+    "closeBody": "A morning with fewer loose ends. Time for the rest of your day. Ask about care for your exact water heater and what the visit includes.",
+    "comparisonHref": "/services/water-heater-repair/",
+    "comparisonLabel": "Explore water heater repair",
+    "replacementHref": "/services/water-heaters/",
+    "replacementLabel": "Explore water heater services",
+    "safety": "",
+    "quoteHeading": "What your water heater care quote should explain.",
+    "quoteIntro": "The model, condition, and past care guide which tasks can be agreed.",
+    "quoteLimit": "The agreed model-specific care tasks and visit price define this visit. Some cleaning tasks may need an assessment first. Any repair or added work needs its own scope, price, and your approval.",
+    "quoteQuestions": [
+      {
+        "title": "The heater and applicable tasks",
+        "body": "Which tank, tankless, or fuel-specific care tasks apply to this model and its condition?"
+      },
+      {
+        "title": "The full visit charge",
+        "body": "What does the care visit cost? Which supplies, parts, or tasks cost extra?"
+      },
+      {
+        "title": "Access and task limits",
+        "body": "What access is needed? Could the heater’s condition or past care limit a proposed cleaning task, and how will that be recorded?"
+      },
+      {
+        "title": "Any separate repair",
+        "body": "What does a finding mean for the heater? Get any added assessment or repair scope and price clear before approving it."
+      }
+    ]
+  },
+  "ST-073": {
+    "kind": "maintenance",
+    "financing": false,
+    "heroHeading": "Heat-pump water heater care. More room for your day.",
+    "heroBody": "Planning care for your heat-pump water heater? MGI Heating and Air helps you get the model’s filter, tank, and drain care clear, with the visit tasks and price agreed first.",
+    "label": "Request heat-pump water heater maintenance",
+    "preparationHeading": "Keep the model with your care notes.",
+    "preparationBody": "The manual and actual service history help define the care. A recurring error needs its own check.",
+    "preparation": [
+      {
+        "title": "The model and service history",
+        "body": "Share the model and the last known filter or tank care if you have them. Confirm support for the equipment."
+      },
+      {
+        "title": "Routine care or a changed result",
+        "body": "Mention any recurring error, leak, or loss of hot water. Repeated cleaning or resets do not replace a fault assessment."
+      },
+      {
+        "title": "Room and equipment access",
+        "body": "Share your address and how to reach the heater, air filter, and water drain. Confirm the tasks, visit charge, and appointment."
+      }
+    ],
+    "technicalHeading": "Tank care and air-side care have different jobs.",
+    "technicalTitles": [
+      "The metal rod inside the tank",
+      "Safe shutdown and startup",
+      "The air filter",
+      "Filter and water-drain care"
+    ],
+    "findingsHeading": "A care reminder and a fault check are different.",
+    "processHeading": "Care for the model you own, one clear step at a time.",
+    "processBody": "Agree on the care, review the findings, and keep any repair choice separate.",
+    "steps": [
+      [
+        "Define the care visit.",
+        "Confirm the model, applicable tank, filter, and drain tasks, full charge, and appointment."
+      ],
+      [
+        "Review the completed tasks.",
+        "Ask what was done, what was found, and anything that could not be checked. A recurring error may need separate assessment, not another care reminder."
+      ],
+      [
+        "Return to your day.",
+        "Keep the care record and any agreed next step. With the defined care complete, turn your attention back to life at home."
+      ]
+    ],
+    "closeHeading": "Let’s make the heater care one less open question.",
+    "closeBody": "An unhurried morning. Time for your people. Ask about a model-specific care visit for your heat-pump water heater.",
+    "comparisonHref": "/services/heat-pump-water-heater-repair/",
+    "comparisonLabel": "Explore heat-pump water heater repair",
+    "replacementHref": "/services/heat-pump-water-heaters/",
+    "replacementLabel": "Explore heat-pump water heater services",
+    "safety": "",
+    "quoteHeading": "What your heat-pump water heater care quote should explain.",
+    "quoteIntro": "Ask which tank, filter, and water-drain tasks apply to the exact model.",
+    "quoteLimit": "The agreed model-specific care tasks and full visit price define this visit. Completing a reminder does not establish that a recurring fault is fixed. Separate assessment or repair needs its own scope, price, and your approval.",
+    "quoteQuestions": [
+      {
+        "title": "The model and care tasks",
+        "body": "Which tank, air-filter, and water-drain tasks does the visit cover for this heater?"
+      },
+      {
+        "title": "The full care price",
+        "body": "What is the visit charge? Are supplies, parts, or other tasks separate?"
+      },
+      {
+        "title": "Access and care limits",
+        "body": "What access is needed? Which tasks might not be completed, and how will the reason and next step be recorded?"
+      },
+      {
+        "title": "A recurring error or other finding",
+        "body": "Does the concern need separate diagnosis or repair? Get the scope and price clear before approving additional work."
+      }
+    ]
+  },
+  "ST-076": {
+    "kind": "maintenance",
+    "financing": false,
+    "heroHeading": "Mini split care. Get back to enjoying your rooms.",
+    "heroBody": "Planning care for your mini splits? MGI Heating and Air helps you name the indoor units and outdoor equipment in the visit, with the care tasks and price clear.",
+    "label": "Request mini split maintenance",
+    "preparationHeading": "Name the units the care visit should cover.",
+    "preparationBody": "A visit to one unit does not define care for every room. Start with the equipment and access.",
+    "preparation": [
+      {
+        "title": "Indoor units and rooms",
+        "body": "List the indoor units and where each one is located. Share the outdoor model if you have it."
+      },
+      {
+        "title": "Past care and current concerns",
+        "body": "Share the last known service. Report a lasting smell, water leak, or changed performance so it can be assessed separately."
+      },
+      {
+        "title": "Access to each unit",
+        "body": "Share your address and any access limits. Confirm the units, care tasks, full visit charge, and appointment."
+      }
+    ],
+    "technicalHeading": "Filters, drains, and operating checks have different roles.",
+    "technicalTitles": [
+      "Restricted filter airflow",
+      "A blocked water drain",
+      "Planning seasonal service",
+      "Electrical and leak checks"
+    ],
+    "findingsHeading": "Define care for each unit. Assess active problems separately.",
+    "processHeading": "From a unit list to completed mini split care.",
+    "processBody": "Keep the included equipment and tasks clear from booking through the care record.",
+    "steps": [
+      [
+        "Choose the covered units.",
+        "Confirm each indoor unit, outdoor equipment, included tasks, access, full price, and appointment."
+      ],
+      [
+        "Review the completed care.",
+        "Ask which tasks were done for each unit and what was not checked. Any deeper cleaning, diagnosis, or repair outside the visit needs a separate decision."
+      ],
+      [
+        "Get back to using your rooms.",
+        "Keep the care record and any agreed next step. After the defined visit, make room for reading, games, and the rest of home life."
+      ]
+    ],
+    "closeHeading": "Let’s plan the mini split care room by room.",
+    "closeBody": "A favorite reading spot. Space for everyone to gather. Ask about a care visit with each included unit and task named.",
+    "comparisonHref": "/services/mini-split-repair/",
+    "comparisonLabel": "Explore mini split repair",
+    "replacementHref": "/services/mini-splits/",
+    "replacementLabel": "Explore mini split services",
+    "safety": "",
+    "quoteHeading": "What your mini split care quote should explain.",
+    "quoteIntro": "Get a task list for the named indoor units and outdoor equipment.",
+    "quoteLimit": "The named units, agreed care tasks, and full visit price define this visit. Access can limit work. Deeper cleaning or a separate drain problem may need its own scope, price, and your approval. Cleaning does not establish a mold cause or health benefit.",
+    "quoteQuestions": [
+      {
+        "title": "Each unit and its tasks",
+        "body": "Which indoor units and outdoor equipment are included? What care tasks apply to each?"
+      },
+      {
+        "title": "The full visit price",
+        "body": "What does the visit cost for the named equipment? Which supplies or tasks cost extra?"
+      },
+      {
+        "title": "Access and cleaning limits",
+        "body": "What access is needed? Is deeper cleaning included, and how will any task that cannot be completed be recorded?"
+      },
+      {
+        "title": "Findings outside routine care",
+        "body": "Does a water leak, lasting smell, or changed performance need a separate check? Confirm its scope and price before approving added work."
+      }
+    ]
+  },
+  "ST-027": {
+    "kind": "maintenance",
+    "financing": false,
+    "heroHeading": "Heating and cooling care. Make room for life at home.",
+    "heroBody": "One home can have several care needs. MGI Heating and Air helps you plan a defined visit for the equipment you own, with the included tasks, price, and any separate work clear.",
+    "label": "Request heating and cooling maintenance",
+    "preparationHeading": "Start with the equipment in your home.",
+    "preparationBody": "A furnace, AC, heat pump, and mini split units do not use one universal task list.",
+    "preparation": [
+      {
+        "title": "Equipment and unit count",
+        "body": "Share which heating and cooling systems need care. Name the mini split indoor units if those are part of the request."
+      },
+      {
+        "title": "Care history or a current fault",
+        "body": "Share the last known visits and any current concern. No heat or no cooling needs a fault check rather than routine care by default."
+      },
+      {
+        "title": "Your address and access",
+        "body": "Share your address and how to reach the equipment. Confirm the supported systems, care tasks, full visit price, and appointment."
+      }
+    ],
+    "technicalHeading": "General care guidance starts with the actual equipment.",
+    "technicalTitles": [
+      "Planning seasonal care",
+      "Inspecting central-system filters",
+      "Professional electrical checks",
+      "Drain and control checks"
+    ],
+    "findingsHeading": "Choose the care scope. Keep repair decisions separate.",
+    "processHeading": "One defined care visit for the systems you name.",
+    "processBody": "Agree on the equipment and tasks, review the care record, and choose any added work separately.",
+    "steps": [
+      [
+        "Define the visit.",
+        "Confirm which systems or indoor units are included, their care tasks, the full charge, and the appointment."
+      ],
+      [
+        "Review the completed care.",
+        "Ask what was checked, found, and not assessed for each system. Get any separate assessment or repair scope and price clear before approving it."
+      ],
+      [
+        "Make room for your day.",
+        "Keep the care record and any agreed next step. With the defined care complete, turn your attention back to life at home."
+      ]
+    ],
+    "closeHeading": "Let’s put the equipment care in its place.",
+    "closeBody": "A clear visit plan. More attention for the parts of home you enjoy. Ask about care for the heating and cooling equipment you actually own.",
+    "comparisonHref": "/services/",
+    "comparisonLabel": "Find the service for your equipment",
+    "replacementHref": "/services/emergency-hvac-service/",
+    "replacementLabel": "Read urgent HVAC help",
+    "safety": "",
+    "quoteHeading": "What your heating and cooling care quote should explain.",
+    "quoteIntro": "Name the systems and units before comparing the tasks and price.",
+    "quoteLimit": "The named equipment, agreed care tasks, and full visit price define this visit. Tasks and access limits differ by system. Any separate assessment or repair needs its own scope, price, and your approval. A care request does not establish membership benefits.",
+    "quoteQuestions": [
+      {
+        "title": "Systems and task lists",
+        "body": "Which systems or indoor units are included? What tasks are agreed for each, and which tasks are excluded?"
+      },
+      {
+        "title": "The full visit charge",
+        "body": "What is the price for the named equipment? Are filters, supplies, or other tasks separate?"
+      },
+      {
+        "title": "Access and weather limits",
+        "body": "What access is needed? Could weather limit a planned check, and how will any unchecked equipment or task be recorded?"
+      },
+      {
+        "title": "Separate recommendations",
+        "body": "Does a finding need further assessment or repair? Get the proposed scope and full price clear before approving extra work."
+      }
+    ]
+  }
+}

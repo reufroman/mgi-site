@@ -1,0 +1,359 @@
+{
+  "ST-059": {
+    "title": "Heat stopped or the furnace sounds different?",
+    "summary": "No heat, short starts, or a new noise? Start with what changed. A furnace check can help find the cause before you choose a repair.",
+    "label": "Request furnace repair",
+    "safety": true,
+    "sections": [
+      {
+        "heading": "The check and the repair are two decisions",
+        "body": "Finding the fault comes first. The repair choice follows the findings, the available parts, and the full price.",
+        "rows": [
+          [
+            "The visit",
+            "Agree on what will be checked and the diagnostic charge before the visit is arranged. Ask whether that charge is credited toward a repair."
+          ],
+          [
+            "Separate work",
+            "A repair may need parts or another visit. Get the repair price and your approval step clear before work starts."
+          ]
+        ],
+        "review": "John Beilman",
+        "action": true
+      },
+      {
+        "heading": "A few details give the visit a starting point",
+        "body": "You do not need to know which part failed. Describe what you can see or hear without opening the furnace.",
+        "bullets": [
+          "When the heat changed, and whether it stays off or starts briefly.",
+          "Which rooms feel different, and any error already visible on the display.",
+          "Past repairs or the model, if you have them handy.",
+          "Your address, access to the equipment, and pets the visitor should know about."
+        ]
+      },
+      {
+        "heading": "What would this repair fix?",
+        "body": "A repair that restores heat may not solve a cold back room. Compare the finding with the concern you want solved. Age alone does not decide whether a furnace needs replacing.",
+        "rows": [
+          [
+            "The finding",
+            "What was checked, what points to the cause, and what is still unknown?"
+          ],
+          [
+            "The choice",
+            "Compare the repair cost, parts availability, and written coverage with the full replacement project."
+          ],
+          [
+            "The follow-through",
+            "Understand who to contact if the same problem returns, and which terms apply."
+          ]
+        ],
+        "link": "/blog/repair-or-replace-furnace/",
+        "linkLabel": "Compare furnace repair and replacement"
+      }
+    ],
+    "faqs": [
+      [
+        "Can a repair be finished on the first visit?",
+        "That depends on the fault and whether the needed parts are available. A request does not promise a same-visit repair. Get the next step and any added cost clear if a part must be ordered."
+      ],
+      [
+        "Does furnace age mean replacement?",
+        "No. Condition, past repairs, available parts, and the heat your home needs matter too. Compare what each choice would fix before deciding."
+      ],
+      [
+        "What should I know about the diagnostic charge?",
+        "Get the visit charge, what it covers, and any credit toward the repair clear before arranging the visit. The repair price is a separate detail."
+      ],
+      [
+        "What if the same problem returns?",
+        "Keep the findings and repair record. Refer to the written parts and labor terms, and contact the office with the original concern and what changed."
+      ]
+    ],
+    "close": "Tell us what your furnace is doing",
+    "closeBody": "Start with when the heat changed and what you notice now. You can request a repair visit without choosing a part or agreeing to replacement."
+  },
+  "ST-060": {
+    "title": "Weighing another repair or a new furnace?",
+    "summary": "Compare what a repair would fix with what a new furnace would include. The right choice starts with your home, the findings, and the full project.",
+    "label": "Request a furnace replacement consultation",
+    "sections": [
+      {
+        "heading": "Age is a clue. The whole picture decides.",
+        "body": "A new furnace is one choice. A supported repair can be another. A repeated fault, a hard-to-find part, or a room that still feels wrong can change the comparison.",
+        "rows": [
+          [
+            "Condition and repairs",
+            "Look at what failed, the past repair history, and whether the next repair addresses the cause."
+          ],
+          [
+            "Your home",
+            "Compare the heat your home needs and the rooms you want to improve. A new furnace alone does not explain every cold room."
+          ],
+          [
+            "The total",
+            "Put the complete repair and replacement prices side by side, with coverage and unfinished work included."
+          ]
+        ],
+        "link": "/blog/repair-or-replace-furnace/",
+        "linkLabel": "Read the furnace decision guide"
+      },
+      {
+        "heading": "Compare the complete work",
+        "body": "The furnace price is only part of the project. A useful written estimate makes the equipment, installation work, and separate responsibilities clear.",
+        "rows": [
+          [
+            "Equipment and fit",
+            "The proposed model, how its size was chosen for the home, and which existing equipment can stay."
+          ],
+          [
+            "Connections and installation",
+            "Fuel, venting, controls, removal of old equipment, permits, and any work by another trade. Identify what is included and what is separate."
+          ],
+          [
+            "Checks and handoff",
+            "Startup checks, control instructions, records, and who owns anything still unfinished."
+          ]
+        ],
+        "review": "Sara Mitchell",
+        "action": true
+      },
+      {
+        "heading": "Start with the full price. Then ways to pay.",
+        "body": "Equipment, installation work, and changes needed in your home affect the price. Keep the amount due separate from possible rebates and monthly payments.",
+        "bullets": [
+          "Compare the full project cost before comparing a monthly payment.",
+          "Financing has its own terms and approval. Read the paperwork before committing.",
+          "Rebates depend on the equipment, your utility, and current program rules. Keep the full price in your budget until eligibility is confirmed."
+        ],
+        "financing": true
+      },
+      {
+        "heading": "Know how the work will finish",
+        "body": "The project sets the timing. Before installation, get access needs, time without heat, and work by other trades clear. At the finish, review the checks, controls, and written equipment and labor coverage.",
+        "bullets": [
+          "Keep the agreed work and any changes in writing.",
+          "Know who handles registration, warranty questions, and any unfinished work.",
+          "An efficiency rating compares heat produced with fuel used. Actual running cost also depends on fuel price, heat lost from the home, and how you use the heat."
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "How is the furnace size chosen?",
+        "The choice should fit the heat the home needs, not just match the old furnace. Ask what the sizing recommendation is based on and how the proposed model fits those needs."
+      ],
+      [
+        "What should the estimate include?",
+        "Equipment and installation work, what stays, what is removed, and any separate trade or permit responsibility. Make sure added work and checks at the finish are clear."
+      ],
+      [
+        "How long will installation take?",
+        "The work in your home sets the timeline. Get a project-specific plan, including time without heat and any work that must happen first."
+      ],
+      [
+        "What warranty applies?",
+        "Equipment and labor coverage can have different terms. Read the written coverage, registration duties, exclusions, and contact route before choosing."
+      ],
+      [
+        "Will a higher efficiency rating lower my bill?",
+        "The rating alone does not establish a lower bill. Fuel price, home heat loss, weather, and use also affect the cost. A useful estimate names its assumptions."
+      ]
+    ],
+    "close": "Talk through the full project",
+    "closeBody": "Bring your concerns, past repairs, and any quotes you want to compare. A consultation request starts the conversation. It does not authorize a purchase."
+  },
+  "ST-063": {
+    "title": "Planning a furnace check before heating season?",
+    "summary": "Care for a working furnace starts with a defined visit. Know the checks, the price, and which work would be a separate choice.",
+    "label": "Request furnace maintenance",
+    "repairLink": true,
+    "sections": [
+      {
+        "heading": "Know what you are buying",
+        "body": "A maintenance visit is agreed checks and care. It does not include every repair the furnace might need. The exact furnace and its instructions guide the work.",
+        "rows": [
+          [
+            "The care visit",
+            "Get the equipment and tasks covered, filter or other supplies included, and the full visit charge clear."
+          ],
+          [
+            "Separate repairs",
+            "A finding may lead to recommended work. Understand the finding and approve repairs as a separate decision."
+          ],
+          [
+            "The record",
+            "A useful care record says what was checked, what was found, and what was not checked."
+          ]
+        ],
+        "action": true
+      },
+      {
+        "heading": "What a professional check can cover",
+        "body": "ENERGY STAR describes common heating checks. They explain the kind of work involved; the tasks included in your MGI visit depend on the agreed visit terms.",
+        "rows": [
+          [
+            "Controls",
+            "Check whether the thermostat and controls start, run, and stop the heat as intended."
+          ],
+          [
+            "Electrical parts",
+            "Check connections and the power supplied to the motor. These are professional checks, not homeowner tasks."
+          ],
+          [
+            "Fuel and heat",
+            "Check gas connections, gas pressure, the burner, and the heat exchanger, the part that transfers heat to the air. These checks need a qualified person."
+          ]
+        ],
+        "source": "https://www.energystar.gov/saveathome/heating-cooling/maintenance-checklist",
+        "sourceLabel": "Read the general maintenance checklist"
+      },
+      {
+        "heading": "Care between visits",
+        "body": "ENERGY STAR recommends annual preseason checkups, with heating checked in fall. It also recommends monthly filter inspection. Inspection does not mean every filter needs replacing every month.",
+        "bullets": [
+          "Follow your model's owner instructions for filter type and care.",
+          "Notice a new noise, repeated error, or change in heat. Share the pattern instead of trying internal equipment checks.",
+          "Leave electrical, fuel, and combustion checks to a qualified person. Do not open internal panels or try repeated resets."
+        ],
+        "source": "https://www.energystar.gov/saveathome/heating-cooling/maintenance-checklist",
+        "sourceLabel": "Read ENERGY STAR's maintenance guidance"
+      },
+      {
+        "heading": "One visit or VIP Membership?",
+        "body": "Compare the same equipment and tasks. A membership has its own price, visits, benefits, and terms. Routine care does not require you to assume repairs or extra visits are included.",
+        "bullets": [
+          "Check which visit is covered and which work costs extra.",
+          "Read renewal and cancellation terms before joining."
+        ],
+        "link": "/vip-membership/",
+        "linkLabel": "Explore VIP Membership information"
+      },
+      {
+        "heading": "A current problem needs its own path",
+        "body": "No heat, a recurring error, or a new furnace noise needs a problem assessment. Tell the office what changed so a current fault is not treated as routine care.",
+        "link": "/services/furnace-repair/",
+        "linkLabel": "See furnace repair help"
+      }
+    ],
+    "faqs": [
+      [
+        "How often should my furnace be checked?",
+        "ENERGY STAR recommends annual preseason heating checkups. The furnace's instructions and a qualified assessment guide care for your exact equipment."
+      ],
+      [
+        "Is a new filter included?",
+        "Filter type and supply are part of the visit terms. Check whether a filter is supplied or charged separately. Follow the furnace's instructions for the right filter."
+      ],
+      [
+        "What if a problem is found?",
+        "Get the finding, its meaning, and the recommended next step clear. A care visit and a repair are separate decisions; understand any added charge before approving work."
+      ],
+      [
+        "Does membership cover this visit?",
+        "Use the current membership terms to check the equipment, visit, and tasks covered. Do not assume all care or repairs are included."
+      ],
+      [
+        "Should I wait for maintenance if the heat stops?",
+        "No heat is a repair concern. Use the repair path and describe what stopped. If you smell gas, leave and call 911 and your gas utility from a safe place. If you suspect carbon monoxide, get outside to fresh air and call 911. For other immediate danger, leave and call 911 from a safe place."
+      ]
+    ],
+    "close": "Plan the care your furnace needs",
+    "closeBody": "Share the furnace model or past service record if you have it. You can start without those details. A maintenance request does not enroll you in a membership."
+  },
+  "ST-079": {
+    "title": "Emergency HVAC help. Get back to life at home.",
+    "summary": "No heat or no cooling? MGI Heating and Air helps you find the next step for urgent HVAC service in Northern Colorado. For an equipment failure without immediate danger, call to check current availability and visit terms.",
+    "label": "Request urgent HVAC service",
+    "safety": true,
+    "urgent": true,
+    "sections": [
+      {
+        "heading": "What stopped working at home?",
+        "body": "After safety is addressed, share the address, when the problem began, and any error already visible on the display. A symptom is a starting point, not proof that equipment needs replacing.",
+        "rows": [
+          [
+            "No heat",
+            "Describe whether the furnace stays off, starts briefly, or runs without warming the home."
+          ],
+          [
+            "No cooling",
+            "Describe when cooling stopped and which rooms are affected. Leave internal checks to a qualified person."
+          ]
+        ],
+        "repairPaths": true
+      },
+      {
+        "heading": "Get the visit and charges clear.",
+        "body": "An urgent request is not a confirmed visit or dispatch. Check address coverage, the next available visit, and the diagnostic charge, including any after-hours fee.",
+        "bullets": [
+          "Get the next step clear before relying on a visit.",
+          "If no visit is available, ask the office what help it can actually offer. Do not wait for an HVAC visit if immediate danger appears."
+        ],
+        "action": true
+      },
+      {
+        "heading": "Think it’s urgent? Call us.",
+        "body": "You do not need to read a checklist before asking for help. If your heat or cooling stopped and there is no immediate danger, call MGI now.",
+        "source": "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center",
+        "sourceLabel": "Read CPSC carbon monoxide safety guidance"
+      },
+      {
+        "heading": "Emergency HVAC call or regular service call?",
+        "body": "Start with what is happening at home. These three situations help you choose the right call.",
+        "bullets": [
+          "Immediate danger: Smell gas, suspect carbon monoxide, or see smoke? Leave the area and call 911 from a safe place. If you smell gas, also contact your gas utility. Do not wait for MGI.",
+          "Heat or cooling stopped: If there is no immediate danger, call MGI now for urgent HVAC help. Tell us what stopped and how the home is affected.",
+          "Regular service: If there is no immediate danger, call about a recurring comfort problem, maintenance, or a planned replacement. Unsure whether you need an urgent repair or a regular visit? Call us."
+        ]
+      },
+      {
+        "heading": "Call. We’ll take it from here.",
+        "body": "We’ll explain the problem and the price, then help you get back to the moments that make a home."
+      }
+    ],
+    "faqs": [
+      [
+        "Does a request mean someone is coming?",
+        "No. The address, requested work, visit terms, and availability still need checking. A visit needs its own confirmation."
+      ],
+      [
+        "Can I assume after-hours service is available?",
+        "No. Ask the office about current availability and any after-hours terms before relying on an HVAC visit. Immediate danger needs emergency services or your utility from a safe place."
+      ],
+      [
+        "Is there an extra fee?",
+        "Get the diagnostic charge and any after-hours fee clear before arranging a visit. Repair work may have a separate price."
+      ],
+      [
+        "What information should I have ready?",
+        "Your address, what stopped, when it changed, and any visible error. Model or service details help if readily available; do not open equipment to find them."
+      ]
+    ],
+    "close": "Let’s get your home comfortable again.",
+    "closeBody": "Your day does not need to revolve around broken heating or cooling. Call MGI for urgent HVAC help, and let’s get you back to life at home.",
+    "safetyDetails": {
+      "body": "Do not try internal furnace, gas, or electrical repairs. Do not keep operating equipment you suspect is unsafe. If you suspect carbon monoxide, get outside to fresh air immediately and call 911.",
+      "bullets": [
+        "Carbon monoxide has no color or smell. You cannot rule it out by smell.",
+        "Never run a portable generator inside a home or garage. Use it outdoors, at least 20 feet from homes, with exhaust facing away."
+      ],
+      "source": "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center",
+      "sourceLabel": "Read CPSC carbon monoxide safety guidance"
+    },
+    "processSteps": [
+      [
+        "Call us. We’ll send someone right away.",
+        "Tell us your address and what stopped working."
+      ],
+      [
+        "See the problem and the price.",
+        "We’ll show you the problem and give you an estimate for the fix. You approve the work before we begin."
+      ],
+      [
+        "Enjoy your home again.",
+        "With the repair complete, get back to a comfortable home and the moments that make it yours."
+      ]
+    ]
+  }
+}

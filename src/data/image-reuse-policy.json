@@ -1,0 +1,14 @@
+{
+  "decision": "Reu approved reuse across related pages on 2026-10-07",
+  "relatedFamilies": [
+    "Service",
+    "Service-town candidate",
+    "Campaign landing"
+  ],
+  "legacyMaxUsesOutsideRelatedFamilies": 3,
+  "minimumDistinctPhotosPerAdaptedPage": 5,
+  "samePageRepeatsAllowed": false,
+  "householdMixRequired": true,
+  "publicUseApprovalGranted": false,
+  "landingReuseDecision": "Current request authorizes new related service landing pages; use existing family scenes with five distinct placements and final visual review. No public-use approval implied."
+}

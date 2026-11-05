@@ -1,0 +1,362 @@
+{
+  "ST-059": {
+    "heroHeading": "Furnace repair. Get back to life at home.",
+    "heroBody": "No heat, short starts, or a new noise? MGI Heating and Air helps you understand the furnace problem and the repair choices, so you can get back to the day you had planned.",
+    "label": "Request furnace repair",
+    "preparationHeading": "A few details help us understand your furnace.",
+    "preparationBody": "You do not need to name the failed part. Describe what you can see or hear without opening the furnace.",
+    "preparation": [
+      {
+        "title": "When the heat changed",
+        "body": "Tell us whether the furnace stays off, starts briefly, or runs without warming the home."
+      },
+      {
+        "title": "What you notice",
+        "body": "Note which rooms feel different and any error already visible on the display. Share past repairs or the model if you have them handy."
+      },
+      {
+        "title": "Your home and access",
+        "body": "Share your address, how to reach the furnace, and any pets the visitor should know about. Confirm the visit details before relying on an appointment."
+      }
+    ],
+    "technicalHeading": "What your furnace symptoms can mean.",
+    "technicalTitles": [
+      "What the thermostat shows",
+      "Airflow and furnace shutdown",
+      "A loud bang when it starts",
+      "A gas smell needs emergency help"
+    ],
+    "findingsHeading": "What would this furnace repair fix?",
+    "processHeading": "From a furnace concern to the work you choose.",
+    "processBody": "Find the cause, compare the repair, and plan for the finish.",
+    "steps": [
+      [
+        "Arrange the repair visit.",
+        "Share the heating concern. Confirm the visit scope, charge, and available appointment."
+      ],
+      [
+        "Choose the repair.",
+        "Review the findings, available parts, full price, and written terms before approving work."
+      ],
+      [
+        "Make room for your day.",
+        "After the agreed work, review what was repaired and tested, along with anything still open. Then get back to the moments you enjoy at home."
+      ]
+    ],
+    "closeHeading": "Let’s get the furnace problem out of your way.",
+    "closeBody": "A quiet breakfast. A game that runs a little longer. Ask about furnace repair and the next step toward getting your heat working again.",
+    "comparisonHref": "/blog/repair-or-replace-furnace/",
+    "comparisonLabel": "Compare furnace repair and replacement",
+    "replacementHref": "/services/furnace-replacement/",
+    "replacementLabel": "Explore furnace replacement",
+    "safety": "Gas smell? Leave. From a safe place, call 911 and your gas utility. Do not use switches or try to relight the furnace. Suspected carbon monoxide? Get outside to fresh air and call 911. Smoke or immediate danger? Leave and call 911 from a safe place.",
+    "quoteHeading": "What your furnace repair quote should explain.",
+    "quoteIntro": "Get the visit charge and repair work clear before you decide.",
+    "quoteQuestions": [
+      {
+        "title": "Finding the fault",
+        "body": "What does the diagnostic visit check, what does it cost, and is any of that charge credited toward a repair?"
+      },
+      {
+        "title": "Parts and repair work",
+        "body": "Which parts and labor are included? Is another visit needed if a part must be ordered?"
+      },
+      {
+        "title": "Changes to the price",
+        "body": "What would cost extra, and how will you approve any additional work before it starts?"
+      },
+      {
+        "title": "If the problem returns",
+        "body": "What are the written parts and labor terms? Who should you contact if the same heating concern returns?"
+      }
+    ]
+  },
+  "ST-065": {
+    "heroHeading": "Heat pump repair. Get back to life at home.",
+    "heroBody": "Heating or cooling not keeping up? MGI Heating and Air helps you understand the heat pump problem and the repair choices for your equipment.",
+    "label": "Request heat pump repair",
+    "preparationHeading": "Tell us what changes between heating and cooling.",
+    "preparationBody": "The mode, outdoor conditions, and timing help explain what you notice.",
+    "preparation": [
+      {
+        "title": "Which mode is affected",
+        "body": "Tell us whether heating, cooling, or both have changed. Share any visible error and whether backup heat is running."
+      },
+      {
+        "title": "What the ice does",
+        "body": "Describe whether ice melts during a brief cycle or stays on the outdoor unit. Do not chip ice from the coil."
+      },
+      {
+        "title": "When it began",
+        "body": "Note when the change started and which rooms are affected. Share your address and confirm coverage, visit charges, and availability."
+      }
+    ],
+    "technicalHeading": "Understand the heat pump behavior before choosing a part.",
+    "technicalTitles": [
+      "A brief winter defrost cycle",
+      "Switching between heat and cooling",
+      "Water that freezes on the outdoor coil",
+      "Ice on the indoor coil"
+    ],
+    "findingsHeading": "Compare the findings with what your heat pump needs.",
+    "processHeading": "A clear path through your heat pump repair.",
+    "processBody": "Keep heating, cooling, and any backup heat in the conversation.",
+    "steps": [
+      [
+        "Arrange an assessment.",
+        "Share the affected mode and any visible error. Confirm the visit scope, charge, and appointment."
+      ],
+      [
+        "Compare the repair choices.",
+        "Review the findings, compatible parts, warranty, and full price before approving work."
+      ],
+      [
+        "Get back to your plans.",
+        "After the agreed work, review which functions were checked and anything that still needs attention. Make room for the rest of your day."
+      ]
+    ],
+    "closeHeading": "Let’s make a plan for your heat pump.",
+    "closeBody": "Less time wondering what the equipment is doing. More attention for life at home. Ask about a repair assessment for your heat pump.",
+    "comparisonHref": "/answers/repair-before-replacement/",
+    "comparisonLabel": "Read repair assessment questions",
+    "replacementHref": "/services/heat-pump-installation/",
+    "replacementLabel": "Explore heat pump replacement",
+    "safety": "",
+    "quoteHeading": "What your heat pump repair quote should explain.",
+    "quoteIntro": "The affected mode and the actual findings guide the scope. Ask what is included.",
+    "quoteQuestions": [
+      {
+        "title": "The assessment",
+        "body": "Which heating, cooling, control, or backup-heat checks does the visit cover? What is the diagnostic charge?"
+      },
+      {
+        "title": "Compatible parts",
+        "body": "Which parts and labor are included, and do the parts match the equipment? Are warranty or parts waits involved?"
+      },
+      {
+        "title": "Separate work",
+        "body": "Is any refrigerant, control, or backup-heat work separate? Get its price and approval step clear."
+      },
+      {
+        "title": "Checks and follow-through",
+        "body": "Which functions will be checked after the repair? What written terms apply if the same concern returns?"
+      }
+    ]
+  },
+  "ST-068": {
+    "heroHeading": "Water heater repair. Get back to your routine.",
+    "heroBody": "No hot water, less than usual, or a leak at the heater? MGI Heating and Air helps you understand what needs checking before you choose a repair or replacement.",
+    "label": "Request water heater repair",
+    "preparationHeading": "Start with what changed in your hot water.",
+    "preparationBody": "You can describe the concern without opening the heater or choosing a part.",
+    "preparation": [
+      {
+        "title": "Which fixtures are affected",
+        "body": "Tell us whether the hot-water change affects one fixture or several, and whether it happened suddenly."
+      },
+      {
+        "title": "What you can see",
+        "body": "Share any visible error and where you notice water around the heater. Water at the heater can have several causes."
+      },
+      {
+        "title": "The heater and your address",
+        "body": "Share the model or fuel type if you know it. Confirm whether the requested work can be served, what the visit covers, and any charge."
+      }
+    ],
+    "technicalHeading": "What a water heater check can help explain.",
+    "technicalTitles": [
+      "Less hot water from an electric tank",
+      "Where moisture may start",
+      "The pressure relief valve",
+      "Gas burner and vent checks"
+    ],
+    "findingsHeading": "Is it a repair to a part or a problem with the tank?",
+    "processHeading": "From a hot-water concern to a clear repair choice.",
+    "processBody": "Understand the fault and the full work before making the decision.",
+    "steps": [
+      [
+        "Arrange the visit.",
+        "Share what changed, any visible leak, and your address. Confirm the scope, charge, and appointment."
+      ],
+      [
+        "Choose the supported work.",
+        "Review where the fault starts, what the repair includes, and the full price before approving it."
+      ],
+      [
+        "Return to your routine.",
+        "After the agreed work, review what was repaired and checked, plus any remaining concern. Get back to the everyday parts of home life."
+      ]
+    ],
+    "closeHeading": "Let’s give the hot-water problem a clear next step.",
+    "closeBody": "Morning routines and a kitchen worth lingering in. Ask about water heater repair, so you can focus on more than the equipment.",
+    "comparisonHref": "/blog/repair-or-replace-water-heater/",
+    "comparisonLabel": "Compare water heater repair and replacement",
+    "replacementHref": "/services/water-heater-replacement/",
+    "replacementLabel": "Explore water heater replacement",
+    "safety": "",
+    "quoteHeading": "What your water heater repair quote should explain.",
+    "quoteIntro": "A connection repair, a heating part, and a damaged tank involve different choices.",
+    "quoteQuestions": [
+      {
+        "title": "Finding the cause",
+        "body": "What does the visit check, including where a visible leak starts? What is the diagnostic charge?"
+      },
+      {
+        "title": "The part and labor",
+        "body": "Which connection, heating part, or control is being repaired? What parts and labor are included?"
+      },
+      {
+        "title": "Work outside the repair",
+        "body": "What remains unresolved or needs separate work? Confirm any extra cost before approving it."
+      },
+      {
+        "title": "Warranty and the finish",
+        "body": "What parts and labor terms apply? Ask which checks will show what the repair changed."
+      }
+    ]
+  },
+  "ST-071": {
+    "heroHeading": "Heat-pump water heater repair. Find the right next step.",
+    "heroBody": "An error, more backup heat, or less hot water? MGI Heating and Air helps you understand the repair questions for your exact heat-pump water heater model.",
+    "label": "Request heat-pump water heater repair",
+    "preparationHeading": "The model and the change help us get started.",
+    "preparationBody": "The same code can mean different things on different heaters. Keep the exact model with your notes.",
+    "preparation": [
+      {
+        "title": "Model and visible error",
+        "body": "Share the model and the code already shown on the display. Do not assume a code calls for the same repair on every heater."
+      },
+      {
+        "title": "Room and water use",
+        "body": "Describe whether the room conditions or hot-water demand changed when the problem began."
+      },
+      {
+        "title": "The requested visit",
+        "body": "Share your address and the hot-water concern. Confirm model support, what the visit covers, the charge, and availability."
+      }
+    ],
+    "technicalHeading": "What affects a heat-pump water heater’s operation.",
+    "technicalTitles": [
+      "Room conditions and backup heat",
+      "What happens when power is lost",
+      "Airflow and error codes",
+      "Model limits on compressor repair"
+    ],
+    "findingsHeading": "Let the model’s findings guide the repair choice.",
+    "processHeading": "A model-specific path to the work you choose.",
+    "processBody": "Check the repair choices and manufacturer limits before approving the next step.",
+    "steps": [
+      [
+        "Ask about an assessment.",
+        "Share the model and visible error. Confirm support for the equipment, visit scope, charge, and appointment."
+      ],
+      [
+        "Review the available repair.",
+        "Compare the recorded findings, manufacturer service limits, warranty, and full price before choosing work."
+      ],
+      [
+        "Make room for everyday life.",
+        "After the agreed work, review the operating checks and any remaining issue. Then turn your attention back to the routines you enjoy."
+      ]
+    ],
+    "closeHeading": "Let’s sort out the heater, so you can focus on home.",
+    "closeBody": "You do not have to turn an error code into a repair plan yourself. Ask about the next step for your heat-pump water heater.",
+    "comparisonHref": "/answers/repair-before-replacement/",
+    "comparisonLabel": "Read repair assessment questions",
+    "replacementHref": "/services/heat-pump-water-heater-installation/",
+    "replacementLabel": "Explore heat-pump water heater replacement",
+    "safety": "",
+    "quoteHeading": "What your heat-pump water heater quote should explain.",
+    "quoteIntro": "The model’s service limits and warranty can change which work is available.",
+    "quoteQuestions": [
+      {
+        "title": "Model-specific checks",
+        "body": "Which model instructions guide the assessment? What does the visit cover, and what is the charge?"
+      },
+      {
+        "title": "Available repair scope",
+        "body": "Is the finding related to airflow, a sensor, a heating element, or the sealed refrigerant circuit? Which work is supported for this model?"
+      },
+      {
+        "title": "Parts and warranty",
+        "body": "Which parts and labor are included? Confirm parts availability, warranty routing, and any labor charge."
+      },
+      {
+        "title": "Additional work",
+        "body": "What needs a separate price or another decision? Review the proposed checks and approve added work before it starts."
+      }
+    ]
+  },
+  "ST-074": {
+    "heroHeading": "Mini split repair. Get back to enjoying your rooms.",
+    "heroBody": "One indoor unit leaking, not cooling, or showing an error? MGI Heating and Air helps you understand the concern across the matched mini split system before you choose work.",
+    "label": "Request mini split repair",
+    "preparationHeading": "Tell us which mini split units are affected.",
+    "preparationBody": "One room and a whole system can tell different stories. Start with what you notice.",
+    "preparation": [
+      {
+        "title": "One unit or several",
+        "body": "Tell us which indoor units behave differently and which mode they are using."
+      },
+      {
+        "title": "The visible change",
+        "body": "Share any error and where you notice water. A water leak and a refrigerant leak are different concerns."
+      },
+      {
+        "title": "Equipment and access",
+        "body": "Share the indoor and outdoor models if you have them. Confirm support, access, visit scope, charges, and availability."
+      }
+    ],
+    "technicalHeading": "What can help explain a mini split problem.",
+    "technicalTitles": [
+      "Cooling that is not keeping up",
+      "Controls, filters, and visible errors",
+      "Why a low refrigerant charge needs checking",
+      "A brief pause during heating"
+    ],
+    "findingsHeading": "Check the matched system before choosing the repair.",
+    "processHeading": "From a room concern to a system repair plan.",
+    "processBody": "Keep the affected units and the full repair scope in view.",
+    "steps": [
+      [
+        "Arrange the assessment.",
+        "Share which units are affected, the mode, and any error. Confirm the visit scope, charge, and appointment."
+      ],
+      [
+        "Choose compatible work.",
+        "Review the findings, matched equipment, available parts, and full price before approving the repair."
+      ],
+      [
+        "Get back to using your rooms.",
+        "After the agreed work, review what was repaired and checked, including anything still open. Make room for the moments you enjoy at home."
+      ]
+    ],
+    "closeHeading": "Let’s get the mini split concern sorted.",
+    "closeBody": "A favorite reading spot. A room where everyone gathers. Ask about mini split repair and a clear next step for your system.",
+    "comparisonHref": "/answers/repair-before-replacement/",
+    "comparisonLabel": "Read repair assessment questions",
+    "replacementHref": "/services/mini-split-installation/",
+    "replacementLabel": "Explore mini split replacement",
+    "safety": "",
+    "quoteHeading": "What your mini split repair quote should explain.",
+    "quoteIntro": "The affected indoor units and their matched outdoor equipment guide the work.",
+    "quoteQuestions": [
+      {
+        "title": "Which units are checked",
+        "body": "Does the assessment cover the affected indoor units, outdoor equipment, and controls? What does the visit cost?"
+      },
+      {
+        "title": "The repair scope",
+        "body": "Which drainage, airflow, electrical, or refrigerant work is supported by the findings? What parts and labor are included?"
+      },
+      {
+        "title": "Parts and extra work",
+        "body": "Are compatible parts available? Confirm any separate work, added visit, or cost before approving it."
+      },
+      {
+        "title": "Terms and result checks",
+        "body": "What written parts and labor terms apply? Which affected functions will be checked after the repair?"
+      }
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+---
+import type {Route,Content} from "../data/types";
+interface Props {route:Route;content:Content;}
+import FamilyPilotService from './FamilyPilotService.astro';
+import ServiceFamily from './ServiceFamily.astro';
+import {serviceRolloutIds} from '../data/service-family-rollout.mjs';
+import ACRepair from './ACRepair.astro';
+import FamilyPilotHub from './FamilyPilotHub.astro';
+import Photo from './Photo.astro';
+import BlogFamily from './BlogFamily.astro';
+import AnswerCategory from './AnswerCategory.astro';
+import AboutJourney from './AboutJourney.astro';
+import UtilityPages from './UtilityPages.astro';
+import ContactBooking from './ContactBooking.astro';
+import TownLanding from './TownLanding.astro';
+import LibraryAnswer from './LibraryAnswer.astro';
+import HomeownerGuide from './HomeownerGuide.astro';
+import HomeownerHub from './HomeownerHub.astro';
+import BatchOneService from './BatchOneService.astro';
+import EmergencyHVAC from './EmergencyHVAC.astro';
+import ServiceAreaMap from './ServiceAreaMap.astro';
+import FinancingJourney from './FinancingJourney.astro';
+import RebateJourney from './RebateJourney.astro';
+import VIPMembership from './VIPMembership.astro';
+import NewHomeowners from './NewHomeowners.astro';
+import DecisionProof from './DecisionProof.astro';
+import ContextCTA from './ContextCTA.astro';
+import {ctaPlan} from '../data/cta-plan.mjs';
+import Cards from './Cards.astro';
+import RequestForm from './RequestForm.astro';
+import Eligibility from './Eligibility.astro';
+import {sourceLabel} from '../data/source-labels.mjs';
+import {photos,byId,pages,services,areas,articles,categories,review,contextFor,requestHref,relatedServices,articleIntent} from '../data/catalog.mjs';
+const {route,content}=Astro.props;
+const isBatchOne=['ST-059','ST-060','ST-063','ST-079'].includes(route.page_id);
+const pictures=photos(route.page_id);
+const bodyCTA=ctaPlan(route,content);
+const context=contextFor(route);
+const isArticle=route.family==='Article';
+const isServicesIndex=route.page_id==='ST-005';
+const isAreaIndex=route.page_id==='ST-006';
+const isFinancing=route.page_id==='ST-007';
+const serviceGroups=[
+ ['Furnaces',['ST-020','ST-059','ST-060','ST-063']],
+ ['Air conditioning',['ST-021','ST-061','ST-062','ST-064']],
+ ['Heat pumps',['ST-022','ST-065','ST-066','ST-067']],
+ ['Water heaters',['ST-023','ST-068','ST-069','ST-070']],
+ ['Heat-pump water heaters',['ST-024','ST-071','ST-072','ST-073']],
+ ['Ductless mini splits',['ST-026','ST-074','ST-075','ST-076']],
+ ['Indoor air quality',['ST-025','ST-077','ST-078']],
+ ['Maintenance and urgent help',['ST-027','ST-079']]
+].map(([heading,ids])=>({heading,items:(ids as string[]).map(id=>byId(id)).filter(Boolean)}));
+const safetyArticle=!!articleIntent[route.page_id]?.safetyFirst;
+const furnaceSafety=['ST-020','ST-059','ST-060','ST-063'].includes(contextFor(route)?.service.page_id||route.page_id);
+const isRequest=['ST-003','ST-004'].includes(route.page_id);
+const urgent=route.page_id==='ST-079'||route.canonical_route.includes('emergency-hvac-service');
+const isUtility=['ST-014','ST-015','ST-016','ST-017','ST-018','ST-019'].includes(route.page_id);
+const related=relatedServices(route);
+const parent=route.family==='Service'?byId('ST-005'):route.family==='Area'?byId('ST-006'):isArticle?byId('ST-013'):context?.area;
+const directory=route.page_id==='ST-005'?services:route.page_id==='ST-006'?areas:route.page_id==='ST-012'?categories:route.page_id==='ST-013'?articles:[];
+const serviceLinks=route.family==='Area'?services.filter(s=>['ST-059','ST-060','ST-061','ST-062','ST-022','ST-023','ST-026','ST-025'].includes(s.page_id)):related;
+const localCandidates=route.family==='Area'?pages.filter(p=>p.family==='Service-town candidate'&&contextFor(p)?.area.page_id===route.page_id):[];
+---
+{route.page_id==='ST-013'||(route.family==='Article'&&!route.source_answer_id)?<BlogFamily route={route} content={content}/>:route.family==='Answer category'?<AnswerCategory route={route} content={content}/>:route.page_id==='ST-002'?<AboutJourney route={route} content={content}/>:['ST-009','ST-014','ST-015','ST-016','ST-017','ST-019'].includes(route.page_id)?<UtilityPages route={route} content={content}/>:['ST-003','ST-004','ST-018'].includes(route.page_id)?<ContactBooking route={route} content={content}/>:route.family==='Area'||route.page_id==='ST-006'?<TownLanding route={route} content={content}/>:context&&route.page_id!=='SL-WIN-AC-REP'?(context.service.page_id==='ST-079'?<EmergencyHVAC route={route} content={content}/>:context.service.page_id==='ST-061'?<ACRepair route={route} content={content}/>:<ServiceFamily route={route} content={content}/>):serviceRolloutIds.includes(route.page_id)?<ServiceFamily route={route} content={content}/>:route.page_id==='ST-079'?<EmergencyHVAC route={route} content={content}/>:['ST-061','SL-WIN-AC-REP'].includes(route.page_id)?<ACRepair route={route} content={content}/>:route.page_id==='ST-005'?<FamilyPilotHub route={route}/>:['ST-059','ST-060','ST-063'].includes(route.page_id)?<FamilyPilotService route={route} content={content}/>:route.source_answer_id?<LibraryAnswer route={route}/>:route.page_id==='ST-012'?<HomeownerHub route={route} content={content}/>:isFinancing?<FinancingJourney route={route} content={content}/>:route.page_id==='ST-008'?<RebateJourney route={route} content={content}/>:route.page_id==='ST-010'?<VIPMembership route={route} content={content}/>:route.page_id==='ST-011'?<NewHomeowners route={route} content={content}/>:isBatchOne?<BatchOneService route={route}/>:<><section class:list={["hero",{"request-hero":isRequest,"financing-hero":isFinancing}]}><div class:list={['wrap',{'article-hero':isArticle}]}><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a>{parent && <><span aria-hidden="true">/</span><a href={parent.canonical_route}>{parent.name}</a></>}<span aria-hidden="true">/</span><span aria-current="page">{route.name}</span></nav>
+<div class:list={[{'hero-grid':pictures.length>0&&!isArticle&&!isUtility&&!isRequest&&!urgent}]}>
+<div data-reveal><h1>{content.title}</h1>{!isArticle&&!isRequest&&<p class="lede">{content.summary}</p>}{urgent&&<div class="notice safety-notice"><strong>Immediate danger needs emergency help.</strong><p>If you smell gas, suspect carbon monoxide, see smoke or face an immediate danger, leave the area and contact emergency services or your utility from a safe place. Do not use this request form for an emergency.</p><p>An urgent HVAC request does not confirm dispatch or an arrival time.</p></div>}{furnaceSafety&&<div class="notice safety-notice"><strong>Smell gas or suspect carbon monoxide?</strong><p>If you smell gas, leave the area. From a safe place, call 911 and your gas utility. Do not use switches or try to relight the furnace. If you suspect carbon monoxide, get outside to fresh air and call 911. This request form is not for an emergency.</p></div>}{isArticle&&<div class="direct-answer" id="answer"><p>{content.answer}</p></div>}{!isRequest&&!isUtility&&!isArticle&&<><DecisionProof/><div class="actions"><a class="button" href={requestHref(route)}>{content.ctaLabel||'Request service'} <span aria-hidden="true">↗</span></a><a class="button outline" href="tel:+19702871673">Call MGI</a><a href="#answer">{isFinancing?'See how it works':'What to know first'}</a></div></>}
+{isUtility&&route.page_id==='ST-019'&&<div class="actions"><a class="button" href="/">Back to Home</a><a href="/services/">Find services</a></div>}
+{safetyArticle&&<><DecisionProof/><div class="actions"><a class="button" href={requestHref(route)}>Ask about furnace repair</a><p class="small-copy">For loss of heat without immediate danger. A request does not confirm dispatch or an arrival time.</p></div></>}{isArticle&&<p class="small-copy">{review?'Homeowner education · Editorial draft · October 5, 2026':'Homeowner education. A guide does not replace a qualified assessment.'}</p>}</div>
+{pictures.length>0&&!isArticle&&!isUtility&&!isRequest&&!urgent && <Photo image={pictures[0]} eager tilt={-2}/>}</div>
+{isArticle&&!safetyArticle&&pictures[0]&&<div class="article-photo"><Photo image={pictures[0]} eager/></div>}
+</div></section>
+{isRequest ? <section class="section"><div class="wrap split request-layout"><div class="request-support"><h2>One useful description is enough.</h2><p>Tell us what changed, where it happens and when it started.</p><h3>Before a visit</h3><p>Address coverage, the requested work, visit terms and availability need to be checked. An appointment has its own confirmation.</p><p>For immediate danger, leave the area and contact emergency services or your utility from a safe place.</p><a href="/service-area/">Explore service-area questions</a></div><RequestForm/></div></section> : <section class="section" id={isArticle?"article-detail":"answer"}><div class="wrap">{!isArticle&&!isFinancing&&content.answer!==content.summary&&<div class="reading"><div class="direct-answer"><p>{content.answer}</p></div></div>}
+
+{isServicesIndex&&<><section class="repair-replace-panel" aria-labelledby="repair-replace-heading"><div><h2 id="repair-replace-heading">Repair or replace?</h2><p>Start with the equipment you have. Compare the finding, the repair and the full replacement cost before choosing.</p></div><nav class="repair-replace-buttons" aria-label="Repair or replace guides"><a class="button outline" href="/blog/repair-or-replace-furnace/">Furnace <span aria-hidden="true">↗</span></a><a class="button outline" href="/blog/repair-or-replace-air-conditioner/">AC <span aria-hidden="true">↗</span></a><a class="button outline" href="/blog/repair-or-replace-water-heater/">Water heater <span aria-hidden="true">↗</span></a></nav></section><div class="service-category-grid">{serviceGroups.map(group=><section class="service-category"><h2>{group.heading}</h2><nav aria-label={`${group.heading} services`}>{group.items.map(item=>item&&<a href={item.canonical_route}>{item.name}<span aria-hidden="true"> ↗</span></a>)}</nav></section>)}</div></>}
+{isAreaIndex&&<ServiceAreaMap/>}
+{directory.length>0&&!isServicesIndex&&!isAreaIndex&&<><div class="filter-controls"><label>Find a topic <input id="topic-filter" type="search" placeholder="Search this list"/></label><p id="topic-count" role="status">{directory.length} topics</p></div><div class="directory" data-filter-list>{directory.map(r=><a data-filter-text={r.name.toLowerCase()} href={r.canonical_route}>{r.name}<span aria-hidden="true"> ↗</span></a>)}</div><p id="topic-empty" hidden>No matching topic. Try a broader word.</p></>}
+{isArticle&&content.sections.length>4&&<details class="reading article-contents"><summary>In this guide</summary><nav aria-label="Guide sections"><ol>{content.sections.map((section,i)=><li><a href={`#section-${i+1}`}>{section.heading}</a></li>)}</ol></nav></details>}
+{!isFinancing&&content.sections.map((section,i)=><><div class="reading" data-reveal><h2 id={`section-${i+1}`}>{section.heading}</h2><p>{section.body}</p>{section.bullets && section.bullets.length>0&&<ul>{section.bullets.map(b=><li>{b}</li>)}</ul>}</div>{bodyCTA&&bodyCTA.afterSection===i&&<ContextCTA plan={bodyCTA}/>}</>)}
+{safetyArticle&&pictures[0]&&<div class="reading article-photo"><Photo image={pictures[0]}/></div>}
+{route.page_id==='ST-009'&&<><div class="reading"><Eligibility/></div>{bodyCTA&&<ContextCTA plan={bodyCTA}/>}</>}
+{route.page_id==='ST-017'&&<div class="reading form-panel"><h2>Optional tracking is off.</h2><p>This review build loads no analytics, advertising tags or tracking cookies. Your privacy choice below is stored only on this browser.</p><button type="button" class="button" id="privacy-choice">Keep optional tracking off</button><p id="privacy-status" class="small-copy" role="status"></p></div>}
+{route.page_id==='ST-018'&&<div class="reading notice"><h2>No request receipt is available.</h2><p>Opening this page does not mean a request was received. This review site has not sent anything or arranged an appointment.</p><a href="/schedule-service/">Return to the request example</a></div>}
+{pictures.slice(isArticle||(!urgent&&!isUtility)?1:0).map(image=><div class="reading section"><Photo image={image} tilt={2}/></div>)}
+{serviceLinks.length>0&&<div class="section"><h2>{route.family==='Area'?'Explore the work your home may need':'Related service choices'}</h2><Cards compact items={serviceLinks.map(s=>({title:s.name,href:s.canonical_route+(route.family==='Area'?'?'+new URLSearchParams({town:route.name.replace('HVAC Services in ','')}).toString():''),label:'Explore this service'}))}/></div>}
+{context&&<div class="reading"><h2>Your two starting points</h2><div class="topic-list"><a href={context.service.canonical_route}>{context.service.name}</a><a href={context.area.canonical_route}>{context.area.name}</a></div></div>}
+{localCandidates.length>0&&<details class="local-candidates"><summary>Explore service questions for this town</summary>{review&&<p>These review candidates still need local evidence and address coverage confirmation.</p>}<ul>{localCandidates.map(p=><li><a href={p.canonical_route}>{p.name}</a></li>)}</ul></details>}
+{isArticle&&<div class="reading"><DecisionProof/><div class="actions"><a class="button" href={requestHref(route)}>{content.ctaLabel}</a></div></div>}{isArticle&&<div class="reading source-list"><h2>Read the source guidance</h2><ul>{content.sources.filter(s=>s.startsWith('https://')).map(s=><li><a href={s} rel="noopener noreferrer">{sourceLabel(s)}</a></li>)}</ul><p>General education does not diagnose your equipment or replace a qualified assessment.</p></div>}
+{review&&!isServicesIndex&&!isFinancing&&<details class="review-note"><summary>Internal review notes and sources</summary><p>Page {route.page_id}. Publication gate: {route.source_publication_gate}.</p><p>Technical and operating-owner review and Jesse's exact approval remain required.</p><ul>{content.reviewNotes.map(n=><li>{n}</li>)}</ul><ul class="source-list">{content.sources.map(s=><li>{s}</li>)}</ul></details>}
+</div></section>}
+{content.faqs?.length>0&&<section class="section"><div class="wrap faq"><h2>Questions before the next step.</h2>{content.faqs.map(f=><details><summary>{f.question}</summary><p>{f.answer}</p></details>)}</div></section>}
+{isArticle&&<section class="section"><div class="wrap"><h2>Keep reading</h2><Cards compact items={articles.filter(a=>a.page_id!==route.page_id).slice(0,3).map(a=>({title:a.name,href:a.canonical_route,label:'Read the guide'}))}/></div></section>}
+</>}
+<script>
+const input=document.querySelector<HTMLInputElement>('#topic-filter');input?.addEventListener('input',()=>{let count=0;document.querySelectorAll<HTMLElement>('[data-filter-text]').forEach(el=>{el.hidden=!el.dataset.filterText?.includes(input.value.trim().toLowerCase());if(!el.hidden)count++;});document.querySelector('#topic-count')!.textContent=`${count} matching topics`;const empty=document.querySelector<HTMLElement>('#topic-empty');if(empty)empty.hidden=count>0;});
+if(input){const need=new URLSearchParams(location.search).get('need');if(need){input.value=need;input.dispatchEvent(new Event('input'));}}
+document.querySelector('#privacy-choice')?.addEventListener('click',()=>{try{localStorage.setItem('mgi-optional-tracking','off');document.querySelector('#privacy-status')!.textContent='Optional tracking remains off. Your choice is saved on this browser.';}catch{document.querySelector('#privacy-status')!.textContent='Optional tracking remains off. Your browser did not allow this preference to be saved.';}});
+</script>

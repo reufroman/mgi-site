@@ -1,0 +1,9 @@
+---
+import PaidLanding from '../../layouts/PaidLanding.astro';
+import {familyPaths} from '../../data/page-entrypoints.mjs';
+import {landingById} from '../../data/landing-content.mjs';
+export function getStaticPaths(){return familyPaths('lp','lp');}
+const {route}=Astro.props;
+const page=landingById[route.page_id];
+---
+<PaidLanding route={route} page={page}/>

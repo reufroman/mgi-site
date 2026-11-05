@@ -1,0 +1,3760 @@
+{
+  "mode": "review",
+  "pages": 749,
+  "inventory": 749,
+  "placements": 2121,
+  "pictures": 111,
+  "errors": [],
+  "checks": [
+    {
+      "id": "ST-019",
+      "file": "dist-review/404/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-019",
+      "file": "dist-review/404.html",
+      "pictures": 0
+    },
+    {
+      "id": "MIGRATION-FAQ",
+      "file": "dist-review/about/faqs/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-002",
+      "file": "dist-review/about/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-016",
+      "file": "dist-review/accessibility/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-067",
+      "file": "dist-review/answers/a-boom-at-the-vents-appeared-after-a-larger-replacement-furnace-was-installed/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-076",
+      "file": "dist-review/answers/a-condensate-drain-froze-inside-a-warm-basement/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-008",
+      "file": "dist-review/answers/a-failed-furnace-blower-also-stopped-my-air-conditioning-before-a-heat-wave/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-040",
+      "file": "dist-review/answers/a-furnace-problem-turned-into-a-quote-for-a-furnace-ac-and-water-heater-do-i-need-all-three/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-091",
+      "file": "dist-review/answers/a-larger-furnace-quote-is-cheaper-is-oversizing-still-a-problem/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-066",
+      "file": "dist-review/answers/a-loud-furnace-sound-starts-when-heating-ends-and-lasts-about-a-minute/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-054",
+      "file": "dist-review/answers/a-maintenance-visit-lasted-only-minutes-and-included-no-tests-was-it-useful/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-081",
+      "file": "dist-review/answers/a-new-furnace-repeatedly-locks-out-because-frost-covers-its-intake/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-032",
+      "file": "dist-review/answers/a-new-furnace-still-has-a-strong-gas-like-smell-is-that-a-normal-new-equipment-smell/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-025",
+      "file": "dist-review/answers/a-new-two-stage-furnace-cycles-every-few-minutes-from-its-first-day/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-077",
+      "file": "dist-review/answers/a-repair-stopped-freezing-by-closing-the-combustion-air-duct-is-that-safe/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-052",
+      "file": "dist-review/answers/a-replacement-filter-with-the-same-printed-size-does-not-fit-the-cabinet/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-072",
+      "file": "dist-review/answers/a-strange-furnace-noise-starts-before-heating-in-extreme-cold-and-advice-conflicts/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-034",
+      "file": "dist-review/answers/a-technician-said-the-heat-exchanger-was-safe-because-the-flame-looked-fine-is-that-enough/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-130",
+      "file": "dist-review/answers/a-tune-up-found-a-bad-compressor-test-worn-pipe-insulation-and-a-sinking-ac-pad-do-i-need-replacement/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-201",
+      "file": "dist-review/answers/a-water-heater-leak-is-coming-through-the-ceiling-near-lights-what-should-i-do-first/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-012",
+      "file": "dist-review/answers/a-working-furnace-is-called-defective-because-it-was-built-with-bad-parts/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-092",
+      "file": "dist-review/answers/adding-ac-came-with-a-recommendation-for-a-larger-furnace/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-046",
+      "file": "dist-review/answers/air-conditioning/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-181",
+      "file": "dist-review/answers/are-ceiling-cassettes-less-reliable-than-wall-mounted-mini-splits/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-044",
+      "file": "dist-review/answers/are-modern-air-filters-only-suitable-for-high-efficiency-furnaces/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-016",
+      "file": "dist-review/answers/are-older-furnace-models-being-priced-higher-because-of-new-colorado-rules/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-095",
+      "file": "dist-review/answers/are-pressure-switches-with-the-same-printed-rating-interchangeable/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-098",
+      "file": "dist-review/answers/burners-light-but-the-main-blower-never-starts-and-heating-shuts-down/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-097",
+      "file": "dist-review/answers/bypassing-a-pressure-switch-caused-forceful-ignition-and-a-gas-smell/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-233",
+      "file": "dist-review/answers/can-a-dirty-tankless-air-filter-cause-a-startup-error/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-261",
+      "file": "dist-review/answers/can-a-heat-pump-water-heater-get-enough-air-in-a-narrow-dirt-niche/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-177",
+      "file": "dist-review/answers/can-a-mini-split-warm-one-cold-room-in-longmont-while-i-keep-my-furnace/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-170",
+      "file": "dist-review/answers/can-an-efficient-heat-pump-cost-more-to-run-than-my-furnace/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-175",
+      "file": "dist-review/answers/can-ductless-mini-splits-replace-failed-central-ac-in-my-large-denver-home/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-242",
+      "file": "dist-review/answers/can-heat-pump-water-heater-exhaust-go-into-an-attic-or-near-soffit-vents/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-144",
+      "file": "dist-review/answers/can-i-add-a-heat-pump-in-longmont-and-keep-my-four-year-old-furnace/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-179",
+      "file": "dist-review/answers/can-i-install-my-own-mini-split-in-denver-and-still-get-a-rebate/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-265",
+      "file": "dist-review/answers/can-i-leave-backup-element-wires-unconnected-to-reduce-electrical-demand/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-174",
+      "file": "dist-review/answers/can-i-mount-a-mini-split-low-on-the-wall-in-northwest-colorado/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-071",
+      "file": "dist-review/answers/can-i-quiet-the-furnace-closet-without-blocking-the-air-it-needs/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-115",
+      "file": "dist-review/answers/can-i-replace-an-r22-coil-or-is-r22-banned-in-colorado/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-014",
+      "file": "dist-review/answers/can-i-replace-two-heating-systems-in-stages-rather-than-all-four-hvac-units-at-once/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-223",
+      "file": "dist-review/answers/can-i-restart-a-new-water-heater-after-a-breaker-trip-and-possible-wire-burns/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-207",
+      "file": "dist-review/answers/can-i-trust-a-normal-status-light-when-my-water-heater-flame-looks-wrong/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-132",
+      "file": "dist-review/answers/can-my-ac-really-cool-only-20-degrees-below-the-outdoor-temperature/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-158",
+      "file": "dist-review/answers/can-my-generator-power-a-replacement-central-heat-pump/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-047",
+      "file": "dist-review/answers/can-my-older-furnace-use-a-thick-media-filter-cabinet/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-171",
+      "file": "dist-review/answers/can-one-mini-split-cool-bedrooms-with-the-doors-closed-at-night/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-211",
+      "file": "dist-review/answers/can-removing-the-anode-to-stop-an-odor-create-another-problem/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-256",
+      "file": "dist-review/answers/can-workshop-dust-affect-a-garage-heat-pump-water-heater/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-189",
+      "file": "dist-review/answers/cleaning-and-a-uv-light-have-not-stopped-my-mini-split-odor-what-should-i-try/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-089",
+      "file": "dist-review/answers/contractors-give-widely-different-furnace-sizes-for-the-same-home/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-073",
+      "file": "dist-review/answers/correcting-the-filter-direction-made-the-furnace-suddenly-much-louder/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-136",
+      "file": "dist-review/answers/could-an-air-source-heat-pump-work-at-8000-feet-in-a-cold-windy-colorado-home/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-248",
+      "file": "dist-review/answers/could-my-heat-pump-water-heaters-outside-condensate-line-freeze/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-139",
+      "file": "dist-review/answers/denver-installers-disagree-about-keeping-gas-backup-in-my-older-home-who-is-right/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-116",
+      "file": "dist-review/answers/did-my-ac-really-need-yearly-refrigerant-if-a-different-fault-was-found/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-155",
+      "file": "dist-review/answers/did-my-heat-pump-maintenance-visit-miss-useful-checks/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-156",
+      "file": "dist-review/answers/do-i-need-to-be-handy-to-own-a-heat-pump/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-035",
+      "file": "dist-review/answers/do-these-photos-prove-my-furnace-has-a-cracked-heat-exchanger/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-013",
+      "file": "dist-review/answers/does-a-colorado-emissions-law-change-mean-i-must-replace-my-working-furnace/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-246",
+      "file": "dist-review/answers/does-a-heat-pump-water-heater-add-to-my-homes-winter-heating-use/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-114",
+      "file": "dist-review/answers/does-a-leaking-coil-mean-my-six-year-old-ac-needs-replacement/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-149",
+      "file": "dist-review/answers/does-every-heat-pump-need-pipes-buried-in-the-yard/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-271",
+      "file": "dist-review/answers/does-filter-access-leave-enough-room-to-service-the-fan-or-motor/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-122",
+      "file": "dist-review/answers/does-hail-damage-to-my-nearly-new-condenser-need-repair/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-272",
+      "file": "dist-review/answers/does-hard-well-water-change-heat-pump-water-heater-maintenance-or-life/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-157",
+      "file": "dist-review/answers/does-my-outdoor-heat-pump-need-risers-for-snow/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-138",
+      "file": "dist-review/answers/does-my-small-denver-condo-need-a-large-heat-pump-and-built-in-backup-or-can-i-use-space-heaters/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-050",
+      "file": "dist-review/answers/does-the-furnace-need-a-different-filter-from-the-ac/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-216",
+      "file": "dist-review/answers/does-water-near-the-drain-valve-mean-my-tank-has-failed/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-194",
+      "file": "dist-review/answers/dry-mode-feels-better-than-cooling-will-it-cost-more-or-wear-out-the-compressor/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-015",
+      "file": "dist-review/answers/financing-seems-to-increase-the-quoted-installed-system-price/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-082",
+      "file": "dist-review/answers/find-furnace-filter/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-088",
+      "file": "dist-review/answers/furnace-bids-include-different-filter-cabinets-warranties-and-first-year-care/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-045",
+      "file": "dist-review/answers/furnaces/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-047",
+      "file": "dist-review/answers/heat-pumps/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-060",
+      "file": "dist-review/answers/heating-passed-a-thermostat-installation-test-months-ago-but-fails-when-winter-arrives/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-026",
+      "file": "dist-review/answers/heating-trouble-returned-after-a-condensate-related-fault-was-cleared/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-280",
+      "file": "dist-review/answers/how-can-i-add-humidity-in-colorado-without-creating-mold-conditions/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-117",
+      "file": "dist-review/answers/how-can-i-confirm-r22-service-before-paying-for-a-diagnostic-visit/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-108",
+      "file": "dist-review/answers/how-can-i-cool-upstairs-bedrooms-when-downstairs-is-comfortable/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-293",
+      "file": "dist-review/answers/how-can-i-get-fresh-air-when-wildfire-smoke-makes-opening-windows-difficult/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-300",
+      "file": "dist-review/answers/how-can-i-judge-the-installed-cost-and-value-of-a-whole-home-air-cleaner/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-125",
+      "file": "dist-review/answers/how-can-i-reduce-recurring-cottonwood-buildup-on-my-ac/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-281",
+      "file": "dist-review/answers/how-can-i-reduce-smoke-inside-my-home-during-colorado-wildfire-season/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-124",
+      "file": "dist-review/answers/how-can-i-safely-clean-cottonwood-trapped-behind-condenser-panels/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-288",
+      "file": "dist-review/answers/how-can-i-stop-cat-litter-odor-from-spreading-through-the-hvac-system/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-212",
+      "file": "dist-review/answers/how-can-i-tell-whether-hot-water-odor-comes-from-the-heater-or-the-well/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-069",
+      "file": "dist-review/answers/how-can-i-tell-whether-the-loud-motor-noise-is-the-inducer-or-the-blower/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-228",
+      "file": "dist-review/answers/how-can-my-tankless-heater-be-maintained-without-service-valves/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-263",
+      "file": "dist-review/answers/how-do-i-check-whether-an-online-colorado-water-heater-rebate-claim-applies-now/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-085",
+      "file": "dist-review/answers/how-do-i-compare-a-two-stage-standard-furnace-with-a-single-stage-high-efficiency-one/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-278",
+      "file": "dist-review/answers/how-do-i-compare-an-electronic-air-cleaner-a-regular-filter-and-an-ionizer/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-297",
+      "file": "dist-review/answers/how-do-i-compare-quiet-room-purifiers-with-a-whole-home-air-cleaner/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-255",
+      "file": "dist-review/answers/how-do-i-find-an-installer-who-understands-heat-pump-water-heaters/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-148",
+      "file": "dist-review/answers/how-do-i-find-someone-who-can-properly-retune-my-longmont-heat-pump-installation/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-270",
+      "file": "dist-review/answers/how-do-i-prevent-gaps-between-the-plumber-electrician-and-room-contractor/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-017",
+      "file": "dist-review/answers/how-do-i-tell-a-real-heating-diagnosis-from-a-replacement-sales-pitch/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-298",
+      "file": "dist-review/answers/how-do-i-verify-that-a-proposed-air-cleaner-does-not-add-ozone/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-236",
+      "file": "dist-review/answers/how-does-high-altitude-affect-propane-tankless-selection/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-269",
+      "file": "dist-review/answers/how-long-will-a-120-volt-heater-take-to-provide-a-shower-after-a-long-outage/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-007",
+      "file": "dist-review/answers/how-much-of-an-installed-furnace-quote-is-equipment-versus-installation-work/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-232",
+      "file": "dist-review/answers/how-often-should-my-tankless-water-heater-be-descaled/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-258",
+      "file": "dist-review/answers/how-should-a-denver-water-heater-replacement-fit-a-planned-solar-installation/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-235",
+      "file": "dist-review/answers/how-should-a-drained-tankless-heater-be-restarted-after-power-returns/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-176",
+      "file": "dist-review/answers/how-should-i-add-cooling-to-a-century-old-denver-home-with-a-hot-converted-attic/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-284",
+      "file": "dist-review/answers/how-should-i-change-an-existing-whole-home-humidifier-for-the-seasons/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-120",
+      "file": "dist-review/answers/how-should-i-compare-ac-and-furnace-bundles-with-financing-in-longmont/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-217",
+      "file": "dist-review/answers/how-should-i-manage-a-leaking-old-heater-while-waiting-for-replacement/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-262",
+      "file": "dist-review/answers/how-should-i-size-a-new-water-heater-when-a-tenant-will-increase-hot-water-use/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-195",
+      "file": "dist-review/answers/how-should-i-switch-my-multi-head-mini-split-between-warm-days-and-cold-nights/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-159",
+      "file": "dist-review/answers/how-will-solar-and-batteries-heat-my-home-during-an-outage/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-020",
+      "file": "dist-review/answers/i-bypassed-furnace-limit-switches-while-chasing-repeated-shutdowns/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-100",
+      "file": "dist-review/answers/i-came-home-from-vacation-to-no-heat-despite-leaving-the-thermostat-on-hold/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-045",
+      "file": "dist-review/answers/i-did-not-know-the-furnace-filter-needed-changing-have-i-damaged-the-system/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-146",
+      "file": "dist-review/answers/i-have-longmont-electricity-and-xcel-gas-could-i-still-get-an-xcel-heat-pump-incentive/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-196",
+      "file": "dist-review/answers/i-have-one-remote-and-three-mini-split-heads-what-is-each-unit-actually-set-to/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-190",
+      "file": "dist-review/answers/i-neglected-my-mini-split-filters-all-winter-could-that-explain-dust-and-high-heating-use/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-093",
+      "file": "dist-review/answers/i-replaced-the-igniter-and-flame-sensor-but-the-furnace-still-will-not-start/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-074",
+      "file": "dist-review/answers/i-turned-down-the-blower-speed-to-reduce-noise-but-it-barely-helped/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-129",
+      "file": "dist-review/answers/im-new-to-central-ac-should-i-run-it-cover-it-or-switch-its-power-off-for-winter/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-135",
+      "file": "dist-review/answers/in-denver-should-we-choose-central-ac-or-evaporative-cooling/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-012",
+      "file": "dist-review/answers/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-049",
+      "file": "dist-review/answers/indoor-air-quality/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-243",
+      "file": "dist-review/answers/is-a-garage-that-drops-below-freezing-a-workable-heat-pump-water-heater-location/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-084",
+      "file": "dist-review/answers/is-a-high-efficiency-furnace-more-complicated-to-maintain/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-056",
+      "file": "dist-review/answers/is-a-maintenance-membership-better-value-than-individual-visits/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-147",
+      "file": "dist-review/answers/is-a-remote-photo-estimate-enough-for-my-longmont-heat-pump-project/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-200",
+      "file": "dist-review/answers/is-a-very-long-installer-labor-warranty-worth-paying-extra-for/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-283",
+      "file": "dist-review/answers/is-a-whole-home-humidifier-worth-repairing-after-repeated-basement-leaks/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-290",
+      "file": "dist-review/answers/is-an-ultraviolet-air-cleaning-add-on-worth-the-cost/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-134",
+      "file": "dist-review/answers/is-buying-a-denver-home-without-central-ac-manageable/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-273",
+      "file": "dist-review/answers/is-filter-cleaning-the-only-care-a-heat-pump-water-heater-needs/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-275",
+      "file": "dist-review/answers/is-four-hour-recovery-after-a-short-shower-normal/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-215",
+      "file": "dist-review/answers/is-household-descaler-safe-inside-a-drinking-water-heater/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-285",
+      "file": "dist-review/answers/is-my-whole-home-humidifier-using-too-much-water-or-hot-water/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-127",
+      "file": "dist-review/answers/is-one-combined-furnace-and-ac-visit-enough-for-seasonal-care/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-182",
+      "file": "dist-review/answers/is-the-more-expensive-mini-split-brand-worth-paying-for/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-172",
+      "file": "dist-review/answers/is-the-smallest-mini-split-head-still-too-large-for-my-tiny-bedroom/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-180",
+      "file": "dist-review/answers/is-this-denver-mini-split-quote-fair-when-it-includes-so-much-work/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-086",
+      "file": "dist-review/answers/is-two-stage-heat-worth-paying-for-if-we-may-move-in-five-years/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-110",
+      "file": "dist-review/answers/is-water-from-my-outdoor-ac-drain-a-risk-to-the-foundation/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-050",
+      "file": "dist-review/answers/mini-splits/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-128",
+      "file": "dist-review/answers/my-ac-has-gone-years-without-maintenance-is-every-other-year-enough/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-102",
+      "file": "dist-review/answers/my-ac-pipe-is-frozen-do-i-really-need-a-whole-new-air-conditioner/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-141",
+      "file": "dist-review/answers/my-denver-heat-pump-quote-promises-summer-and-winter-savings-how-should-i-check-each-claim/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-187",
+      "file": "dist-review/answers/my-diy-mini-split-will-not-cool-and-now-freezes-and-spits-water-what-next/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-169",
+      "file": "dist-review/answers/my-electric-bill-tripled-after-a-heat-pump-conversion-did-i-make-a-mistake/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-061",
+      "file": "dist-review/answers/my-electric-heating-equipment-has-no-labeled-common-terminal-for-a-smart-thermostat/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-075",
+      "file": "dist-review/answers/my-furnace-intake-freezes-solid-again-soon-after-i-clear-a-small-opening/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-037",
+      "file": "dist-review/answers/my-furnace-light-keeps-blinking-red-but-the-heat-works-is-it-a-warning/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-096",
+      "file": "dist-review/answers/my-furnace-makes-startup-noises-but-the-inducer-does-not-seem-to-start/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-001",
+      "file": "dist-review/answers/my-furnace-smells-like-gas-each-time-it-starts-is-that-normal/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-199",
+      "file": "dist-review/answers/my-mini-split-coil-is-covered-but-the-repair-and-parts-delay-are-costly-should-i-replace-the-unit/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-183",
+      "file": "dist-review/answers/my-mini-split-is-leaking-onto-the-floor-what-can-i-safely-check/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-197",
+      "file": "dist-review/answers/my-mini-split-shows-a-code-that-is-not-in-the-user-manual-is-it-a-fault/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-198",
+      "file": "dist-review/answers/my-mini-split-shuts-down-with-e1-the-installer-says-it-is-normal-but-the-manual-disagrees-who-is-right/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-188",
+      "file": "dist-review/answers/my-mini-split-still-smells-musty-after-a-deep-cleaning-is-it-mold/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-133",
+      "file": "dist-review/answers/my-new-ac-runs-all-day-at-the-set-temperature-and-a-tune-up-found-installation-gaps-is-that-normal/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-152",
+      "file": "dist-review/answers/my-new-heat-pump-keeps-defrosting-for-hours-with-short-breaks-is-that-normal/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-185",
+      "file": "dist-review/answers/my-new-mini-split-drains-only-after-suction-should-the-installer-add-a-pump/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-131",
+      "file": "dist-review/answers/my-old-ac-failed-but-the-label-is-unreadable-and-the-home-warranty-wants-a-make-and-model-what-now/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-033",
+      "file": "dist-review/answers/my-old-furnace-was-red-tagged-could-cleaning-the-heat-exchanger-make-it-usable-again/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-058",
+      "file": "dist-review/answers/my-smart-thermostats-remote-temperature-sensor-stopped-connecting-after-installation/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-042",
+      "file": "dist-review/answers/my-warranty-heat-exchanger-will-take-months-to-arrive-do-i-have-to-buy-a-furnace-now/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-208",
+      "file": "dist-review/answers/my-water-heater-has-burned-looking-insulation-and-no-hot-water-what-comes-first/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-202",
+      "file": "dist-review/answers/my-water-heater-replacement-quote-seems-very-high-how-should-i-compare-it/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-186",
+      "file": "dist-review/answers/oily-fluid-came-from-the-mini-split-in-my-childs-room-what-should-i-do/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-080",
+      "file": "dist-review/answers/power-came-back-after-a-winter-storm-but-the-furnace-will-not-heat/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-083",
+      "file": "dist-review/answers/repair-before-replacement/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-063",
+      "file": "dist-review/answers/reusing-the-fan-wire-powered-the-thermostat-but-i-lost-independent-fan-control/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-055",
+      "file": "dist-review/answers/should-a-furnace-check-specifically-inspect-combustion-safety-on-an-old-unit/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-018",
+      "file": "dist-review/answers/should-a-heating-replacement-be-sized-larger-for-colorado-cold-snaps/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-090",
+      "file": "dist-review/answers/should-a-replacement-match-the-old-furnaces-btu-input-or-its-heat-output/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-214",
+      "file": "dist-review/answers/should-an-older-water-heater-that-has-never-been-flushed-be-flushed-now/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-049",
+      "file": "dist-review/answers/should-i-change-the-filter-monthly-or-every-three-months/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-244",
+      "file": "dist-review/answers/should-i-choose-a-larger-tank-when-switching-to-a-heat-pump-water-heater/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-143",
+      "file": "dist-review/answers/should-i-keep-a-heat-pump-at-one-temperature-or-turn-it-down-at-night-and-when-away/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-119",
+      "file": "dist-review/answers/should-i-pay-a-large-deposit-for-a-low-ac-quote/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-168",
+      "file": "dist-review/answers/should-i-remove-my-newer-furnace-when-adding-a-heat-pump/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-145",
+      "file": "dist-review/answers/should-i-take-an-upfront-heat-pump-rebate-discount-or-pay-first-and-wait-for-the-paperwork/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-286",
+      "file": "dist-review/answers/should-i-wait-for-hvac-replacement-before-replacing-my-humidifier/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-106",
+      "file": "dist-review/answers/should-i-worry-about-shorter-ac-cycles-after-replacing-my-windows/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-078",
+      "file": "dist-review/answers/snow-buries-the-furnace-intake-and-the-house-loses-heat/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-009",
+      "file": "dist-review/answers/south-facing-upstairs-bedrooms-are-colder-in-winter-than-the-rest-of-the-home/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-004",
+      "file": "dist-review/answers/the-blower-keeps-running-after-the-heat-shuts-off-on-a-very-old-furnace/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-027",
+      "file": "dist-review/answers/the-burners-go-out-before-the-blower-starts-why-does-the-furnace-keep-retrying/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-140",
+      "file": "dist-review/answers/the-cold-weather-performance-tables-are-overwhelming-how-do-i-choose-a-heat-pump-for-my-colorado-a-frame/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-087",
+      "file": "dist-review/answers/the-contractor-quoted-a-smaller-furnace-than-an-online-calculator-suggests/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-019",
+      "file": "dist-review/answers/the-furnace-fails-for-hours-or-days-but-works-when-the-technician-arrives/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-023",
+      "file": "dist-review/answers/the-furnace-fan-ramps-up-repeatedly-even-after-the-thermostat-is-disconnected/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-003",
+      "file": "dist-review/answers/the-furnace-gives-a-strong-whoosh-after-gas-seems-to-flow-before-ignition/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-046",
+      "file": "dist-review/answers/the-furnace-hits-its-temperature-limit-after-i-install-a-higher-rated-filter-is-the-filter-the-problem/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-010",
+      "file": "dist-review/answers/the-furnace-in-a-home-i-may-buy-was-made-in-1988-what-should-i-investigate/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-068",
+      "file": "dist-review/answers/the-furnace-is-so-loud-we-have-to-shout-to-talk-at-home/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-099",
+      "file": "dist-review/answers/the-furnace-keeps-heating-after-the-thermostat-is-set-to-off/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-031",
+      "file": "dist-review/answers/the-furnace-runs-poorly-and-we-get-headaches-but-our-co-alarm-reads-zero-can-we-keep-using-it/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-021",
+      "file": "dist-review/answers/the-furnace-shuts-down-only-when-the-thermostat-calls-for-second-stage-heat/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-070",
+      "file": "dist-review/answers/the-furnace-squeals-and-rattles-as-its-fans-slow-down/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-024",
+      "file": "dist-review/answers/the-furnace-starts-again-briefly-after-reaching-the-thermostat-target/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-022",
+      "file": "dist-review/answers/the-furnace-stops-below-target-but-shows-a-normal-status-light/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-059",
+      "file": "dist-review/answers/the-furnace-works-but-my-smart-thermostat-keeps-using-up-batteries/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-002",
+      "file": "dist-review/answers/the-gas-smell-returns-after-four-service-visits-and-a-replaced-gas-valve/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-030",
+      "file": "dist-review/answers/the-gas-utility-and-hvac-company-disagree-who-decides-whether-my-furnace-is-safe/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-038",
+      "file": "dist-review/answers/the-heat-exchanger-is-under-warranty-why-am-i-being-charged-for-the-repair/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-011",
+      "file": "dist-review/answers/the-high-altitude-furnace-manual-does-not-match-the-gas-heat-value-number-i-found-online/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-041",
+      "file": "dist-review/answers/the-home-inspector-said-the-furnace-was-healthy-why-did-a-later-technician-condemn-it/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-039",
+      "file": "dist-review/answers/the-manufacturer-says-my-furnace-is-registered-at-another-address-how-do-i-fix-that/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-101",
+      "file": "dist-review/answers/the-outdoor-fan-runs-but-the-ac-is-not-cold-at-the-first-spring-startup/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-094",
+      "file": "dist-review/answers/the-small-exhaust-fan-runs-but-the-igniter-never-glows/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-036",
+      "file": "dist-review/answers/the-technician-says-the-heat-exchanger-is-cracked-can-i-wait-until-summer/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-062",
+      "file": "dist-review/answers/the-thermostat-reports-loss-of-power-around-a-utility-installed-control-switch/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-029",
+      "file": "dist-review/answers/the-utility-found-no-leak-why-does-the-furnace-exhaust-still-smell-unusually-strong/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-057",
+      "file": "dist-review/answers/there-is-a-c-terminal-at-the-furnace-but-no-common-wire-at-my-thermostat/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-006",
+      "file": "dist-review/answers/two-furnace-replacement-quotes-differ-sharply-for-comparable-models/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-048",
+      "file": "dist-review/answers/water-heaters/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-082",
+      "file": "dist-review/answers/water-seems-to-leak-from-furnace-exhaust-or-intake-pipe-joints/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-051",
+      "file": "dist-review/answers/what-care-does-a-brand-new-furnace-need/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-154",
+      "file": "dist-review/answers/what-care-does-my-ducted-heat-pump-need-beyond-a-filter-change/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-279",
+      "file": "dist-review/answers/what-care-should-i-expect-from-an-electronic-air-cleaner/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-260",
+      "file": "dist-review/answers/what-changes-when-my-crawl-space-loses-warmth-from-its-old-gas-furnace/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-053",
+      "file": "dist-review/answers/what-does-a-professional-furnace-check-include-that-i-cannot-do-myself/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-123",
+      "file": "dist-review/answers/what-evidence-helps-when-an-insurer-disputes-a-hail-related-ac-leak/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-118",
+      "file": "dist-review/answers/what-if-i-cannot-afford-an-ac-replacement-after-freezing-in-denver/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-299",
+      "file": "dist-review/answers/what-if-mold-and-chemical-tests-find-nothing-but-an-air-concern-continues/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-251",
+      "file": "dist-review/answers/what-if-the-heat-pump-section-fails-but-electric-mode-still-heats-water/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-173",
+      "file": "dist-review/answers/what-mini-split-options-fit-a-room-with-low-ceilings/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-237",
+      "file": "dist-review/answers/what-replacement-fits-a-crawl-space-too-short-for-a-standard-water-heater-tank/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-277",
+      "file": "dist-review/answers/what-should-i-address-first-when-my-home-is-dusty-and-very-dry/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-113",
+      "file": "dist-review/answers/what-should-i-do-about-hissing-and-a-burning-smell-after-an-ac-repair/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-209",
+      "file": "dist-review/answers/what-should-i-do-about-scorch-marks-near-my-water-heater-exhaust/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-112",
+      "file": "dist-review/answers/what-should-i-do-if-my-ac-trips-a-breaker-whines-and-produces-smoke/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-234",
+      "file": "dist-review/answers/what-should-i-do-with-an-outdoor-tankless-heater-during-a-freezing-power-outage/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-266",
+      "file": "dist-review/answers/what-temporary-electrical-supply-can-i-use-before-the-panel-upgrade/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-294",
+      "file": "dist-review/answers/where-should-i-start-with-dust-pet-dander-and-musty-rooms-in-an-older-home/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-178",
+      "file": "dist-review/answers/where-should-our-mini-split-heads-and-outdoor-lines-go/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-291",
+      "file": "dist-review/answers/which-air-cleaner-fits-dust-and-mold-spore-concerns-after-moisture-remediation/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-292",
+      "file": "dist-review/answers/which-indoor-air-measurements-are-useful-and-can-i-trust-my-monitor/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-121",
+      "file": "dist-review/answers/which-refrigerant-model-should-i-buy-for-a-new-ac-in-denver/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-048",
+      "file": "dist-review/answers/which-way-should-the-arrow-on-my-furnace-filter-point/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-240",
+      "file": "dist-review/answers/who-handles-water-damage-after-a-water-heater-leak-and-who-replaces-the-heater/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-203",
+      "file": "dist-review/answers/why-am-i-being-offered-a-commercial-water-heater-for-my-home/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-064",
+      "file": "dist-review/answers/why-are-the-two-wires-that-run-my-old-furnace-not-enough-to-power-a-smart-thermostat/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-252",
+      "file": "dist-review/answers/why-can-i-still-pay-labor-when-a-heat-pump-water-heater-fails-under-warranty/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-225",
+      "file": "dist-review/answers/why-did-my-electric-water-heater-stop-heating-after-a-thermostat-adjustment/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-231",
+      "file": "dist-review/answers/why-did-my-tankless-hot-water-flow-slow-again-just-weeks-after-descaling/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-224",
+      "file": "dist-review/answers/why-did-replacing-an-element-fail-to-fix-my-heaters-lukewarm-water/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-142",
+      "file": "dist-review/answers/why-do-denver-installers-recommend-different-temperatures-for-switching-a-heat-pump-to-the-furnace/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-028",
+      "file": "dist-review/answers/why-do-i-smell-gas-outside-near-the-furnace-exhaust-on-very-cold-days/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-238",
+      "file": "dist-review/answers/why-do-tankless-installers-disagree-about-needing-a-bigger-gas-line/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-167",
+      "file": "dist-review/answers/why-do-two-technicians-disagree-about-my-heat-pumps-refrigerant-charge/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-239",
+      "file": "dist-review/answers/why-does-a-home-warranty-cover-the-tank-but-leave-large-replacement-charges/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-162",
+      "file": "dist-review/answers/why-does-auxiliary-heat-still-run-after-i-added-attic-insulation/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-160",
+      "file": "dist-review/answers/why-does-emergency-heat-blow-room-temperature-air-when-auxiliary-heat-works/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-210",
+      "file": "dist-review/answers/why-does-hot-water-still-smell-like-rotten-eggs-after-several-anode-replacements/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-103",
+      "file": "dist-review/answers/why-does-my-ac-airflow-get-weak-after-a-few-hours/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-107",
+      "file": "dist-review/answers/why-does-my-ac-stop-cooling-for-days-then-work-again/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-206",
+      "file": "dist-review/answers/why-does-my-gas-water-heater-pilot-keep-going-out/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-267",
+      "file": "dist-review/answers/why-does-my-generator-overload-when-it-powers-only-the-heat-pump-water-heater/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-153",
+      "file": "dist-review/answers/why-does-my-heat-pump-get-so-loud-during-defrost/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-161",
+      "file": "dist-review/answers/why-does-my-heat-pump-run-nearly-nonstop-and-cost-more-after-a-nest-installation/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-250",
+      "file": "dist-review/answers/why-does-my-heat-pump-water-heater-ask-me-to-clean-the-condensate-line-every-few-weeks/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-254",
+      "file": "dist-review/answers/why-does-my-heat-pump-water-heater-work-again-only-after-a-power-reset/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-282",
+      "file": "dist-review/answers/why-does-my-humidifier-leave-white-powder-around-the-house/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-165",
+      "file": "dist-review/answers/why-does-my-hybrid-system-cost-more-and-lack-the-expected-thermostat-setting/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-111",
+      "file": "dist-review/answers/why-does-my-indoor-ac-keep-leaking-at-night-and-humming-loudly/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-184",
+      "file": "dist-review/answers/why-does-my-mini-split-still-drip-after-the-drain-was-cleared/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-104",
+      "file": "dist-review/answers/why-does-my-new-ac-keep-freezing-after-repeated-service-visits/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-222",
+      "file": "dist-review/answers/why-does-my-new-electric-heater-make-warm-water-and-trip-its-breaker/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-164",
+      "file": "dist-review/answers/why-does-my-new-heat-pump-cool-quickly-but-leave-the-house-humid/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-230",
+      "file": "dist-review/answers/why-does-my-new-tankless-heater-alternate-between-hot-and-cold/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-105",
+      "file": "dist-review/answers/why-does-my-new-variable-speed-ac-run-in-five-minute-bursts/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-229",
+      "file": "dist-review/answers/why-does-my-tankless-water-turn-cold-when-i-barely-open-the-tap/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-226",
+      "file": "dist-review/answers/why-does-my-water-heater-overheat-and-need-resetting-after-a-repair/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-213",
+      "file": "dist-review/answers/why-does-my-water-heater-still-pop-after-its-yearly-flush/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-253",
+      "file": "dist-review/answers/why-does-my-water-heater-wait-for-a-schedule-change-before-reheating/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-191",
+      "file": "dist-review/answers/why-does-one-bedroom-get-much-hotter-than-its-mini-split-setting/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-274",
+      "file": "dist-review/answers/why-does-the-dirty-filter-warning-return-mainly-in-summer/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-219",
+      "file": "dist-review/answers/why-does-the-drain-pan-fill-when-the-cup-below-the-valve-stays-dry/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-268",
+      "file": "dist-review/answers/why-does-the-supply-look-different-from-my-heaters-single-phase-wiring-diagram/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-227",
+      "file": "dist-review/answers/why-does-turning-up-my-new-heater-not-make-the-tap-water-hotter/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-296",
+      "file": "dist-review/answers/why-doesnt-my-small-purifier-clear-smoke-across-the-rest-of-the-house/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-204",
+      "file": "dist-review/answers/why-have-my-water-heaters-needed-repeated-replacement-over-eight-years/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-109",
+      "file": "dist-review/answers/why-is-my-attic-ac-leaking-onto-the-ceiling-when-the-visible-pan-is-dry/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-163",
+      "file": "dist-review/answers/why-is-my-basement-colder-after-switching-to-a-heat-pump/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-221",
+      "file": "dist-review/answers/why-is-my-electric-water-heater-lukewarm-when-its-breaker-has-not-tripped/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-151",
+      "file": "dist-review/answers/why-is-my-heat-pump-defrosting-when-it-is-above-freezing-outside/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-249",
+      "file": "dist-review/answers/why-is-my-new-heat-pump-water-heater-alarming-and-spilling-water-from-its-side/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-218",
+      "file": "dist-review/answers/why-is-my-new-water-heater-leaking-at-the-drain-valve-threads/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-205",
+      "file": "dist-review/answers/why-is-the-relief-valve-dripping-again-days-after-replacement/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-276",
+      "file": "dist-review/answers/why-is-there-dust-inside-the-furnace-after-the-filter/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-220",
+      "file": "dist-review/answers/why-is-water-leaking-near-both-the-heating-element-and-drain/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-192",
+      "file": "dist-review/answers/why-must-i-set-the-remote-so-high-to-get-the-room-warm/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-126",
+      "file": "dist-review/answers/why-was-condenser-cleaning-charged-during-a-warranty-callback/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-193",
+      "file": "dist-review/answers/why-will-my-mini-split-not-give-more-heat-as-the-room-gets-colder/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-166",
+      "file": "dist-review/answers/why-wont-my-heat-pump-reach-its-published-minimum-power/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-264",
+      "file": "dist-review/answers/why-would-a-120-volt-heat-pump-water-heater-need-a-panel-upgrade/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-241",
+      "file": "dist-review/answers/will-a-heat-pump-water-heater-disturb-nearby-bedrooms/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-247",
+      "file": "dist-review/answers/will-a-heat-pump-water-heater-lower-basement-humidity-enough-to-help/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-245",
+      "file": "dist-review/answers/will-a-heat-pump-water-heater-make-my-finished-basement-uncomfortable/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-295",
+      "file": "dist-review/answers/will-a-higher-rated-furnace-filter-restrict-my-hvac-airflow/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-065",
+      "file": "dist-review/answers/will-a-new-thermostat-work-with-my-existing-equipment-interface-module/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-083",
+      "file": "dist-review/answers/will-a-variable-speed-furnace-fix-uneven-temperatures-between-floors/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-289",
+      "file": "dist-review/answers/will-a-whole-home-air-cleaner-remove-paint-or-wood-stain-smells/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-287",
+      "file": "dist-review/answers/will-an-air-purifier-fix-stale-or-unpleasant-basement-or-crawlspace-air/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-259",
+      "file": "dist-review/answers/will-cold-incoming-water-reduce-heat-pump-hot-water-delivery-in-denver/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-257",
+      "file": "dist-review/answers/will-moving-my-water-heater-farther-away-make-hot-water-waits-worse/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-079",
+      "file": "dist-review/answers/wind-pushes-furnace-exhaust-toward-the-intake-and-creates-frost/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-150",
+      "file": "dist-review/answers/with-existing-ducts-in-my-denver-home-should-i-choose-a-central-heat-pump-or-ductless-units/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ANSWER-MGI-137",
+      "file": "dist-review/answers/without-solar-will-a-heat-pump-make-my-denver-winter-bills-much-higher/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-054",
+      "file": "dist-review/blog/furnace-will-not-start/index.html",
+      "pictures": 1
+    },
+    {
+      "id": "ST-056",
+      "file": "dist-review/blog/heat-pump-water-heater-guide/index.html",
+      "pictures": 1
+    },
+    {
+      "id": "ST-013",
+      "file": "dist-review/blog/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-058",
+      "file": "dist-review/blog/indoor-air-quality-observations/index.html",
+      "pictures": 1
+    },
+    {
+      "id": "ST-057",
+      "file": "dist-review/blog/mini-split-or-ducted-system/index.html",
+      "pictures": 1
+    },
+    {
+      "id": "ST-051",
+      "file": "dist-review/blog/most-common-ac-problems-in-colorado/index.html",
+      "pictures": 1
+    },
+    {
+      "id": "ST-080",
+      "file": "dist-review/blog/repair-or-replace-air-conditioner/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-055",
+      "file": "dist-review/blog/repair-or-replace-furnace/index.html",
+      "pictures": 1
+    },
+    {
+      "id": "ST-081",
+      "file": "dist-review/blog/repair-or-replace-water-heater/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "BLOG-MANUAL-J",
+      "file": "dist-review/blog/what-is-a-manual-j-calculation-and-why-is-it-important/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-052",
+      "file": "dist-review/blog/what-to-know-about-colorado-heat-pump-rebates/index.html",
+      "pictures": 1
+    },
+    {
+      "id": "ST-053",
+      "file": "dist-review/blog/why-heat-pumps-are-a-great-choice-for-coloradans/index.html",
+      "pictures": 1
+    },
+    {
+      "id": "ST-003",
+      "file": "dist-review/contact/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-007",
+      "file": "dist-review/financing/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-001",
+      "file": "dist-review/index.html",
+      "pictures": 12
+    },
+    {
+      "id": "SL-BER-AC-MNT",
+      "file": "dist-review/local-hvac/berthoud-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-AC-REP",
+      "file": "dist-review/local-hvac/berthoud-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-AC-RPL",
+      "file": "dist-review/local-hvac/berthoud-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-AIR-PUR",
+      "file": "dist-review/local-hvac/berthoud-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-EMR",
+      "file": "dist-review/local-hvac/berthoud-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-FUR-MNT",
+      "file": "dist-review/local-hvac/berthoud-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-FUR-REP",
+      "file": "dist-review/local-hvac/berthoud-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-FUR-RPL",
+      "file": "dist-review/local-hvac/berthoud-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-HP-INS",
+      "file": "dist-review/local-hvac/berthoud-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-HP-MNT",
+      "file": "dist-review/local-hvac/berthoud-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-HP-REP",
+      "file": "dist-review/local-hvac/berthoud-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-HPWH-INS",
+      "file": "dist-review/local-hvac/berthoud-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-HPWH-MNT",
+      "file": "dist-review/local-hvac/berthoud-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-HPWH-REP",
+      "file": "dist-review/local-hvac/berthoud-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-IAQ-ASM",
+      "file": "dist-review/local-hvac/berthoud-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-MS-INS",
+      "file": "dist-review/local-hvac/berthoud-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-MS-MNT",
+      "file": "dist-review/local-hvac/berthoud-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-MS-REP",
+      "file": "dist-review/local-hvac/berthoud-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-WH-MNT",
+      "file": "dist-review/local-hvac/berthoud-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-WH-REP",
+      "file": "dist-review/local-hvac/berthoud-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BER-WH-RPL",
+      "file": "dist-review/local-hvac/berthoud-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-AC-MNT",
+      "file": "dist-review/local-hvac/boulder-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-AC-REP",
+      "file": "dist-review/local-hvac/boulder-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-AC-RPL",
+      "file": "dist-review/local-hvac/boulder-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-AIR-PUR",
+      "file": "dist-review/local-hvac/boulder-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-EMR",
+      "file": "dist-review/local-hvac/boulder-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-FUR-MNT",
+      "file": "dist-review/local-hvac/boulder-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-FUR-REP",
+      "file": "dist-review/local-hvac/boulder-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-FUR-RPL",
+      "file": "dist-review/local-hvac/boulder-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-HP-INS",
+      "file": "dist-review/local-hvac/boulder-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-HP-MNT",
+      "file": "dist-review/local-hvac/boulder-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-HP-REP",
+      "file": "dist-review/local-hvac/boulder-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-HPWH-INS",
+      "file": "dist-review/local-hvac/boulder-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-HPWH-MNT",
+      "file": "dist-review/local-hvac/boulder-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-HPWH-REP",
+      "file": "dist-review/local-hvac/boulder-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-IAQ-ASM",
+      "file": "dist-review/local-hvac/boulder-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-MS-INS",
+      "file": "dist-review/local-hvac/boulder-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-MS-MNT",
+      "file": "dist-review/local-hvac/boulder-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-MS-REP",
+      "file": "dist-review/local-hvac/boulder-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-WH-MNT",
+      "file": "dist-review/local-hvac/boulder-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-WH-REP",
+      "file": "dist-review/local-hvac/boulder-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BOU-WH-RPL",
+      "file": "dist-review/local-hvac/boulder-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-AC-MNT",
+      "file": "dist-review/local-hvac/broomfield-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-AC-REP",
+      "file": "dist-review/local-hvac/broomfield-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-AC-RPL",
+      "file": "dist-review/local-hvac/broomfield-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-AIR-PUR",
+      "file": "dist-review/local-hvac/broomfield-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-EMR",
+      "file": "dist-review/local-hvac/broomfield-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-FUR-MNT",
+      "file": "dist-review/local-hvac/broomfield-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-FUR-REP",
+      "file": "dist-review/local-hvac/broomfield-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-FUR-RPL",
+      "file": "dist-review/local-hvac/broomfield-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-HP-INS",
+      "file": "dist-review/local-hvac/broomfield-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-HP-MNT",
+      "file": "dist-review/local-hvac/broomfield-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-HP-REP",
+      "file": "dist-review/local-hvac/broomfield-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-HPWH-INS",
+      "file": "dist-review/local-hvac/broomfield-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-HPWH-MNT",
+      "file": "dist-review/local-hvac/broomfield-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-HPWH-REP",
+      "file": "dist-review/local-hvac/broomfield-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-IAQ-ASM",
+      "file": "dist-review/local-hvac/broomfield-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-MS-INS",
+      "file": "dist-review/local-hvac/broomfield-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-MS-MNT",
+      "file": "dist-review/local-hvac/broomfield-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-MS-REP",
+      "file": "dist-review/local-hvac/broomfield-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-WH-MNT",
+      "file": "dist-review/local-hvac/broomfield-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-WH-REP",
+      "file": "dist-review/local-hvac/broomfield-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-BRO-WH-RPL",
+      "file": "dist-review/local-hvac/broomfield-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-AC-MNT",
+      "file": "dist-review/local-hvac/dacono-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-AC-REP",
+      "file": "dist-review/local-hvac/dacono-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-AC-RPL",
+      "file": "dist-review/local-hvac/dacono-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-AIR-PUR",
+      "file": "dist-review/local-hvac/dacono-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-EMR",
+      "file": "dist-review/local-hvac/dacono-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-FUR-MNT",
+      "file": "dist-review/local-hvac/dacono-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-FUR-REP",
+      "file": "dist-review/local-hvac/dacono-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-FUR-RPL",
+      "file": "dist-review/local-hvac/dacono-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-HP-INS",
+      "file": "dist-review/local-hvac/dacono-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-HP-MNT",
+      "file": "dist-review/local-hvac/dacono-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-HP-REP",
+      "file": "dist-review/local-hvac/dacono-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-HPWH-INS",
+      "file": "dist-review/local-hvac/dacono-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-HPWH-MNT",
+      "file": "dist-review/local-hvac/dacono-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-HPWH-REP",
+      "file": "dist-review/local-hvac/dacono-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-IAQ-ASM",
+      "file": "dist-review/local-hvac/dacono-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-MS-INS",
+      "file": "dist-review/local-hvac/dacono-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-MS-MNT",
+      "file": "dist-review/local-hvac/dacono-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-MS-REP",
+      "file": "dist-review/local-hvac/dacono-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-WH-MNT",
+      "file": "dist-review/local-hvac/dacono-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-WH-REP",
+      "file": "dist-review/local-hvac/dacono-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-DAC-WH-RPL",
+      "file": "dist-review/local-hvac/dacono-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-AC-MNT",
+      "file": "dist-review/local-hvac/erie-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-AC-REP",
+      "file": "dist-review/local-hvac/erie-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-AC-RPL",
+      "file": "dist-review/local-hvac/erie-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-AIR-PUR",
+      "file": "dist-review/local-hvac/erie-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-EMR",
+      "file": "dist-review/local-hvac/erie-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-FUR-MNT",
+      "file": "dist-review/local-hvac/erie-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-FUR-REP",
+      "file": "dist-review/local-hvac/erie-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-FUR-RPL",
+      "file": "dist-review/local-hvac/erie-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-HP-INS",
+      "file": "dist-review/local-hvac/erie-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-HP-MNT",
+      "file": "dist-review/local-hvac/erie-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-HP-REP",
+      "file": "dist-review/local-hvac/erie-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-HPWH-INS",
+      "file": "dist-review/local-hvac/erie-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-HPWH-MNT",
+      "file": "dist-review/local-hvac/erie-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-HPWH-REP",
+      "file": "dist-review/local-hvac/erie-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-IAQ-ASM",
+      "file": "dist-review/local-hvac/erie-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-MS-INS",
+      "file": "dist-review/local-hvac/erie-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-MS-MNT",
+      "file": "dist-review/local-hvac/erie-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-MS-REP",
+      "file": "dist-review/local-hvac/erie-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-WH-MNT",
+      "file": "dist-review/local-hvac/erie-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-WH-REP",
+      "file": "dist-review/local-hvac/erie-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-ERI-WH-RPL",
+      "file": "dist-review/local-hvac/erie-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-AC-MNT",
+      "file": "dist-review/local-hvac/firestone-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-AC-REP",
+      "file": "dist-review/local-hvac/firestone-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-AC-RPL",
+      "file": "dist-review/local-hvac/firestone-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-AIR-PUR",
+      "file": "dist-review/local-hvac/firestone-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-EMR",
+      "file": "dist-review/local-hvac/firestone-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-FUR-MNT",
+      "file": "dist-review/local-hvac/firestone-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-FUR-REP",
+      "file": "dist-review/local-hvac/firestone-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-FUR-RPL",
+      "file": "dist-review/local-hvac/firestone-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-HP-INS",
+      "file": "dist-review/local-hvac/firestone-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-HP-MNT",
+      "file": "dist-review/local-hvac/firestone-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-HP-REP",
+      "file": "dist-review/local-hvac/firestone-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-HPWH-INS",
+      "file": "dist-review/local-hvac/firestone-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-HPWH-MNT",
+      "file": "dist-review/local-hvac/firestone-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-HPWH-REP",
+      "file": "dist-review/local-hvac/firestone-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-IAQ-ASM",
+      "file": "dist-review/local-hvac/firestone-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-MS-INS",
+      "file": "dist-review/local-hvac/firestone-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-MS-MNT",
+      "file": "dist-review/local-hvac/firestone-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-MS-REP",
+      "file": "dist-review/local-hvac/firestone-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-WH-MNT",
+      "file": "dist-review/local-hvac/firestone-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-WH-REP",
+      "file": "dist-review/local-hvac/firestone-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FIR-WH-RPL",
+      "file": "dist-review/local-hvac/firestone-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-AC-MNT",
+      "file": "dist-review/local-hvac/fort-collins-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-AC-REP",
+      "file": "dist-review/local-hvac/fort-collins-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-AC-RPL",
+      "file": "dist-review/local-hvac/fort-collins-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-AIR-PUR",
+      "file": "dist-review/local-hvac/fort-collins-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-EMR",
+      "file": "dist-review/local-hvac/fort-collins-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-FUR-MNT",
+      "file": "dist-review/local-hvac/fort-collins-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-FUR-REP",
+      "file": "dist-review/local-hvac/fort-collins-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-FUR-RPL",
+      "file": "dist-review/local-hvac/fort-collins-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-HP-INS",
+      "file": "dist-review/local-hvac/fort-collins-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-HP-MNT",
+      "file": "dist-review/local-hvac/fort-collins-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-HP-REP",
+      "file": "dist-review/local-hvac/fort-collins-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-HPWH-INS",
+      "file": "dist-review/local-hvac/fort-collins-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-HPWH-MNT",
+      "file": "dist-review/local-hvac/fort-collins-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-HPWH-REP",
+      "file": "dist-review/local-hvac/fort-collins-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-IAQ-ASM",
+      "file": "dist-review/local-hvac/fort-collins-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-MS-INS",
+      "file": "dist-review/local-hvac/fort-collins-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-MS-MNT",
+      "file": "dist-review/local-hvac/fort-collins-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-MS-REP",
+      "file": "dist-review/local-hvac/fort-collins-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-WH-MNT",
+      "file": "dist-review/local-hvac/fort-collins-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-WH-REP",
+      "file": "dist-review/local-hvac/fort-collins-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FCO-WH-RPL",
+      "file": "dist-review/local-hvac/fort-collins-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-AC-MNT",
+      "file": "dist-review/local-hvac/frederick-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-AC-REP",
+      "file": "dist-review/local-hvac/frederick-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-AC-RPL",
+      "file": "dist-review/local-hvac/frederick-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-AIR-PUR",
+      "file": "dist-review/local-hvac/frederick-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-EMR",
+      "file": "dist-review/local-hvac/frederick-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-FUR-MNT",
+      "file": "dist-review/local-hvac/frederick-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-FUR-REP",
+      "file": "dist-review/local-hvac/frederick-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-FUR-RPL",
+      "file": "dist-review/local-hvac/frederick-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-HP-INS",
+      "file": "dist-review/local-hvac/frederick-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-HP-MNT",
+      "file": "dist-review/local-hvac/frederick-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-HP-REP",
+      "file": "dist-review/local-hvac/frederick-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-HPWH-INS",
+      "file": "dist-review/local-hvac/frederick-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-HPWH-MNT",
+      "file": "dist-review/local-hvac/frederick-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-HPWH-REP",
+      "file": "dist-review/local-hvac/frederick-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-IAQ-ASM",
+      "file": "dist-review/local-hvac/frederick-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-MS-INS",
+      "file": "dist-review/local-hvac/frederick-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-MS-MNT",
+      "file": "dist-review/local-hvac/frederick-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-MS-REP",
+      "file": "dist-review/local-hvac/frederick-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-WH-MNT",
+      "file": "dist-review/local-hvac/frederick-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-WH-REP",
+      "file": "dist-review/local-hvac/frederick-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-FRE-WH-RPL",
+      "file": "dist-review/local-hvac/frederick-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-AC-MNT",
+      "file": "dist-review/local-hvac/greeley-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-AC-REP",
+      "file": "dist-review/local-hvac/greeley-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-AC-RPL",
+      "file": "dist-review/local-hvac/greeley-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-AIR-PUR",
+      "file": "dist-review/local-hvac/greeley-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-EMR",
+      "file": "dist-review/local-hvac/greeley-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-FUR-MNT",
+      "file": "dist-review/local-hvac/greeley-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-FUR-REP",
+      "file": "dist-review/local-hvac/greeley-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-FUR-RPL",
+      "file": "dist-review/local-hvac/greeley-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-HP-INS",
+      "file": "dist-review/local-hvac/greeley-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-HP-MNT",
+      "file": "dist-review/local-hvac/greeley-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-HP-REP",
+      "file": "dist-review/local-hvac/greeley-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-HPWH-INS",
+      "file": "dist-review/local-hvac/greeley-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-HPWH-MNT",
+      "file": "dist-review/local-hvac/greeley-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-HPWH-REP",
+      "file": "dist-review/local-hvac/greeley-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-IAQ-ASM",
+      "file": "dist-review/local-hvac/greeley-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-MS-INS",
+      "file": "dist-review/local-hvac/greeley-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-MS-MNT",
+      "file": "dist-review/local-hvac/greeley-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-MS-REP",
+      "file": "dist-review/local-hvac/greeley-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-WH-MNT",
+      "file": "dist-review/local-hvac/greeley-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-WH-REP",
+      "file": "dist-review/local-hvac/greeley-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-GRE-WH-RPL",
+      "file": "dist-review/local-hvac/greeley-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-AC-MNT",
+      "file": "dist-review/local-hvac/johnstown-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-AC-REP",
+      "file": "dist-review/local-hvac/johnstown-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-AC-RPL",
+      "file": "dist-review/local-hvac/johnstown-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-AIR-PUR",
+      "file": "dist-review/local-hvac/johnstown-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-EMR",
+      "file": "dist-review/local-hvac/johnstown-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-FUR-MNT",
+      "file": "dist-review/local-hvac/johnstown-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-FUR-REP",
+      "file": "dist-review/local-hvac/johnstown-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-FUR-RPL",
+      "file": "dist-review/local-hvac/johnstown-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-HP-INS",
+      "file": "dist-review/local-hvac/johnstown-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-HP-MNT",
+      "file": "dist-review/local-hvac/johnstown-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-HP-REP",
+      "file": "dist-review/local-hvac/johnstown-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-HPWH-INS",
+      "file": "dist-review/local-hvac/johnstown-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-HPWH-MNT",
+      "file": "dist-review/local-hvac/johnstown-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-HPWH-REP",
+      "file": "dist-review/local-hvac/johnstown-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-IAQ-ASM",
+      "file": "dist-review/local-hvac/johnstown-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-MS-INS",
+      "file": "dist-review/local-hvac/johnstown-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-MS-MNT",
+      "file": "dist-review/local-hvac/johnstown-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-MS-REP",
+      "file": "dist-review/local-hvac/johnstown-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-WH-MNT",
+      "file": "dist-review/local-hvac/johnstown-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-WH-REP",
+      "file": "dist-review/local-hvac/johnstown-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-JOH-WH-RPL",
+      "file": "dist-review/local-hvac/johnstown-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-AC-MNT",
+      "file": "dist-review/local-hvac/longmont-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-AC-REP",
+      "file": "dist-review/local-hvac/longmont-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-AC-RPL",
+      "file": "dist-review/local-hvac/longmont-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-AIR-PUR",
+      "file": "dist-review/local-hvac/longmont-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-EMR",
+      "file": "dist-review/local-hvac/longmont-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-FUR-MNT",
+      "file": "dist-review/local-hvac/longmont-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-FUR-REP",
+      "file": "dist-review/local-hvac/longmont-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-FUR-RPL",
+      "file": "dist-review/local-hvac/longmont-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-HP-INS",
+      "file": "dist-review/local-hvac/longmont-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-HP-MNT",
+      "file": "dist-review/local-hvac/longmont-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-HP-REP",
+      "file": "dist-review/local-hvac/longmont-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-HPWH-INS",
+      "file": "dist-review/local-hvac/longmont-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-HPWH-MNT",
+      "file": "dist-review/local-hvac/longmont-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-HPWH-REP",
+      "file": "dist-review/local-hvac/longmont-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-IAQ-ASM",
+      "file": "dist-review/local-hvac/longmont-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-MS-INS",
+      "file": "dist-review/local-hvac/longmont-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-MS-MNT",
+      "file": "dist-review/local-hvac/longmont-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-MS-REP",
+      "file": "dist-review/local-hvac/longmont-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-WH-MNT",
+      "file": "dist-review/local-hvac/longmont-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-WH-REP",
+      "file": "dist-review/local-hvac/longmont-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LON-WH-RPL",
+      "file": "dist-review/local-hvac/longmont-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-AC-MNT",
+      "file": "dist-review/local-hvac/loveland-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-AC-REP",
+      "file": "dist-review/local-hvac/loveland-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-AC-RPL",
+      "file": "dist-review/local-hvac/loveland-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-AIR-PUR",
+      "file": "dist-review/local-hvac/loveland-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-EMR",
+      "file": "dist-review/local-hvac/loveland-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-FUR-MNT",
+      "file": "dist-review/local-hvac/loveland-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-FUR-REP",
+      "file": "dist-review/local-hvac/loveland-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-FUR-RPL",
+      "file": "dist-review/local-hvac/loveland-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-HP-INS",
+      "file": "dist-review/local-hvac/loveland-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-HP-MNT",
+      "file": "dist-review/local-hvac/loveland-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-HP-REP",
+      "file": "dist-review/local-hvac/loveland-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-HPWH-INS",
+      "file": "dist-review/local-hvac/loveland-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-HPWH-MNT",
+      "file": "dist-review/local-hvac/loveland-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-HPWH-REP",
+      "file": "dist-review/local-hvac/loveland-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-IAQ-ASM",
+      "file": "dist-review/local-hvac/loveland-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-MS-INS",
+      "file": "dist-review/local-hvac/loveland-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-MS-MNT",
+      "file": "dist-review/local-hvac/loveland-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-MS-REP",
+      "file": "dist-review/local-hvac/loveland-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-WH-MNT",
+      "file": "dist-review/local-hvac/loveland-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-WH-REP",
+      "file": "dist-review/local-hvac/loveland-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-LOV-WH-RPL",
+      "file": "dist-review/local-hvac/loveland-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-AC-MNT",
+      "file": "dist-review/local-hvac/severance-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-AC-REP",
+      "file": "dist-review/local-hvac/severance-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-AC-RPL",
+      "file": "dist-review/local-hvac/severance-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-AIR-PUR",
+      "file": "dist-review/local-hvac/severance-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-EMR",
+      "file": "dist-review/local-hvac/severance-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-FUR-MNT",
+      "file": "dist-review/local-hvac/severance-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-FUR-REP",
+      "file": "dist-review/local-hvac/severance-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-FUR-RPL",
+      "file": "dist-review/local-hvac/severance-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-HP-INS",
+      "file": "dist-review/local-hvac/severance-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-HP-MNT",
+      "file": "dist-review/local-hvac/severance-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-HP-REP",
+      "file": "dist-review/local-hvac/severance-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-HPWH-INS",
+      "file": "dist-review/local-hvac/severance-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-HPWH-MNT",
+      "file": "dist-review/local-hvac/severance-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-HPWH-REP",
+      "file": "dist-review/local-hvac/severance-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-IAQ-ASM",
+      "file": "dist-review/local-hvac/severance-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-MS-INS",
+      "file": "dist-review/local-hvac/severance-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-MS-MNT",
+      "file": "dist-review/local-hvac/severance-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-MS-REP",
+      "file": "dist-review/local-hvac/severance-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-WH-MNT",
+      "file": "dist-review/local-hvac/severance-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-WH-REP",
+      "file": "dist-review/local-hvac/severance-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-SEV-WH-RPL",
+      "file": "dist-review/local-hvac/severance-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-AC-MNT",
+      "file": "dist-review/local-hvac/thornton-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-AC-REP",
+      "file": "dist-review/local-hvac/thornton-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-AC-RPL",
+      "file": "dist-review/local-hvac/thornton-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-AIR-PUR",
+      "file": "dist-review/local-hvac/thornton-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-EMR",
+      "file": "dist-review/local-hvac/thornton-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-FUR-MNT",
+      "file": "dist-review/local-hvac/thornton-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-FUR-REP",
+      "file": "dist-review/local-hvac/thornton-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-FUR-RPL",
+      "file": "dist-review/local-hvac/thornton-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-HP-INS",
+      "file": "dist-review/local-hvac/thornton-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-HP-MNT",
+      "file": "dist-review/local-hvac/thornton-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-HP-REP",
+      "file": "dist-review/local-hvac/thornton-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-HPWH-INS",
+      "file": "dist-review/local-hvac/thornton-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-HPWH-MNT",
+      "file": "dist-review/local-hvac/thornton-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-HPWH-REP",
+      "file": "dist-review/local-hvac/thornton-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-IAQ-ASM",
+      "file": "dist-review/local-hvac/thornton-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-MS-INS",
+      "file": "dist-review/local-hvac/thornton-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-MS-MNT",
+      "file": "dist-review/local-hvac/thornton-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-MS-REP",
+      "file": "dist-review/local-hvac/thornton-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-WH-MNT",
+      "file": "dist-review/local-hvac/thornton-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-WH-REP",
+      "file": "dist-review/local-hvac/thornton-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-THO-WH-RPL",
+      "file": "dist-review/local-hvac/thornton-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-AC-MNT",
+      "file": "dist-review/local-hvac/timnath-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-AC-REP",
+      "file": "dist-review/local-hvac/timnath-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-AC-RPL",
+      "file": "dist-review/local-hvac/timnath-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-AIR-PUR",
+      "file": "dist-review/local-hvac/timnath-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-EMR",
+      "file": "dist-review/local-hvac/timnath-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-FUR-MNT",
+      "file": "dist-review/local-hvac/timnath-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-FUR-REP",
+      "file": "dist-review/local-hvac/timnath-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-FUR-RPL",
+      "file": "dist-review/local-hvac/timnath-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-HP-INS",
+      "file": "dist-review/local-hvac/timnath-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-HP-MNT",
+      "file": "dist-review/local-hvac/timnath-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-HP-REP",
+      "file": "dist-review/local-hvac/timnath-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-HPWH-INS",
+      "file": "dist-review/local-hvac/timnath-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-HPWH-MNT",
+      "file": "dist-review/local-hvac/timnath-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-HPWH-REP",
+      "file": "dist-review/local-hvac/timnath-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-IAQ-ASM",
+      "file": "dist-review/local-hvac/timnath-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-MS-INS",
+      "file": "dist-review/local-hvac/timnath-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-MS-MNT",
+      "file": "dist-review/local-hvac/timnath-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-MS-REP",
+      "file": "dist-review/local-hvac/timnath-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-WH-MNT",
+      "file": "dist-review/local-hvac/timnath-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-WH-REP",
+      "file": "dist-review/local-hvac/timnath-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-TIM-WH-RPL",
+      "file": "dist-review/local-hvac/timnath-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-AC-MNT",
+      "file": "dist-review/local-hvac/wellington-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-AC-REP",
+      "file": "dist-review/local-hvac/wellington-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-AC-RPL",
+      "file": "dist-review/local-hvac/wellington-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-AIR-PUR",
+      "file": "dist-review/local-hvac/wellington-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-EMR",
+      "file": "dist-review/local-hvac/wellington-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-FUR-MNT",
+      "file": "dist-review/local-hvac/wellington-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-FUR-REP",
+      "file": "dist-review/local-hvac/wellington-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-FUR-RPL",
+      "file": "dist-review/local-hvac/wellington-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-HP-INS",
+      "file": "dist-review/local-hvac/wellington-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-HP-MNT",
+      "file": "dist-review/local-hvac/wellington-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-HP-REP",
+      "file": "dist-review/local-hvac/wellington-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-HPWH-INS",
+      "file": "dist-review/local-hvac/wellington-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-HPWH-MNT",
+      "file": "dist-review/local-hvac/wellington-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-HPWH-REP",
+      "file": "dist-review/local-hvac/wellington-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-IAQ-ASM",
+      "file": "dist-review/local-hvac/wellington-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-MS-INS",
+      "file": "dist-review/local-hvac/wellington-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-MS-MNT",
+      "file": "dist-review/local-hvac/wellington-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-MS-REP",
+      "file": "dist-review/local-hvac/wellington-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-WH-MNT",
+      "file": "dist-review/local-hvac/wellington-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-WH-REP",
+      "file": "dist-review/local-hvac/wellington-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WEL-WH-RPL",
+      "file": "dist-review/local-hvac/wellington-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-AC-MNT",
+      "file": "dist-review/local-hvac/windsor-ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-AC-REP",
+      "file": "dist-review/local-hvac/windsor-ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-AC-RPL",
+      "file": "dist-review/local-hvac/windsor-ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-AIR-PUR",
+      "file": "dist-review/local-hvac/windsor-air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-EMR",
+      "file": "dist-review/local-hvac/windsor-emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-FUR-MNT",
+      "file": "dist-review/local-hvac/windsor-furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-FUR-REP",
+      "file": "dist-review/local-hvac/windsor-furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-FUR-RPL",
+      "file": "dist-review/local-hvac/windsor-furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-HP-INS",
+      "file": "dist-review/local-hvac/windsor-heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-HP-MNT",
+      "file": "dist-review/local-hvac/windsor-heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-HP-REP",
+      "file": "dist-review/local-hvac/windsor-heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-HPWH-INS",
+      "file": "dist-review/local-hvac/windsor-heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-HPWH-MNT",
+      "file": "dist-review/local-hvac/windsor-heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-HPWH-REP",
+      "file": "dist-review/local-hvac/windsor-heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-IAQ-ASM",
+      "file": "dist-review/local-hvac/windsor-indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-MS-INS",
+      "file": "dist-review/local-hvac/windsor-mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-MS-MNT",
+      "file": "dist-review/local-hvac/windsor-mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-MS-REP",
+      "file": "dist-review/local-hvac/windsor-mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-WH-MNT",
+      "file": "dist-review/local-hvac/windsor-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-WH-REP",
+      "file": "dist-review/local-hvac/windsor-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "SL-WIN-WH-RPL",
+      "file": "dist-review/local-hvac/windsor-water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "LP-003",
+      "file": "dist-review/lp/ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "LP-004",
+      "file": "dist-review/lp/ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "LP-001",
+      "file": "dist-review/lp/furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "LP-002",
+      "file": "dist-review/lp/furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "LP-005",
+      "file": "dist-review/lp/heat-pumps/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "LP-009",
+      "file": "dist-review/lp/hvac/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "LP-007",
+      "file": "dist-review/lp/indoor-air-quality/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "LP-008",
+      "file": "dist-review/lp/mgi/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "LP-006",
+      "file": "dist-review/lp/water-heaters/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-011",
+      "file": "dist-review/new-homeowners/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-017",
+      "file": "dist-review/privacy-choices/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-014",
+      "file": "dist-review/privacy-policy/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-009",
+      "file": "dist-review/rebates/calculator/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-008",
+      "file": "dist-review/rebates/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-018",
+      "file": "dist-review/request-received/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-004",
+      "file": "dist-review/schedule-service/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-031",
+      "file": "dist-review/service-area/berthoud/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-034",
+      "file": "dist-review/service-area/boulder/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-039",
+      "file": "dist-review/service-area/broomfield/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-044",
+      "file": "dist-review/service-area/dacono/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-035",
+      "file": "dist-review/service-area/erie/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-037",
+      "file": "dist-review/service-area/firestone/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-040",
+      "file": "dist-review/service-area/fort-collins/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-036",
+      "file": "dist-review/service-area/frederick/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-029",
+      "file": "dist-review/service-area/greeley/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-006",
+      "file": "dist-review/service-area/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-041",
+      "file": "dist-review/service-area/johnstown/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-033",
+      "file": "dist-review/service-area/longmont/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-030",
+      "file": "dist-review/service-area/loveland/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-043",
+      "file": "dist-review/service-area/severance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-038",
+      "file": "dist-review/service-area/thornton/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-042",
+      "file": "dist-review/service-area/timnath/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-028",
+      "file": "dist-review/service-area/wellington/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-032",
+      "file": "dist-review/service-area/windsor/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-064",
+      "file": "dist-review/services/ac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-061",
+      "file": "dist-review/services/ac-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-062",
+      "file": "dist-review/services/ac-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-021",
+      "file": "dist-review/services/air-conditioning/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-078",
+      "file": "dist-review/services/air-purification-systems/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-079",
+      "file": "dist-review/services/emergency-hvac-service/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-020",
+      "file": "dist-review/services/furnace/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-063",
+      "file": "dist-review/services/furnace-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-059",
+      "file": "dist-review/services/furnace-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-060",
+      "file": "dist-review/services/furnace-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-066",
+      "file": "dist-review/services/heat-pump-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-067",
+      "file": "dist-review/services/heat-pump-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-065",
+      "file": "dist-review/services/heat-pump-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-072",
+      "file": "dist-review/services/heat-pump-water-heater-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-073",
+      "file": "dist-review/services/heat-pump-water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-071",
+      "file": "dist-review/services/heat-pump-water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-024",
+      "file": "dist-review/services/heat-pump-water-heaters/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-022",
+      "file": "dist-review/services/heat-pumps/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-027",
+      "file": "dist-review/services/hvac-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-005",
+      "file": "dist-review/services/index.html",
+      "pictures": 1
+    },
+    {
+      "id": "ST-025",
+      "file": "dist-review/services/indoor-air-quality/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-077",
+      "file": "dist-review/services/indoor-air-quality-assessment/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-075",
+      "file": "dist-review/services/mini-split-installation/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-076",
+      "file": "dist-review/services/mini-split-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-074",
+      "file": "dist-review/services/mini-split-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-026",
+      "file": "dist-review/services/mini-splits/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-070",
+      "file": "dist-review/services/water-heater-maintenance/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-068",
+      "file": "dist-review/services/water-heater-repair/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-069",
+      "file": "dist-review/services/water-heater-replacement/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-023",
+      "file": "dist-review/services/water-heaters/index.html",
+      "pictures": 5
+    },
+    {
+      "id": "ST-015",
+      "file": "dist-review/terms/index.html",
+      "pictures": 0
+    },
+    {
+      "id": "ST-010",
+      "file": "dist-review/vip-membership/index.html",
+      "pictures": 5
+    }
+  ]
+}

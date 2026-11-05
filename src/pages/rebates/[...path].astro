@@ -1,0 +1,9 @@
+---
+import Base from '../../layouts/Base.astro';
+import {familyPaths} from '../../data/page-entrypoints.mjs';
+import RebateJourney from '../../components/RebateJourney.astro';
+import UtilityPages from '../../components/UtilityPages.astro';
+export function getStaticPaths(){return familyPaths('rebates','rebates');}
+const {route,content}=Astro.props;
+---
+<Base route={route} content={content}>{route.page_id==='ST-008'?<RebateJourney route={route} content={content}/>:<UtilityPages route={route} content={content}/>}</Base>

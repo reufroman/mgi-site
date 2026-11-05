@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import {familyPaths} from '../../data/page-entrypoints.mjs';
+import BlogFamily from '../../components/BlogFamily.astro';
+export function getStaticPaths(){return familyPaths('blog','blog');}
+const {route,content}=Astro.props;
+---
+<Base route={route} content={content}><BlogFamily route={route} content={content}/></Base>

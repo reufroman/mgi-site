@@ -1,0 +1,92 @@
+---
+import type {Route,Content} from "../data/types";
+interface Props {route:Route;content:Pick<Content,"title"|"summary">;}
+import '../styles/site.css';
+import LandingCallMeasurement from '../components/LandingCallMeasurement.astro';
+import ReadingMotion from '../components/ReadingMotion.astro';
+import ServiceTitanScheduler from '../components/ServiceTitanScheduler.astro';
+import {pageMetadata} from '../data/page-metadata.mjs';
+import {canonicalUrl, robotsDirective, pageSchema} from '../data/seo-policy.mjs';
+import site from '../data/site.json';
+import proof from '../data/home-proof.json';
+import ServiceIcon from '../components/ServiceIcon.astro';
+import {serviceRolloutIds} from '../data/service-family-rollout.mjs';
+import PrimaryActions from '../components/PrimaryActions.astro';
+import CredentialLogos from '../components/CredentialLogos.astro';
+import {review,buildMode,byId,requestHref,areas,services} from '../data/catalog.mjs';
+const {route,content}=Astro.props;
+const metadata=pageMetadata(route,content);
+const isBatchOne=['ST-059','ST-060','ST-063','ST-079'].includes(route.page_id);
+const isPilot=route.page_id==='ST-005';
+const isInfoPilot=route.page_id==='ST-005';
+const isHomeowner=route.page_id==='ST-012'||!!route.source_answer_id;
+const phone=site.phone?String(site.phone):null;
+const dialNumber=phone?phone.replace(/[^+0-9]/g,''):'';
+const phoneHref='tel:'+(dialNumber.length===10?'+1':'')+dialNumber;
+const canonical=canonicalUrl(route,Astro.site);
+const navigation=[['ST-005','Services'],['ST-006','Service areas'],['ST-007','Financing'],['ST-008','Rebates'],['ST-079','Emergency']].filter(([id])=>byId(id));
+const resources=[['ST-012','Homeowner help'],['ST-002','About']].filter(([id])=>byId(id));
+const schema=pageSchema(route,metadata,Astro.site,site);
+---
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>{metadata.title} | MGI Heating and Air</title><meta name="description" content={metadata.description}/>
+<meta name="robots" content={robotsDirective(route,review)}/>
+<link rel="canonical" href={canonical}/><meta name="theme-color" content="#174E5B"/>
+<link rel="preload" href="/assets/manrope.woff2" as="font" type="font/woff2" crossorigin/><link rel="preload" href="/assets/cormorant.woff2" as="font" type="font/woff2" crossorigin/>
+<meta property="og:title" content={`${metadata.title} | MGI Heating and Air`}/><meta property="og:description" content={metadata.description}/><meta property="og:type" content={route.family==='Article'?'article':'website'}/><meta property="og:site_name" content={site.brand}/><meta property="og:locale" content="en_US"/><meta property="og:image" content={new URL('/assets/mgi-badge.png',Astro.site).href}/><meta property="og:image:alt" content="MGI Heating and Air logo"/><meta name="twitter:card" content="summary"/><link rel="icon" href="/assets/mgi-badge.png" type="image/png"/><meta property="og:url" content={canonical}/>
+<script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g,'\u003c')}/>
+</head><body data-page-id={route.page_id} data-build-mode={buildMode} data-replacement-services={JSON.stringify(services.filter(service=>/Replacement|Installation/.test(service.name)).map(service=>service.name))} data-request-towns={JSON.stringify(areas.map(a=>a.name.replace('HVAC Services in ','')))}>
+<a class="skip" href="#main">Skip to content</a>
+{!['ST-004','ST-017'].includes(route.page_id)&&<LandingCallMeasurement sitewide/>}
+{review && <div class="review-bar"><strong>Private review</strong><span>Draft site. The scheduler sends real requests.</span><a href="/review/">Page directory</a></div>}
+<header class:list={["site-header",{"homeowner-shell":isHomeowner||isPilot}]}><div class="wrap masthead"><nav class="desktop-nav" aria-label="Main navigation">{navigation.map(([id,label])=><a href={byId(id)!.canonical_route} aria-current={route.page_id===id?'page':undefined}>{label}</a>)}</nav>
+<a class="brand" href="/" aria-label="MGI Heating and Air home"><img src="/assets/mgi-badge-240.webp" srcset="/assets/mgi-badge-120.webp 120w, /assets/mgi-badge-240.webp 240w" sizes="120px" alt="MGI Heating and Air" width="667" height="667"/></a>
+<div class="header-right"><details class="header-help desktop-nav"><summary>More</summary><nav aria-label="More navigation">{resources.map(([id,label])=><a href={byId(id)!.canonical_route}>{label}</a>)}</nav></details>{phone&&!isPilot&&<a class="button small outline phone-button" aria-label={`Call MGI at ${phone}`} href={phoneHref}><ServiceIcon name="phone"/><span>{phone}</span></a>}{byId('ST-004') && <a class="button small schedule-button" href={requestHref(route)}>{isBatchOne?'Request service':'Schedule service'}</a>}</div>
+<details class="mobile-menu"><summary>Menu</summary><nav aria-label="Mobile navigation">{[...navigation,...resources].map(([id,label])=><a href={byId(id)!.canonical_route}>{label}</a>)}{byId('ST-004') && <a href={requestHref(route)}>{isBatchOne?'Request service':'Schedule service'}</a>}{phone&&!isPilot&&<a href={phoneHref}>Call {phone}</a>}</nav></details>
+</div></header>
+<main id="main" tabindex="-1"><slot/></main>
+<ReadingMotion/>
+{!['ST-002','ST-009','ST-013','ST-014','ST-015','ST-016','ST-017','ST-019'].includes(route.page_id) && route.family!=='Article' && route.family!=='Answer category' && route.family!=='Area' && route.page_id!=='ST-006' && route.family!=='Service-town candidate' && !serviceRolloutIds.includes(route.page_id) && !isHomeowner && !isPilot && !isBatchOne && !['ST-061','SL-WIN-AC-REP'].includes(route.page_id) && route.page_id!=='ST-018' && route.page_id!=='ST-004' && route.page_id!=='ST-003' && route.page_id!=='ST-007' && route.page_id!=='ST-008' && route.page_id!=='ST-010' && route.page_id!=='ST-011' && byId('ST-004') && <section class="closing"><div class="wrap close-grid"><div><h2>{route.page_id==='ST-007'?<>Let’s put your options<br/>side by side.</>:route.page_id==='ST-001'?<>Let’s make room for life at home.</>:<>Tell us what’s happening<br/>at home.</>}</h2><p>{route.page_id==='ST-007'?'Bring your questions about the system, installation and ways to pay. Start with an appointment.':route.page_id==='ST-001'?'Let MGI help with your heating and cooling, so you can get back to the moments that matter.':'You do not need to know which part is causing the problem. Start with what you notice.'}</p></div><div><p class="closing-proof"><a href={proof.carrier}>Carrier Factory Authorized Dealer</a><br/><a href={proof.bbb}>BBB Accredited · A+ rating</a></p>{route.page_id==='ST-001'?<PrimaryActions dark/>:<><a class="button light" href={requestHref(route)}>{route.page_id==='ST-007'?'Book an appointment':'Schedule service'} <span aria-hidden="true">↗</span></a><p class="small-copy">The office will confirm your appointment and visit details.</p></>}</div></div></section>}
+<footer class="site-footer"><div class="wrap"><div class="footer-top"><div><p class="footer-name">MGI Heating and Air</p><p>Heating and cooling help for your home.</p></div><a href={proof.carrier}><img class="carrier-logo" src="/assets/carrier-logo.png" alt="Carrier" width="800" height="320"/></a></div><div class="footer-grid"><div><h3>Let’s talk.</h3>{phone&&!isPilot&&<p><a class="footer-phone" href={phoneHref}>{phone}</a></p>}<p>{site.address}</p><a class="button" href={requestHref(route)}>{isBatchOne?'Request service ↗':'Schedule service ↗'}</a><div class="footer-credentials"><CredentialLogos compact/></div></div><nav aria-label="Footer services"><h3>Services</h3>{['ST-020','ST-021','ST-022','ST-023','ST-024','ST-026','ST-025','ST-027','ST-079'].filter(id=>byId(id)).map(id=><a href={byId(id)!.canonical_route}>{byId(id)!.name}</a>)}</nav><nav aria-label="Footer service areas"><h3>Our communities</h3>{areas.filter(a=>!['Fort Collins','Johnstown','Timnath','Severance','Dacono'].includes(a.name.replace('HVAC Services in ',''))).map(a=><a href={a.canonical_route}>{a.name.replace('HVAC Services in ','')}</a>)}<a href="/service-area/">All service areas ↗</a></nav><nav aria-label="Footer resources"><h3>Homeowner help</h3>{['ST-007','ST-008','ST-010','ST-011','ST-012','ST-013','ST-002','ST-003'].filter(id=>byId(id)).map(id=><a href={byId(id)!.canonical_route}>{byId(id)!.name}</a>)}</nav></div><p class="footer-coverage">Contact MGI to confirm service at your address and current availability.</p><div class="footer-bottom"><small>© 2026 {site.legalName}</small><nav aria-label="Policies">{['MIGRATION-FAQ','ST-014','ST-015','ST-016','ST-017'].filter(id=>byId(id)).map(id=><a href={byId(id)!.canonical_route}>{byId(id)!.name}</a>)}</nav></div><p class="image-disclaimer">Lifestyle images are AI-generated illustrations. They do not show actual MGI customers, employees or completed work.</p></div></footer>
+<script>
+// Preserve an allowed town when a visitor explores a generic service from an area page.
+const incomingTown=new URLSearchParams(location.search).get('town');
+const allowedTowns=JSON.parse(document.body.dataset.requestTowns||'[]');
+if(incomingTown&&allowedTowns.includes(incomingTown)){document.querySelectorAll<HTMLAnchorElement>('a[href^="/schedule-service/"],a[href^="/services/"],a[href^="/financing/"]').forEach(link=>{const destination=new URL(link.href);destination.searchParams.set('town',incomingTown);link.href=destination.pathname+destination.search+destination.hash;});}
+// Keep the chosen replacement service when Financing leads to an appointment.
+const incomingService=new URLSearchParams(location.search).get('service');
+const allowedReplacements=JSON.parse(document.body.dataset.replacementServices||'[]');
+if(document.body.dataset.pageId==='ST-007'&&incomingService&&allowedReplacements.includes(incomingService)){document.querySelectorAll<HTMLAnchorElement>('a[href^="/schedule-service/"]').forEach(link=>{const destination=new URL(link.href);destination.searchParams.set('service',incomingService);link.href=destination.pathname+destination.search+destination.hash;});}
+const reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
+// Animate the separate translate property so each frame keeps its CSS tilt and positioning.
+const headerAnimations=new Set<Animation>();
+const revealHeaderPhotos=()=>{
+ if(reduce.matches || typeof HTMLElement.prototype.animate!=='function')return;
+ const visibleFrames=[...document.querySelectorAll<HTMLElement>('.hero .polaroid')].filter(frame=>{
+  const style=getComputedStyle(frame);
+  return style.display!=='none' && style.visibility!=='hidden' && frame.getClientRects().length>0;
+ });
+ visibleFrames.forEach((frame,index)=>{
+  const distance=window.matchMedia('(max-width: 767px)').matches?18:28;
+  const offset=(index%2===0?-1:1)*distance;
+  const animation=frame.animate([{translate:`${offset}px 0px`,opacity:0},{translate:'0px 0px',opacity:1}],{
+   duration:1200,delay:index*90,easing:'cubic-bezier(.2,.65,.3,1)',fill:'backwards'
+  });
+  headerAnimations.add(animation);
+  animation.finished.then(()=>headerAnimations.delete(animation)).catch(()=>headerAnimations.delete(animation));
+ });
+};
+if(document.readyState==='complete')revealHeaderPhotos();
+else window.addEventListener('load',revealHeaderPhotos,{once:true});
+reduce.addEventListener('change',()=>{if(reduce.matches){headerAnimations.forEach(animation=>animation.cancel());headerAnimations.clear();}});
+if(!reduce.matches && 'IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('revealed');observer.unobserve(entry.target);}});},{threshold:0.08});document.querySelectorAll('[data-reveal]').forEach(el=>observer.observe(el));}
+document.querySelectorAll<HTMLDetailsElement>('.mobile-menu, .header-help').forEach(menu=>{menu.addEventListener('keydown',(e)=>{if(e.key==='Escape'){menu.removeAttribute('open');menu.querySelector('summary')?.focus();}});});
+</script>
+<ServiceTitanScheduler/>
+</body></html>
+
+<style is:global>
+@media(max-width:1100px){.homeowner-shell .masthead{min-height:150px}.homeowner-shell .brand{margin-bottom:0}}
+@media(max-width:767px){.homeowner-shell .masthead{grid-template-rows:75px 75px;align-content:center}}
+</style>

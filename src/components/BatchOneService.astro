@@ -1,0 +1,61 @@
+---
+import type {Route} from '../data/types';
+import batch from '../data/audit-batch-one.json';
+import proof from '../data/home-proof.json';
+import site from '../data/site.json';
+import Photo from './Photo.astro';
+import DecisionProof from './DecisionProof.astro';
+import {photos,requestHref} from '../data/catalog.mjs';
+interface Props {route:Route;}
+const {route}=Astro.props;
+const data=batch[route.page_id as keyof typeof batch];
+// Optional presentation fields belong to individual intent sections.
+type Section={heading:string;body:string;rows?:string[][];bullets?:string[];review?:string;action?:boolean;link?:string;linkLabel?:string;financing?:boolean;repairPaths?:boolean;source?:string;sourceLabel?:string;};
+const sections=data.sections as Section[];
+const urgent=route.page_id==='ST-079';
+const safety=urgent||route.page_id==='ST-059';
+const pictures=photos(route.page_id);
+const phone=String(site.phone).replace(/[^+0-9]/g,'');
+const call='tel:'+(phone.length===10?'+1':'')+phone;
+const href=requestHref(route);
+const financing='/financing/?'+new URLSearchParams({service:route.name,town:''}).toString();
+---
+<div class:list={['batch-one',{'batch-urgent':urgent}]} data-batch-one>
+<section class="hero"><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/services/">Services</a><span aria-hidden="true">/</span><span aria-current="page">{route.name}</span></nav>
+<div class:list={[{'hero-grid':!urgent&&pictures.length>0}]}>
+<div><h1>{data.title}</h1>
+{safety&&<div class="batch-safety" data-safety><h2>Smell gas, suspect carbon monoxide, or face immediate danger?</h2><p>If you smell gas, leave the area. From a safe place, call 911 and your gas utility. Do not use switches or try to relight the furnace. If you suspect carbon monoxide, get outside to fresh air and call 911. For smoke or other immediate danger, leave the area and call 911 from a safe place.</p><strong>Do not wait for an HVAC visit.</strong></div>}
+<p class="lede">{data.summary}</p>
+{route.page_id==='ST-063'&&<p>Heat stopped or a new problem appeared? <a href="/services/furnace-repair/">Start with furnace repair.</a></p>}
+<div class="actions" data-primary-actions>{urgent?<><a class="button" href={call}>Call about urgent HVAC help ↗</a><a href={href}>{data.label}</a></>:<><a class="button" href={href}>{data.label} ↗</a><a href={call}>{route.page_id==='ST-059'?'Call about furnace repair':'Call MGI'}</a></>}</div>
+<p class="small-copy">{urgent?'Ask about current availability and visit terms. A request does not confirm dispatch or an arrival time.':'Address coverage, visit terms, and availability need checking. A request is not a confirmed appointment.'}</p>
+{!urgent&&<DecisionProof/>}
+</div>
+{!urgent&&pictures[0]&&<Photo image={pictures[0]} eager tilt={-2}/>}
+</div></div></section>
+{sections.map((section,index)=>{
+ const review=proof.reviews.find(r=>r.name===section.review);
+ return <section id={index===0?'answer':undefined} class:list={['batch-section',{'batch-tint':index%2===0}]} aria-labelledby={`batch-heading-${index}`}><div class="wrap batch-editorial">
+<div class="batch-heading" data-reveal><span class="batch-number" aria-hidden="true">{String(index+1).padStart(2,'0')}</span><h2 id={`batch-heading-${index}`}>{section.heading}</h2></div>
+<div class="batch-detail" data-reveal><p class="batch-intro">{section.body}</p>
+{section.rows&&<dl class="batch-rows">{section.rows.map(([label,body])=><div><dt>{label}</dt><dd>{body}</dd></div>)}</dl>}
+{section.bullets&&<ul>{section.bullets.map(item=><li>{item}</li>)}</ul>}
+{review&&<figure class="batch-review"><blockquote>{review.text}</blockquote><figcaption>{review.name} · <a href={review.source}>Read this customer review</a></figcaption><p class="small-copy">{route.page_id==='ST-060'?'Sara describes her combined AC and heating installation.':'John describes his experience with furnace work.'}</p></figure>}
+{section.link&&<a class="batch-text-link" href={section.link}>{section.linkLabel} ↗</a>}
+{section.source&&<a class="batch-text-link" href={section.source}>{section.sourceLabel} ↗</a>}
+{section.repairPaths&&<nav class="batch-paths" aria-label="Repair information"><a href="/services/furnace-repair/">Furnace repair ↗</a><a href="/services/ac-repair/">AC repair ↗</a></nav>}
+{section.financing&&<nav class="batch-paths" aria-label="Project cost information"><a href={financing}>Explore financing ↗</a><a href="/rebates/">Check rebate information ↗</a></nav>}
+{section.action&&<aside class="batch-next" data-context-cta><p>Learn about MGI</p><DecisionProof/><div class="actions"><a class="button" href={urgent?call:href}>{urgent?'Call about urgent HVAC help':data.label} ↗</a></div></aside>}
+</div></div></section>;
+})}
+
+<section class="batch-section"><div class="wrap faq"><h2>{urgent?'Questions about urgent help':`Questions about ${route.name.toLowerCase()}`}</h2>{data.faqs.map(([question,answer])=><details><summary>{question}</summary><p>{answer}</p></details>)}</div></section>
+{pictures.slice(urgent?0:1).map(image=><section class="batch-section"><div class="wrap batch-atmosphere"><Photo image={image} tilt={2}/></div></section>)}
+<section class="closing"><div class="wrap close-grid"><div><h2>{data.close}</h2><p>{data.closeBody}</p></div><div><div class="actions"><a class="button light" href={urgent?call:href}>{urgent?'Call about urgent HVAC help':data.label} ↗</a>{urgent?<a href={href}>Request urgent HVAC service</a>:<a href={call}>Call MGI</a>}</div></div></div></section>
+</div>
+<style>
+.batch-one .hero-grid{align-items:start;gap:64px}.batch-one h1{max-width:16ch}.batch-safety{border-left:5px solid var(--teal);background:#f1f3ec;padding:24px;margin:28px 0}.batch-safety h2{font-family:Manrope,Arial,sans-serif;font-size:18px;line-height:1.5;margin:0 0 12px}.batch-safety p{font-size:15px;margin-bottom:12px}.batch-safety strong{font-size:15px}.batch-urgent .hero{padding-bottom:48px}.batch-urgent .hero>div{max-width:1000px}.batch-urgent h1{max-width:none}.batch-urgent .batch-safety{max-width:820px}.batch-urgent .lede{max-width:65ch}.batch-section{padding:72px 0}.batch-tint{background:#f2f3ed}.batch-editorial{display:grid;grid-template-columns:1fr 1.45fr;gap:80px;align-items:start}.batch-heading h2{font-size:clamp(34px,3.4vw,48px);max-width:18ch}.batch-number{display:block;color:var(--teal);font:600 60px/1 Cormorant,Georgia,serif;margin-bottom:24px}.batch-detail{min-width:0}.batch-intro{font-size:19px}.batch-rows{margin:28px 0}.batch-rows>div{display:grid;grid-template-columns:155px 1fr;gap:24px;border-top:1px solid #bcb5aa;padding:22px 0}.batch-rows dt{font-weight:700;font-size:15px;color:var(--teal)}.batch-rows dd{margin:0;font-size:16px}.batch-detail li{margin-bottom:14px}.batch-review{margin:32px 0;padding:28px;border-left:3px solid var(--teal);background:var(--warm)}.batch-review blockquote{margin:0 0 20px;font-size:19px}.batch-review figcaption{font-family:Manrope,Arial,sans-serif;font-size:13px}.batch-review p{margin-bottom:0}.batch-next{margin-top:32px;padding-top:24px;border-top:1px solid #bcb5aa}.batch-next>p{font-size:13px;margin-bottom:0}.batch-next .actions{margin-bottom:0}.batch-paths{display:flex;flex-wrap:wrap;gap:16px 28px}.batch-paths a,.batch-text-link{display:inline-flex;align-items:center;min-height:44px;font-weight:600;font-size:15px}.batch-atmosphere{max-width:720px}.batch-one .closing a:focus-visible{outline-color:var(--warm)}
+@media(max-width:900px){.batch-editorial{gap:40px;grid-template-columns:1fr 1.3fr}.batch-one .hero-grid{gap:36px}.batch-rows>div{grid-template-columns:1fr;gap:8px}}
+@media(max-width:767px){.batch-one .hero-grid,.batch-editorial{display:grid;grid-template-columns:1fr;gap:32px}.batch-one .hero{padding-bottom:48px}.batch-section{padding:48px 0}.batch-number{font-size:48px;margin-bottom:16px}.batch-heading h2{margin-bottom:0}.batch-detail .batch-intro{font-size:18px}.batch-review{padding:24px}.batch-safety{padding:20px}.batch-one .actions{gap:16px}.batch-one .button{max-width:100%;gap:12px}.batch-atmosphere{padding:0 12px}}
+</style>

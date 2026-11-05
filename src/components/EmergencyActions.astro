@@ -1,0 +1,9 @@
+---
+import ServiceIcon from './ServiceIcon.astro';
+interface Props {href:string;dark?:boolean;}
+const {href,dark=false}=Astro.props;
+---
+<div class:list={['actions','primary-actions',{'on-dark':dark}]} data-urgent-actions>
+<a class:list={['button',{'light':dark}]} href="tel:+19702871673"><ServiceIcon name="phone"/>Call about urgent HVAC help</a>
+<a class="button outline" href={href}>Request urgent HVAC service <span aria-hidden="true">↗</span></a>
+</div>

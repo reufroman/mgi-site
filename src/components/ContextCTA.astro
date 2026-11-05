@@ -1,0 +1,9 @@
+---
+import DecisionProof from './DecisionProof.astro';
+interface Props {plan:{heading:string;body:string;label:string;href:string;showPhone?:boolean;financingHref?:string};}
+const {plan}=Astro.props;
+---
+<aside class="reading context-cta" aria-label="Your next step" data-context-cta>
+ <h2>{plan.heading}</h2><p>{plan.body}</p><DecisionProof/>
+ <div class="actions"><a class="button" href={plan.href}>{plan.label} <span aria-hidden="true">↗</span></a>{plan.financingHref&&<a class="button outline financing-link" href={plan.financingHref}>Explore financing <span aria-hidden="true">↗</span></a>}{plan.showPhone!==false&&<a class="context-call" href="tel:+19702871673">Call MGI</a>}</div>
+</aside>

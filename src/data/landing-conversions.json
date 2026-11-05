@@ -1,0 +1,24 @@
+{
+  "enabled": false,
+  "productionHostname": "mgiheatingandair.com",
+  "googleAdsId": "AW-621269572",
+  "googleAdsLabel": "yOT8CKje04UZEMSkn6gC",
+  "provider": {
+    "origin": null,
+    "iframeSelector": null,
+    "eventTypeField": null,
+    "eventType": null,
+    "successField": null,
+    "successValue": null,
+    "receiptField": null
+  },
+  "verification": {
+    "providerProtocolEvidence": null,
+    "opaqueReceiptEvidence": null,
+    "googleAdsDestinationEvidence": "Read-only Google Ads account 350-839-2399 on 2026-10-12, Schedule Service (main site), action 6722744104 event snippet; no settings changed",
+    "productionDomainEvidence": null,
+    "consentPolicyEvidence": null,
+    "activationApprovalEvidence": null
+  },
+  "destinationStatus": "Observed existing Schedule Service (main site), action 6722744104; request-conversion reuse suitability not approved"
+}
