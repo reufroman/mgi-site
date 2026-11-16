@@ -1,6 +1,6 @@
 // Headline rebate total. Change this one value.
-// Through Fri Nov 20, 2026: 5800, headline "Up to $5,800 in Rebates + 0% Financing for 72 Months".
-// From Sat Nov 21, 2026: set to 3700, headline "Up to $3,700 in Rebates".
+// Through Fri Nov 20, 2026 this is 5800. From Sat Nov 21, 2026 set it to 3700.
+// The hero always keeps the financing half. Only the rebate dollar amount changes.
 export const HEADLINE_REBATE_DOLLARS = 5800;
 
 export const OFFER_END = 'December 30, 2026';
@@ -20,9 +20,7 @@ export const pending = Object.freeze({
 const money = dollars => `$${dollars.toLocaleString('en-US')}`;
 
 export function holidayHeadline(dollars = HEADLINE_REBATE_DOLLARS) {
-  const amount = money(dollars);
-  if (dollars === 5800) return `Up to ${amount} in Rebates + 0% Financing for 72 Months`;
-  return `Up to ${amount} in Rebates`;
+  return `Up to ${money(dollars)} in Rebates + 0% Financing for 72 Months`;
 }
 
 export function financingSectionHeading(dollars = HEADLINE_REBATE_DOLLARS) {

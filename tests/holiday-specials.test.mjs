@@ -13,7 +13,7 @@ import {
 test('headline number is the single switch for Nov 21', () => {
   assert.equal(HEADLINE_REBATE_DOLLARS, 5800);
   assert.equal(holidayHeadline(5800), 'Up to $5,800 in Rebates + 0% Financing for 72 Months');
-  assert.equal(holidayHeadline(3700), 'Up to $3,700 in Rebates');
+  assert.equal(holidayHeadline(3700), 'Up to $3,700 in Rebates + 0% Financing for 72 Months');
   assert.equal(activeRebateTotal(5800), 5800);
   assert.equal(activeRebateTotal(3700), 3700);
 });
