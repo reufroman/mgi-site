@@ -1,0 +1,238 @@
+---
+import ServiceIcon from './ServiceIcon.astro';
+import site from '../data/site.json';
+import {
+  HEADLINE_REBATE_DOLLARS,
+  FINANCE_DISCLOSURE,
+  FINANCE_PLAN,
+  OFFER_END,
+  activeRebateLines,
+  activeRebateTotal,
+  finePrint,
+  holidayHeadline,
+  offers,
+  pending,
+  rebateLineAmount,
+  scheduleHref,
+  vipPlans,
+  windsorRebateLine,
+} from '../data/holiday-specials.mjs';
+
+const phone = String(site.phone || '');
+const dial = phone.replace(/[^+0-9]/g, '');
+const phoneHref = 'tel:' + (dial.length === 10 ? '+1' : '') + dial;
+const headline = holidayHeadline();
+const amountLabel = `$${HEADLINE_REBATE_DOLLARS.toLocaleString('en-US')}`;
+const [headlineBefore, headlineAfter = ''] = headline.split(amountLabel);
+const lines = activeRebateLines();
+const total = activeRebateTotal();
+const notes = finePrint();
+const openItems = Object.entries(pending);
+---
+<article class="specials">
+  <section class="hero specials-hero">
+    <div class="wrap specials-hero-grid">
+      <div>
+        <p class="specials-kicker">Holiday specials through {OFFER_END}</p>
+        <h1><span class="specials-before">{headlineBefore}</span><span class="specials-amount">{amountLabel}</span> <span class="specials-rest">{headlineAfter.trim()}</span></h1>
+        <p class="lede">{HEADLINE_REBATE_DOLLARS === 5800 ? 'This rebate total is for this week, through Friday, November 20, 2026. On Saturday, November 21, the headline number changes to $3,700.' : 'Carrier Cool Cash is no longer in this total. The buy-by date was November 20, 2026.'}</p>
+        <p class="specials-disclosure">{FINANCE_DISCLOSURE}</p>
+        <div class="actions">
+          <a class="button" href={scheduleHref}>Schedule service <span aria-hidden="true">↗</span></a>
+          <a class="button outline" href={phoneHref}><ServiceIcon name="phone"/>Call {phone}</a>
+        </div>
+      </div>
+      <nav class="specials-index" aria-label="Offers on this page">
+        <p>Eight offers. Each one ends {OFFER_END}.</p>
+        <ol>
+          {offers.map(offer => <li><a href={`#${offer.id}`}>{offer.name}</a></li>)}
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="open-items-heading">
+    <div class="wrap">
+      <h2 id="open-items-heading">Open items</h2>
+      <p>These five items are waiting on confirmation. They are marked on the offers they affect.</p>
+      <ul class="pending-list">
+        {openItems.map(([key, text]) => <li class="pending" id={`pending-${key}`}><span class="pending-key">{key}</span> {text}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section specials-canvas" aria-labelledby="offers-heading">
+    <div class="wrap">
+      <div class="section-heading">
+        <h2 id="offers-heading">The offers</h2>
+        <p>Call or schedule for the offer you want. The office confirms the details for your home.</p>
+      </div>
+      <div class="specials-grid">
+        {offers.map((offer, index) => <article class="specials-card" id={offer.id} aria-labelledby={`${offer.id}-title`}>
+          <p class="specials-card-index">{String(index + 1).padStart(2, '0')}</p>
+          <p class="specials-figure">{offer.figure}</p>
+          <h3 id={`${offer.id}-title`}>{offer.headline}</h3>
+          <p>{offer.body}</p>
+          {offer.id === 'rebates' && <p class="specials-windsor">{windsorRebateLine()}</p>}
+          {offer.pending.map(item => <p class="pending">{item}</p>)}
+          <div class="actions specials-card-actions">
+            <a class="button" href={scheduleHref}>Schedule service <span aria-hidden="true">↗</span></a>
+            <a class="button outline" href={phoneHref}>Call {phone}</a>
+          </div>
+        </article>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="financing-rebates" aria-labelledby="finance-heading">
+    <div class="wrap">
+      <div class="section-heading">
+        <h2 id="finance-heading">Financing and rebates</h2>
+        <p>The financing term and the rebate stack are separate. A home may qualify for one, both, or neither.</p>
+      </div>
+      <div class="specials-split">
+        <div class="specials-panel">
+          <h3>Carrier financing</h3>
+          <p class="specials-figure">0% <span>APR</span></p>
+          <p>72 months with equal monthly payments, on approved credit. Wells Fargo plan {FINANCE_PLAN}.</p>
+          <p class="specials-disclosure">{FINANCE_DISCLOSURE}</p>
+          <p>Wells Fargo is a registered trademark of Wells Fargo & Company.</p>
+          <p><a href="/financing/">Read the financing page <span aria-hidden="true">↗</span></a></p>
+          <div class="actions">
+            <a class="button" href={scheduleHref}>Schedule service <span aria-hidden="true">↗</span></a>
+            <a class="button outline" href={phoneHref}>Call {phone}</a>
+          </div>
+        </div>
+        <div class="specials-panel">
+          <h3>Rebate stack</h3>
+          <p>{windsorRebateLine()}</p>
+          <dl class="rebate-stack">
+            {lines.map(line => <div>
+              <dt>{line.label}{line.detail ? <span>{line.detail}</span> : null}</dt>
+              <dd>{rebateLineAmount(line)}</dd>
+            </div>)}
+            <div class="rebate-total">
+              <dt>Example total</dt>
+              <dd>${total.toLocaleString('en-US')}</dd>
+            </div>
+          </dl>
+          <p>Amounts vary by utility, equipment, and eligibility. These figures are up to the amounts shown. Check your utility.</p>
+          <p class="pending">{pending.A}</p>
+          <p class="pending">{pending.B}</p>
+          <p><a href="/rebates/">Read the rebates page <span aria-hidden="true">↗</span></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark" id="vip" aria-labelledby="vip-heading">
+    <div class="wrap">
+      <div class="section-heading">
+        <h2 id="vip-heading">VIP and ductless VIP</h2>
+        <p>Standard VIP and ductless VIP are separate plans. A new system includes the first year of VIP.</p>
+      </div>
+      <div class="specials-split">
+        {vipPlans.map(plan => <div class="vip-plan">
+          <h3>{plan.name}</h3>
+          <p class="specials-figure">{plan.price} <span>{plan.unit}</span></p>
+          <p>{plan.alt}</p>
+          <p>{plan.detail}</p>
+        </div>)}
+      </div>
+      <div class="specials-vip-offers">
+        <div>
+          <h3>Included with a new system</h3>
+          <p>The first year of VIP is included with any new system sold through {OFFER_END}.</p>
+          <p class="pending">{pending.C}</p>
+        </div>
+        <div>
+          <h3>No heat at the visit</h3>
+          <p>Join VIP at the visit and that day's diagnostic is billed at the $69 member rate.</p>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="button light" href={scheduleHref}>Schedule service <span aria-hidden="true">↗</span></a>
+        <a class="button outline" href={phoneHref}>Call {phone}</a>
+        <a class="button outline" href="/vip-membership/">VIP membership <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="fine-print" aria-labelledby="fine-print-heading">
+    <div class="wrap specials-fine">
+      <h2 id="fine-print-heading">Fine print</h2>
+      <ol>
+        {notes.map(note => <li class:list={[{pending: note.startsWith('[PENDING:')}]}>{note}</li>)}
+      </ol>
+      <div class="actions">
+        <a class="button" href={scheduleHref}>Schedule service <span aria-hidden="true">↗</span></a>
+        <a class="button outline" href={phoneHref}>Call {phone}</a>
+      </div>
+    </div>
+  </section>
+</article>
+
+<style>
+.specials-kicker{margin:0 0 12px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
+.specials-hero{padding-bottom:36px}
+.specials-hero h1{max-width:none;font-size:clamp(32px,7vw,40px);line-height:1.05}
+.specials-before{display:block;font-size:clamp(28px,6vw,36px)}
+.specials-amount{display:block;margin:8px 0 12px;font-size:clamp(72px,18vw,104px);line-height:.86;letter-spacing:-.03em}
+.specials-rest{display:block;max-width:16ch;font-size:clamp(32px,7vw,44px);line-height:1.08}
+.specials-disclosure{font-size:15px;color:var(--slate)}
+.specials-hero-grid,.specials-split,.specials-vip-offers{display:grid;gap:28px}
+.specials-index{border:2px solid var(--teal);border-radius:18px;padding:20px 20px 8px;background:#f2f3ed}
+.specials-index p{margin:0 0 12px;font-size:15px;font-weight:700;color:var(--teal)}
+.specials-index ol{margin:0;padding:0;list-style:none}
+.specials-index a{display:flex;align-items:center;min-height:44px;padding:8px 0;border-top:1px solid #c8c2b9;text-decoration:none;font-weight:600}
+.specials-index a:hover{text-decoration:underline}
+.specials-canvas{background:#f2f3ed}
+.specials-grid{display:grid;gap:16px}
+.specials-card,.specials-panel,.vip-plan{display:flex;flex-direction:column;border:2px solid var(--teal);border-radius:18px;padding:22px;background:var(--warm)}
+.specials-card-index{margin:0 0 8px;font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--bronze)}
+.specials-figure{margin:0 0 8px;font-family:Cormorant,Georgia,serif;font-size:clamp(40px,8vw,56px);font-weight:600;line-height:.95;color:var(--teal)}
+.specials-figure span{font-size:.42em;font-weight:600}
+.specials-card h3,.specials-panel h3,.vip-plan h3{font-size:30px;margin-bottom:12px}
+.specials-card p,.specials-panel p,.vip-plan p{font-size:16px}
+.specials-card .specials-figure,.specials-panel .specials-figure,.vip-plan .specials-figure{font-size:clamp(42px,8vw,56px);line-height:.95;margin:0 0 8px}
+.specials-windsor{font-weight:700;color:var(--teal)}
+.specials-card-actions{margin-top:auto}
+@media(max-width:767px){.specials-card-actions{display:grid;grid-template-columns:1fr}.specials-card-actions .button{width:100%}}
+.pending{margin:0 0 12px;padding:12px 14px;border:1.5px dashed var(--bronze);border-radius:10px;background:#f7f1e8;font-size:14px;line-height:1.5;color:var(--charcoal)}
+.pending-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.pending-key{display:inline-grid;place-items:center;min-width:28px;height:28px;margin-right:8px;border-radius:50%;background:var(--teal);color:var(--warm);font-size:13px;font-weight:700}
+.rebate-stack{margin:0 0 20px}
+.rebate-stack div{display:grid;grid-template-columns:1fr auto;gap:12px 16px;align-items:baseline;padding:12px 0;border-bottom:1px solid #c8c2b9}
+.rebate-stack dt,.rebate-stack dd{margin:0}
+.rebate-stack dt span{display:block;font-size:13px;font-weight:500;color:var(--slate)}
+.rebate-stack dd{font-weight:700;color:var(--teal);text-align:right}
+.rebate-total{font-family:Cormorant,Georgia,serif;font-size:28px}
+.specials-vip-offers>div{padding-top:8px}
+.dark .specials-figure,.dark h2,.dark h3,.dark .lede{color:var(--warm)}
+.dark .vip-plan{background:var(--warm)}
+.dark .vip-plan h3,.dark .vip-plan .specials-figure{color:var(--teal)}
+.dark .vip-plan p{color:var(--charcoal)}
+.dark .specials-vip-offers p{color:var(--warm)}
+.dark .pending{color:var(--charcoal)}
+.dark .button.outline{color:var(--warm);border-color:var(--warm)}
+.dark .button.outline:hover{background:#103C46}
+.specials-fine{max-width:780px}
+.specials-fine ol{margin:0 0 8px;padding-left:22px}
+.specials-fine li{margin:0 0 16px}
+.specials-fine li.pending{padding:12px 14px}
+@media(min-width:768px){
+  .specials-hero{padding-bottom:64px}
+  .specials-hero h1{font-size:48px}
+  .specials-amount{font-size:120px}
+  .specials-rest{font-size:44px}
+  .specials-hero-grid{grid-template-columns:1.3fr .7fr;gap:48px;align-items:end}
+  .specials-grid{grid-template-columns:1fr 1fr;gap:24px}
+  .specials-split{grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+  .specials-vip-offers{grid-template-columns:1fr 1fr;gap:32px}
+  .specials-card,.specials-panel,.vip-plan{padding:28px}
+}
+@media(min-width:1100px){
+  .specials-hero-grid{gap:72px}
+  .specials-amount{font-size:136px}
+}
+</style>
