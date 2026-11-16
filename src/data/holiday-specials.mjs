@@ -1,6 +1,6 @@
 // Headline rebate total. Change this one value.
-// Through Fri Nov 20, 2026: 5800, headline "Up to $5,800 in rebates plus 0% financing for 72 months."
-// From Sat Nov 21, 2026: set to 3700, headline "Up to $3,700 in rebates."
+// Through Fri Nov 20, 2026: 5800, headline "Up to $5,800 in Rebates + 0% Financing for 72 Months".
+// From Sat Nov 21, 2026: set to 3700, headline "Up to $3,700 in Rebates".
 export const HEADLINE_REBATE_DOLLARS = 5800;
 
 export const OFFER_END = 'December 30, 2026';
@@ -21,8 +21,17 @@ const money = dollars => `$${dollars.toLocaleString('en-US')}`;
 
 export function holidayHeadline(dollars = HEADLINE_REBATE_DOLLARS) {
   const amount = money(dollars);
-  if (dollars === 5800) return `Up to ${amount} in rebates plus 0% financing for 72 months.`;
-  return `Up to ${amount} in rebates.`;
+  if (dollars === 5800) return `Up to ${amount} in Rebates + 0% Financing for 72 Months`;
+  return `Up to ${amount} in Rebates`;
+}
+
+export function financingSectionHeading(dollars = HEADLINE_REBATE_DOLLARS) {
+  return `For homeowners buying a new system: 0% APR for 72 months and up to ${money(dollars)} in rebates`;
+}
+
+export function rebatePanelHeading(dollars = HEADLINE_REBATE_DOLLARS) {
+  const timing = dollars === 5800 ? ' this week' : '';
+  return `Up to ${money(dollars)} in rebates for a dual-fuel system in Windsor${timing}`;
 }
 
 export function windsorRebateLine(dollars = HEADLINE_REBATE_DOLLARS) {
@@ -52,11 +61,17 @@ export function activeRebateTotal(dollars = HEADLINE_REBATE_DOLLARS) {
   return activeRebateLines(dollars).reduce((sum, line) => sum + line.amount, 0);
 }
 
+export function offerHeadline(offer, dollars = HEADLINE_REBATE_DOLLARS) {
+  if (offer.id === 'rebates') return `Up to ${money(dollars)} in rebates for a qualifying new system`;
+  return offer.headline;
+}
+
 export const offers = Object.freeze([
   {
     id: 'tune-up',
     name: '$99 furnace tune-up',
-    headline: 'Make room for company.',
+    headline: '$99 furnace tune-up, one per customer',
+    subhead: 'Make room for company.',
     figure: '$99',
     body: `One furnace tune-up for $99. One per customer. This offer cannot be combined with other offers. It runs through ${OFFER_END}.`,
     pending: [pending.C],
@@ -64,7 +79,8 @@ export const offers = Object.freeze([
   {
     id: 'humidifier',
     name: '$150 off a humidifier',
-    headline: 'Call a truce with dry winter air.',
+    headline: '$150 off a humidifier, installed',
+    subhead: 'Call a truce with dry winter air.',
     figure: '$150 off',
     body: `$150 off a humidifier, installed. One per customer. This offer cannot be combined with other offers. It runs through ${OFFER_END}.`,
     pending: [pending.C],
@@ -72,7 +88,8 @@ export const offers = Object.freeze([
   {
     id: 'financing',
     name: 'Carrier financing',
-    headline: '0% APR for 72 months.',
+    headline: '0% APR for 72 months, with equal payments, on approved credit',
+    subhead: '',
     figure: '0% APR',
     body: `Carrier financing is 0% APR for 72 months with equal monthly payments, on approved credit. This is Wells Fargo plan ${FINANCE_PLAN}. ${FINANCE_DISCLOSURE}`,
     pending: [],
@@ -80,7 +97,8 @@ export const offers = Object.freeze([
   {
     id: 'rebates',
     name: 'Stacked rebates',
-    headline: 'Stack the rebates your home qualifies for.',
+    headline: '',
+    subhead: 'Stack the rebates your home qualifies for.',
     figure: 'Rebates',
     body: 'We stack every rebate the home qualifies for: the electric utility, the gas utility, Carrier, and the Colorado heat pump credit.',
     pending: [pending.A, pending.B],
@@ -88,7 +106,8 @@ export const offers = Object.freeze([
   {
     id: 'vip-year',
     name: 'First year of VIP',
-    headline: 'The gift that shows up twice.',
+    headline: 'First year of VIP included with any new system',
+    subhead: 'The gift that shows up twice.',
     figure: '1 year',
     body: 'The first year of VIP is included with any new system.',
     pending: [pending.C],
@@ -96,7 +115,8 @@ export const offers = Object.freeze([
   {
     id: 'no-heat',
     name: 'No-heat VIP visit',
-    headline: 'No heat? Join VIP at the visit.',
+    headline: '$69 diagnostic when you join VIP on a no-heat visit',
+    subhead: 'No heat? Join VIP at the visit.',
     figure: '$69',
     body: `Join VIP at the visit and that day's diagnostic is billed at the $69 member rate. This offer runs through ${OFFER_END}.`,
     pending: [],
@@ -104,7 +124,8 @@ export const offers = Object.freeze([
   {
     id: 'referral',
     name: 'Refer a neighbor',
-    headline: 'Your neighbor asked who you use.',
+    headline: '$200 or $300 when a neighbor you refer buys a system',
+    subhead: 'Your neighbor asked who you use.',
     figure: '$200 or $300',
     body: 'Refer a neighbor. You receive $200 when they buy a system from $10,000 to $19,999. You receive $300 when the system is $20,000 or more. Rewards are never tied to reviews.',
     pending: [pending.E],
@@ -112,7 +133,8 @@ export const offers = Object.freeze([
   {
     id: 'santa-paws',
     name: 'Santa Paws',
-    headline: 'Santa Paws.',
+    headline: 'A set amount from every residential job to a local shelter',
+    subhead: 'Santa Paws.',
     figure: 'Shelter gift',
     body: `A set amount from every residential job goes to a local shelter through ${OFFER_END}. Colorado law requires the dollar amount or percent per job in every ad.`,
     pending: [pending.D],
