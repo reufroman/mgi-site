@@ -38,7 +38,7 @@ const openItems = Object.entries(pending);
       <div>
         <p class="specials-kicker">Holiday specials through {OFFER_END}</p>
         <h1><span class="specials-before">{headlineBefore}</span><span class="specials-amount">{amountLabel}</span> <span class="specials-rest">{headlineAfter.trim()}</span></h1>
-        <p class="lede">{HEADLINE_REBATE_DOLLARS === 5800 ? 'This rebate total is for this week, through Friday, November 20, 2026. On Saturday, November 21, the headline number changes to $3,700.' : 'Carrier Cool Cash is no longer in this total. The buy-by date was November 20, 2026.'}</p>
+        <p class="lede">{HEADLINE_REBATE_DOLLARS === 5133 ? 'This rebate total is for this week, through Friday, November 20, 2026. On Saturday, November 21, the headline number changes to $3,033.' : 'Carrier Cool Cash is no longer in this total. The buy-by date was November 20, 2026.'}</p>
         <p class="specials-disclosure">{FINANCE_DISCLOSURE}</p>
         <div class="actions">
           <a class="button" href={scheduleHref}>Schedule service <span aria-hidden="true">↗</span></a>
@@ -46,7 +46,7 @@ const openItems = Object.entries(pending);
         </div>
       </div>
       <nav class="specials-index" aria-label="Offers on this page">
-        <p>Eight offers. Each one ends {OFFER_END}.</p>
+        <p>{offers.length} offers. Each one ends {OFFER_END}.</p>
         <ol>
           {offers.map(offer => <li><a href={`#${offer.id}`}>{offerHeadline(offer)}</a></li>)}
         </ol>
@@ -56,8 +56,8 @@ const openItems = Object.entries(pending);
 
   <section class="section" aria-labelledby="open-items-heading">
     <div class="wrap">
-      <h2 id="open-items-heading">Five details still to confirm</h2>
-      <p>These five items are waiting on confirmation. They are marked on the offers they affect.</p>
+      <h2 id="open-items-heading">One detail still to confirm</h2>
+      <p>This item is waiting on confirmation. It is marked on the offer it affects.</p>
       <ul class="pending-list">
         {openItems.map(([key, text]) => <li class="pending" id={`pending-${key}`}><span class="pending-key">{key}</span> {text}</li>)}
       </ul>
@@ -67,7 +67,7 @@ const openItems = Object.entries(pending);
   <section class="section specials-canvas" aria-labelledby="offers-heading">
     <div class="wrap">
       <div class="section-heading">
-        <h2 id="offers-heading">Eight offers through {OFFER_END}</h2>
+        <h2 id="offers-heading">{offers.length} offers through {OFFER_END}</h2>
         <p>Call or schedule for the offer you want. The office confirms the details for your home.</p>
       </div>
       <div class="specials-grid">
@@ -110,6 +110,7 @@ const openItems = Object.entries(pending);
         <div class="specials-panel">
           <h3>{rebatePanelHeading()}</h3>
           <p>{windsorRebateLine()}</p>
+          <p>MGI is a Carrier Authorized Dealer.</p>
           <dl class="rebate-stack">
             {lines.map(line => <div>
               <dt>{line.label}{line.detail ? <span>{line.detail}</span> : null}</dt>
@@ -121,8 +122,6 @@ const openItems = Object.entries(pending);
             </div>
           </dl>
           <p>Amounts vary by utility, equipment, and eligibility. These figures are up to the amounts shown. Check your utility.</p>
-          <p class="pending">{pending.A}</p>
-          <p class="pending">{pending.B}</p>
           <p><a href="/rebates/">Read the rebates page <span aria-hidden="true">↗</span></a></p>
         </div>
       </div>

@@ -12,6 +12,7 @@ import proof from '../data/home-proof.json';
 import routes from '../data/routes.json';
 import {scheduleHref} from '../data/holiday-specials.mjs';
 
+declare const process: {env: {MGI_BUILD_MODE?: string}};
 const buildMode = process.env.MGI_BUILD_MODE || 'review';
 const review = buildMode === 'review';
 const byId = (id: string) => routes.find(route => route.page_id === id);
@@ -23,7 +24,7 @@ const dial = phone.replace(/[^+0-9]/g, '');
 const phoneHref = 'tel:' + (dial.length === 10 ? '+1' : '') + dial;
 const canonical = new URL('/specials/', Astro.site).href;
 const description = 'Holiday offers through December 30, 2026. Includes a $99 furnace tune-up, $150 off an installed humidifier, 0% APR financing for 72 months with equal payments, and stacked utility rebates.';
-const robots = review ? 'noindex, nofollow' : 'index, follow';
+const robots = 'noindex, nofollow';
 ---
 <!doctype html>
 <html lang="en">
@@ -95,7 +96,7 @@ const robots = review ? 'noindex, nofollow' : 'index, follow';
         {phone && <p><a class="footer-phone" href={phoneHref}>{phone}</a></p>}
         <p>{site.address}</p>
         <a class="button" href={scheduleHref}>Schedule service ↗</a>
-        <div class="footer-credentials"><CredentialLogos compact/></div>
+        <div class="footer-credentials"><CredentialLogos compact excludeCarrierFactoryMark/></div>
       </div>
       <nav aria-label="Footer services">
         <h3>Services</h3>
@@ -123,7 +124,7 @@ const robots = review ? 'noindex, nofollow' : 'index, follow';
 <script>
 document.querySelectorAll('details.mobile-menu, details.header-help').forEach(menu => {
   menu.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
+    if (event instanceof KeyboardEvent && event.key === 'Escape') {
       menu.removeAttribute('open');
       menu.querySelector('summary')?.focus();
     }
