@@ -21,7 +21,8 @@
     "test:production-controls": "node --test tests/production-integrations.test.mjs tests/render-fingerprint.test.mjs tests/seo-policy.test.mjs",
     "build:public": "MGI_BUILD_MODE=public MGI_SITE_URL=https://mgiheatingandair.com npm run build",
     "test:publication": "node --test tests/publication.test.mjs tests/render-fingerprint.test.mjs tests/public-build.test.mjs",
-    "es:import": "node scripts/es-import.mjs"
+    "es:import": "node scripts/es-import.mjs",
+    "es:parity": "node scripts/es-parity.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",

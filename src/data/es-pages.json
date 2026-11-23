@@ -5,7 +5,7 @@
     "esRoute": "/es/",
     "schema": "WebPage",
     "metaTitle": "Calefacción y aire acondicionado en el norte de Colorado",
-    "metaDescription": "Reparación, reemplazo y mantenimiento de calefacción y aire acondicionado con MGI Heating & Air. Llame al (970) 287-1673.",
+    "metaDescription": "Reparación, reemplazo y mantenimiento de calefacción y aire acondicionado con MGI Heating & Air. Llame al {{phone}}.",
     "eyebrow": "MGI Heating & Air",
     "title": "Más vida en casa, menos preocupaciones.",
     "summary": "¿Problemas con la calefacción, el aire acondicionado o el agua caliente? Empiece por lo que nota. Encuentre una reparación, compare opciones si planea un cambio o conozca el cuidado que necesita su equipo.",
@@ -33,7 +33,7 @@
     "esRoute": "/es/servicios/servicio-de-emergencia-hvac/",
     "schema": "Service",
     "metaTitle": "Emergencia de calefacción o aire acondicionado",
-    "metaDescription": "¿No calienta o no enfría? Seguridad primero. Solicite servicio de emergencia con MGI Heating & Air al (970) 287-1673.",
+    "metaDescription": "¿No calienta o no enfría? Seguridad primero. Solicite servicio de emergencia con MGI Heating & Air al {{phone}}.",
     "eyebrow": "Servicio de emergencia",
     "title": "Servicio de emergencia de calefacción y aire",
     "summary": "¿No calienta o no enfría? Si huele a gas, sospecha monóxido de carbono o hay peligro inmediato, salga de la casa y, desde un lugar seguro, llame al 911 o a su compañía de gas. Si el equipo falló y no hay peligro inmediato, solicite ayuda.",
@@ -62,7 +62,7 @@
       },
       {
         "heading": "Antes de acordar la visita",
-        "body": "La oficina confirma la dirección, los términos de la visita y la disponibilidad. Teléfono (970) 287-1673."
+        "body": "La oficina confirma la dirección, los términos de la visita y la disponibilidad. Teléfono {{phone}}."
       }
     ],
     "faqs": [
@@ -72,7 +72,7 @@
       },
       {
         "question": "¿MGI atiende emergencias fuera de horario?",
-        "answer": "Llame al (970) 287-1673. La oficina o el proceso de emergencia le dirá la disponibilidad real para ese momento."
+        "answer": "Llame al {{phone}}. La oficina o el proceso de emergencia le dirá la disponibilidad real para ese momento."
       }
     ]
   },
@@ -82,7 +82,7 @@
     "esRoute": "/es/servicios/reparacion-de-calefaccion/",
     "schema": "Service",
     "metaTitle": "Reparación de calentón en el norte de Colorado",
-    "metaDescription": "¿El calentón no prende o hace ruido? Reparación de calefacción con MGI Heating & Air. Llame al (970) 287-1673.",
+    "metaDescription": "¿El calentón no prende o hace ruido? Reparación de calefacción con MGI Heating & Air. Llame al {{phone}}.",
     "eyebrow": "Reparación de calentón",
     "title": "Reparación de calentón",
     "summary": "¿Su calentón (furnace) no calienta, prende y se apaga seguido o hace un ruido nuevo? Solicite una evaluación para entender la causa antes de decidir el trabajo.",
@@ -107,7 +107,7 @@
       },
       {
         "heading": "Antes de acordar la visita",
-        "body": "Confirme dirección, disponibilidad y términos con la oficina al (970) 287-1673."
+        "body": "Confirme dirección, disponibilidad y términos con la oficina al {{phone}}."
       }
     ],
     "faqs": [
@@ -127,7 +127,7 @@
     "esRoute": "/es/servicios/reparacion-de-aire-acondicionado/",
     "schema": "Service",
     "metaTitle": "Reparación de aire acondicionado",
-    "metaDescription": "¿El aire sopla caliente, se congela o gotea? Reparación de aire acondicionado con MGI Heating & Air. (970) 287-1673.",
+    "metaDescription": "¿El aire sopla caliente, se congela o gotea? Reparación de aire acondicionado con MGI Heating & Air. {{phone}}.",
     "eyebrow": "Reparación de aire acondicionado",
     "title": "Reparación de aire acondicionado",
     "summary": "¿El aire sopla caliente, se congela o gotea? Solicite una evaluación de reparación. El síntoma nos dice por dónde empezar, pero por sí solo no indica qué pieza falló.",
@@ -152,7 +152,7 @@
       },
       {
         "heading": "Antes de acordar la visita",
-        "body": "La oficina confirma dirección, términos y disponibilidad. (970) 287-1673."
+        "body": "La oficina confirma dirección, términos y disponibilidad. {{phone}}."
       }
     ],
     "faqs": [
@@ -172,7 +172,7 @@
     "esRoute": "/es/servicios/minisplits/",
     "schema": "Service",
     "metaTitle": "Minisplits y sistemas sin ductos",
-    "metaDescription": "Instalación, reparación y cuidado de minisplits con MGI Heating & Air en el norte de Colorado. (970) 287-1673.",
+    "metaDescription": "Instalación, reparación y cuidado de minisplits con MGI Heating & Air en el norte de Colorado. {{phone}}.",
     "eyebrow": "Minisplits / sistemas sin ductos",
     "title": "Minisplits sin ductos",
     "summary": "¿Hay un cuarto que no se calienta o no se enfría bien, o un minisplit que dejó de funcionar? Conozca opciones de instalación por cuarto, reparación y mantenimiento de las unidades interiores.",
@@ -197,7 +197,7 @@
       },
       {
         "heading": "Antes de acordar la visita",
-        "body": "Confirme dirección y disponibilidad con la oficina. (970) 287-1673."
+        "body": "Confirme dirección y disponibilidad con la oficina. {{phone}}."
       }
     ],
     "faqs": [
@@ -217,7 +217,7 @@
     "esRoute": "/es/servicios/mantenimiento-hvac/",
     "schema": "Service",
     "metaTitle": "Mantenimiento de calefacción y aire acondicionado",
-    "metaDescription": "Mantenimiento de calefacción y aire acondicionado con MGI Heating & Air. Pregunte por el Plan VIP. (970) 287-1673.",
+    "metaDescription": "Mantenimiento de calefacción y aire acondicionado con MGI Heating & Air. Pregunte por el Plan VIP. {{phone}}.",
     "eyebrow": "Mantenimiento",
     "title": "Mantenimiento de calefacción y aire",
     "summary": "¿Quiere cuidar el equipo que ya tiene? Empiece con una visita de cuidado definida, las tareas incluidas y un plan aparte si hay un problema activo.",
@@ -242,7 +242,7 @@
       },
       {
         "heading": "Antes de acordar la visita",
-        "body": "Oferta de temporada: mantenimiento del calentón por $99. Una por cliente. Se puede combinar con la oferta de $150 de descuento en un humidificador instalado. Válida hasta el 30 de diciembre de 2026. Llame al (970) 287-1673."
+        "body": "Oferta de temporada: mantenimiento del calentón por {{tuneUp}}. Una por cliente. Se puede combinar con la oferta de {{humidifier}} de descuento en un humidificador instalado. Válida hasta el {{offerEnd}}. Llame al {{phone}}."
       }
     ],
     "faqs": [
@@ -262,7 +262,7 @@
     "esRoute": "/es/financiamiento/",
     "schema": "WebPage",
     "metaTitle": "Financiamiento para calefacción y aire acondicionado",
-    "metaDescription": "Opciones de financiamiento para calefacción y aire acondicionado con MGI Heating & Air. Llame al (970) 287-1673.",
+    "metaDescription": "Opciones de financiamiento para calefacción y aire acondicionado con MGI Heating & Air. Llame al {{phone}}.",
     "eyebrow": "Financiamiento",
     "title": "Financiamiento para calefacción y aire. Un plan para el hogar que quiere.",
     "summary": "Un sistema nuevo de calefacción o aire es una compra grande. El financiamiento puede repartir el costo inicial en pagos, para que compare el proyecto completo con su presupuesto.",
@@ -293,7 +293,7 @@
       },
       {
         "question": "¿Se combina con ofertas de temporada?",
-        "answer": "Las ofertas de $99 y $150 se pueden combinar entre sí. Pregunte en la oficina si se combinan con el financiamiento en el mismo trabajo."
+        "answer": "Las ofertas de {{tuneUp}} y {{humidifier}} se pueden combinar entre sí. Pregunte en la oficina si se combinan con el financiamiento en el mismo trabajo."
       }
     ]
   },
@@ -303,11 +303,11 @@
     "esRoute": "/es/membresia-vip/",
     "schema": "WebPage",
     "metaTitle": "Membresía VIP de mantenimiento HVAC",
-    "metaDescription": "Plan VIP de MGI Heating & Air: mantenimiento de temporada para calefacción, aire y minisplits. (970) 287-1673.",
+    "metaDescription": "Plan VIP de MGI Heating & Air: mantenimiento de temporada para calefacción, aire y minisplits. {{phone}}.",
     "eyebrow": "Plan VIP",
     "title": "Cuidado de su calefacción y aire. Más vida en casa, menos preocupaciones.",
     "summary": "Ponga la calefacción y el aire en el calendario. El VIP Comfort Club de MGI reúne mantenimiento de temporada y beneficios para miembros en un solo plan, para que entienda el costo y elija lo que mejor le funcione a su hogar.",
-    "answer": "El VIP Comfort Club incluye mantenimiento de temporada para su calefacción y su aire, más beneficios para miembros. VIP estándar: $225 al año o $20 al mes, más $89 por cada equipo adicional. VIP para minisplits: $12 al mes; el precio se ajusta si tiene unidades interiores adicionales. Si su casa tiene ambos sistemas, cada uno lleva su propia membresía.",
+    "answer": "El VIP Comfort Club incluye mantenimiento de temporada para su calefacción y su aire, más beneficios para miembros. VIP estándar: {{vipStandard}} por cada equipo adicional. VIP para minisplits: {{vipDuctless}}; el precio se ajusta si tiene unidades interiores adicionales. Si su casa tiene ambos sistemas, cada uno lleva su propia membresía.",
     "cta": "Pregunte por la membresía VIP",
     "sections": [
       {
@@ -329,8 +329,8 @@
     ],
     "faqs": [
       {
-        "question": "¿Puedo combinar VIP con la oferta de $99?",
-        "answer": "La oferta de $99 se puede combinar con la oferta de $150 en un humidificador. Pregunte en la oficina si se combina con su plan VIP. Si ya es miembro VIP, es posible que su plan ya incluya el mantenimiento del calentón. Confirme con la oficina."
+        "question": "¿Puedo combinar VIP con la oferta de {{tuneUp}}?",
+        "answer": "La oferta de {{tuneUp}} se puede combinar con la oferta de {{humidifier}} en un humidificador. Pregunte en la oficina si se combina con su plan VIP. Si ya es miembro VIP, es posible que su plan ya incluya el mantenimiento del calentón. Confirme con la oficina."
       }
     ]
   },
@@ -340,7 +340,7 @@
     "esRoute": "/es/reembolsos/",
     "schema": "WebPage",
     "metaTitle": "Reembolsos de calefacción y aire acondicionado",
-    "metaDescription": "Revise reembolsos e incentivos con MGI Heating & Air. Programas según su compañía de luz y gas. (970) 287-1673.",
+    "metaDescription": "Revise reembolsos e incentivos con MGI Heating & Air. Programas según su compañía de luz y gas. {{phone}}.",
     "eyebrow": "Reembolsos",
     "title": "Reembolsos para calefacción y aire. Más apoyo para los planes de su hogar.",
     "summary": "Un reembolso o descuento puede ayudar con el costo de un sistema nuevo de calefacción, aire o agua caliente. Empiece por lo que su hogar necesita; luego revise los programas de su compañía de luz y gas y de su equipo antes de contar con el ahorro.",
@@ -371,7 +371,7 @@
       },
       {
         "question": "¿Qué programas hay en mi área?",
-        "answer": "Depende de su compañía de luz y gas. Llame al (970) 287-1673 y revisamos con usted los programas vigentes para su casa."
+        "answer": "Depende de su compañía de luz y gas. Llame al {{phone}} y revisamos con usted los programas vigentes para su casa."
       }
     ]
   },
@@ -381,7 +381,7 @@
     "esRoute": "/es/programar-servicio/",
     "schema": "WebPage",
     "metaTitle": "Programar servicio de calefacción y aire",
-    "metaDescription": "Solicite servicio de calefacción y aire con MGI Heating & Air. Teléfono (970) 287-1673.",
+    "metaDescription": "Solicite servicio de calefacción y aire con MGI Heating & Air. Teléfono {{phone}}.",
     "eyebrow": "Programar servicio",
     "title": "Empecemos su solicitud de servicio.",
     "summary": "Cuéntenos qué ocurre en casa y cómo comunicarnos con usted. La oficina confirmará el servicio en su dirección, los términos de la visita y la disponibilidad.",

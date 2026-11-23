@@ -4,6 +4,7 @@ import ServiceIcon from '../../components/ServiceIcon.astro';
 import site from '../../data/site.json';
 import {photos} from '../../data/catalog.mjs';
 import {esStaticPaths,esByPageId,esServiceLinks,spanishPhoneNote} from '../../data/es.mjs';
+import {lenders} from '../../data/lenders.mjs';
 export function getStaticPaths(){return esStaticPaths();}
 const {page}=Astro.props;
 const pictures=photos(page.pageId);
@@ -33,6 +34,13 @@ const ctaLabel=isSchedule?`Llame al ${phone}`:page.cta;
 </div></div></section>
 
 {page.answer&&<section class="section es-answer" id="respuesta"><div class="wrap"><p class="es-answer-lead">{page.answer}</p></div></section>}
+
+{page.pageId==='ST-007'&&<section class="section es-lenders" aria-labelledby="es-lenders-heading"><div class="wrap">
+<h2 id="es-lenders-heading">Solicite financiamiento en línea</h2>
+<p>Puede solicitar en línea con Synchrony, Wells Fargo o Service Finance. Confirme el plan disponible y sus términos antes de solicitar. Los formularios de los prestamistas están en inglés.</p>
+<div class="es-lender-grid">{lenders.map(lender=><div class="es-lender"><p class="es-eyebrow">{lender.kind==='card'?'Financiamiento con tarjeta de crédito':'Préstamo a plazos'}</p><h3>{lender.name}</h3><p>{lender.kind==='card'?`Solicite en línea con ${lender.name}. Sujeto a aprobación de crédito.`:'Service Finance describe su financiamiento como un préstamo de monto y plazo fijos. Pregunte qué programa aplica, cuánto cuesta y si tiene una fecha límite de promoción.'}</p><a class="button outline" href={lender.apply} target="_blank" rel="noopener noreferrer" hreflang="en">Solicitar financiamiento (en inglés) <span aria-hidden="true">↗</span></a>{lender.faq&&<p><a href={lender.faq} target="_blank" rel="noopener noreferrer" hreflang="en">Preguntas sobre el prestamista (en inglés) ↗</a></p>}</div>)}</div>
+<p class="small-copy">La aprobación no está garantizada. Pregunte al prestamista cómo afecta la solicitud a su crédito antes de enviarla.</p>
+</div></section>}
 
 {isSchedule&&<section class="section es-booking"><div class="wrap es-booking-grid">
 <div class="es-booking-card"><ServiceIcon name="phone"/><h2>Llame a la oficina</h2><p>Es la forma más rápida de empezar en español.</p><a class="es-phone" href={phoneHref}>{phone}</a><p class="small-copy">{spanishPhoneNote}</p></div>
@@ -78,6 +86,7 @@ const ctaLabel=isSchedule?`Llame al ${phone}`:page.cta;
 .es-faq details{border-bottom:1px solid #bbc5be;padding:18px 0}
 .es-faq summary{font-weight:700;cursor:pointer;font-size:19px}
 .es-faq details p{margin:12px 0 0}
+.es-lender-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin:24px 0}.es-lender{padding:24px;border:1px solid #bbc5be;border-radius:12px}.es-lender h3{margin:0 0 8px}
 .es-booking-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
 .es-booking-card{padding:28px;border-radius:12px;background:#f1f3ec}
 .es-booking-card :global(svg){width:40px;height:40px;color:var(--teal)}

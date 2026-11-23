@@ -12,3 +12,12 @@ The [Google-to-ServiceTitan review proof bank](../Review-Proof-Register/README.m
 - Record human confirmations in [Review-Decisions.csv](../Review-Proof-Register/Review-Decisions.csv), and maintain [Website-Review-Placements.csv](../Review-Proof-Register/Website-Review-Placements.csv) when a page adds, removes, or changes review use.
 
 The three current AC Repair quotations have linked Fort Collins jobs. They remain general MGI proof on the Windsor draft. A four- or five-star rating does not clear the existing association, service, locality, or approval holds. Use the bank during authorized page reviews, preserve accepted layouts, and obtain the required approval before publication.
+
+## Spanish pages follow English
+
+English is the source of truth. Each Spanish page under `/es/` pairs with one English page (`src/data/es-pages.json`), and the Spanish page must say the same thing.
+
+- Prices, offer dates, VIP prices and the phone number reach Spanish through `{{tokens}}` filled in `src/data/es.mjs` from `site.json` and `holiday-specials.mjs`. Change them in the English data, never in Spanish copy.
+- Lender links live in `src/data/lenders.mjs`; a test fails if they differ from the English `/financing/` page.
+- `src/data/es-parity.json` records the English content each Spanish page was synced against. When an English paired page changes, `npm test` fails until the Spanish copy in `content/es/side-by-side/` is updated, `npm run es:import` is run, and `npm run build && npm run es:parity -- --record` records the new pair.
+- Spanish copy changes need a Spanish-speaker read (Cinthia at MGI) before release.

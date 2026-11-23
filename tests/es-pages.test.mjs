@@ -2,7 +2,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import esPages from '../src/data/es-pages.json' with {type:'json'};
+import {esPages,esFacts} from '../src/data/es.mjs';
+import {lenders} from '../src/data/lenders.mjs';
+import {parityDrift} from '../scripts/es-parity.mjs';
 
 const out = `dist-${process.env.MGI_BUILD_MODE || 'review'}`;
 const file = (route) => `${out}${route}index.html`;
@@ -71,4 +73,27 @@ test('offers and VIP prices match the live English Specials page', () => {
   assert.doesNotMatch(all, /No se combina|no se combinan|\$128|\$65\b/);
   assert.match(read('/es/servicios/mantenimiento-hvac/'), /Se puede combinar con la oferta de \$150/);
   assert.match(read('/es/membresia-vip/'), /VIP para minisplits: \$12 al mes/);
+});
+
+test('every paired English page is unchanged since the Spanish page was last synced', () => {
+  const drift = parityDrift(out);
+  assert.deepEqual(drift.map((d) => `${d.enRoute} changed: update ${d.esRoute}, then npm run es:parity -- --record`), []);
+});
+
+test('shared facts come from the English data and leave no unfilled tokens', () => {
+  const all = esPages.map((p) => read(p.esRoute)).join('\n');
+  assert.doesNotMatch(all, /\{\{/);
+  assert.match(read('/es/servicios/mantenimiento-hvac/'), new RegExp(`por \\${esFacts.tuneUp}\\.`));
+  assert.match(read('/es/servicios/mantenimiento-hvac/'), new RegExp(esFacts.offerEnd));
+});
+
+test('Spanish financing lists the same lender links as the English financing page', () => {
+  const en = read('/financing/').replace(/&amp;/g, '&');
+  const es = read('/es/financiamiento/').replace(/&amp;/g, '&');
+  for (const lender of lenders) {
+    assert.ok(en.includes(lender.apply), `${lender.name} apply link missing from English /financing/`);
+    assert.ok(es.includes(lender.apply), `${lender.name} apply link missing from Spanish /es/financiamiento/`);
+  }
+  const englishApplyLinks = [...en.matchAll(/href="(https:\/\/[^"]*(?:mysynchrony|init-app|apply\.svcfin)[^"]*)"/g)].map((m) => m[1]);
+  assert.deepEqual([...new Set(englishApplyLinks)].sort(), lenders.map((l) => l.apply).sort());
 });

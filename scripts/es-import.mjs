@@ -40,6 +40,18 @@ const replaceAll = [
    'más $89 por cada equipo adicional. VIP para minisplits: $12 al mes; el precio se ajusta si tiene unidades interiores adicionales.'],
 ];
 
+const tokens = [
+  ['$225 al año o $20 al mes, más $89', '{{vipStandard}}'],
+  ['VIP para minisplits: $12 al mes', 'VIP para minisplits: {{vipDuctless}}'],
+  ['Válida hasta el 30 de diciembre de 2026', 'Válida hasta el {{offerEnd}}'],
+  ['mantenimiento del calentón por $99', 'mantenimiento del calentón por {{tuneUp}}'],
+  ['La oferta de $99 ', 'La oferta de {{tuneUp}} '],
+  ['la oferta de $99?', 'la oferta de {{tuneUp}}?'],
+  ['Las ofertas de $99 y $150', 'Las ofertas de {{tuneUp}} y {{humidifier}}'],
+  ['la oferta de $150 ', 'la oferta de {{humidifier}} '],
+  ['(970) 287-1673', '{{phone}}'],
+];
+
 const clean = (s) => s.replace(/\*\*/g, '').trim();
 const usable = (s) => s && s !== 'None' && !/^INTERNAL\b/.test(s) && !/UNREVIEWED|PLACEHOLDER/.test(s);
 
@@ -83,6 +95,10 @@ function parse(file) {
   let json = JSON.stringify(page);
   for (const [from, to] of replaceAll) json = json.split(from).join(to);
   if (/No se combina|no se combinan|\$128|\$65/.test(json)) throw Error(`${pageId}: offer or VIP wording does not match the English Specials page`);
+  // Facts shared with English: the copy keeps tokens and src/data/es.mjs fills them from
+  // site.json and src/data/holiday-specials.mjs, so a price, date or phone change in English
+  // changes Spanish too.
+  for (const [from, to] of tokens) json = json.split(from).join(to);
   return JSON.parse(json);
 }
 
