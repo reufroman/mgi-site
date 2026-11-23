@@ -1,7 +1,7 @@
 // Headline rebate total. Change this one value.
-// Through Fri Nov 20, 2026 this is 5133. From Sat Nov 21, 2026 set it to 3033.
+// Carrier Cool Cash ended Nov 20, 2026. The live total is 3033.
 // The hero always keeps the financing half. Only the rebate dollar amount changes.
-export const HEADLINE_REBATE_DOLLARS = 5133;
+export const HEADLINE_REBATE_DOLLARS = 3033;
 
 export const OFFER_END = 'December 30, 2026';
 export const COOL_CASH_BUY_BY = 'November 20, 2026';
@@ -10,7 +10,7 @@ export const FINANCE_DISCLOSURE = 'Subject to credit approval. Equal monthly pay
 export const scheduleHref = '/schedule-service/?' + new URLSearchParams({service: '', town: '', topic: 'Holiday specials'}).toString();
 
 export const pending = Object.freeze({
-  C: '[PENDING: Whether the free first year of VIP can be combined with 0% financing.]',
+  C: 'Ask us whether offers can be combined.',
 });
 
 const money = dollars => `$${dollars.toLocaleString('en-US')}`;

@@ -30,7 +30,8 @@ test('seven offers and the one open item are present', () => {
   for (const item of Object.values(pending)) assert.ok(notes.includes(item), item);
   assert.equal(new Set(offers.map(offer => offer.id)).size, 7);
   assert.ok(!offers.some(offer => offer.id === 'santa-paws'));
-  assert.match(pending.C, /free first year of VIP.*0% financing/i);
+  assert.equal(pending.C, 'Ask us whether offers can be combined.');
+  assert.doesNotMatch(pending.C, /can be combined with 0%|they combine|free first year of VIP can be combined/i);
   for (const id of ['tune-up', 'humidifier']) assert.match(offers.find(offer => offer.id === id).body, /can be combined/i);
   assert.match(offers.find(offer => offer.id === 'referral').body, /signs.*installed.*pay in full.*no set payout timeline/i);
   assert.ok(!/cannot be combined|santa paws/i.test(notes));
