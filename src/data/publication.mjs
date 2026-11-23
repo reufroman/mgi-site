@@ -32,18 +32,38 @@ export function publicationErrors(record, expected = {}) {
  // This supplemental permission covers measurement presentation and the exact
  // frozen render source only. All existing content except privacy disclosures
  // must retain its earlier baseline or landing authorization.
+ // A later holidaySpecialsRelease is append-only. Once it is valid and binds
+ // the current whole-site fingerprint, earlier records stay shape-checked
+ // history. Their stored fingerprints are not compared with the current one.
  const measurement=record.measurementRelease;
  const selectedIds=Object.keys(expected.pageHashes||{});
  const priorPages={...(record.pages||{}),...(supplement?.pages||{})};
  const measurementIds=Object.keys(measurement?.pages||{});
- const scopedMeasurement=object(measurement)&&measurement.authorizedBy==='Reu'&&measurement.scope==='sitewide-consent-tag-manager'&&measurement.containerId==='GTM-5NWW55ZN'&&measurement.canonicalOrigin===expected.canonicalOrigin&&recordedDate(measurement.authorizedAt,expected.now||new Date().toISOString())&&nonempty(measurement.evidenceReference)&&hash(measurement.renderSourceHash)&&measurement.renderSourceHash===expected.renderSourceHash&&object(measurement.pages)&&selectedIds.length>0&&measurementIds.length===selectedIds.length&&measurementIds.every(id=>Object.hasOwn(expected.pageHashes,id)&&Object.hasOwn(priorPages,id)&&measurement.pages[id]?.contentHash===expected.pageHashes[id])&&selectedIds.every(id=>['ST-014','ST-017'].includes(id)||priorPages[id]?.contentHash===expected.pageHashes[id]);
- if(measurement&&!scopedMeasurement)errors.push('publication.measurementRelease: require exact Reu permission, production origin, source, container, existing route set, and unchanged non-privacy content');
- const landingIds=Object.keys(expected.pageHashes||{}).filter(id=>/^LP-00[1-9]$/.test(id));
+ const now=expected.now||new Date().toISOString();
+ const holiday=record.holidaySpecialsRelease;
+ const holidayRoutes=Array.isArray(holiday?.routes)?holiday.routes:[];
+ const holidayScope='/specials/ plus the Specials anchors in the Base.astro header, mobile menu and footer';
+ const holidayShape=object(holiday)&&holiday.authorizedBy==='Reu'&&holiday.authorizedAt==='2026-11-23T08:26:00-07:00'&&recordedDate(holiday.authorizedAt,now)&&holiday.canonicalOrigin==='https://mgiheatingandair.com'&&nonempty(holiday.evidenceReference)&&holiday.evidenceReference.includes('We are good on all yeps.')&&holiday.scope===holidayScope&&holidayRoutes.length===1&&holidayRoutes[0]==='HOLIDAY-SPECIALS';
+ let holidayCurrent=false;
+ if(holiday){
+  if(!holidayShape)errors.push('publication.holidaySpecialsRelease: require Reu, the Nov 23 8:26 AM MT timestamp, production origin, the yeps evidence, the Specials scope, and only route HOLIDAY-SPECIALS');
+  if(holiday.renderSourceHash==='PENDING_WHOLE_SITE_FINGERPRINT')errors.push('publication.holidaySpecialsRelease.renderSourceHash: placeholder must be replaced by npm run bind:holiday-fingerprint on a full tree');
+  else if(!hash(holiday.renderSourceHash))errors.push('publication.holidaySpecialsRelease.renderSourceHash: newest approval needs the current whole-site fingerprint');
+  else if(!hash(expected.renderSourceHash)||holiday.renderSourceHash!==expected.renderSourceHash)errors.push('publication.holidaySpecialsRelease.renderSourceHash: newest record must match the current fingerprint');
+  else if(holidayShape)holidayCurrent=true;
+ }
+ const historicalMeasurement=holidayCurrent&&object(measurement)&&measurement.authorizedBy==='Reu'&&measurement.scope==='sitewide-consent-tag-manager'&&measurement.containerId==='GTM-5NWW55ZN'&&measurement.canonicalOrigin===expected.canonicalOrigin&&recordedDate(measurement.authorizedAt,now)&&nonempty(measurement.evidenceReference)&&hash(measurement.renderSourceHash)&&object(measurement.pages)&&object(record.pages)&&Object.keys(record.pages).every(id=>Object.hasOwn(measurement.pages,id))&&measurementIds.every(id=>Object.hasOwn(record.pages,id)||/^LP-00[1-9]$/.test(id))&&measurementIds.every(id=>hash(measurement.pages[id]?.contentHash));
+ const landingShapeIds=['LP-001','LP-002','LP-003','LP-004','LP-005','LP-006','LP-007','LP-008','LP-009'];
  const supplementalIds=Object.keys(supplement?.pages||{});
+ const historicalSupplement=holidayCurrent&&object(supplement)&&supplement.authorizedBy==='Reu'&&supplement.canonicalOrigin===expected.canonicalOrigin&&recordedDate(supplement.authorizedAt,now)&&nonempty(supplement.evidenceReference)&&hash(supplement.renderSourceHash)&&object(supplement.pages)&&[9,11].includes(supplementalIds.length)&&landingShapeIds.every(id=>supplementalIds.includes(id))&&supplementalIds.every(id=>landingShapeIds.includes(id)||['ST-014','ST-017'].includes(id))&&supplementalIds.every(id=>hash(supplement.pages[id]?.contentHash));
+ const scopedMeasurement=!holidayCurrent&&object(measurement)&&measurement.authorizedBy==='Reu'&&measurement.scope==='sitewide-consent-tag-manager'&&measurement.containerId==='GTM-5NWW55ZN'&&measurement.canonicalOrigin===expected.canonicalOrigin&&recordedDate(measurement.authorizedAt,now)&&nonempty(measurement.evidenceReference)&&hash(measurement.renderSourceHash)&&measurement.renderSourceHash===expected.renderSourceHash&&object(measurement.pages)&&selectedIds.length>0&&measurementIds.length===selectedIds.length&&measurementIds.every(id=>Object.hasOwn(expected.pageHashes,id)&&Object.hasOwn(priorPages,id)&&measurement.pages[id]?.contentHash===expected.pageHashes[id])&&selectedIds.every(id=>['ST-014','ST-017'].includes(id)||priorPages[id]?.contentHash===expected.pageHashes[id]);
+ if(measurement&&!scopedMeasurement&&!historicalMeasurement)errors.push('publication.measurementRelease: require exact Reu permission, production origin, source, container, existing route set, and unchanged non-privacy content');
+ const landingIds=Object.keys(expected.pageHashes||{}).filter(id=>/^LP-00[1-9]$/.test(id));
  const permittedIds=[...landingIds,'ST-014','ST-017'];
- const scopedSupplement=object(supplement)&&supplement.authorizedBy==='Reu'&&supplement.canonicalOrigin===expected.canonicalOrigin&&recordedDate(supplement.authorizedAt,expected.now||new Date().toISOString())&&nonempty(supplement.evidenceReference)&&hash(supplement.renderSourceHash)&&(supplement.renderSourceHash===expected.renderSourceHash||scopedMeasurement)&&object(supplement.pages)&&landingIds.length===9&&[9,11].includes(supplementalIds.length)&&supplementalIds.every(id=>permittedIds.includes(id))&&supplementalIds.every(id=>(supplement.pages[id]?.contentHash===expected.pageHashes[id]||(scopedMeasurement&&['ST-014','ST-017'].includes(id))))&&landingIds.every(id=>(supplement.pages[id]?.contentHash===expected.pageHashes[id]||(scopedMeasurement&&['ST-014','ST-017'].includes(id))));
- if(supplement&&!scopedSupplement)errors.push('publication.supplementalRelease: require exact Reu authorization for the nine campaign landing pages and explicitly authorized privacy disclosures only');
- if (!hash(expected.renderSourceHash) || (record.renderSourceHash !== expected.renderSourceHash&&!scopedSupplement&&!scopedMeasurement)) errors.push('publication.renderSourceHash: rendered source changed or exact source binding is missing');
+ const scopedSupplement=!holidayCurrent&&object(supplement)&&supplement.authorizedBy==='Reu'&&supplement.canonicalOrigin===expected.canonicalOrigin&&recordedDate(supplement.authorizedAt,now)&&nonempty(supplement.evidenceReference)&&hash(supplement.renderSourceHash)&&(supplement.renderSourceHash===expected.renderSourceHash||scopedMeasurement)&&object(supplement.pages)&&landingIds.length===9&&[9,11].includes(supplementalIds.length)&&supplementalIds.every(id=>permittedIds.includes(id))&&supplementalIds.every(id=>(supplement.pages[id]?.contentHash===expected.pageHashes[id]||(scopedMeasurement&&['ST-014','ST-017'].includes(id))))&&landingIds.every(id=>(supplement.pages[id]?.contentHash===expected.pageHashes[id]||(scopedMeasurement&&['ST-014','ST-017'].includes(id))));
+ if(supplement&&!scopedSupplement&&!historicalSupplement)errors.push('publication.supplementalRelease: require exact Reu authorization for the nine campaign landing pages and explicitly authorized privacy disclosures only');
+ if (!hash(expected.renderSourceHash) || (!holidayCurrent && record.renderSourceHash !== expected.renderSourceHash&&!scopedSupplement&&!scopedMeasurement)) errors.push('publication.renderSourceHash: rendered source changed or exact source binding is missing');
+ if(holidayCurrent&&!hash(record.renderSourceHash))errors.push('publication.renderSourceHash: October 12 record must keep a well-formed historical fingerprint');
  for (const [field, expectedField, hashField] of [['pages', 'pageHashes', 'contentHash'], ['images', 'imageHashes', 'sourceHash']]) {
   const wanted = expected[expectedField];
   const approved = record[field];
