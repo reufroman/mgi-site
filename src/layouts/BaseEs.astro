@@ -1,0 +1,53 @@
+---
+// Spanish page shell. Kept separate from Base.astro so the English layout,
+// measurement and scheduler behavior are untouched by the Spanish build.
+// No Tag Manager, call-number swap or ServiceTitan widget loads here yet:
+// Spanish measurement is a separate, approved step (WDA 6.4(c)).
+import '../styles/site.css';
+import site from '../data/site.json';
+import proof from '../data/home-proof.json';
+import ServiceIcon from '../components/ServiceIcon.astro';
+import CredentialLogos from '../components/CredentialLogos.astro';
+import {review} from '../data/catalog.mjs';
+import {esByPageId,esNavigation,esServiceLinks,esIndexable,spanishPhoneNote} from '../data/es.mjs';
+interface Props {page:{pageId:string;enRoute:string;esRoute:string;schema:string;metaTitle:string;metaDescription:string;title:string};}
+const {page}=Astro.props;
+const origin=Astro.site;
+const canonical=new URL(page.esRoute,origin).href;
+const english=new URL(page.enRoute,origin).href;
+const phone=String(site.phone);
+const dial=phone.replace(/[^0-9]/g,'');
+const phoneHref='tel:+1'+dial;
+const request=esByPageId('ST-004')?.esRoute;
+const robots=review||!esIndexable?'noindex, nofollow':'index, follow';
+const home=new URL('/',origin).href;
+const schema={'@context':'https://schema.org','@graph':[{'@type':page.schema==='Service'?'Service':'WebPage','@id':`${canonical}#webpage`,name:page.metaTitle,url:canonical,description:page.metaDescription,inLanguage:'es',isPartOf:{'@id':`${home}#website`},provider:{'@id':`${home}#organization`}}]};
+---
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>{page.metaTitle} | MGI Heating and Air</title><meta name="description" content={page.metaDescription}/>
+<meta name="robots" content={robots}/>
+<link rel="canonical" href={canonical}/>
+<link rel="alternate" hreflang="es" href={canonical}/><link rel="alternate" hreflang="en" href={english}/><link rel="alternate" hreflang="x-default" href={english}/>
+<meta name="theme-color" content="#174E5B"/>
+<link rel="preload" href="/assets/manrope.woff2" as="font" type="font/woff2" crossorigin/><link rel="preload" href="/assets/cormorant.woff2" as="font" type="font/woff2" crossorigin/>
+<meta property="og:title" content={`${page.metaTitle} | MGI Heating and Air`}/><meta property="og:description" content={page.metaDescription}/><meta property="og:type" content="website"/><meta property="og:site_name" content={site.brand}/><meta property="og:locale" content="es_US"/><meta property="og:locale:alternate" content="en_US"/><meta property="og:image" content={new URL('/assets/mgi-badge.png',origin).href}/><meta property="og:image:alt" content="Logotipo de MGI Heating and Air"/><meta name="twitter:card" content="summary"/><link rel="icon" href="/assets/mgi-badge.png" type="image/png"/><meta property="og:url" content={canonical}/>
+<script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g,'<')}/>
+</head><body data-page-id={`ES-${page.pageId}`} data-lang="es">
+<a class="skip" href="#main">Saltar al contenido</a>
+{review && <div class="review-bar"><strong>Revisión privada</strong><span>Borrador en español. No publicado.</span><a href="/review/">Page directory</a></div>}
+<header class="site-header"><div class="wrap masthead"><nav class="desktop-nav" aria-label="Navegación principal">{esNavigation.map(([id,label])=><a href={esByPageId(id)!.esRoute} aria-current={page.pageId===id?'page':undefined}>{label}</a>)}</nav>
+<a class="brand" href="/es/" aria-label="MGI Heating and Air, inicio"><img src="/assets/mgi-badge-240.webp" srcset="/assets/mgi-badge-120.webp 120w, /assets/mgi-badge-240.webp 240w" sizes="120px" alt="MGI Heating and Air" width="667" height="667"/></a>
+<div class="header-right"><a class="lang-switch desktop-nav" href={page.enRoute} hreflang="en" lang="en">English</a><a class="button small outline phone-button" aria-label={`Llame a MGI al ${phone}`} href={phoneHref}><ServiceIcon name="phone"/><span>{phone}</span></a>{request&&<a class="button small schedule-button" href={request}>Solicite servicio</a>}</div>
+<details class="mobile-menu"><summary>Menú</summary><nav aria-label="Navegación móvil">{esNavigation.map(([id,label])=><a href={esByPageId(id)!.esRoute}>{label}</a>)}{request&&<a href={request}>Solicite servicio</a>}<a href={phoneHref}>Llame al {phone}</a><a href={page.enRoute} hreflang="en" lang="en">English</a></nav></details>
+</div></header>
+<main id="main" tabindex="-1"><slot/></main>
+<footer class="site-footer"><div class="wrap"><div class="footer-top"><div><p class="footer-name">MGI Heating and Air</p><p>Calefacción y aire acondicionado para su hogar.</p></div><a href={proof.carrier}><img class="carrier-logo" src="/assets/carrier-logo.png" alt="Carrier" width="800" height="320"/></a></div>
+<div class="footer-grid"><div><h3>Hablemos.</h3><p><a class="footer-phone" href={phoneHref}>{phone}</a></p><p>{spanishPhoneNote}</p><p>{site.address}</p>{request&&<a class="button" href={request}>Solicite servicio ↗</a>}<div class="footer-credentials"><CredentialLogos compact/></div></div>
+<nav aria-label="Servicios"><h3>Servicios</h3>{esServiceLinks.map(id=><a href={esByPageId(id)!.esRoute}>{esByPageId(id)!.title}</a>)}</nav>
+<nav aria-label="Ayuda para su hogar"><h3>Ayuda para su hogar</h3>{['ST-007','ST-008','ST-010'].filter(id=>esByPageId(id)).map(id=><a href={esByPageId(id)!.esRoute}>{esByPageId(id)!.eyebrow||esByPageId(id)!.title}</a>)}<a href={page.enRoute} hreflang="en" lang="en">English version</a></nav></div>
+<p class="footer-coverage">Llame a MGI para confirmar el servicio en su dirección y la disponibilidad.</p>
+<div class="footer-bottom"><small>© 2026 {site.legalName}</small><nav aria-label="Políticas"><a href="/privacy-policy/" hreflang="en">Política de privacidad (en inglés)</a><a href="/terms/" hreflang="en">Términos (en inglés)</a></nav></div>
+<p class="image-disclaimer">Las imágenes son ilustraciones generadas con inteligencia artificial. No muestran clientes, empleados ni trabajos reales de MGI.</p></div></footer>
+<style>.lang-switch{font-weight:700;text-decoration:underline;text-underline-offset:4px}</style>
+</body></html>

@@ -130,3 +130,4 @@
 .home-financing .wrap{text-align:center}
 /* Let enlarged header text wrap within its existing columns. */
 @media(min-width:1101px){.masthead{grid-template-columns:minmax(0,1fr) 150px minmax(0,1fr)}.masthead>.desktop-nav,.header-right{min-width:0;flex-wrap:wrap}.header-right .button{max-width:100%}}
+.lang-switch{font-weight:700;text-decoration:underline;text-underline-offset:4px}

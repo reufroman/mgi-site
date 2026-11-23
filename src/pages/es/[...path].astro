@@ -1,0 +1,87 @@
+---
+import BaseEs from '../../layouts/BaseEs.astro';
+import ServiceIcon from '../../components/ServiceIcon.astro';
+import site from '../../data/site.json';
+import {photos} from '../../data/catalog.mjs';
+import {esStaticPaths,esByPageId,esServiceLinks,spanishPhoneNote} from '../../data/es.mjs';
+export function getStaticPaths(){return esStaticPaths();}
+const {page}=Astro.props;
+const pictures=photos(page.pageId);
+const hero=pictures[0], support=pictures[1];
+const phone=String(site.phone);
+const phoneHref='tel:+1'+phone.replace(/[^0-9]/g,'');
+const request=esByPageId('ST-004')?.esRoute;
+const isHome=page.pageId==='ST-001';
+const isSchedule=page.pageId==='ST-004';
+const isService=page.esRoute.startsWith('/es/servicios/');
+const ctaHref=isSchedule?phoneHref:request;
+const ctaLabel=isSchedule?`Llame al ${phone}`:page.cta;
+---
+<BaseEs page={page}>
+<article class="es-page" data-es-page={page.pageId}>
+<section class="hero"><div class="wrap">
+{!isHome&&<nav class="breadcrumb" aria-label="Ruta de navegación"><a href="/es/">Inicio</a><span aria-hidden="true">/</span>{isService&&<><span>Servicios</span><span aria-hidden="true">/</span></>}<span aria-current="page">{page.eyebrow||page.title}</span></nav>}
+<div class:list={['es-opening',{'es-opening-photo':!!hero}]}>
+<div>
+{page.eyebrow&&<p class="es-eyebrow">{page.eyebrow}</p>}
+<h1>{page.title}</h1>
+<p class="lede">{page.summary}</p>
+<div class="actions"><a class="button" href={ctaHref}>{isSchedule&&<ServiceIcon name="phone"/>}{ctaLabel}{!isSchedule&&<span aria-hidden="true"> ↗</span>}</a>{!isSchedule&&<a class="button outline" href={phoneHref}><ServiceIcon name="phone"/>Llame al {phone}</a>}</div>
+<p class="small-copy">{spanishPhoneNote}</p>
+</div>
+{hero&&<figure class="polaroid es-photo" style="--tilt:-2deg"><img src={hero.src} srcset={hero.srcset} sizes="(max-width: 767px) calc(100vw - 72px), (max-width: 1100px) 45vw, 560px" width={hero.width} height={hero.height} loading="eager" fetchpriority="high" decoding="async" alt=""/></figure>}
+</div></div></section>
+
+{page.answer&&<section class="section es-answer" id="respuesta"><div class="wrap"><p class="es-answer-lead">{page.answer}</p></div></section>}
+
+{isSchedule&&<section class="section es-booking"><div class="wrap es-booking-grid">
+<div class="es-booking-card"><ServiceIcon name="phone"/><h2>Llame a la oficina</h2><p>Es la forma más rápida de empezar en español.</p><a class="es-phone" href={phoneHref}>{phone}</a><p class="small-copy">{spanishPhoneNote}</p></div>
+<div class="es-booking-card"><h2>Programe en línea</h2><p>El programador en línea está en inglés. Si prefiere, puede usarlo para enviar su dirección y lo que nota; la oficina se comunicará con usted.</p><a class="button outline" href="/schedule-service/" hreflang="en">Abrir el programador (en inglés) ↗</a></div>
+</div></section>}
+
+{page.sections.length>0&&<section class:list={['section','es-sections',{'es-home-grid':isHome}]}><div class="wrap">
+{page.sections.map((section:{heading:string;body:string},index:number)=><div class="es-section" data-reveal>
+<span class="es-number" aria-hidden="true">{String(index+1).padStart(2,'0')}</span>
+<div><h2>{section.heading}</h2><p>{section.body}</p></div>
+</div>)}
+</div></section>}
+
+{isHome&&<section class="section es-services"><div class="wrap"><h2>Servicios en español</h2><div class="es-service-links">{esServiceLinks.map(id=><a class="link-card" href={esByPageId(id)!.esRoute}><strong>{esByPageId(id)!.title}</strong><span aria-hidden="true">↗</span></a>)}</div></div></section>}
+
+{page.faqs.length>0&&<section class="section es-faq"><div class="wrap"><h2>Preguntas frecuentes</h2>
+{page.faqs.map((faq:{question:string;answer:string})=><details><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}
+</div></section>}
+
+{!isSchedule&&<section class="closing"><div class="wrap close-grid"><div><h2>Cuéntenos qué pasa en casa.</h2><p>No necesita saber qué pieza falló. Empiece por lo que nota.</p></div><div>{support&&<figure class="polaroid es-photo-small" style="--tilt:2deg"><img src={support.src} srcset={support.srcset} sizes="(max-width: 767px) calc(100vw - 72px), 320px" width={support.width} height={support.height} loading="lazy" decoding="async" alt=""/></figure>}<a class="button light" href={request}>Solicite servicio <span aria-hidden="true">↗</span></a><p class="small-copy">La oficina confirmará su cita y los detalles de la visita.</p></div></div></section>}
+</article>
+</BaseEs>
+<style>
+.es-eyebrow{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--teal);margin:0 0 12px}
+.es-opening{display:grid;gap:48px;align-items:center}
+.es-opening-photo{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}
+.es-opening h1{font-size:clamp(38px,4.4vw,62px)}
+.es-opening .actions{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 8px}
+.es-photo img,.es-photo-small img{width:100%;height:auto;display:block}
+.es-photo-small{max-width:320px;margin:0 0 24px}
+.es-answer{padding-top:0}
+.es-answer-lead{font-size:clamp(20px,2vw,26px);line-height:1.5;max-width:880px;margin:0 auto;border-left:4px solid var(--teal);padding-left:24px}
+.es-sections .wrap{display:grid;gap:28px;max-width:960px}
+.es-home-grid .wrap{grid-template-columns:repeat(3,minmax(0,1fr));max-width:none}
+.es-section{display:grid;grid-template-columns:56px minmax(0,1fr);gap:16px;padding:24px 0;border-top:1px solid #bbc5be}
+.es-home-grid .es-section{grid-template-columns:1fr}
+.es-number{font-weight:700;color:var(--teal);font-size:15px;padding-top:6px}
+.es-section h2{font-size:clamp(26px,2.4vw,34px);margin:0 0 10px}
+.es-section p{margin:0}
+.es-service-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:24px}
+.es-service-links a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:20px;border:1px solid #bbc5be;border-radius:12px;text-decoration:none}
+.es-faq .wrap{max-width:880px}
+.es-faq details{border-bottom:1px solid #bbc5be;padding:18px 0}
+.es-faq summary{font-weight:700;cursor:pointer;font-size:19px}
+.es-faq details p{margin:12px 0 0}
+.es-booking-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.es-booking-card{padding:28px;border-radius:12px;background:#f1f3ec}
+.es-booking-card :global(svg){width:40px;height:40px;color:var(--teal)}
+.es-phone{display:inline-block;font-size:28px;font-weight:700;padding:8px 0}
+@media(max-width:900px){.es-opening-photo,.es-home-grid .wrap,.es-booking-grid{grid-template-columns:1fr}}
+@media(max-width:767px){.es-section{grid-template-columns:1fr;gap:4px}.es-answer-lead{padding-left:16px}}
+</style>
