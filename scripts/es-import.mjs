@@ -27,6 +27,17 @@ const replaceAll = [
   // $99 furnace tune-up offer: furnace-specific.
   ['mantenimiento de calefacción por $99', 'mantenimiento del calentón por $99'],
   ['ya incluya el mantenimiento de calefacción', 'ya incluya el mantenimiento del calentón'],
+  // Nov 23, 2026 (Reu): follow the live English Specials page (src/data/holiday-specials.mjs).
+  // The $99 tune-up and the $150 humidifier offer can be combined; both run through Dec 30, 2026.
+  ['Una por cliente. No se combina con otras ofertas. El trabajo debe completarse a más tardar el 30 de diciembre.',
+   'Una por cliente. Se puede combinar con la oferta de $150 de descuento en un humidificador instalado. Válida hasta el 30 de diciembre de 2026.'],
+  ['Las ofertas de $99 y $150 no se combinan con otras ofertas. Confirme con la oficina si el financiamiento aplica en el mismo trabajo.',
+   'Las ofertas de $99 y $150 se pueden combinar entre sí. Pregunte en la oficina si se combinan con el financiamiento en el mismo trabajo.'],
+  ['Las ofertas de temporada no se combinan con otras ofertas. Si ya es miembro VIP,',
+   'La oferta de $99 se puede combinar con la oferta de $150 en un humidificador. Pregunte en la oficina si se combina con su plan VIP. Si ya es miembro VIP,'],
+  // VIP prices as stated on the live English Specials page.
+  ['más $89 al año por cada equipo adicional. VIP para minisplits: $128 al año con una unidad interior incluida y $65 por cada unidad adicional.',
+   'más $89 por cada equipo adicional. VIP para minisplits: $12 al mes; el precio se ajusta si tiene unidades interiores adicionales.'],
 ];
 
 const clean = (s) => s.replace(/\*\*/g, '').trim();
@@ -71,6 +82,7 @@ function parse(file) {
   }
   let json = JSON.stringify(page);
   for (const [from, to] of replaceAll) json = json.split(from).join(to);
+  if (/No se combina|no se combinan|\$128|\$65/.test(json)) throw Error(`${pageId}: offer or VIP wording does not match the English Specials page`);
   return JSON.parse(json);
 }
 

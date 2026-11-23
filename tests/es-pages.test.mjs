@@ -65,3 +65,10 @@ test('Spanish pages load no Tag Manager, call-number swap or scheduler script', 
     assert.doesNotMatch(html, /googletagmanager|data-google-call-measurement|STWidgetManager|webscheduler/, page.esRoute);
   }
 });
+
+test('offers and VIP prices match the live English Specials page', () => {
+  const all = esPages.map((p) => read(p.esRoute)).join('\n');
+  assert.doesNotMatch(all, /No se combina|no se combinan|\$128|\$65\b/);
+  assert.match(read('/es/servicios/mantenimiento-hvac/'), /Se puede combinar con la oferta de \$150/);
+  assert.match(read('/es/membresia-vip/'), /VIP para minisplits: \$12 al mes/);
+});
