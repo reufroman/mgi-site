@@ -130,3 +130,7 @@
 .home-financing .wrap{text-align:center}
 /* Let enlarged header text wrap within its existing columns. */
 @media(min-width:1101px){.masthead{grid-template-columns:minmax(0,1fr) 150px minmax(0,1fr)}.masthead>.desktop-nav,.header-right{min-width:0;flex-wrap:wrap}.header-right .button{max-width:100%}}
+
+/* Keep the phone number visible above the fold on every mobile page. */
+@media(max-width:767px){.header-right .phone-button{grid-column:2/4;grid-row:1;gap:6px;font-size:12px;padding:6px;white-space:nowrap}.header-right .phone-button span{display:inline}.header-right .phone-button .service-icon{width:16px;height:16px}.mobile-menu{grid-column:3;grid-row:2;margin-bottom:8px}.header-right .schedule-button{grid-column:2;grid-row:2;font-size:11px;padding:6px 8px}}
+@media(max-width:359px){.header-right .phone-button{font-size:11px;gap:4px}.header-right .phone-button .service-icon{display:none}}

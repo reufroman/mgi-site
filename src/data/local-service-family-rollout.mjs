@@ -99,9 +99,8 @@ export function localServiceFamilyContent(route,context,generalContent){
   copy.priceTransparency={...copy.priceTransparency,
    inclusionsHeading:`What your ${town} AC repair quote should explain.`,
    examplesHeading:`See the work behind a ${town} AC repair.`,
-   examplesIntro:`AC repair costs in ${town} depend on the part, the equipment, and the work needed. These illustrative examples explain what a repair can include. Current prices are pending confirmation. Confirm the full price and any separate charges before approving work.`,
-   exampleLabel:'Illustrative repair examples. They do not establish completed local work or a current price.',
-   priceRange:'Price pending confirmation'
+   examplesIntro:`AC repair costs in ${town} depend on the part, the equipment, and the work needed. These examples show repair work, price ranges, and what can change the total. Confirm the full quote and any separate charges before approving work.`,
+   exampleLabel:copy.priceTransparency.exampleLabel+' These examples do not establish completed local work.'
   };
   copy.localContext=localEvidence(fact,town,'repair');
   return {...common,title:`AC Repair in ${town}, CO`,summary:copy.heroBody,ctaLabel:base.ctaLabel,acStandard:copy,relevantReviews:base.relevantReviews,faqs:[...base.faqs,localFAQ(fact,'repair')]};

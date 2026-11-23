@@ -80,8 +80,13 @@
       "honesty": 2
     },
     "acceptedForReview": true,
-    "notes": "Source inspected at full displayed size after contact-sheet review; overlapping hands and physical contact remain plausible. Fictional lifestyle illustration only; not customer or job proof. Preserve the complete interaction in final placement. Retain the safe separation between the dance and cooking area; do not crop away the surrounding context.",
-    "checkedSource": "06_Assets-&-Resources/Website-Lifestyle-2026-09-29/2026-09-29_Empty-Nesters-Dancing-in-Kitchen.png"
+    "notes": "Exact final repaired source and desktop/phone placement inspected November3. AI-generated fictional scene, no customer or job proof.",
+    "checkedSource": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-006-r2.png",
+    "source_file": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-006-r2.png",
+    "asset_stem": "img-006-r2",
+    "status": "Final image repair reviewed November3; release receipt owns deployed state",
+    "source_sha256": "cc3433e096dc7e5deaccd98a3829b7053bd5840473504c83edb6c4ff08976ba9",
+    "source_manifest": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/provenance.json"
   },
   "IMG-007": {
     "alt": "Illustration of an adult and two children laugh on a rug beside a cardboard rocket.",
@@ -346,8 +351,13 @@
       "honesty": 2
     },
     "acceptedForReview": true,
-    "notes": "Actual source inspected visually. Hands, props and object contact appear plausible at inspected resolution. Fictional lifestyle illustration only, not customer or job proof. Final desktop/mobile placement remains to be inspected.",
-    "checkedSource": "06_Assets-&-Resources/Website-Astro-2026-10-05/IMG-025-Home-Scene.png"
+    "notes": "Exact final repaired source and desktop/phone placement inspected November3. AI-generated fictional scene, no customer or job proof.",
+    "checkedSource": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-025-r3.png",
+    "source_file": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-025-r3.png",
+    "asset_stem": "img-025-r3",
+    "status": "Final image repair reviewed November3; release receipt owns deployed state",
+    "source_sha256": "0b046ae8409e3b65b48728532098447054877e71711ae8aab611c5a571471266",
+    "source_manifest": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/provenance.json"
   },
   "IMG-026": {
     "alt": "Illustration of an adult and a child build a small house from wooden blocks.",
@@ -458,8 +468,13 @@
       "honesty": 2
     },
     "acceptedForReview": true,
-    "notes": "Generated edit inspected visually: two adults only, plausible hands and card contact, relaxed interaction, intact landscape. Fictional atmosphere only; public approval remains pending.",
-    "checkedSource": "06_Assets-&-Resources/Website-Astro-2026-10-07/IMG-033-Couple-Card-Game.png"
+    "notes": "Exact final repaired source and desktop/phone placement inspected November3. AI-generated fictional scene, no customer or job proof.",
+    "checkedSource": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-033-r2.png",
+    "source_file": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-033-r2.png",
+    "asset_stem": "img-033-r2",
+    "status": "Final image repair reviewed November3; release receipt owns deployed state",
+    "source_sha256": "286ca6121e61addaf34a461495b4a3a20b0815138333cc058ebe500d504c745d",
+    "source_manifest": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/provenance.json"
   },
   "IMG-034": {
     "alt": "Illustration of an older couple sharing tea on a sofa while a dog rests nearby.",

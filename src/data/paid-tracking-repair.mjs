@@ -33,48 +33,126 @@ export function schedulerDestination({ pageUrl, link = '/schedule-service/', coo
   return destination;
 }
 
-export function installSchedulerTransport({ window: win, document: doc, policy, widgetId, websiteUrl }) {
+export const NATIVE_SCHEDULER_ID = 'sched_dumyfs557ofap3vd4lag37v6';
+export const NATIVE_SCHEDULER_API_KEY = 'c1rx3xe2fcg3eyfxb1my1jem';
+// The native embed reads the complete hosting URL and st-dni-parameters itself.
+// Give it only supported routing context plus the permitted current touch.
+export function nativeHostingUrl(href, destination) {
+  const page = new URL(href), clean = new URL(page.origin + page.pathname);
+  for (const key of [...CONTEXT_KEYS, 'ws-widget']) {
+    if (safeValue(page.searchParams.get(key))) clean.searchParams.set(key, page.searchParams.get(key));
+  }
+  for (const key of ATTRIBUTION_KEYS) if (destination.searchParams.has(key)) clean.searchParams.set(key, destination.searchParams.get(key));
+  return clean;
+}
+export function installSchedulerTransport({ window: win, document: doc, policy, websiteUrl, timeoutMs = 15000 }) {
+  if (win.__mgiNativeSchedulerTransport) return win.__mgiNativeSchedulerTransport;
   const local = win.location.protocol === 'https:' && win.location.origin === new URL(websiteUrl).origin
     && win.location.hostname === 'mgiheatingandair.com';
+  const schedulerPage = win.location.pathname.replace(/\/$/, '') === '/schedule-service';
   const blocked = () => { const help = doc.getElementById('scheduler-help'); if (help) help.hidden = false; return false; };
-  let failed = false;
-  const ready = (async () => {
-    if (!local) return false;
-    await policy.ready;
+  let failed = false, initializedChoice, initializedUrl, navigating = false;
+  function cleanNavigation(url) {
+    navigating = true;
+    // A fresh document discards the provider's cached source data. Explicitly
+    // suppress referrer so the old tagged URL cannot return through referrer.
+    const link = doc.createElement('a'); link.href = url.href;
+    link.referrerPolicy = 'no-referrer'; link.rel = 'noreferrer';
+    // Keep the site's normal schedule-link interceptor from capturing this
+    // required fresh-document navigation. The browser default still runs.
+    link.addEventListener?.('click', event => event.stopPropagation());
+    doc.body.appendChild(link); link.click(); link.remove();
+    return false;
+  }
+  function normalize(link = '/schedule-service/') {
     policy.refresh?.();
+    const granted = policy.state.choice === 'granted' && win.navigator?.globalPrivacyControl !== true;
     let cookie = ''; try { cookie = doc.cookie; } catch {}
-    const page = new URL(win.location.href);
-    const destination = schedulerDestination({ pageUrl: page.href, cookie, measurementAllowed: policy.state.choice === 'granted' });
-    for (const key of ATTRIBUTION_KEYS) {
-      page.searchParams.delete(key);
-      if (destination.searchParams.has(key)) page.searchParams.set(key, destination.searchParams.get(key));
+    const original = win.location.href;
+    const destination = schedulerDestination({ pageUrl: original, link, cookie, measurementAllowed: granted });
+    if (granted && (Object.keys(attributionFrom(new URL(original).search)).length || Object.keys(attributionFrom(new URL(link, original).search)).length)) {
+      const touch = attributionFrom(destination.search);
+      try { doc.cookie = `mgi_click=${encodeURIComponent(JSON.stringify(touch))}; Max-Age=7776000; Path=/; SameSite=Lax; Secure`; } catch {}
     }
-    // The hosting URL must be correct BEFORE the shim snapshots its parent URL.
-    if (page.href !== win.location.href) win.history.replaceState(win.history.state, '', page.href);
-    win.STWidgetManager = win.STWidgetManager || function () { (win.STWidgetManager.q = win.STWidgetManager.q || []).push(arguments); };
-    win.STWidgetManager.l = Date.now();
-    win.STWidgetManager('init', widgetId);
-    const script = doc.createElement('script'); script.async = true;
-    script.src = 'https://static.servicetitan.com/webscheduler/shim.js';
-    script.onerror = () => { failed = true; blocked(); };
-    doc.head.appendChild(script);
-    if (page.searchParams.get('ws-widget') === 'open') win.STWidgetManager('ws-open');
-    return true;
+    // Never merge arbitrary Marketing Pro fields, stale IDs, or contact details.
+    try { win.sessionStorage.removeItem('st-dni-parameters'); }
+    catch { return { destination, granted, safe: false }; }
+    const page = nativeHostingUrl(original, destination);
+    if (page.href !== original) win.history.replaceState(win.history.state, '', page.href);
+    return { destination, granted, safe: true };
+  }
+  const ready = (async () => {
+    if (!local || !schedulerPage) return false;
+    await policy.ready;
+    const normalized = normalize();
+    if (!normalized.safe) return blocked();
+    initializedChoice = normalized.granted;
+    initializedUrl = new URL(win.location.href);
+    // The vendor copies document.referrer into its iframe unconditionally.
+    // Reload without a referrer if it contains a query/hash, even when allowed:
+    // approved attribution comes only from the current touch contract.
+    try { const ref = doc.referrer && new URL(doc.referrer); if (ref && (ref.search || ref.hash)) return cleanNavigation(new URL(win.location.href)); } catch { return blocked(); }
+    if (doc.getElementById('se-widget-embed') || win.STWidgetManager || win._scheduler) return blocked();
+    const appReady = await new Promise(resolve => {
+      const timer = setTimeout(() => { failed = true; blocked(); resolve(false); }, timeoutMs);
+      const finish = ok => { clearTimeout(timer); resolve(ok); };
+      const script = doc.createElement('script'); script.async = true; script.defer = true;
+      script.id = 'se-widget-embed';
+      script.setAttribute('data-api-key', NATIVE_SCHEDULER_API_KEY);
+      script.setAttribute('data-schedulerid', NATIVE_SCHEDULER_ID);
+      script.src = 'https://embed.scheduler.servicetitan.com/scheduler-v1.js';
+      script.onload = () => {
+        if (typeof win._scheduler?.addEventListener !== 'function') { failed = true; finish(blocked()); return; }
+        // Script load is not application readiness. Register before its async
+        // configuration/iframe handshake completes. No custom Booking* relay.
+        win._scheduler.addEventListener('AppReady', () => {
+          refreshConsent();
+          finish(!failed && !navigating);
+        });
+      };
+      script.onerror = () => { failed = true; finish(blocked()); };
+      doc.head.appendChild(script);
+    });
+    if (appReady && new URL(win.location.href).searchParams.get('ws-widget') === 'open') {
+      try { await win._scheduler.show({ schedulerId: NATIVE_SCHEDULER_ID }); }
+      catch { failed = true; return blocked(); }
+    }
+    return appReady;
   })();
-  return { ready, async open(link = '/schedule-service/') {
-    if (!await ready || failed) return blocked();
-    // The live consent banner has its own bundled policy instance. Same-tab
-    // storage writes do not emit storage events, so re-read before opening.
-    policy.refresh?.();
-    let cookie = ''; try { cookie = doc.cookie; } catch {}
-    const destination = schedulerDestination({ pageUrl: win.location.href, link, cookie, measurementAllowed: policy.state.choice === 'granted' });
-    const current = new URL(win.location.href);
-    const differs = [...ATTRIBUTION_KEYS, ...CONTEXT_KEYS].some(key => (current.searchParams.get(key) || '') !== (destination.searchParams.get(key) || ''));
-    // A later link with a different touch needs a new hosting page, never a stale
-    // already-initialized widget. Provider persistence still requires vendor proof.
-    if (differs) { win.location.assign(destination.href); return true; }
-    win.STWidgetManager('ws-open'); return true;
+  // The live banner may have its own bundled policy instance. Refresh after
+  // every UI click, and on storage/focus, to invalidate cached provider state.
+  function refreshConsent() {
+    if (!local || !schedulerPage || initializedChoice === undefined || navigating) return;
+    const normalized = normalize();
+    if (!normalized.safe) { failed = true; blocked(); return; }
+    if (normalized.granted !== initializedChoice) cleanNavigation(new URL(win.location.href));
+  }
+  doc.addEventListener?.('click', () => queueMicrotask(refreshConsent));
+  win.addEventListener?.('storage', refreshConsent);
+  win.addEventListener?.('focus', refreshConsent);
+  const transport = { ready, async open(link = '/schedule-service/') {
+    if (!local || navigating) return blocked();
+    await policy.ready;
+    if (!schedulerPage) {
+      policy.refresh?.();
+      let cookie = ''; try { cookie = doc.cookie; } catch {}
+      const destination = schedulerDestination({ pageUrl: win.location.href, link, cookie, measurementAllowed: policy.state.choice === 'granted' && win.navigator?.globalPrivacyControl !== true });
+      // Native copies its hosting URL. Keep content-page searches and anchors
+      // untouched, and host booking only on the dedicated request page.
+      return cleanNavigation(nativeHostingUrl(destination.href, destination));
+    }
+    const normalized = normalize(link);
+    if (!normalized.safe) return blocked();
+    if (initializedChoice !== undefined && normalized.granted !== initializedChoice) return cleanNavigation(normalized.destination);
+    const current = initializedUrl || new URL(win.location.href);
+    const differs = [...ATTRIBUTION_KEYS, ...CONTEXT_KEYS].some(key => (current.searchParams.get(key) || '') !== (normalized.destination.searchParams.get(key) || ''));
+    if (differs) { win.location.assign(normalized.destination.href); return true; }
+    if (!await ready || failed || navigating) return blocked();
+    try { await win._scheduler.show({ schedulerId: NATIVE_SCHEDULER_ID }); return true; }
+    catch { failed = true; return blocked(); }
   } };
+  win.__mgiNativeSchedulerTransport = transport;
+  return transport;
 }
 
 // Called only by an adapter backed by a VERIFIED saved provider receipt. This

@@ -1,0 +1,53 @@
+---
+import '../../styles/site.css';
+import LandingCallMeasurement from '../../components/LandingCallMeasurement.astro';
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank you | MGI Heating and Air</title>
+  <meta name="description" content="Thank you for choosing MGI. See what happens after your service request and how to reach us if your plans change." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="theme-color" content="#174E5B" />
+  <link rel="canonical" href="https://mgiheatingandair.com/booking-thank-you/" />
+  <link rel="icon" href="/assets/mgi-badge.png" />
+  <link rel="preload" href="/assets/manrope.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/cormorant.woff2" as="font" type="font/woff2" crossorigin />
+</head>
+<body data-page-id="MGI-THANK-YOU">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="thank-header">
+    <a href="/" aria-label="MGI Heating and Air home"><img src="/assets/mgi-badge-240.webp" width="120" height="120" alt="MGI Heating and Air" /></a>
+    <a class="thank-header-help" href="tel:+19702871673">Need a hand? <span>(970) 287-1673</span></a>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="thank-card" aria-labelledby="thank-title">
+      <div class="thank-intro">
+        <p class="thank-eyebrow">MGI Heating and Air</p>
+        <h1 id="thank-title">Your service request</h1>
+        <p class="thank-lede">If you sent a request, we’ll reach out if we need to confirm or change any details.</p>
+        <p class="appointment-note">If you sent a request, your appointment time is pending confirmation.</p>
+      </div>
+      <div class="next-grid">
+        <section><span class="step-label">What happens next</span><h2>Check on your request.</h2><p>If you sent a request, watch for a call or message from our team. If you’re not sure it went through, call us before sending another.</p></section>
+        <section><span class="step-label">If your plans change</span><h2>You can reach us here.</h2><p>Need to change a detail or ask a question? Call us. We can help with the next step.</p><a class="thank-phone" href="tel:+19702871673">(970) 287-1673 <span aria-hidden="true">↗</span></a></section>
+      </div>
+      <div class="thank-close"><p>Thank you for trusting us with your home.</p><a class="button outline" href="/">Back to the MGI website <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <p class="safety-note">If there’s immediate danger, leave the area and contact emergency services or your utility from a safe place. Don’t wait for a reply to your request.</p>
+  </main>
+  <footer class="thank-footer"><p>MGI Heating and Air</p><nav aria-label="Policies"><a href="/privacy-policy/">Privacy policy</a><a href="/privacy-choices/">Privacy choices</a></nav></footer>
+  <LandingCallMeasurement sitewide />
+  <script>
+    import { installThankYouAttribution } from '../../data/thank-you-attribution.mjs';
+    installThankYouAttribution(window);
+  </script>
+</body>
+</html>
+<style>
+  :global(body){background:#f4f4ed;color:#1a1a1a} .thank-header{max-width:1100px;margin:auto;padding:24px 36px 18px;display:flex;align-items:center;justify-content:space-between}.thank-header img{display:block;width:120px;height:120px}.thank-header-help{font-size:14px;color:#174e5b;text-decoration:none}.thank-header-help span{display:block;font-size:20px;font-weight:700;margin-top:4px}main{padding:6px 24px 0}.thank-card{max-width:1040px;margin:auto;background:#fffdfb;border:1px solid #d7ddd5;border-radius:22px;overflow:hidden;box-shadow:0 12px 42px #174e5b08}.thank-intro{padding:44px 40px 36px;text-align:center}.thank-icon{height:56px;width:56px;border-radius:50%;background:#e9efda;color:#174e5b;margin:0 auto 20px;display:grid;place-items:center}.thank-icon svg{width:40px;height:40px}.thank-eyebrow,.step-label{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#174e5b}.thank-eyebrow{margin:0 auto 14px;max-width:none}h1{font-size:clamp(42px,5.4vw,64px);line-height:1.02;letter-spacing:-.025em;margin:0 auto 22px;color:#174e5b;font-weight:600}.thank-lede{font-size:20px;line-height:1.6;max-width:540px;margin:0 auto 16px}.appointment-note{font-size:14px;color:#484b47;margin:0}.next-grid{display:grid;grid-template-columns:1fr 1fr;border-block:1px solid #d7ddd5;background:#f8f9f4}.next-grid section{padding:30px 38px}.next-grid section+section{border-left:1px solid #d7ddd5}.next-grid h2{font-size:30px;line-height:1.15;margin:12px 0;color:#174e5b}.next-grid p{font-size:16px;line-height:1.7;margin:0;color:#484b47}.thank-phone{display:inline-block;font-size:19px;font-weight:700;color:#174e5b;padding:12px 0 0;text-underline-offset:5px}.thank-close{padding:24px 38px;display:flex;align-items:center;justify-content:space-between;gap:20px}.thank-close p{font-size:15px;color:#484b47;margin:0}.thank-close .button{font-size:14px;padding:12px 18px}.safety-note{max-width:780px;margin:24px auto 0;text-align:center;font-size:13px;line-height:1.7;color:#484b47}.thank-footer{max-width:1040px;margin:28px auto 20px;padding:0 24px;display:flex;justify-content:space-between;gap:20px;font-size:13px;color:#484b47}.thank-footer p{margin:0}.thank-footer nav{display:flex;gap:24px}.thank-footer a{color:inherit;text-underline-offset:4px}a:focus-visible{outline:3px solid #174e5b;outline-offset:5px}:global([data-google-call-measurement]){margin:0 auto 20px!important;background:#fffdfb;border-radius:12px;font-size:12px!important;max-width:1040px!important}:global([data-call-measurement-controls] p){font-size:12px!important}
+  @media(max-width:650px){.thank-header{padding:18px 22px 14px}.thank-header img{width:120px;height:120px}.thank-header-help{font-size:12px}.thank-header-help span{font-size:16px}main{padding:4px 16px 0}.thank-intro{padding:30px 22px}.thank-icon{margin-bottom:18px}h1{font-size:46px}.thank-lede{font-size:18px;line-height:1.6}.next-grid{grid-template-columns:1fr}.next-grid section{padding:26px 24px}.next-grid section+section{border-left:0;border-top:1px solid #d7ddd5}.next-grid h2{font-size:29px}.thank-close{padding:24px;flex-direction:column;align-items:flex-start;gap:18px}.safety-note{text-align:left;padding:0 8px}.thank-footer{padding:0 24px;flex-direction:column;gap:12px}:global([data-google-call-measurement]){margin:0 16px 20px!important}.desktop-break{display:none}}
+</style>

@@ -15,7 +15,7 @@ const {data,anchorOffset=false}=Astro.props;
   <section class="price-examples" aria-labelledby="price-examples-heading">
     <header><h2 id="price-examples-heading" tabindex={anchorOffset?-1:undefined} style={anchorOffset?'scroll-margin-top:120px':undefined}>{data.examplesHeading}</h2><p>{data.examplesIntro}</p><p class="price-note">{data.exampleLabel}</p></header>
     <div class="price-column-headings" aria-hidden="true"><span>Example situation</span><span>Work included in this example</span><span>Price and what changes it</span></div>
-    <div class="price-comparison">{data.cases.map(example=><article class="price-example"><div><h3>{example.title}</h3><p>{example.finding}</p></div><div><h4 class="price-mobile-label">Work included in this example</h4><ul>{example.work.map(item=><li>{item}</li>)}</ul></div><div class="price-range-cell"><h4>Example price range</h4><p class="price-range">{data.priceRange}</p><p class="price-note">{data.priceBasis}</p><p>{example.driver}</p><p class="price-note price-scope-limit">{example.limit}</p></div></article>)}</div>
+    <div class="price-comparison">{data.cases.map(example=><article class="price-example"><div><h3>{example.title}</h3><p>{example.finding}</p></div><div><h4 class="price-mobile-label">Work included in this example</h4><ul>{example.work.map(item=><li>{item}</li>)}</ul></div><div class="price-range-cell"><h4>Example price range</h4><p class="price-range">{example.priceRange}</p><p class="price-note">{example.priceBasis}</p><p>{example.driver}</p><p class="price-note price-scope-limit">{example.limit}</p></div></article>)}</div>
     <p class="price-note price-basis">{data.basis}</p>
   </section>
 </div>

@@ -1,6 +1,6 @@
 {
   "name": "Price transparency list",
-  "status": "Client review draft. MGI must confirm the proposed checks, repair scope, and current prices.",
+  "status": "Client review draft. Ranges transcribed from Elijah’s October 14, 2026, notes. Jesse and Elijah must review the exact scope and wording before publication.",
   "inclusionsHeading": "What your AC repair quote should explain.",
   "inclusionsIntro": "Before you approve a repair, ask which checks are included and what any extra work would cost.",
   "groups": [
@@ -50,10 +50,8 @@
   ],
   "inclusionsLimit": "The checks depend on your AC, its condition, and safe access. Confirm the inspection charge and which checks your visit includes. Any additional repair needs its own price and your approval.",
   "examplesHeading": "See the work behind an AC repair.",
-  "examplesIntro": "A clear price starts with a clear repair. These examples show what the work covers and what can change the cost.",
-  "exampleLabel": "Illustrative examples, informed by documented repair work. Your quote is based on what we find in your home.",
-  "priceRange": "Price pending confirmation",
-  "priceBasis": "Parts and labor for the listed example repair.",
+  "examplesIntro": "A clear price starts with a clear repair. These examples show the work, a price range, and what can change the total. Ask for the full quote before approving work.",
+  "exampleLabel": "Illustrative repair examples. Price ranges are from MGI’s October 14, 2026, service-manager notes. Your quote is based on your equipment and the work needed.",
   "cases": [
     {
       "title": "A motor needs a new capacitor.",
@@ -68,16 +66,28 @@
         "Check how the equipment runs after replacement",
         "Explain any separate cooling concern found during the checks"
       ],
-      "driver": "The capacitor your equipment uses and any separate problem found during testing.",
-      "limit": "This example covers one capacitor replacement. A motor repair or refrigerant problem is separate work.",
+      "driver": "Capacitor type, access, and any separate electrical problem can change the price.",
+      "limit": "Confirm whether this range applies to your single-run or dual capacitor. Ask whether diagnosis, tax, or an after-hours charge is separate. Motor or refrigerant repairs need their own quote.",
       "sourceJobs": [
         "73121507",
         "74061310"
-      ]
+      ],
+      "priceRange": "$175 to $275",
+      "priceBasis": "One capacitor replacement with a compatible part and an operating check.",
+      "priceSource": {
+        "document": "SKM_C300i26101407590.pdf",
+        "gmailMessage": "1a13abff739fe54d",
+        "pages": [
+          3,
+          19
+        ],
+        "reviewedOn": "2026-11-02",
+        "approval": "Final scope and public wording pending Jesse and Elijah review"
+      }
     },
     {
-      "title": "The indoor fan needs a new motor.",
-      "finding": "Example: the blower motor needs replacement. It runs the fan that moves cooled air through your home.",
+      "title": "The indoor fan needs a conventional original-equipment motor.",
+      "finding": "Example: the blower motor needs replacement. It runs the fan that moves cooled air through your home. This range is for a conventional original-equipment motor that uses a capacitor.",
       "work": [
         "Confirm which replacement motor fits the equipment",
         "Remove the existing blower motor",
@@ -88,14 +98,26 @@
         "Test operation and measure the motor’s electrical draw",
         "Explain any other finding that needs separate work"
       ],
-      "driver": "Motor type, access, and whether a matching capacitor or separate control repair is needed.",
-      "limit": "The quote must identify whether a matching capacitor is included. Separate control or refrigerant work is outside this example.",
+      "driver": "Motor type, access, matching parts, and separate control or airflow problems can change the total.",
+      "limit": "The quote must identify whether a matching capacitor is included and whether diagnosis and tax are separate. Electronically controlled, variable-speed, and universal motors are outside this range. Refrigerant work needs its own quote.",
       "sourceJobs": [
         "73805502"
-      ]
+      ],
+      "priceRange": "$650 to $1,200",
+      "priceBasis": "Conventional original-equipment blower motor (OEM PSC). Other motor types have different ranges.",
+      "priceSource": {
+        "document": "SKM_C300i26101407590.pdf",
+        "gmailMessage": "1a13abff739fe54d",
+        "pages": [
+          4,
+          19
+        ],
+        "reviewedOn": "2026-11-02",
+        "approval": "Final scope and public wording pending Jesse and Elijah review"
+      }
     },
     {
-      "title": "The indoor cooling coil needs replacement.",
+      "title": "An indoor cooling coil out of warranty needs replacement.",
       "finding": "Example: the repair calls for a new indoor coil, where refrigerant takes heat out of the air. The parts connected around it can change the work.",
       "work": [
         "Confirm the replacement coil and the work listed in the quote",
@@ -108,20 +130,33 @@
         "Complete the quoted refrigerant and operating checks",
         "Explain the checks completed and any remaining work"
       ],
-      "driver": "Coil type, access, refrigerant, and changes needed to the surrounding connections.",
-      "limit": "The quote must list any surrounding air-box, drain, or other connection work. Other cooling problems need their own repair scope and price.",
+      "driver": "Coil size, access, refrigerant type and amount, and changes to surrounding connections can change the price.",
+      "limit": "Ask which connection work, refrigerant, and operating checks are included, and whether diagnosis and tax are separate. A coil with parts-warranty coverage needs a separate quote. Other cooling problems are separate work.",
       "sourceJobs": [
         "72109537"
-      ]
+      ],
+      "priceRange": "$2,000 to $3,500",
+      "priceBasis": "Indoor cooling coil replacement without parts-warranty coverage, for the work listed in your quote.",
+      "priceSource": {
+        "document": "SKM_C300i26101407590.pdf",
+        "gmailMessage": "1a13abff739fe54d",
+        "pages": [
+          6,
+          21
+        ],
+        "reviewedOn": "2026-11-02",
+        "approval": "Final scope and public wording pending Jesse and Elijah review"
+      }
     }
   ],
-  "basis": "Before you decide, your quote lists the work, the full price, and whether visit fees, tax, or permit costs are included or separate. If another repair or project task is needed, we explain its cost and get your approval.",
+  "basis": "Before you decide, get a quote that lists the work, the full price, and whether visit fees, tax, refrigerant, or permit costs are included or separate. Any additional work needs its own price and your approval.",
   "internalEvidence": {
     "acceptedDesign": "Handoffs/2026-10-07_MGI-Service-Section-Concepts.md",
     "repairSources": "02_Strategy/Proposals-&-Planning/2026-10-07_INTERNAL_MGI-Real-Replacement-Work.md",
-    "priceStatus": "Current prices being prepared offline; no numeric range verified",
+    "priceStatus": "Three example-specific ranges transcribed and visually checked against Elijah’s October 14 scan; final scope and wording review pending.",
     "operatingStatus": "Proposed checklist; quote-confirmation guidance, not universal inclusion promise",
     "publicApproval": "Pending",
-    "scope": "Service/replacement pattern; currently ST-061 and SL-WIN-AC-REP"
+    "scope": "Draft general AC Repair and AC service-town pages; source prices stored once per repair case.",
+    "pricingSource": "Handoffs/2026-11-02_Visual-Review-Evidence/pricing/Pricing-and-Scope.md"
   }
 }

@@ -6,7 +6,7 @@ import Photo from './Photo.astro';
 import PrimaryActions from './PrimaryActions.astro';
 import CredentialLogos from './CredentialLogos.astro';
 import ServiceIcon from './ServiceIcon.astro';
-import {photos,requestHref,contextFor} from '../data/catalog.mjs';
+import {photos,requestHref,contextFor,review} from '../data/catalog.mjs';
 import {serviceFamilyContent} from '../data/service-family-rollout.mjs';
 interface Props {route:Route;content:Content;}
 const {route,content}=Astro.props;
@@ -32,6 +32,7 @@ const captions=['A little time together.','Room for the things you enjoy.','Make
 <section class="section quote-section"><div class="wrap"><div class="family-intro"><h2>{copy.quoteHeading}</h2><p>{copy.quoteIntro}</p></div>{copy.localContext&&<aside class="family-local"><h3>{copy.localContext.heading}</h3>{copy.localContext.intro&&<p>{copy.localContext.intro}</p>}<p>{copy.localContext.body}</p></aside>}<div class="quote-grid">{copy.servicePaths ? copy.servicePaths.map(item=><div><h3><a href={item.href}>{item.title} <span aria-hidden="true">↗</span></a></h3><p>{item.body}</p></div>) : copy.quoteQuestions.map(item=><div><h3>{item.title}</h3><p>{item.body}</p></div>)}</div>{copy.kind!=='hub'&&<p class="quote-limit">{copy.quoteLimit||'Get the full parts and labor price, visit charge, and any separate work clear before you approve the repair.'}</p>}{copy.financing&&<div class="project-finance"><h3>A payment plan for the project you choose.</h3><p>Financing can spread the upfront cost over monthly payments. Compare the payment, total cost, and terms before choosing. Approval and terms apply.</p><a class="button light" href={'/financing/?'+new URLSearchParams({service:route.name}).toString()}>Explore financing information <span aria-hidden="true">↗</span></a></div>}</div></section>
 <section class="section green"><div class="wrap"><div class="family-intro"><h2>{copy.processHeading}</h2><p>{copy.processBody}</p></div><div class="family-story"><div><ol class="process">{copy.steps.map(([heading,body])=><li><h3>{heading}</h3><p>{body}</p></li>)}</ol><PrimaryActions href={request} label={data.ctaLabel}/></div><Photo image={moment('process-moment')} caption={captions[2]} tilt={2}/></div></div></section>
 <section class="section"><div class="wrap"><div class="family-intro"><h2>{'faqHeading' in copy ? copy.faqHeading : <>Questions about {route.name.toLowerCase().replace(/\bac\b/g,'AC').replace(/\bhvac\b/g,'HVAC')}.</>}</h2></div><div class="faq">{data.faqs.map(f=><details><summary>{f.question}</summary><p>{f.answer}</p></details>)}</div></div></section>
+{review&&route.canonical_route==='/services/mini-split-maintenance/'&&<aside class="section"><div class="wrap"><h2>Have a ductless system?</h2><p>See the ductless VIP membership draft and its terms for review.</p><a href="/vip-membership/#ductless-vip">Review ductless VIP membership</a></div></aside>}
 <section class="closing"><div class="wrap"><div class="family-intro"><h2>{copy.closeHeading}</h2><p>{copy.closeBody}</p></div><div class="family-story"><Photo image={moment('closing-moment')} caption={captions[3]} tilt={-2}/><PrimaryActions dark href={request} label={data.ctaLabel}/></div><p class="origin-note">Lifestyle scenes are AI-generated illustrations, not photographs of MGI customers or completed work.</p></div></section>
 </article>
 <style>

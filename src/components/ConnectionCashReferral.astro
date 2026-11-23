@@ -1,0 +1,175 @@
+<section class="cash-referral" id="referral-form" aria-labelledby="referral-title">
+  <div class="referral-intro">
+    <p class="referral-eyebrow">Make a connection</p>
+    <h2 id="referral-title">Start with the people.</h2>
+    <p>Add your details, then the person you want to refer.</p>
+  </div>
+  <form id="connection-cash-referral" method="dialog" novalidate>
+    <p class="referral-progress" aria-live="polite">Step <span data-referral-step-number>1</span> of 2</p>
+    <p class="referral-required">Name and phone are required for each person. Other fields are optional.</p>
+    <fieldset data-referral-step="1">
+      <legend tabindex="-1">Who are you?</legend>
+      <div class="referral-grid">
+        <div class="referral-field"><label for="cash-your-name">Your name <span>(required)</span></label><input id="cash-your-name" name="yourName" autocomplete="section-referrer name" maxlength="100" required aria-describedby="cash-your-name-error"/><p class="referral-error" id="cash-your-name-error"></p></div>
+        <div class="referral-field"><label for="cash-your-phone">Your phone <span>(required)</span></label><input id="cash-your-phone" name="yourPhone" type="tel" inputmode="tel" autocomplete="section-referrer tel" maxlength="30" required aria-describedby="cash-your-phone-error"/><p class="referral-error" id="cash-your-phone-error"></p></div>
+        <div class="referral-field referral-wide"><label for="cash-your-address">Your address <span>(optional)</span></label><input id="cash-your-address" name="yourAddress" autocomplete="section-referrer street-address" maxlength="240" aria-describedby="cash-your-address-error"/><p class="referral-error" id="cash-your-address-error"></p></div>
+        <div class="referral-field referral-wide"><label for="cash-your-email">Your email <span>(optional)</span></label><input id="cash-your-email" name="yourEmail" type="email" autocomplete="section-referrer email" maxlength="160" aria-describedby="cash-your-email-error"/><p class="referral-error" id="cash-your-email-error"></p></div>
+      </div>
+    </fieldset>
+    <fieldset data-referral-step="2" hidden disabled>
+      <legend tabindex="-1">Who are you referring?</legend>
+      <p class="referral-permission">Ask their permission before sharing their details.</p>
+      <div class="referral-grid">
+        <div class="referral-field"><label for="cash-their-name">Their name <span>(required)</span></label><input id="cash-their-name" name="theirName" autocomplete="section-referred name" maxlength="100" required aria-describedby="cash-their-name-error"/><p class="referral-error" id="cash-their-name-error"></p></div>
+        <div class="referral-field"><label for="cash-their-phone">Their phone <span>(required)</span></label><input id="cash-their-phone" name="theirPhone" type="tel" inputmode="tel" autocomplete="section-referred tel" maxlength="30" required aria-describedby="cash-their-phone-error"/><p class="referral-error" id="cash-their-phone-error"></p></div>
+        <div class="referral-field referral-wide"><label for="cash-their-address">Their address <span>(optional)</span></label><input id="cash-their-address" name="theirAddress" autocomplete="section-referred street-address" maxlength="240" aria-describedby="cash-their-address-error"/><p class="referral-error" id="cash-their-address-error"></p></div>
+        <div class="referral-field referral-wide"><label for="cash-their-email">Their email <span>(optional)</span></label><input id="cash-their-email" name="theirEmail" type="email" autocomplete="section-referred email" maxlength="160" aria-describedby="cash-their-email-error"/><p class="referral-error" id="cash-their-email-error"></p></div>
+        <div class="referral-field referral-wide"><label for="cash-source">Who gave you the card, or how did you hear about us? <span>(optional)</span></label><input id="cash-source" name="source" maxlength="160" placeholder="For example, Aaron’s card"/></div>
+      </div>
+    </fieldset>
+    <div class="referral-honeypot" aria-hidden="true"><label for="cash-website">Leave this field blank</label><input id="cash-website" name="website" tabindex="-1" autocomplete="off"/></div>
+    <div class="referral-actions"><button class="button outline" type="button" data-referral-back hidden>Back</button><button class="button" type="submit" data-referral-next>Next <span aria-hidden="true">↗</span></button></div>
+    <div class="referral-send" data-referral-send hidden>
+      <div data-referral-challenge aria-label="Spam protection"></div>
+      <p data-referral-challenge-status role="status" aria-live="polite">Spam protection will load here.</p>
+      <p>By submitting, you agree MGI Heating &amp; Air may contact you about this offer.</p>
+      <p><a href="https://mgiheatingandair.com/privacy-policy/">Privacy policy</a></p>
+      <button class="button" type="submit" data-referral-submit disabled>Send referral <span aria-hidden="true">↗</span></button>
+    </div>
+    <div class="referral-problem" data-referral-problem hidden tabindex="-1" role="status" aria-live="polite"><p data-referral-error></p><p>Questions? <a href="tel:+19702871673">Call (970) 287-1673</a>.</p><button class="button outline" type="button" data-referral-retry>Try again</button></div>
+    <noscript><p>This form needs JavaScript. To ask about a referral, <a href="tel:+19702871673">call (970) 287-1673</a>.</p></noscript>
+  </form>
+  <div class="referral-success" data-referral-success hidden tabindex="-1" role="status"><h3>Thank you.</h3><p>Your referral has been sent. MGI can contact you about the referral.</p><p>Questions? <a href="tel:+19702871673">Call (970) 287-1673</a>.</p><p class="referral-reference" data-referral-reference></p></div>
+</section>
+
+<script>
+  type Turnstile = {render:(container:HTMLElement,options:Record<string,unknown>)=>string;reset:(id:string)=>void;remove:(id:string)=>void};
+  const runtime = window as Window & {turnstile?:Turnstile};
+  const form = document.querySelector<HTMLFormElement>('#connection-cash-referral');
+  if (form) {
+    const steps = [...form.querySelectorAll<HTMLFieldSetElement>('[data-referral-step]')];
+    const back = form.querySelector<HTMLButtonElement>('[data-referral-back]')!;
+    const next = form.querySelector<HTMLButtonElement>('[data-referral-next]')!;
+    const sendPanel = form.querySelector<HTMLElement>('[data-referral-send]')!;
+    const send = form.querySelector<HTMLButtonElement>('[data-referral-submit]')!;
+    const retry = form.querySelector<HTMLButtonElement>('[data-referral-retry]')!;
+    const problem = form.querySelector<HTMLElement>('[data-referral-problem]')!;
+    const errorText = form.querySelector<HTMLElement>('[data-referral-error]')!;
+    const challengeStatus = form.querySelector<HTMLElement>('[data-referral-challenge-status]')!;
+    const challenge = form.querySelector<HTMLElement>('[data-referral-challenge]')!;
+    const progress = form.querySelector<HTMLElement>('[data-referral-step-number]')!;
+    const success = document.querySelector<HTMLElement>('[data-referral-success]')!;
+    const message = 'We could not send your referral. Please try again or call MGI.';
+    let current = 0, busy = false, preparing = false, completed = false, session = '', token = '', sitekey = '', widget = '', failed = false;
+    let loader:Promise<void> | undefined;
+    const updateSend = () => { send.disabled = busy || completed || failed || !session || !token; back.disabled = busy; retry.disabled = busy || preparing; };
+    function showError(focus = false) {
+      failed = true;
+      token = '';
+      errorText.textContent = message;
+      problem.hidden = false;
+      challengeStatus.textContent = 'The form is not ready to send. Use Try again, or call MGI.';
+      updateSend();
+      if (focus) problem.focus();
+    }
+    function loadTurnstile() {
+      if (runtime.turnstile) return Promise.resolve();
+      loader ??= new Promise<void>((resolve,reject) => {
+        const script = document.createElement('script');
+        script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+        script.async = true;
+        const timer = window.setTimeout(() => reject(Error('challenge unavailable')),15000);
+        script.onload = () => { clearTimeout(timer);runtime.turnstile ? resolve() : reject(Error('challenge unavailable')); };
+        script.onerror = () => { clearTimeout(timer);script.remove();reject(Error('challenge unavailable')); };
+        document.head.append(script);
+      });
+      return loader;
+    }
+    async function renderChallenge() {
+      if (current !== 1 || !sitekey || failed || completed) return;
+      try {
+        await loadTurnstile();
+        if (current !== 1 || failed || completed || widget) return;
+        challengeStatus.textContent = 'Complete the spam check before sending.';
+        widget = runtime.turnstile!.render(challenge,{sitekey,action:'connection_cash',size:'flexible',
+          callback:(value:string) => { if (failed || completed) return;token=value;challengeStatus.textContent='Spam check complete.';updateSend(); },
+          'expired-callback':() => {token='';challengeStatus.textContent='The spam check expired. Please complete it again.';updateSend();},
+          'error-callback':() => {showError();return true;},
+          'timeout-callback':() => {token='';challengeStatus.textContent='Please complete the spam check again.';updateSend();}
+        });
+      } catch { loader=undefined;showError(); }
+    }
+    async function initialise() {
+      if(preparing)return;
+      preparing=true;
+      session='';token='';failed=false;problem.hidden=true;retry.disabled=true;updateSend();
+      try {
+        const [configResponse,sessionResponse]=await Promise.all([
+          fetch('/api/referral/config',{credentials:'same-origin',cache:'no-store',signal:AbortSignal.timeout(10000)}),
+          fetch('/api/referral/session',{credentials:'same-origin',cache:'no-store',signal:AbortSignal.timeout(10000)})
+        ]);
+        if (!configResponse.ok || !sessionResponse.ok) throw Error('form unavailable');
+        const [config,data]=await Promise.all([configResponse.json(),sessionResponse.json()]);
+        if (typeof config.sitekey !== 'string' || !config.sitekey || typeof data.session !== 'string' || !data.session) throw Error('form unavailable');
+        sitekey=config.sitekey;session=data.session;
+        challengeStatus.textContent='Complete the spam check before sending.';
+        await renderChallenge();
+      } catch { showError(); }
+      finally {preparing=false;updateSend();}
+    }
+    function showStep(index:number) {
+      if (busy) return;
+      current=index;
+      steps.forEach((step,position)=>{step.hidden=position!==index;step.disabled=position!==index;});
+      progress.textContent=String(index+1);back.hidden=index===0;next.hidden=index===1;sendPanel.hidden=index===0;
+      steps[index].querySelector<HTMLElement>('legend')!.focus();
+      if(index===1) void renderChallenge();
+      updateSend();
+    }
+    function validate(step:HTMLFieldSetElement) {
+      let first:HTMLInputElement|undefined;
+      step.querySelectorAll<HTMLInputElement>('input').forEach(input=>{
+        const error=form!.querySelector<HTMLElement>(`#${input.id}-error`);if(!error)return;
+        const value=input.value.trim();let text='';
+        if(input.required&&!value)text=input.type==='tel'?'Enter a phone number.':'Enter a name.';
+        else if(value&&input.type==='tel'&&(!/^[+\d\s().-]+$/.test(value)||value.replace(/\D/g,'').length<10||value.replace(/\D/g,'').length>15))text='Enter a phone number with an area code.';
+        else if(value&&input.type==='email'&&!input.validity.valid)text='Enter an email address, or leave it blank.';
+        error.textContent=text;if(text){input.setAttribute('aria-invalid','true');first??=input;}else input.removeAttribute('aria-invalid');
+      });
+      first?.focus();return !first;
+    }
+    back.addEventListener('click',()=>showStep(0));
+    retry.addEventListener('click',()=>{
+      if(busy)return;
+      if(widget){runtime.turnstile?.remove(widget);widget='';}
+      loader=runtime.turnstile?Promise.resolve():undefined;
+      void initialise();
+    });
+    form.addEventListener('submit',async event=>{
+      event.preventDefault();if(busy||completed)return;
+      if(!validate(steps[current]))return;
+      if(current===0){showStep(1);return;}
+      if(send.disabled)return;
+      busy=true;updateSend();form.setAttribute('aria-busy','true');
+      challengeStatus.textContent='Sending your referral.';
+      const fields=['yourName','yourPhone','yourAddress','yourEmail','theirName','theirPhone','theirAddress','theirEmail','source','website'];
+      const payload:Record<string,string>={session,token};
+      fields.forEach(name=>{payload[name]=(form.elements.namedItem(name) as HTMLInputElement).value;});
+      session='';token='';
+      try {
+        const response=await fetch('/api/referral/submit',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+        const result=await response.json();
+        if(!response.ok||result.ok!==true||result.receipt!==true||typeof result.reference!=='string'||!result.reference)throw Error('not confirmed');
+        completed=true;form.reset();form.hidden=true;success.hidden=false;
+        success.querySelector<HTMLElement>('[data-referral-reference]')!.textContent='Reference: '+result.reference;
+        success.focus();
+      } catch {showError(true);}
+      finally {busy=false;form.removeAttribute('aria-busy');if(widget)runtime.turnstile?.reset(widget);updateSend();}
+    });
+    void initialise();
+  }
+</script>
+
+<style>
+  .cash-referral{padding:clamp(24px,4vw,48px);border:1px solid var(--teal);border-radius:18px;background:var(--warm);color:var(--ink);scroll-margin-top:24px;max-width:100%}.referral-intro h2{margin:0 0 16px;color:var(--teal)}.referral-intro p:last-child{margin-bottom:24px}.referral-eyebrow{font-size:12px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;color:var(--teal);margin:0 0 12px}.referral-notice{border-left:3px solid var(--teal);padding:12px 16px;font-size:14px;line-height:1.65;background:#f1f3ec;margin-bottom:28px}.referral-progress{color:var(--teal);font-size:14px;font-weight:700;margin:0 0 8px}.referral-required,.referral-permission{font-size:14px;line-height:1.65}.referral-required{margin-bottom:28px}.cash-referral fieldset{border:0;padding:0;margin:0;min-width:0}.cash-referral legend{padding:0;margin-bottom:24px;font:600 clamp(30px,3vw,38px)/1.1 Cormorant,Georgia,serif;color:var(--teal)}.referral-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.referral-wide{grid-column:1/-1}.referral-field{min-width:0}.referral-field label{display:block;font-size:15px;font-weight:700;margin-bottom:9px;line-height:1.55}.referral-field label span{font-size:12px;font-weight:400}.referral-field input{display:block;box-sizing:border-box;width:100%;min-height:50px;border:1px solid var(--teal);border-radius:8px;padding:12px 14px;font:inherit;font-size:16px;background:var(--warm);color:var(--ink)}.referral-field input::placeholder{color:var(--slate);opacity:1}.referral-field input[aria-invalid="true"]{border-width:2px}.referral-error{font-size:13px;font-weight:600;line-height:1.55;color:var(--teal);margin:8px 0 0}.referral-error:empty{display:none}.referral-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.cash-referral button{font-family:Manrope,Arial,sans-serif;min-height:48px;cursor:pointer}.cash-referral :is(input,button,a,legend,[tabindex]):focus-visible{outline:3px solid var(--teal);outline-offset:4px}.referral-review{padding:20px;border:1px solid var(--teal);border-radius:8px;margin-top:24px}.referral-review h3{font-size:27px;margin:0 0 12px}.referral-review p{margin:0;font-size:15px}.referral-send{margin-top:28px;padding-top:24px;border-top:1px solid var(--teal)}.referral-send p{font-size:13px;line-height:1.65;margin:0 0 8px}.referral-send a{display:inline-flex;align-items:center;min-height:44px;color:var(--teal);text-decoration:underline;text-underline-offset:3px}.referral-send button{white-space:normal;max-width:100%}.referral-send button:disabled{background:var(--warm);color:var(--slate);border:1px solid var(--teal);cursor:not-allowed;opacity:1}.referral-honeypot{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.referral-problem,.referral-success{margin-top:24px;padding:20px;border:1px solid var(--teal);border-radius:8px}.referral-problem p,.referral-success p{font-size:15px}.referral-problem a,.referral-success a{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;color:var(--teal)}.referral-success h3{color:var(--teal);font-size:32px;margin-bottom:16px}.referral-reference{overflow-wrap:anywhere}.referral-send [data-referral-challenge]{min-height:70px;width:100%;min-width:0}.referral-send [data-referral-challenge-status]{font-size:13px;margin:8px 0 20px}.cash-referral [hidden]{display:none!important}@media(max-width:600px){.cash-referral{padding:24px 20px}.referral-grid{grid-template-columns:1fr;gap:20px}.referral-actions{flex-direction:column}.referral-actions button,.referral-send button{width:100%;justify-content:center}.referral-field label{font-size:14px}.referral-field label span{display:inline-block}}
+</style>

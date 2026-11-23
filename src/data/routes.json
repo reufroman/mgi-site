@@ -90,7 +90,7 @@
   {
     "page_id": "ST-009",
     "family": "Core",
-    "name": "Rebate Calculator",
+    "name": "Rebate checklist",
     "canonical_route": "/rebates/calculator/",
     "source_publication_gate": "Validated rules, uncertainty behavior, and approval",
     "planned_public_state": "Excluded until evidence and exact approval clear",

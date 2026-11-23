@@ -2865,7 +2865,7 @@
   },
   "ST-009": {
     "eyebrow": "MGI Heating and Air",
-    "title": "Organize the rebate questions.",
+    "title": "Rebate checklist.",
     "summary": "Use this planning tool to collect the facts a program check needs. It cannot determine eligibility or promise an incentive amount.",
     "answer": "Use this planning tool to collect the facts a program check needs. It cannot determine eligibility or promise an incentive amount.",
     "sections": [
@@ -3523,7 +3523,7 @@
       "02_Strategy/Proposals-&-Planning/2026-10-02_INTERNAL_MGI-Monday-Research/Cross-Cutting-Colorado-Facts.md",
       "https://www.carrier.com/us/en/residential/hvac-resources/air-conditioners/troubleshoot-an-ac-not-working/",
       "https://www.epa.gov/ods-phaseout/purchasing-and-repairing-home-air-conditioners-or-heat-pumps",
-      "https://www.mgimechanicalservices.com/blog/most-common-ac-problems-in-colorado/"
+      "https://mgiheatingandair.com/blog/most-common-ac-problems-in-colorado/"
     ]
   },
   "ST-052": {
@@ -3598,12 +3598,12 @@
       "https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit",
       "https://unitedpower.com/heat-pumps",
       "https://pvrea.coop/for-members/rebates/heating-cooling-rebates/",
-      "https://www.mgimechanicalservices.com/blog/what-to-know-about-colorado-heat-pump-rebates/"
+      "https://mgiheatingandair.com/blog/what-to-know-about-colorado-heat-pump-rebates/"
     ]
   },
   "ST-053": {
     "eyebrow": "Homeowner guide",
-    "title": "A heat pump may fit. Start with the home.",
+    "title": "Why Heat Pumps are a Great Choice for Coloradans",
     "summary": "A space heat pump can heat and cool. The right choice depends on the home’s heating needs, cold-weather output, installation scope and actual energy prices.",
     "answer": "A space heat pump can heat and cool. The right choice depends on the home’s heating needs, cold-weather output, installation scope and actual energy prices.",
     "sections": [
@@ -3668,7 +3668,7 @@
       "https://www.energystar.gov/products/air_source_heat_pumps/key-product-criteria",
       "https://www.energystar.gov/sites/default/files/2024-12/ENERGY%20STAR%20Version%206.2%20Central%20Air%20Conditioner%20and%20Heat%20Pump%20Final%20Specification_1.pdf",
       "https://www.acca.org/standards/technical-manuals/manual-s",
-      "https://www.mgimechanicalservices.com/blog/why-heat-pumps-are-a-great-choice-for-coloradans/"
+      "https://mgiheatingandair.com/blog/why-heat-pumps-are-a-great-choice-for-coloradans/"
     ]
   },
   "ST-054": {
@@ -4217,7 +4217,7 @@
       "Qualified technical review and Jesse exact public approval remain required. Brand Chapters 02, 06, 10, 13, and 18 checked."
     ],
     "sources": [
-      "https://www.mgimechanicalservices.com/blog/what-is-a-manual-j-calculation-and-why-is-it-important/",
+      "https://mgiheatingandair.com/blog/what-is-a-manual-j-calculation-and-why-is-it-important/",
       "https://www.acca.org/standards/technical-manuals/manual-j",
       "https://www.acca.org/standards/technical-manuals/manual-s",
       "https://www.acca.org/standards/technical-manuals/manual-d"

@@ -15,7 +15,7 @@ export function installTagManager(config, { window: win, document: doc, choicesO
     if (manageConsent) {
       win.gtag = win.gtag || function () { win.dataLayer.push(arguments); };
       win.gtag('consent', 'default', denied);
-      win.gtag('consent', 'update', { ...denied, analytics_storage: 'granted' });
+      win.gtag('consent', 'update', { ...denied, ad_storage: 'granted', ad_user_data: 'granted', analytics_storage: 'granted' });
     }
     win.gtag = win.gtag || function () { win.dataLayer.push(arguments); };
     win.gtag('set', { restricted_data_processing: true });

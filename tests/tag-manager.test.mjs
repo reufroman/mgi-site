@@ -14,8 +14,8 @@ test('unset, denied, and legacy denial load no GTM or Google commands',()=>{
  for(const consent of [undefined,'denied']){const env=environment({consent});installTagManager(config,env);assert.equal(env.scripts.length,0);assert.equal(env.commands.length,0);}
  const env=environment({consent:'granted'});env.values.set(LEGACY_CONSENT_KEY,'off');installTagManager(config,env);assert.equal(env.scripts.length,0);
 });
-test('affirmative consent queues denied defaults then analytics only, one GTM loader across repeated installs',()=>{
- const env=environment();const manager=installTagManager(config,env);manager.grant();manager.grant();assert.equal(installTagManager(config,env),manager);assert.equal(env.scripts.length,1);assert.equal(env.scripts[0].src,'https://www.googletagmanager.com/gtm.js?id=GTM-5NWW55ZN');assert.equal(env.commands[0][2].analytics_storage,'denied');assert.equal(env.commands[1][2].analytics_storage,'granted');assert.equal(env.commands[1][2].ad_storage,'denied');assert.deepEqual(env.window.dataLayer.map(row=>row.event),['gtm.js']);
+test('affirmative consent queues denied defaults then ad measurement and analytics with personalization denied, one GTM loader across repeated installs',()=>{
+ const env=environment();const manager=installTagManager(config,env);manager.grant();manager.grant();assert.equal(installTagManager(config,env),manager);assert.equal(env.scripts.length,1);assert.equal(env.scripts[0].src,'https://www.googletagmanager.com/gtm.js?id=GTM-5NWW55ZN');assert.equal(env.commands[0][2].analytics_storage,'denied');assert.equal(env.commands[1][2].analytics_storage,'granted');assert.equal(env.commands[1][2].ad_storage,'granted');assert.equal(env.commands[1][2].ad_user_data,'granted');assert.equal(env.commands[1][2].ad_personalization,'denied');assert.deepEqual(env.window.dataLayer.map(row=>row.event),['gtm.js']);
 });
 test('wrong host, localhost, HTTP, malformed ID, and privacy choices never load GTM',()=>{
  for(const settings of [{host:'localhost'},{host:'mgi.localnerds.co'},{host:'www.mgiheatingandair.com'},{host:'mgiheatingandair.com.evil.test'},{protocol:'http:'},{pathname:'/privacy-choices/'},{pathname:'/privacy-choices'}]){const env=environment({consent:'granted',...settings});installTagManager(config,env).grant();assert.equal(env.scripts.length,0);}
@@ -39,3 +39,19 @@ test('GTM Page URL trigger includes landing routes and excludes privacy choices 
 test('blocked storage still permits explicit current-page choice and withdrawal',()=>{
  const env=environment();env.window.localStorage={getItem(){throw Error('blocked');},setItem(){throw Error('blocked');}};const manager=installTagManager(config,env);assert.equal(env.scripts.length,0);manager.grant();assert.equal(env.scripts.length,1);manager.deny();assert.equal(env.reloads.length,1);assert.equal(manager.consent,'denied');
 });
+
+for(const pathname of ['/schedule-service/','/booking-thank-you/']){
+ test(`${pathname}: explicit grant enables ad measurement before GTM while withdrawal denies every consent type`,()=>{
+  const env=environment({pathname});const manager=installTagManager(config,env);assert.equal(env.scripts.length,0);manager.grant();
+  const denied={ad_storage:'denied',ad_user_data:'denied',analytics_storage:'denied',ad_personalization:'denied'};
+  assert.deepEqual(env.commands[0],['consent','default',denied]);
+  assert.deepEqual(env.commands[1],['consent','update',{...denied,ad_storage:'granted',ad_user_data:'granted',analytics_storage:'granted'}]);
+  assert.equal(env.scripts.length,1);assert.ok(env.commands.some(args=>args[0]==='set'&&args[1].restricted_data_processing===true));
+  manager.deny();assert.deepEqual(env.commands.at(-1),['consent','update',denied]);assert.equal(env.reloads.length,1);
+ });
+ test(`${pathname}: GPC overrides saved Allow and revokes an active grant`,()=>{
+  const blocked=environment({pathname,consent:'granted'});blocked.window.navigator={globalPrivacyControl:true};const blockedManager=installTagManager(config,blocked);blockedManager.grant();assert.equal(blocked.scripts.length,0);assert.equal(blocked.commands.length,0);
+  const active=environment({pathname,consent:'granted'});active.window.navigator={globalPrivacyControl:false};installTagManager(config,active);assert.equal(active.commands[1][2].ad_storage,'granted');
+  active.window.navigator.globalPrivacyControl=true;active.storage(CALL_CONSENT_KEY);assert.deepEqual(active.commands.at(-1),['consent','update',{ad_storage:'denied',ad_user_data:'denied',analytics_storage:'denied',ad_personalization:'denied'}]);assert.equal(active.reloads.length,1);
+ });
+}

@@ -8,10 +8,13 @@ const widgetId = site.schedulerWidgetId;
 // @ts-nocheck
 import site from '../data/site.json';
 import { installSchedulerTransport } from '../data/paid-tracking-repair.mjs';
+import { installNativeBookingMeasurement } from '../data/native-booking-completion.mjs';
 import { getMeasurementPolicy } from '../data/measurement-policy.mjs';
 const widgetId = site.schedulerWidgetId;
 const websiteUrl = site.schedulerWebsiteUrl;
 const policy = getMeasurementPolicy(window);
+// Verified backend: this scheduler's native Ads export is off and it submits requests.
+installNativeBookingMeasurement({window,document,policy,enabled:true});
 const scheduler=installSchedulerTransport({window,document,policy,widgetId,websiteUrl});
 // Keep every existing booking link as a usable fallback and open the provider on activation.
 document.addEventListener('click',function(event){
