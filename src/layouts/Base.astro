@@ -15,6 +15,7 @@ import PrimaryActions from '../components/PrimaryActions.astro';
 import CredentialLogos from '../components/CredentialLogos.astro';
 import SmsDisclosure from '../components/SmsDisclosure.astro';
 import {review,buildMode,byId,requestHref,areas,services} from '../data/catalog.mjs';
+import {esForEnglishRoute} from '../data/es.mjs';
 const {route,content}=Astro.props;
 const metadata=pageMetadata(route,content);
 const isBatchOne=['ST-059','ST-060','ST-063','ST-079'].includes(route.page_id);
@@ -28,12 +29,13 @@ const canonical=canonicalUrl(route,Astro.site);
 const navigation=[['ST-005','Services'],['ST-006','Service areas'],['ST-007','Financing'],['ST-008','Rebates'],['ST-079','Emergency']].filter(([id])=>byId(id));
 const resources=[['ST-012','Homeowner help'],['ST-002','About']].filter(([id])=>byId(id));
 const schema=pageSchema(route,metadata,Astro.site,site);
+const spanish=esForEnglishRoute(route.canonical_route);
 ---
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>{metadata.title} | MGI Heating and Air</title><meta name="description" content={metadata.description}/>
 <meta name="robots" content={robotsDirective(route,review)}/>
-<link rel="canonical" href={canonical}/><meta name="theme-color" content="#174E5B"/>
+<link rel="canonical" href={canonical}/>{spanish&&<><link rel="alternate" hreflang="en" href={canonical}/><link rel="alternate" hreflang="es" href={new URL(spanish.esRoute,Astro.site).href}/><link rel="alternate" hreflang="x-default" href={canonical}/></>}<meta name="theme-color" content="#174E5B"/>
 <link rel="preload" href="/assets/manrope.woff2" as="font" type="font/woff2" crossorigin/><link rel="preload" href="/assets/cormorant.woff2" as="font" type="font/woff2" crossorigin/>
 <meta property="og:title" content={`${metadata.title} | MGI Heating and Air`}/><meta property="og:description" content={metadata.description}/><meta property="og:type" content={route.family==='Article'?'article':'website'}/><meta property="og:site_name" content={site.brand}/><meta property="og:locale" content="en_US"/><meta property="og:image" content={new URL('/assets/mgi-badge.png',Astro.site).href}/><meta property="og:image:alt" content="MGI Heating and Air logo"/><meta name="twitter:card" content="summary"/><link rel="icon" href="/assets/mgi-badge.png" type="image/png"/><meta property="og:url" content={canonical}/>
 <script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g,'\u003c')}/>
@@ -43,8 +45,8 @@ const schema=pageSchema(route,metadata,Astro.site,site);
 {review && <div class="review-bar"><strong>Private review</strong><span>Draft site. The scheduler sends real requests.</span><a href="/review/">Page directory</a></div>}
 <header class:list={["site-header",{"homeowner-shell":isHomeowner||isPilot}]}><div class="wrap masthead"><nav class="desktop-nav" aria-label="Main navigation">{navigation.map(([id,label])=><a href={byId(id)!.canonical_route} aria-current={route.page_id===id?'page':undefined}>{label}</a>)}</nav>
 <a class="brand" href="/" aria-label="MGI Heating and Air home"><img src="/assets/mgi-badge-240.webp" srcset="/assets/mgi-badge-120.webp 120w, /assets/mgi-badge-240.webp 240w" sizes="120px" alt="MGI Heating and Air" width="667" height="667"/></a>
-<div class="header-right"><details class="header-help desktop-nav"><summary>More</summary><nav aria-label="More navigation">{resources.map(([id,label])=><a href={byId(id)!.canonical_route}>{label}</a>)}<a href="/specials/" aria-current={route.page_id==='HOLIDAY-SPECIALS'?'page':undefined}>Specials</a></nav></details>{phone&&!isPilot&&<a class="button small outline phone-button" aria-label={`Call MGI at ${phone}`} href={phoneHref}><ServiceIcon name="phone"/><span>{phone}</span></a>}{byId('ST-004') && <a class="button small schedule-button" href={requestHref(route)}>{isBatchOne?'Request service':'Schedule service'}</a>}</div>
-<details class="mobile-menu"><summary>Menu</summary><nav aria-label="Mobile navigation">{[...navigation,...resources].map(([id,label])=><a href={byId(id)!.canonical_route}>{label}</a>)}<a href="/specials/" aria-current={route.page_id==='HOLIDAY-SPECIALS'?'page':undefined}>Specials</a>{byId('ST-004') && <a href={requestHref(route)}>{isBatchOne?'Request service':'Schedule service'}</a>}{phone&&!isPilot&&<a href={phoneHref}>Call {phone}</a>}</nav></details>
+<div class="header-right">{spanish&&<a class="lang-switch desktop-nav" href={spanish.esRoute} hreflang="es" lang="es">Español</a>}<details class="header-help desktop-nav"><summary>More</summary><nav aria-label="More navigation">{resources.map(([id,label])=><a href={byId(id)!.canonical_route}>{label}</a>)}<a href="/specials/" aria-current={route.page_id==='HOLIDAY-SPECIALS'?'page':undefined}>Specials</a></nav></details>{phone&&!isPilot&&<a class="button small outline phone-button" aria-label={`Call MGI at ${phone}`} href={phoneHref}><ServiceIcon name="phone"/><span>{phone}</span></a>}{byId('ST-004') && <a class="button small schedule-button" href={requestHref(route)}>{isBatchOne?'Request service':'Schedule service'}</a>}</div>
+<details class="mobile-menu"><summary>Menu</summary><nav aria-label="Mobile navigation">{[...navigation,...resources].map(([id,label])=><a href={byId(id)!.canonical_route}>{label}</a>)}<a href="/specials/" aria-current={route.page_id==='HOLIDAY-SPECIALS'?'page':undefined}>Specials</a>{byId('ST-004') && <a href={requestHref(route)}>{isBatchOne?'Request service':'Schedule service'}</a>}{phone&&!isPilot&&<a href={phoneHref}>Call {phone}</a>}{spanish&&<a href={spanish.esRoute} hreflang="es" lang="es">Español</a>}</nav></details>
 </div></header>
 <main id="main" tabindex="-1"><slot/></main>
 <ReadingMotion/>

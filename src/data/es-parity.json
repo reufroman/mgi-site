@@ -1,0 +1,56 @@
+{
+  "note": "English main-content fingerprints the Spanish pages were last synced against. Update only after the Spanish page matches the English page. See scripts/es-parity.mjs.",
+  "recordedAt": "2026-11-23",
+  "pairs": {
+    "ST-001": {
+      "enRoute": "/",
+      "esRoute": "/es/",
+      "enSha256": "b5eb17205ef7038ca24fd8606a60d625d4c0581404e932abae77a02d5f41c37b"
+    },
+    "ST-079": {
+      "enRoute": "/services/emergency-hvac-service/",
+      "esRoute": "/es/servicios/servicio-de-emergencia-hvac/",
+      "enSha256": "4efb1b4f89f7e71a9089164546a44e17eedc869e1a42049a1fc97af230e530a8"
+    },
+    "ST-059": {
+      "enRoute": "/services/furnace-repair/",
+      "esRoute": "/es/servicios/reparacion-de-calefaccion/",
+      "enSha256": "74a479c65d672883997fa7240885d0527de39c155418f0fbde23e23c1eae92c3"
+    },
+    "ST-061": {
+      "enRoute": "/services/ac-repair/",
+      "esRoute": "/es/servicios/reparacion-de-aire-acondicionado/",
+      "enSha256": "4c3a4b2d8ff83c6c12cf29884aaef6cba2b69d44780b0cc51b761b95feed56a4"
+    },
+    "ST-026": {
+      "enRoute": "/services/mini-splits/",
+      "esRoute": "/es/servicios/minisplits/",
+      "enSha256": "df501248209933e920f922dc417369f19cd2b16fd5e7db598ee464d01cdcf3a3"
+    },
+    "ST-027": {
+      "enRoute": "/services/hvac-maintenance/",
+      "esRoute": "/es/servicios/mantenimiento-hvac/",
+      "enSha256": "26383d73b861a4b455f40061630df70b93c76c299ea77bcc528982fb31b24660"
+    },
+    "ST-007": {
+      "enRoute": "/financing/",
+      "esRoute": "/es/financiamiento/",
+      "enSha256": "a7759bfdf769a9ec6f78a9761435165834722d693ae908a30dc30e4e8ab57f04"
+    },
+    "ST-010": {
+      "enRoute": "/vip-membership/",
+      "esRoute": "/es/membresia-vip/",
+      "enSha256": "1a78b441d0fcfa404184dda906188172b61925d00140696cfeb55c6e00b9b07c"
+    },
+    "ST-008": {
+      "enRoute": "/rebates/",
+      "esRoute": "/es/reembolsos/",
+      "enSha256": "98505b8de0ee58b9f7831671005d7b10647c6051a5a767c6343f0191fe6c6e3b"
+    },
+    "ST-004": {
+      "enRoute": "/schedule-service/",
+      "esRoute": "/es/programar-servicio/",
+      "enSha256": "232268f9bd23fffe48b7450635e77fac272f75b8d143ec23998ca2604d69d674"
+    }
+  }
+}

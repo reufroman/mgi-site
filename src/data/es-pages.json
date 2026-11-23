@@ -1,0 +1,406 @@
+[
+  {
+    "pageId": "ST-001",
+    "enRoute": "/",
+    "esRoute": "/es/",
+    "schema": "WebPage",
+    "metaTitle": "Calefacción y aire acondicionado en el norte de Colorado",
+    "metaDescription": "Reparación, reemplazo y mantenimiento de calefacción y aire acondicionado con MGI Heating & Air. Llame al {{phone}}.",
+    "eyebrow": "MGI Heating & Air",
+    "title": "Más vida en casa, menos preocupaciones.",
+    "summary": "¿Problemas con la calefacción, el aire acondicionado o el agua caliente? Empiece por lo que nota. Encuentre una reparación, compare opciones si planea un cambio o conozca el cuidado que necesita su equipo.",
+    "answer": "MGI Heating & Air atiende hogares en el norte de Colorado. Cuéntenos lo que ocurre y le ayudamos a elegir el siguiente paso con claridad.",
+    "cta": "Solicite servicio",
+    "sections": [
+      {
+        "heading": "Algo dejó de funcionar",
+        "body": "¿No calienta, no enfría o hace un ruido nuevo? Describa lo que nota. No necesita nombrar la pieza. Solicite servicio y la oficina confirmará la visita."
+      },
+      {
+        "heading": "¿Planea un cambio?",
+        "body": "Si evalúa un reemplazo, un minisplit o una bomba de calor, compare opciones, reembolsos y financiamiento antes de decidir."
+      },
+      {
+        "heading": "Mantenga su equipo al día",
+        "body": "Un mantenimiento de temporada o el Plan VIP pone el cuidado en el calendario, lo que puede ayudar a que el equipo dure más y a evitar sorpresas."
+      }
+    ],
+    "faqs": []
+  },
+  {
+    "pageId": "ST-079",
+    "enRoute": "/services/emergency-hvac-service/",
+    "esRoute": "/es/servicios/servicio-de-emergencia-hvac/",
+    "schema": "Service",
+    "metaTitle": "Emergencia de calefacción o aire acondicionado",
+    "metaDescription": "¿No calienta o no enfría? Seguridad primero. Solicite servicio de emergencia con MGI Heating & Air al {{phone}}.",
+    "eyebrow": "Servicio de emergencia",
+    "title": "Servicio de emergencia de calefacción y aire",
+    "summary": "¿No calienta o no enfría? Si huele a gas, sospecha monóxido de carbono o hay peligro inmediato, salga de la casa y, desde un lugar seguro, llame al 911 o a su compañía de gas. Si el equipo falló y no hay peligro inmediato, solicite ayuda.",
+    "answer": "Primero la seguridad. Después describa lo que hace el equipo. MGI puede ayudar con una evaluación de emergencia cuando no hay peligro inmediato en el hogar.",
+    "cta": "Solicite servicio",
+    "sections": [
+      {
+        "heading": "Qué está haciendo el equipo",
+        "body": "¿No calienta, no enfría, huele raro, hace ruido o suena una alarma? Anote lo que ve y oye. Eso ayuda a priorizar la visita."
+      },
+      {
+        "heading": "Describa el problema cuando ya esté seguro",
+        "body": "Si ya salió de una situación de peligro, cuéntenos el síntoma, desde cuándo ocurre y qué equipo está involucrado."
+      },
+      {
+        "heading": "Qué importa antes de elegir el trabajo",
+        "body": "La evaluación confirma la causa. No dé por hecho cuál es el arreglo hasta que un técnico revise el sistema."
+      },
+      {
+        "heading": "Detalles útiles",
+        "body": "Edad aproximada del equipo, marcas visibles, si hay garantía y si hay niños, adultos mayores o mascotas en casa."
+      },
+      {
+        "heading": "Elija la opción que le conviene hoy",
+        "body": "Reparación de emergencia, reparación programada o, si el equipo está al final de su vida útil, una conversación sobre reemplazo."
+      },
+      {
+        "heading": "Antes de acordar la visita",
+        "body": "La oficina confirma la dirección, los términos de la visita y la disponibilidad. Teléfono {{phone}}."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Qué hago si huele a gas?",
+        "answer": "Salga de inmediato. Desde afuera, llame al 911 o a su compañía de gas. No toque los interruptores ni use el teléfono dentro de la casa."
+      },
+      {
+        "question": "¿MGI atiende emergencias fuera de horario?",
+        "answer": "Llame al {{phone}}. La oficina o el proceso de emergencia le dirá la disponibilidad real para ese momento."
+      }
+    ]
+  },
+  {
+    "pageId": "ST-059",
+    "enRoute": "/services/furnace-repair/",
+    "esRoute": "/es/servicios/reparacion-de-calefaccion/",
+    "schema": "Service",
+    "metaTitle": "Reparación de calentón en el norte de Colorado",
+    "metaDescription": "¿El calentón no prende o hace ruido? Reparación de calefacción con MGI Heating & Air. Llame al {{phone}}.",
+    "eyebrow": "Reparación de calentón",
+    "title": "Reparación de calentón",
+    "summary": "¿Su calentón (furnace) no calienta, prende y se apaga seguido o hace un ruido nuevo? Solicite una evaluación para entender la causa antes de decidir el trabajo.",
+    "answer": "El síntoma nos dice por dónde empezar, pero por sí solo no indica qué pieza falló. Un técnico de MGI revisa su calentón de gas u otro sistema y le explica las opciones.",
+    "cta": "Solicite servicio",
+    "sections": [
+      {
+        "heading": "Lo que nota ayuda al diagnóstico",
+        "body": "¿No calienta, prende y se apaga seguido, hace ruido, huele raro o el termostato no responde? Describa el cambio."
+      },
+      {
+        "heading": "Qué importa antes de elegir el trabajo",
+        "body": "Compare reparación y reemplazo con hechos: edad del equipo, piezas, seguridad y costo total."
+      },
+      {
+        "heading": "Detalles útiles",
+        "body": "Marca, modelo si lo tiene, edad aproximada, último mantenimiento y si tiene garantía."
+      },
+      {
+        "heading": "Describa el cambio antes de elegir una pieza",
+        "body": "No necesita saber qué pieza es. Empiece por el síntoma y deje que la evaluación guíe el trabajo."
+      },
+      {
+        "heading": "Antes de acordar la visita",
+        "body": "Confirme dirección, disponibilidad y términos con la oficina al {{phone}}."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Puedo seguir usando el calentón si hace ruido?",
+        "answer": "Si huele a gas, salga de la casa y llame al 911 o a su compañía de gas desde afuera. Si ve hollín o tiene otra duda de seguridad, apague el equipo y llame a la oficina. Si solo hay un ruido nuevo sin otras señales, programe una evaluación pronto."
+      },
+      {
+        "question": "¿Reparación o reemplazo?",
+        "answer": "Depende de la edad, el diagnóstico y el costo. MGI le explica ambas rutas después de la evaluación."
+      }
+    ]
+  },
+  {
+    "pageId": "ST-061",
+    "enRoute": "/services/ac-repair/",
+    "esRoute": "/es/servicios/reparacion-de-aire-acondicionado/",
+    "schema": "Service",
+    "metaTitle": "Reparación de aire acondicionado",
+    "metaDescription": "¿El aire sopla caliente, se congela o gotea? Reparación de aire acondicionado con MGI Heating & Air. {{phone}}.",
+    "eyebrow": "Reparación de aire acondicionado",
+    "title": "Reparación de aire acondicionado",
+    "summary": "¿El aire sopla caliente, se congela o gotea? Solicite una evaluación de reparación. El síntoma nos dice por dónde empezar, pero por sí solo no indica qué pieza falló.",
+    "answer": "MGI revisa sistemas de aire acondicionado central y le explica la causa y las opciones de reparación o reemplazo.",
+    "cta": "Solicite servicio",
+    "sections": [
+      {
+        "heading": "Comparta el síntoma y el momento",
+        "body": "¿Aire caliente, hielo, agua que gotea, ruidos o se apaga solo? Díganos desde cuándo ocurre y qué cambió en la casa."
+      },
+      {
+        "heading": "Qué importa antes de elegir el trabajo",
+        "body": "La evaluación separa un arreglo puntual de un sistema al final de su vida útil."
+      },
+      {
+        "heading": "Detalles útiles",
+        "body": "Edad del equipo, filtros recientes, mantenimiento previo y si hay garantía."
+      },
+      {
+        "heading": "Describa el cambio antes de elegir una pieza",
+        "body": "No compre piezas por adelantado. Empiece por el síntoma y la visita de diagnóstico."
+      },
+      {
+        "heading": "Antes de acordar la visita",
+        "body": "La oficina confirma dirección, términos y disponibilidad. {{phone}}."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿El aire caliente siempre es el compresor?",
+        "answer": "No. Puede ser refrigerante, flujo de aire, termostato u otra causa. La evaluación lo confirma."
+      },
+      {
+        "question": "¿Debo apagar el equipo si hay hielo?",
+        "answer": "Sí. Apague el aire, deje que el hielo se derrita y programe una revisión. No fuerce el equipo si tiene hielo."
+      }
+    ]
+  },
+  {
+    "pageId": "ST-026",
+    "enRoute": "/services/mini-splits/",
+    "esRoute": "/es/servicios/minisplits/",
+    "schema": "Service",
+    "metaTitle": "Minisplits y sistemas sin ductos",
+    "metaDescription": "Instalación, reparación y cuidado de minisplits con MGI Heating & Air en el norte de Colorado. {{phone}}.",
+    "eyebrow": "Minisplits / sistemas sin ductos",
+    "title": "Minisplits sin ductos",
+    "summary": "¿Hay un cuarto que no se calienta o no se enfría bien, o un minisplit que dejó de funcionar? Conozca opciones de instalación por cuarto, reparación y mantenimiento de las unidades interiores.",
+    "answer": "Los minisplits (sistemas sin ductos) calientan y enfrían cuarto por cuarto, si el modelo tiene ambas funciones. MGI ayuda con instalación, reparación y mantenimiento.",
+    "cta": "Pregunte por sus opciones",
+    "sections": [
+      {
+        "heading": "Díganos qué cuartos necesitan calefacción o aire",
+        "body": "Recámara, oficina, ampliación o sótano. Saber qué cuartos importan define cuántas unidades interiores (cabezas) se necesitan y de qué capacidad."
+      },
+      {
+        "heading": "Qué importa antes de elegir el trabajo",
+        "body": "Compare un minisplit con un sistema de ductos: costo, reembolsos y mantenimiento."
+      },
+      {
+        "heading": "Detalles útiles",
+        "body": "Si ya tiene un minisplit, anote la marca, cuántas unidades interiores tiene y el síntoma. Si es nuevo, anote el aislamiento y el uso de cada cuarto."
+      },
+      {
+        "heading": "Elija la opción que le conviene hoy",
+        "body": "Reparación, mantenimiento o una instalación nueva por zonas."
+      },
+      {
+        "heading": "Antes de acordar la visita",
+        "body": "Confirme dirección y disponibilidad con la oficina. {{phone}}."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Un minisplit puede reemplazar el aire central?",
+        "answer": "A veces, según el tamaño de la casa y el diseño. Una visita lo aclara con medidas reales."
+      },
+      {
+        "question": "¿Hay un plan de mantenimiento para minisplits?",
+        "answer": "Sí. Hay un plan VIP para minisplits, aparte del VIP para calefacción y aire. Vea los precios en la página de membresía o llame a la oficina."
+      }
+    ]
+  },
+  {
+    "pageId": "ST-027",
+    "enRoute": "/services/hvac-maintenance/",
+    "esRoute": "/es/servicios/mantenimiento-hvac/",
+    "schema": "Service",
+    "metaTitle": "Mantenimiento de calefacción y aire acondicionado",
+    "metaDescription": "Mantenimiento de calefacción y aire acondicionado con MGI Heating & Air. Pregunte por el Plan VIP. {{phone}}.",
+    "eyebrow": "Mantenimiento",
+    "title": "Mantenimiento de calefacción y aire",
+    "summary": "¿Quiere cuidar el equipo que ya tiene? Empiece con una visita de cuidado definida, las tareas incluidas y un plan aparte si hay un problema activo.",
+    "answer": "El mantenimiento no es lo mismo que una reparación. MGI separa el cuidado programado de un diagnóstico cuando algo ya falló.",
+    "cta": "Solicite mantenimiento",
+    "sections": [
+      {
+        "heading": "Un hogar puede tener varias necesidades de cuidado",
+        "body": "Calefacción, aire acondicionado, bomba de calor o minisplit. Cada uno puede necesitar su propia visita de temporada."
+      },
+      {
+        "heading": "Qué importa antes de elegir el trabajo",
+        "body": "Sepa qué incluye la visita, qué queda fuera y cómo se maneja un hallazgo que requiere reparación."
+      },
+      {
+        "heading": "Detalles útiles",
+        "body": "Fecha del último servicio, cambio de filtros, si tiene Plan VIP y cualquier síntoma nuevo."
+      },
+      {
+        "heading": "Separe el cuidado de un problema actual",
+        "body": "Si hoy no calienta o no enfría, pida una reparación o servicio de emergencia. Si el equipo funciona, programe mantenimiento."
+      },
+      {
+        "heading": "Antes de acordar la visita",
+        "body": "Oferta de temporada: mantenimiento del calentón por {{tuneUp}}. Una por cliente. Se puede combinar con la oferta de {{humidifier}} de descuento en un humidificador instalado. Válida hasta el {{offerEnd}}. Llame al {{phone}}."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Con qué frecuencia debo hacer mantenimiento?",
+        "answer": "En general, una visita para la calefacción y otra para el aire cada año. El Plan VIP organiza ese calendario."
+      },
+      {
+        "question": "¿El mantenimiento cubre reparaciones?",
+        "answer": "No. El mantenimiento es cuidado. Las reparaciones se cotizan aparte después del diagnóstico."
+      }
+    ]
+  },
+  {
+    "pageId": "ST-007",
+    "enRoute": "/financing/",
+    "esRoute": "/es/financiamiento/",
+    "schema": "WebPage",
+    "metaTitle": "Financiamiento para calefacción y aire acondicionado",
+    "metaDescription": "Opciones de financiamiento para calefacción y aire acondicionado con MGI Heating & Air. Llame al {{phone}}.",
+    "eyebrow": "Financiamiento",
+    "title": "Financiamiento para calefacción y aire. Un plan para el hogar que quiere.",
+    "summary": "Un sistema nuevo de calefacción o aire es una compra grande. El financiamiento puede repartir el costo inicial en pagos, para que compare el proyecto completo con su presupuesto.",
+    "answer": "El financiamiento reparte el costo de un proyecto aprobado en pagos. La aprobación, los intereses, los cargos y los plazos dependen del prestamista y del plan. Antes de solicitar, compare el precio completo del proyecto con el costo total del préstamo.",
+    "cta": "Pregunte por financiamiento",
+    "sections": [
+      {
+        "heading": "Empiece por su hogar",
+        "body": "Díganos qué trabajo necesita: una reparación mayor o el reemplazo de su calefacción, aire, bomba de calor o minisplit."
+      },
+      {
+        "heading": "Compare el proyecto completo",
+        "body": "Precio del equipo, instalación, reembolsos posibles y el pago mensual si usa financiamiento."
+      },
+      {
+        "heading": "Elija cómo pagar",
+        "body": "Compare pagar de contado con las opciones de financiamiento vigentes. Si decide solicitar, revise los requisitos del prestamista. La aprobación no está garantizada."
+      },
+      {
+        "heading": "Vuelva a disfrutar su casa",
+        "body": "Cuando el proyecto y la forma de pago estén acordados, confirme el plan de instalación. La meta es terminar el trabajo para que usted vuelva a disfrutar su casa."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿La aprobación está garantizada?",
+        "answer": "No. La aprobación y los términos dependen del prestamista. Pregunte en la oficina por las opciones vigentes."
+      },
+      {
+        "question": "¿Se combina con ofertas de temporada?",
+        "answer": "Las ofertas de {{tuneUp}} y {{humidifier}} se pueden combinar entre sí. Pregunte en la oficina si se combinan con el financiamiento en el mismo trabajo."
+      }
+    ]
+  },
+  {
+    "pageId": "ST-010",
+    "enRoute": "/vip-membership/",
+    "esRoute": "/es/membresia-vip/",
+    "schema": "WebPage",
+    "metaTitle": "Membresía VIP de mantenimiento HVAC",
+    "metaDescription": "Plan VIP de MGI Heating & Air: mantenimiento de temporada para calefacción, aire y minisplits. {{phone}}.",
+    "eyebrow": "Plan VIP",
+    "title": "Cuidado de su calefacción y aire. Más vida en casa, menos preocupaciones.",
+    "summary": "Ponga la calefacción y el aire en el calendario. El VIP Comfort Club de MGI reúne mantenimiento de temporada y beneficios para miembros en un solo plan, para que entienda el costo y elija lo que mejor le funcione a su hogar.",
+    "answer": "El VIP Comfort Club incluye mantenimiento de temporada para su calefacción y su aire, más beneficios para miembros. VIP estándar: {{vipStandard}} por cada equipo adicional. VIP para minisplits: {{vipDuctless}}; el precio se ajusta si tiene unidades interiores adicionales. Si su casa tiene ambos sistemas, cada uno lleva su propia membresía.",
+    "cta": "Pregunte por la membresía VIP",
+    "sections": [
+      {
+        "heading": "Hable de su equipo.",
+        "body": "Díganos si tiene calefacción, aire, bomba de calor o minisplits. Así vemos si le conviene el VIP estándar, el VIP para minisplits o ambos."
+      },
+      {
+        "heading": "Elija su forma de pago.",
+        "body": "Compare el costo anual completo y pregunte por los términos de facturación, renovación y cancelación antes de inscribirse."
+      },
+      {
+        "heading": "Programe las visitas de cuidado.",
+        "body": "El plan pone el mantenimiento en el calendario para que no dependa de recordarlo usted solo."
+      },
+      {
+        "heading": "Entienda los hallazgos.",
+        "body": "Si la visita encuentra un problema, la reparación se cotiza aparte. El VIP no reemplaza el diagnóstico de emergencia."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Puedo combinar VIP con la oferta de {{tuneUp}}?",
+        "answer": "La oferta de {{tuneUp}} se puede combinar con la oferta de {{humidifier}} en un humidificador. Pregunte en la oficina si se combina con su plan VIP. Si ya es miembro VIP, es posible que su plan ya incluya el mantenimiento del calentón. Confirme con la oficina."
+      }
+    ]
+  },
+  {
+    "pageId": "ST-008",
+    "enRoute": "/rebates/",
+    "esRoute": "/es/reembolsos/",
+    "schema": "WebPage",
+    "metaTitle": "Reembolsos de calefacción y aire acondicionado",
+    "metaDescription": "Revise reembolsos e incentivos con MGI Heating & Air. Programas según su compañía de luz y gas. {{phone}}.",
+    "eyebrow": "Reembolsos",
+    "title": "Reembolsos para calefacción y aire. Más apoyo para los planes de su hogar.",
+    "summary": "Un reembolso o descuento puede ayudar con el costo de un sistema nuevo de calefacción, aire o agua caliente. Empiece por lo que su hogar necesita; luego revise los programas de su compañía de luz y gas y de su equipo antes de contar con el ahorro.",
+    "answer": "Que usted califique para un reembolso depende de su cuenta de luz o gas, el equipo exacto, quién lo instala, cuándo se presenta la solicitud y las reglas vigentes del programa. Vivir en cierta ciudad no garantiza que califique. Planee con el precio completo del proyecto hasta que el reembolso esté confirmado.",
+    "cta": "Pregunte por reembolsos",
+    "sections": [
+      {
+        "heading": "Revise antes de empezar el trabajo",
+        "body": "Díganos cuál es su compañía de luz y de gas, qué equipo piensa reemplazar y si ya empezó el trabajo. Algunos programas requieren aprobación antes de comprar o instalar."
+      },
+      {
+        "heading": "Compare el proyecto y el programa",
+        "body": "Algunos reembolsos requieren instaladores o modelos específicos. Le mostramos cada beneficio posible por separado, con sus condiciones."
+      },
+      {
+        "heading": "Acuerde quién maneja cada paso",
+        "body": "Papeles, fotos, números de serie y plazos. Deje claro qué hace MGI y qué hace usted."
+      },
+      {
+        "heading": "Siga el resultado",
+        "body": "Pregunte si el beneficio llega como descuento, cheque, crédito en su factura o beneficio fiscal. Una solicitud enviada no es lo mismo que un pago aprobado. Guarde sus confirmaciones."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿El reembolso reduce el precio el mismo día?",
+        "answer": "A veces hay descuento anticipado; a veces usted paga y reclama después. Depende del programa. Verifique antes de firmar."
+      },
+      {
+        "question": "¿Qué programas hay en mi área?",
+        "answer": "Depende de su compañía de luz y gas. Llame al {{phone}} y revisamos con usted los programas vigentes para su casa."
+      }
+    ]
+  },
+  {
+    "pageId": "ST-004",
+    "enRoute": "/schedule-service/",
+    "esRoute": "/es/programar-servicio/",
+    "schema": "WebPage",
+    "metaTitle": "Programar servicio de calefacción y aire",
+    "metaDescription": "Solicite servicio de calefacción y aire con MGI Heating & Air. Teléfono {{phone}}.",
+    "eyebrow": "Programar servicio",
+    "title": "Empecemos su solicitud de servicio.",
+    "summary": "Cuéntenos qué ocurre en casa y cómo comunicarnos con usted. La oficina confirmará el servicio en su dirección, los términos de la visita y la disponibilidad.",
+    "answer": "Envíe su solicitud y la oficina se comunicará con usted para confirmar la dirección, el tipo de servicio, los términos de la visita y una hora real para su cita.",
+    "cta": "Solicite servicio",
+    "sections": [
+      {
+        "heading": "Qué ayuda en la solicitud",
+        "body": "Síntoma, equipo, ciudad y el mejor teléfono. Si es una emergencia de seguridad, salga de la casa y llame al 911 primero."
+      },
+      {
+        "heading": "Qué confirmar antes de la visita",
+        "body": "Dirección dentro del área de servicio, acceso al equipo y un adulto presente."
+      },
+      {
+        "heading": "¿Sistema detenido o cuidado planeado?",
+        "body": "Reparación y emergencia no son lo mismo que mantenimiento VIP. Elija la opción que describe su día."
+      }
+    ],
+    "faqs": []
+  }
+]
