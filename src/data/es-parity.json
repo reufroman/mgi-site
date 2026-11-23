@@ -51,6 +51,246 @@
       "enRoute": "/schedule-service/",
       "esRoute": "/es/programar-servicio/",
       "enSha256": "232268f9bd23fffe48b7450635e77fac272f75b8d143ec23998ca2604d69d674"
+    },
+    "ST-003": {
+      "enRoute": "/contact/",
+      "esRoute": "/es/contacto/",
+      "enSha256": "c318bc978d216fca760eb994c575f3e1d68964c7b287b1566b0b4628c7abf55d"
+    },
+    "ST-018": {
+      "enRoute": "/request-received/",
+      "esRoute": "/es/solicitud-recibida/",
+      "enSha256": "54292ca87233b301308a5afc98fecd850dac05957094b5602a37c46c7733d9e7"
+    },
+    "ST-019": {
+      "enRoute": "/404/",
+      "esRoute": "/es/404/",
+      "enSha256": "e15f47d20a98cdc853eb5f38dff5a3310a53a1cfd53ad06ce3b1f78874e48d49"
+    },
+    "ST-005": {
+      "enRoute": "/services/",
+      "esRoute": "/es/servicios/",
+      "enSha256": "3b50761f5365f80ed6b2169379d8365b4b3390b9868d2c867010d143db4d18f7"
+    },
+    "ST-006": {
+      "enRoute": "/service-area/",
+      "esRoute": "/es/areas-de-servicio/",
+      "enSha256": "9c3f3f4b558fd70de52f9801d4e27672c71079ee160cca81b4e022d26f8f83aa"
+    },
+    "ST-002": {
+      "enRoute": "/about/",
+      "esRoute": "/es/nosotros/",
+      "enSha256": "49dfb87a249d5e49415202ada944333a05c81d959b569159c6c8b53a3de8f075"
+    },
+    "HOLIDAY-SPECIALS": {
+      "enRoute": "/specials/",
+      "esRoute": "/es/ofertas/",
+      "enSha256": "6e2db65e8d9e1fecd361e5a07fb87e3a6a077d434bf99556b379d502ce280806"
+    },
+    "ST-020": {
+      "enRoute": "/services/furnace/",
+      "esRoute": "/es/servicios/calentones/",
+      "enSha256": "b74f356a31cb43548ecd9dea9a2ce1f6a7ad37e0c892ee7c64c3c9f9412ba3e9"
+    },
+    "ST-060": {
+      "enRoute": "/services/furnace-replacement/",
+      "esRoute": "/es/servicios/reemplazo-de-calenton/",
+      "enSha256": "8b35e7171df4c82e8fbd09e932cec15f9a87040b8dfcec01ec1190a7508cbfa1"
+    },
+    "ST-063": {
+      "enRoute": "/services/furnace-maintenance/",
+      "esRoute": "/es/servicios/mantenimiento-de-calenton/",
+      "enSha256": "933b99556814db49f71ca0dd1da60de182c23db24b945e75396a7eecb2e600a0"
+    },
+    "ST-021": {
+      "enRoute": "/services/air-conditioning/",
+      "esRoute": "/es/servicios/aire-acondicionado/",
+      "enSha256": "8466422c840bd9526aa58692c062db3ce59f485ae7b285ab91b022fb6790f8e1"
+    },
+    "ST-062": {
+      "enRoute": "/services/ac-replacement/",
+      "esRoute": "/es/servicios/reemplazo-de-aire-acondicionado/",
+      "enSha256": "ee1ca4f376ae97271ea5eb7720322c9e4467da68e97282b429ea3f1b585e30bb"
+    },
+    "ST-064": {
+      "enRoute": "/services/ac-maintenance/",
+      "esRoute": "/es/servicios/mantenimiento-de-aire-acondicionado/",
+      "enSha256": "a78e6329356e34b05172d9f1bdc43941a7df2d66b6401fdcda7a7fb0fe4f1566"
+    },
+    "ST-022": {
+      "enRoute": "/services/heat-pumps/",
+      "esRoute": "/es/servicios/bombas-de-calor/",
+      "enSha256": "5e4640e7773abb1cca5c2fb172343a94a119ab3229b5b2d38443c51650fcedcf"
+    },
+    "ST-065": {
+      "enRoute": "/services/heat-pump-repair/",
+      "esRoute": "/es/servicios/reparacion-de-bomba-de-calor/",
+      "enSha256": "195076383e9b906a64f78c40df14c53fc6fe0cb43a0565b5bef58bed96051a21"
+    },
+    "ST-066": {
+      "enRoute": "/services/heat-pump-installation/",
+      "esRoute": "/es/servicios/instalacion-de-bomba-de-calor/",
+      "enSha256": "2d1d1b5a7fc5e5fa47d0e582b76ec289f69b17478183a19edbed6673f618d576"
+    },
+    "ST-067": {
+      "enRoute": "/services/heat-pump-maintenance/",
+      "esRoute": "/es/servicios/mantenimiento-de-bomba-de-calor/",
+      "enSha256": "c95f1857e27cf99181aade8c60f52aadc908b2d123796f7315a99adb26f42fac"
+    },
+    "ST-023": {
+      "enRoute": "/services/water-heaters/",
+      "esRoute": "/es/servicios/calentadores-de-agua/",
+      "enSha256": "71f6356ee86690fb49d2ad51dadeda65d602e4adad8d12dc5b125bfc899724cf"
+    },
+    "ST-068": {
+      "enRoute": "/services/water-heater-repair/",
+      "esRoute": "/es/servicios/reparacion-de-calentador-de-agua/",
+      "enSha256": "18efd2bb098412af88428581a27aceaf68d5b71626a1cab790d13b9f623c1745"
+    },
+    "ST-069": {
+      "enRoute": "/services/water-heater-replacement/",
+      "esRoute": "/es/servicios/reemplazo-de-calentador-de-agua/",
+      "enSha256": "3732c710f2d0abff37cd58b20ce9df15dbed946c87f9143c2de75fec0a57d7bc"
+    },
+    "ST-070": {
+      "enRoute": "/services/water-heater-maintenance/",
+      "esRoute": "/es/servicios/mantenimiento-de-calentador-de-agua/",
+      "enSha256": "eb491540e619c9d10fcf979e22f5e1da573a8739cb950c1ad567b57f267cc162"
+    },
+    "ST-024": {
+      "enRoute": "/services/heat-pump-water-heaters/",
+      "esRoute": "/es/servicios/calentadores-de-agua-con-bomba-de-calor/",
+      "enSha256": "ac146a402a5280e548e7339bb298bc7b557506e2cb68f41df6e7f4e613239640"
+    },
+    "ST-071": {
+      "enRoute": "/services/heat-pump-water-heater-repair/",
+      "esRoute": "/es/servicios/reparacion-de-calentador-de-agua-con-bomba-de-calor/",
+      "enSha256": "9e119f2278bd702a4d4e73b14d3d382e31a08c12d27f46828c29b5d163d85cc2"
+    },
+    "ST-072": {
+      "enRoute": "/services/heat-pump-water-heater-installation/",
+      "esRoute": "/es/servicios/instalacion-de-calentador-de-agua-con-bomba-de-calor/",
+      "enSha256": "1e5545136c79c4ecd98ed5518876d3dee3d97db1df2d0b67779160cebe1bc859"
+    },
+    "ST-073": {
+      "enRoute": "/services/heat-pump-water-heater-maintenance/",
+      "esRoute": "/es/servicios/mantenimiento-de-calentador-de-agua-con-bomba-de-calor/",
+      "enSha256": "2d5202695e735a8dc525a9581e43692140e4dd8cc6f887308194e425a0316080"
+    },
+    "ST-074": {
+      "enRoute": "/services/mini-split-repair/",
+      "esRoute": "/es/servicios/reparacion-de-minisplit/",
+      "enSha256": "5a347dd97bd4eb99d7b8054226aedf5d62fdced62c4e387b1aac8130c8d96575"
+    },
+    "ST-075": {
+      "enRoute": "/services/mini-split-installation/",
+      "esRoute": "/es/servicios/instalacion-de-minisplit/",
+      "enSha256": "a87fcfc355c3ff81993e84609b4218eb499ac0bb07ee5949995e984e983e518a"
+    },
+    "ST-076": {
+      "enRoute": "/services/mini-split-maintenance/",
+      "esRoute": "/es/servicios/mantenimiento-de-minisplit/",
+      "enSha256": "8d6c84cb49e6ec8e49242c3dc03c8e61194125761847fc28dc6abe6ac48cd76d"
+    },
+    "ST-025": {
+      "enRoute": "/services/indoor-air-quality/",
+      "esRoute": "/es/servicios/calidad-del-aire-interior/",
+      "enSha256": "52d0bc69e8c2a15858fb0355116b504528225112e07fb659cf469491914a8702"
+    },
+    "ST-077": {
+      "enRoute": "/services/indoor-air-quality-assessment/",
+      "esRoute": "/es/servicios/evaluacion-de-calidad-del-aire/",
+      "enSha256": "3adc63b698fb617f443173be2ab748378f326bcab4c9f63e944bd2781dcf76f1"
+    },
+    "ST-078": {
+      "enRoute": "/services/air-purification-systems/",
+      "esRoute": "/es/servicios/sistemas-de-purificacion-de-aire/",
+      "enSha256": "53ef67900c0dd83514fcfcb635b2f9f80a9150bf27823493b345237f16854f9a"
+    },
+    "ST-028": {
+      "enRoute": "/service-area/wellington/",
+      "esRoute": "/es/areas-de-servicio/wellington/",
+      "enSha256": "4c6942de1c75a2118c885e6507019ca3ad4854f0f91f52d2a7f23d84c6fb69aa"
+    },
+    "ST-029": {
+      "enRoute": "/service-area/greeley/",
+      "esRoute": "/es/areas-de-servicio/greeley/",
+      "enSha256": "a6e34c686112daf5525776e67c8c83ee2fd8f9ee828e2af3c85bf1956dce54ca"
+    },
+    "ST-030": {
+      "enRoute": "/service-area/loveland/",
+      "esRoute": "/es/areas-de-servicio/loveland/",
+      "enSha256": "0813c7e68aabdc093f6624fb980fe6ce04c059ef860b7e313d1e446a023d1e59"
+    },
+    "ST-031": {
+      "enRoute": "/service-area/berthoud/",
+      "esRoute": "/es/areas-de-servicio/berthoud/",
+      "enSha256": "2b536cf5d461c837594ab02208d4f4e385ae9a5594a595e7ab3aaab47e4a60ed"
+    },
+    "ST-032": {
+      "enRoute": "/service-area/windsor/",
+      "esRoute": "/es/areas-de-servicio/windsor/",
+      "enSha256": "c4e85dd92214c78297632db6f03b81b2e64a206fe5a9480d4c560344af6483e1"
+    },
+    "ST-033": {
+      "enRoute": "/service-area/longmont/",
+      "esRoute": "/es/areas-de-servicio/longmont/",
+      "enSha256": "a3b7a6f733479352c74d292f5d27272a30383bda0b31c14519b5a69ba9dc2fd5"
+    },
+    "ST-034": {
+      "enRoute": "/service-area/boulder/",
+      "esRoute": "/es/areas-de-servicio/boulder/",
+      "enSha256": "c61f441ae55c436ae4b03ee6a5595b2dbe2ab7d88cf00ef62afe7c083f52519c"
+    },
+    "ST-035": {
+      "enRoute": "/service-area/erie/",
+      "esRoute": "/es/areas-de-servicio/erie/",
+      "enSha256": "ddcb315c1be612f36fe52f01333aa2746ffa115c6a12a7ef90c33d10dde4762a"
+    },
+    "ST-036": {
+      "enRoute": "/service-area/frederick/",
+      "esRoute": "/es/areas-de-servicio/frederick/",
+      "enSha256": "59a246494d6ccd03b7b2e5b48797853cbfb1a3e14ffd26109e986d6fc4696556"
+    },
+    "ST-037": {
+      "enRoute": "/service-area/firestone/",
+      "esRoute": "/es/areas-de-servicio/firestone/",
+      "enSha256": "c6d1520c8c28835a8414302dafb4f5a78a518e1f77fe74bc2a914d75b45a9b75"
+    },
+    "ST-038": {
+      "enRoute": "/service-area/thornton/",
+      "esRoute": "/es/areas-de-servicio/thornton/",
+      "enSha256": "fff8ac5402fcab5030530a12f289d5b9e85fb9410054a73ca30730ecddfd15bb"
+    },
+    "ST-039": {
+      "enRoute": "/service-area/broomfield/",
+      "esRoute": "/es/areas-de-servicio/broomfield/",
+      "enSha256": "3e6e5b348eeaf199375432d4d21e3d72a63b164c89397ca690b06f2e821db955"
+    },
+    "ST-040": {
+      "enRoute": "/service-area/fort-collins/",
+      "esRoute": "/es/areas-de-servicio/fort-collins/",
+      "enSha256": "62ffe364dc25a03fd8359dcf4a1ed8bf17c3f2448284dd6df079e7c81fefabc2"
+    },
+    "ST-041": {
+      "enRoute": "/service-area/johnstown/",
+      "esRoute": "/es/areas-de-servicio/johnstown/",
+      "enSha256": "e854ecaa63cc66e87b8eeb4f495baee060c1697fc8dc86cabbf77eab402cc385"
+    },
+    "ST-042": {
+      "enRoute": "/service-area/timnath/",
+      "esRoute": "/es/areas-de-servicio/timnath/",
+      "enSha256": "ac38e6806497d4e26b6e82f8385beeb37991218b060ae7ffcf024e6f73236fd6"
+    },
+    "ST-043": {
+      "enRoute": "/service-area/severance/",
+      "esRoute": "/es/areas-de-servicio/severance/",
+      "enSha256": "cdce414b7efdcbc447c1df80eaf00147f26f0d3830901867dcb3290b79432103"
+    },
+    "ST-044": {
+      "enRoute": "/service-area/dacono/",
+      "esRoute": "/es/areas-de-servicio/dacono/",
+      "enSha256": "2eb764c56f1fbbe7a676ff623c67df38191183e6a4eacdac74c553d06e782126"
     }
   }
 }

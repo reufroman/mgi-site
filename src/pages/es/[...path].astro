@@ -3,7 +3,7 @@ import BaseEs from '../../layouts/BaseEs.astro';
 import ServiceIcon from '../../components/ServiceIcon.astro';
 import site from '../../data/site.json';
 import {photos} from '../../data/catalog.mjs';
-import {esStaticPaths,esByPageId,esServiceLinks,spanishPhoneNote} from '../../data/es.mjs';
+import {esStaticPaths,esByPageId,esServiceLinks,esLink,spanishPhoneNote} from '../../data/es.mjs';
 import {lenders} from '../../data/lenders.mjs';
 export function getStaticPaths(){return esStaticPaths();}
 const {page}=Astro.props;
@@ -14,14 +14,16 @@ const phoneHref='tel:+1'+phone.replace(/[^0-9]/g,'');
 const request=esByPageId('ST-004')?.esRoute;
 const isHome=page.pageId==='ST-001';
 const isSchedule=page.pageId==='ST-004';
-const isService=page.esRoute.startsWith('/es/servicios/');
+const isService=page.esRoute.startsWith('/es/servicios/')&&page.esRoute!=='/es/servicios/';
+const isArea=page.esRoute.startsWith('/es/areas-de-servicio/')&&page.esRoute!=='/es/areas-de-servicio/';
+const servicesHub=esByPageId('ST-005')?.esRoute, areasHub=esByPageId('ST-006')?.esRoute;
 const ctaHref=isSchedule?phoneHref:request;
 const ctaLabel=isSchedule?`Llame al ${phone}`:page.cta;
 ---
 <BaseEs page={page}>
 <article class="es-page" data-es-page={page.pageId}>
 <section class="hero"><div class="wrap">
-{!isHome&&<nav class="breadcrumb" aria-label="Ruta de navegación"><a href="/es/">Inicio</a><span aria-hidden="true">/</span>{isService&&<><span>Servicios</span><span aria-hidden="true">/</span></>}<span aria-current="page">{page.eyebrow||page.title}</span></nav>}
+{!isHome&&<nav class="breadcrumb" aria-label="Ruta de navegación"><a href="/es/">Inicio</a><span aria-hidden="true">/</span>{isService&&<>{servicesHub?<a href={servicesHub}>Servicios</a>:<span>Servicios</span>}<span aria-hidden="true">/</span></>}{isArea&&areasHub&&<><a href={areasHub}>Áreas de servicio</a><span aria-hidden="true">/</span></>}<span aria-current="page">{page.eyebrow||page.title}</span></nav>}
 <div class:list={['es-opening',{'es-opening-photo':!!hero}]}>
 <div>
 {page.eyebrow&&<p class="es-eyebrow">{page.eyebrow}</p>}
@@ -48,9 +50,12 @@ const ctaLabel=isSchedule?`Llame al ${phone}`:page.cta;
 </div></section>}
 
 {page.sections.length>0&&<section class:list={['section','es-sections',{'es-home-grid':isHome}]}><div class="wrap">
-{page.sections.map((section:{heading:string;body:string},index:number)=><div class="es-section" data-reveal>
+{page.sections.map((section:{heading:string;body:string;points?:{title:string;body:string}[];links?:{enRoute:string;label:string}[]},index:number)=><div class="es-section" data-reveal>
 <span class="es-number" aria-hidden="true">{String(index+1).padStart(2,'0')}</span>
-<div><h2>{section.heading}</h2><p>{section.body}</p></div>
+<div><h2>{section.heading}</h2>{section.body&&<p>{section.body}</p>}
+{section.points&&<ul class="es-points">{section.points.map(point=><li>{point.title&&<strong>{point.title} </strong>}{point.body}</li>)}</ul>}
+{section.links&&<div class="es-section-links">{section.links.map(link=>{const target=esLink(link.enRoute);return <a class="link-card" href={target.href} hreflang={target.english?'en':undefined}><strong>{link.label}{target.english&&' (en inglés)'}</strong><span aria-hidden="true">↗</span></a>;})}</div>}
+</div>
 </div>)}
 </div></section>}
 
@@ -80,6 +85,9 @@ const ctaLabel=isSchedule?`Llame al ${phone}`:page.cta;
 .es-number{font-weight:700;color:var(--teal);font-size:15px;padding-top:6px}
 .es-section h2{font-size:clamp(26px,2.4vw,34px);margin:0 0 10px}
 .es-section p{margin:0}
+.es-points{margin:14px 0 0;padding-left:20px;display:grid;gap:10px}
+.es-section-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:18px}
+.es-section-links a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;border:1px solid #bbc5be;border-radius:12px;text-decoration:none}
 .es-service-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:24px}
 .es-service-links a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:20px;border:1px solid #bbc5be;border-radius:12px;text-decoration:none}
 .es-faq .wrap{max-width:880px}

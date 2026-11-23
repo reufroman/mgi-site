@@ -1,7 +1,7 @@
 // Spanish (es) page set. Content comes from es-pages.json (see scripts/es-import.mjs).
 import rawPages from './es-pages.json' with {type:'json'};
 import site from './site.json' with {type:'json'};
-import {offers,vipPlans,OFFER_END} from './holiday-specials.mjs';
+import {offers,vipPlans,OFFER_END,COOL_CASH_BUY_BY,FINANCE_PLAN,HEADLINE_REBATE_DOLLARS} from './holiday-specials.mjs';
 
 // Facts the Spanish copy shares with English. Tokens like {{tuneUp}} in es-pages.json are
 // filled from the same data the English pages use, so a change there changes Spanish too.
@@ -27,6 +27,15 @@ export const esFacts=Object.freeze({
  humidifier:amount(offer('humidifier').figure,'humidifier offer'),
  vipStandard:`${standard.price} ${perUnit(standard.unit,'standard VIP')} o ${amount(standard.alt,'standard VIP monthly')} al mes, más ${amount(standard.detail,'standard VIP extra equipment')}`,
  vipDuctless:`${ductless.price} ${perUnit(ductless.unit,'ductless VIP')}`,
+ // Specials page (/es/ofertas/) facts.
+ rebateTotal:'$'+HEADLINE_REBATE_DOLLARS.toLocaleString('en-US'),
+ financePlan:FINANCE_PLAN,
+ coolCashBuyBy:spanishDate(COOL_CASH_BUY_BY),
+ noHeatDiagnostic:amount(offer('no-heat').figure,'no-heat offer'),
+ vipStandardYear:standard.price,
+ vipStandardMonth:amount(standard.alt,'standard VIP monthly'),
+ vipExtraEquipment:amount(standard.detail,'standard VIP extra equipment'),
+ vipDuctlessMonth:ductless.price,
 });
 function fill(value){
  if(typeof value==='string')return value.replace(/\{\{(\w+)\}\}/g,(_,key)=>{if(!(key in esFacts))throw Error(`Unknown Spanish fact {{${key}}}`);return esFacts[key];});
@@ -48,13 +57,21 @@ export const esByPageId=id=>esPages.find(p=>p.pageId===id);
 export const esByRoute=route=>esPages.find(p=>p.esRoute===route);
 export const esForEnglishRoute=route=>esPages.find(p=>p.enRoute===route);
 export const esHref=id=>esByPageId(id)?.esRoute;
+// A link written against an English route goes to the Spanish page when one exists,
+// otherwise to the English page, marked as English.
+export function esLink(enRoute){
+ const target=esForEnglishRoute(enRoute);
+ return target?{href:target.esRoute,english:false}:{href:enRoute,english:true};
+}
 
 // Top navigation, limited to pages that exist in Spanish.
 export const esNavigation=[
- ['ST-079','Emergencias'],
+// Same order as the English navigation; Plan VIP stays in the footer.
+ ['ST-005','Servicios'],
+ ['ST-006','Áreas de servicio'],
  ['ST-007','Financiamiento'],
  ['ST-008','Reembolsos'],
- ['ST-010','Plan VIP'],
+ ['ST-079','Emergencias'],
 ].filter(([id])=>esByPageId(id));
 
 export const esServiceLinks=['ST-059','ST-061','ST-026','ST-027','ST-079'].filter(id=>esByPageId(id));
