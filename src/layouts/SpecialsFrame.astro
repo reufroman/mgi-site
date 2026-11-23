@@ -4,9 +4,9 @@
 import '../styles/site.css';
 import LandingCallMeasurement from '../components/LandingCallMeasurement.astro';
 import ReadingMotion from '../components/ReadingMotion.astro';
-import ServiceTitanScheduler from '../components/ServiceTitanScheduler.astro';
 import ServiceIcon from '../components/ServiceIcon.astro';
 import CredentialLogos from '../components/CredentialLogos.astro';
+import SmsDisclosure from '../components/SmsDisclosure.astro';
 import site from '../data/site.json';
 import proof from '../data/home-proof.json';
 import routes from '../data/routes.json';
@@ -118,6 +118,7 @@ const robots = 'noindex, nofollow';
       <small>© 2026 {site.legalName}</small>
       <nav aria-label="Policies">{['MIGRATION-FAQ','ST-014','ST-015','ST-016','ST-017'].filter(id => byId(id)).map(id => <a href={byId(id)!.canonical_route}>{byId(id)!.name}</a>)}</nav>
     </div>
+    <SmsDisclosure placement="footer"/>
     <p class="image-disclaimer">Lifestyle images are AI-generated illustrations. They do not show actual MGI customers, employees or completed work.</p>
   </div>
 </footer>
@@ -131,6 +132,5 @@ document.querySelectorAll('details.mobile-menu, details.header-help').forEach(me
   });
 });
 </script>
-<ServiceTitanScheduler/>
 </body>
 </html>

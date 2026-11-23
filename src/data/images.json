@@ -62,14 +62,18 @@
   {
     "picture_id": "IMG-006",
     "scene": "Kitchen twirl",
-    "source_file": "06_Assets-&-Resources/Website-Lifestyle-2026-09-29/2026-09-29_Empty-Nesters-Dancing-in-Kitchen.png",
-    "status": "Existing generated source; new placement review required",
+    "source_file": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-006-r2.png",
+    "status": "Final image repair reviewed November3; release receipt owns deployed state",
     "origin": "AI-generated fictional home scene",
     "brief": "Preserve existing interaction; review crop, anatomy and honest use",
     "planned_uses": "110",
     "max_uses": "3 outside approved service families; related service reuse permitted",
     "remaining_capacity": "Related service reuse permitted",
-    "reuse_policy": "image-reuse-policy.json"
+    "reuse_policy": "image-reuse-policy.json",
+    "asset_stem": "img-006-r2",
+    "source_sha256": "cc3433e096dc7e5deaccd98a3829b7053bd5840473504c83edb6c4ff08976ba9",
+    "source_manifest": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/provenance.json",
+    "asset_quality": 85
   },
   {
     "picture_id": "IMG-007",
@@ -290,14 +294,18 @@
   {
     "picture_id": "IMG-025",
     "scene": "Shared crossword",
-    "source_file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Astro-2026-10-05/IMG-025-Home-Scene.png",
-    "status": "Generated and implemented for local review; public approval pending",
+    "source_file": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-025-r3.png",
+    "status": "Final image repair reviewed November3; release receipt owns deployed state",
     "origin": "AI-generated illustrative home scene",
     "brief": "Two older adults consider a crossword at a kitchen table, with one pencil between them. Core set centers White and Hispanic households with natural variation; no town/persona casting. Candid ordinary home, clean photo only, 3:2 intact interaction, mobile-safe faces/hands. No equipment, company marks, text, guarantee or factual customer implication. Origin and rights review required.",
     "planned_uses": "57",
     "max_uses": "3 outside approved service families; related service reuse permitted",
     "remaining_capacity": "Related service reuse permitted",
-    "reuse_policy": "image-reuse-policy.json"
+    "reuse_policy": "image-reuse-policy.json",
+    "asset_stem": "img-025-r3",
+    "source_sha256": "0b046ae8409e3b65b48728532098447054877e71711ae8aab611c5a571471266",
+    "source_manifest": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/provenance.json",
+    "asset_quality": 85
   },
   {
     "picture_id": "IMG-026",
@@ -386,14 +394,18 @@
   {
     "picture_id": "IMG-033",
     "scene": "Couple playing cards",
-    "source_file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Astro-2026-10-07/IMG-033-Couple-Card-Game.png",
-    "status": "Generated and implemented for local review; public approval pending",
+    "source_file": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-033-r2.png",
+    "status": "Final image repair reviewed November3; release receipt owns deployed state",
     "origin": "AI-generated illustrative home scene",
     "brief": "One adult couple enjoys a relaxed card game at their kitchen table. Edited from IMG-027 to remove the third adult. Fictional home scene, not customer or completed-job proof. Clean 3:2 photo; retain both people and hands inside the website Polaroid.",
     "planned_uses": "166",
     "max_uses": "3 outside approved service families; related service reuse permitted",
     "remaining_capacity": "Related service reuse permitted",
-    "reuse_policy": "image-reuse-policy.json"
+    "reuse_policy": "image-reuse-policy.json",
+    "asset_stem": "img-033-r2",
+    "source_sha256": "286ca6121e61addaf34a461495b4a3a20b0815138333cc058ebe500d504c745d",
+    "source_manifest": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/provenance.json",
+    "asset_quality": 85
   },
   {
     "picture_id": "IMG-034",

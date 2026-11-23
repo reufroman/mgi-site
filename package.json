@@ -11,7 +11,7 @@
     "build": "node scripts/validate-content.mjs && astro build && node scripts/finalize-build.mjs",
     "preview": "astro preview --host 127.0.0.1",
     "check": "astro check",
-    "test": "node --test tests/unit.test.mjs tests/holiday-specials.test.mjs tests/holiday-publication.test.mjs tests/intake.test.mjs tests/render-fingerprint.test.mjs tests/page-metadata.test.mjs tests/answer-links.test.mjs tests/seo-policy.test.mjs tests/migration-redirects.test.mjs tests/page-entrypoints.test.mjs && node tests/verify-build.mjs",
+    "test": "node --test --test-concurrency=1 tests/unit.test.mjs tests/holiday-specials.test.mjs tests/holiday-publication.test.mjs tests/financing-provenance.test.mjs tests/released-provenance.test.mjs tests/reviewer-provenance.test.mjs tests/intake.test.mjs tests/render-fingerprint.test.mjs tests/page-metadata.test.mjs tests/answer-links.test.mjs tests/seo-policy.test.mjs tests/migration-redirects.test.mjs tests/page-entrypoints.test.mjs tests/tag-manager.test.mjs tests/measurement-policy.test.mjs tests/sms-disclosures.test.mjs tests/schedule-privacy-drawer.test.mjs tests/specials-scheduler-navigation.test.mjs tests/service-finance-application.spec.mjs && node tests/verify-build.mjs",
     "bind:holiday-fingerprint": "node scripts/bind-holiday-specials-fingerprint.mjs",
     "test:measurement": "node --test tests/tag-manager.test.mjs tests/landing-call-measurement.test.mjs tests/landing-conversions.test.mjs",
     "test:browser": "node tests/browser.spec.mjs",

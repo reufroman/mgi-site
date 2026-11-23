@@ -29,3 +29,22 @@ test('newest approval must match the current fingerprint', () => {
  record.holidaySpecialsRelease.renderSourceHash = expected.renderSourceHash;
  assert.deepEqual(publicationErrors(record, expected), []);
 });
+
+test('holiday approval retains exact previously authorized landing pages', () => {
+ const record = JSON.parse(readFileSync('src/data/publication.json', 'utf8'));
+ const expected = {
+  canonicalOrigin: 'https://mgiheatingandair.com',
+  renderSourceHash: record.holidaySpecialsRelease.renderSourceHash,
+  now: '2026-11-23T20:00:00Z',
+  pageHashes: Object.fromEntries(Object.entries(record.pages).map(([id, page]) => [id, page.contentHash])),
+  imageHashes: Object.fromEntries(Object.entries(record.images).map(([id, image]) => [id, image.sourceHash])),
+  site: {schedulerWidgetId: record.scheduler.widgetId, schedulerWebsiteUrl: 'https://mgiheatingandair.com'}
+ };
+ for (let n = 1; n <= 9; n++) {
+  const id = `LP-00${n}`;
+  expected.pageHashes[id] = record.measurementRelease.pages[id].contentHash;
+ }
+ assert.deepEqual(publicationErrors(record, expected), []);
+ expected.pageHashes['LP-001'] = 'f'.repeat(64);
+ assert.ok(publicationErrors(record, expected).some(error => error.includes('publication.pages.LP-001.contentHash')));
+});

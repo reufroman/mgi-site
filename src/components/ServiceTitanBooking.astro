@@ -1,12 +1,13 @@
 ---
 import site from '../data/site.json';
+import SmsDisclosure from './SmsDisclosure.astro';
 if (!site.schedulerWidgetId) throw Error('Scheduling requires the supplied ServiceTitan widget ID');
 ---
 <div class="provider-booking">
  <h2>Tell us what you need.</h2>
  <p>Start your service request in MGI’s scheduling window. Have your address and a short description ready.</p>
+ <SmsDisclosure placement="booking"/>
  <button class="button" type="button" data-scheduler-open>Open service scheduler <span aria-hidden="true">↗</span></button>
- <p class="small-copy">Your appointment is pending confirmation.</p>
  <noscript><p>To request service, <a href="tel:+19702871673">call MGI at (970) 287-1673</a>. The online scheduler needs JavaScript.</p></noscript>
 </div>
 <style>.provider-booking{padding:32px;border:1px solid #bcc8c0;background:#fffdfb;border-radius:12px}.provider-booking h2{font-size:32px}.provider-booking p{margin-top:16px}.provider-booking button{cursor:pointer;font:inherit}@media(max-width:767px){.provider-booking{padding:24px}.provider-booking button{width:100%}}</style>

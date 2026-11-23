@@ -9,7 +9,7 @@ export const OFFER_END = 'December 30, 2026';
 export const COOL_CASH_BUY_BY = 'November 20, 2026';
 export const FINANCE_PLAN = '3442';
 export const FINANCE_DISCLOSURE = 'Subject to credit approval. Equal monthly payments are required. See the Wells Fargo credit card agreement.';
-export const scheduleHref = '/schedule-service/?' + new URLSearchParams({service: '', town: '', topic: 'Holiday specials'}).toString();
+export const scheduleHref = '/schedule-service/?' + new URLSearchParams({service: '', town: '', topic: 'Holiday specials', 'ws-widget': 'open'}).toString();
 
 export const pending = Object.freeze({
   C: 'Ask us whether offers can be combined.',
