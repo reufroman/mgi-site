@@ -157,15 +157,15 @@
   {
     "picture_id": "IMG-006",
     "scene": "Kitchen twirl",
-    "source_file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Lifestyle-2026-09-29/2026-09-29_Empty-Nesters-Dancing-in-Kitchen.png",
-    "status": "Existing generated source; new placement review required",
+    "source_file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-006-r2.png",
+    "status": "Final image repair reviewed November3; release receipt owns deployed state",
     "origin": "AI-generated illustrative home scene",
     "brief": "Preserve existing interaction; review crop, anatomy and honest use",
     "planned_uses": "111",
     "max_uses": "3 outside approved service families; related service reuse permitted",
     "remaining_capacity": "Related service reuse permitted",
-    "src": "/assets/img-006-1440.webp",
-    "srcset": "/assets/img-006-480.webp 480w, /assets/img-006-720.webp 720w, /assets/img-006-960.webp 960w, /assets/img-006-1440.webp 1440w",
+    "src": "/assets/img-006-r2-1440.webp",
+    "srcset": "/assets/img-006-r2-480.webp 480w, /assets/img-006-r2-720.webp 720w, /assets/img-006-r2-960.webp 960w, /assets/img-006-r2-1440.webp 1440w",
     "width": 1536,
     "height": 1024,
     "alt": "Illustration of two adults dance in a kitchen, holding their joined hands above their heads.",
@@ -180,10 +180,14 @@
         "honesty": 2
       },
       "acceptedForReview": true,
-      "notes": "Source inspected at full displayed size after contact-sheet review; overlapping hands and physical contact remain plausible. Fictional lifestyle illustration only; not customer or job proof. Preserve the complete interaction in final placement. Retain the safe separation between the dance and cooking area; do not crop away the surrounding context.",
-      "checkedSource": "06_Assets-&-Resources/Website-Lifestyle-2026-09-29/2026-09-29_Empty-Nesters-Dancing-in-Kitchen.png"
+      "notes": "Exact final repaired source inspected at full size and in final desktop/phone placement. AI-generated fictional home scene, not real customer, address, or job proof.",
+      "checkedSource": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-006-r2.png"
     },
-    "reuse_policy": "image-reuse-policy.json"
+    "reuse_policy": "image-reuse-policy.json",
+    "asset_stem": "img-006-r2",
+    "source_sha256": "cc3433e096dc7e5deaccd98a3829b7053bd5840473504c83edb6c4ff08976ba9",
+    "source_manifest": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/provenance.json",
+    "asset_quality": 85
   },
   {
     "picture_id": "IMG-007",
@@ -746,15 +750,15 @@
   {
     "picture_id": "IMG-025",
     "scene": "Shared crossword",
-    "source_file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Astro-2026-10-05/IMG-025-Home-Scene.png",
-    "status": "Generated and implemented for local review; public approval pending",
+    "source_file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-025-r3.png",
+    "status": "Final image repair reviewed November3; release receipt owns deployed state",
     "origin": "AI-generated illustrative home scene",
     "brief": "Two older adults consider a crossword at a kitchen table, with one pencil between them. Core set centers White and Hispanic households with natural variation; no town/persona casting. Candid ordinary home, clean photo only, 3:2 intact interaction, mobile-safe faces/hands. No equipment, company marks, text, guarantee or factual customer implication. Origin and rights review required.",
     "planned_uses": "56",
     "max_uses": "3 outside approved service families; related service reuse permitted",
     "remaining_capacity": "Related service reuse permitted",
-    "src": "/assets/img-025-1440.webp",
-    "srcset": "/assets/img-025-480.webp 480w, /assets/img-025-720.webp 720w, /assets/img-025-960.webp 960w, /assets/img-025-1440.webp 1440w",
+    "src": "/assets/img-025-r3-1440.webp",
+    "srcset": "/assets/img-025-r3-480.webp 480w, /assets/img-025-r3-720.webp 720w, /assets/img-025-r3-960.webp 960w, /assets/img-025-r3-1440.webp 1440w",
     "width": 1536,
     "height": 1024,
     "alt": "Illustration of two adults work through a crossword at a kitchen table.",
@@ -769,10 +773,14 @@
         "honesty": 2
       },
       "acceptedForReview": true,
-      "notes": "Actual source inspected visually. Hands, props and object contact appear plausible at inspected resolution. Fictional lifestyle illustration only, not customer or job proof. Final desktop/mobile placement remains to be inspected.",
-      "checkedSource": "06_Assets-&-Resources/Website-Astro-2026-10-05/IMG-025-Home-Scene.png"
+      "notes": "Exact final repaired source inspected at full size and in final desktop/phone placement. AI-generated fictional home scene, not real customer, address, or job proof.",
+      "checkedSource": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-025-r3.png"
     },
-    "reuse_policy": "image-reuse-policy.json"
+    "reuse_policy": "image-reuse-policy.json",
+    "asset_stem": "img-025-r3",
+    "source_sha256": "0b046ae8409e3b65b48728532098447054877e71711ae8aab611c5a571471266",
+    "source_manifest": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/provenance.json",
+    "asset_quality": 85
   },
   {
     "picture_id": "IMG-026",
@@ -994,15 +1002,15 @@
   {
     "picture_id": "IMG-033",
     "scene": "Couple playing cards",
-    "source_file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Astro-2026-10-07/IMG-033-Couple-Card-Game.png",
-    "status": "Generated and implemented for local review; public approval pending",
+    "source_file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-033-r2.png",
+    "status": "Final image repair reviewed November3; release receipt owns deployed state",
     "origin": "AI-generated illustrative home scene",
     "brief": "One adult couple enjoys a relaxed card game at their kitchen table. Edited from IMG-027 to remove the third adult. Fictional home scene, not customer or completed-job proof. Clean 3:2 photo; retain both people and hands inside the website Polaroid.",
     "planned_uses": "169",
     "max_uses": "3 outside approved service families; related service reuse permitted",
     "remaining_capacity": "Related service reuse permitted",
-    "src": "/assets/img-033-1440.webp",
-    "srcset": "/assets/img-033-480.webp 480w, /assets/img-033-720.webp 720w, /assets/img-033-960.webp 960w, /assets/img-033-1440.webp 1440w",
+    "src": "/assets/img-033-r2-1440.webp",
+    "srcset": "/assets/img-033-r2-480.webp 480w, /assets/img-033-r2-720.webp 720w, /assets/img-033-r2-960.webp 960w, /assets/img-033-r2-1440.webp 1440w",
     "width": 1536,
     "height": 1024,
     "alt": "Illustration of a couple playing cards together at a kitchen table.",
@@ -1017,10 +1025,14 @@
         "honesty": 2
       },
       "acceptedForReview": true,
-      "notes": "Generated edit inspected visually: two adults only, plausible hands and card contact, relaxed interaction, intact landscape. Fictional atmosphere only; public approval remains pending.",
-      "checkedSource": "06_Assets-&-Resources/Website-Astro-2026-10-07/IMG-033-Couple-Card-Game.png"
+      "notes": "Exact final repaired source inspected at full size and in final desktop/phone placement. AI-generated fictional home scene, not real customer, address, or job proof.",
+      "checkedSource": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-033-r2.png"
     },
-    "reuse_policy": "image-reuse-policy.json"
+    "reuse_policy": "image-reuse-policy.json",
+    "asset_stem": "img-033-r2",
+    "source_sha256": "286ca6121e61addaf34a461495b4a3a20b0815138333cc058ebe500d504c745d",
+    "source_manifest": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/provenance.json",
+    "asset_quality": 85
   },
   {
     "picture_id": "IMG-034",
@@ -1407,29 +1419,31 @@
   {
     "picture_id": "TOWN-loveland-05",
     "scene": "Loveland 05 Younger adult couple, no children.",
-    "source_file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/01_Projects/Website-Astro/output/town-headers/2026-10-07/loveland/loveland-05-homecoming-fall.png",
-    "status": "Existing generated source integrated for private town-page review; public approval pending",
+    "source_file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/town-loveland-05-r2.png",
+    "status": "Final image repair reviewed November3; release receipt owns deployed state",
     "origin": "AI-generated fictional editorial illustration",
     "brief": "Preserve complete native 3:2 interaction. Town-inspired composite atmosphere, not an actual address, current street condition, customer, or completed MGI work.",
     "planned_uses": "1",
     "max_uses": "3",
     "remaining_capacity": "2",
-    "src": "/assets/town-loveland-05-1440.webp",
-    "srcset": "/assets/town-loveland-05-480.webp 480w, /assets/town-loveland-05-720.webp 720w, /assets/town-loveland-05-960.webp 960w, /assets/town-loveland-05-1440.webp 1440w",
+    "src": "/assets/town-loveland-05-r2-1440.webp",
+    "srcset": "/assets/town-loveland-05-r2-480.webp 480w, /assets/town-loveland-05-r2-720.webp 720w, /assets/town-loveland-05-r2-960.webp 960w, /assets/town-loveland-05-r2-1440.webp 1440w",
     "width": 1536,
     "height": 1024,
     "alt": "AI-generated illustration: Two adults return from a walk to a landscaped modern home's entry.",
     "review": {
       "alt": "AI-generated illustration: Two adults return from a walk to a landscaped modern home's entry.",
       "acceptedForReview": true,
-      "notes": "Existing source review retained: Replacement pixels inspected. Maintained middle-class home, modest yard, neighboring homes, coherent people and object contact. No clear generation defect. Final crop not tested. Selected scene and household sequence inspected together in evidence/town-hubs/montage-0.jpg through montage-3.jpg. Final responsive placement requires page inspection. Fictional illustration only.",
-      "checkedSource": "output/town-headers/2026-10-07/loveland/loveland-05-homecoming-fall.png"
+      "notes": "Exact final repaired source inspected at full size and in final desktop/phone placement. AI-generated fictional home scene, not real customer, address, or job proof.",
+      "checkedSource": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/town-loveland-05-r2.png"
     },
     "reuse_policy": "image-reuse-policy.json",
     "household": "Younger adult couple, no children.",
     "housing_tier": "middle-class",
-    "source_sha256": "f0b488017f798c72b5fcee1209c7014155f86478a19d2a09217baee7f6ffef6a",
-    "source_manifest": "output/town-headers/2026-10-07/loveland/manifest.json"
+    "source_sha256": "59d5129ea0263953a11e3fc4af106b1bedf10c452877029930e45bead933822c",
+    "source_manifest": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/provenance.json",
+    "asset_stem": "town-loveland-05-r2",
+    "asset_quality": 85
   },
   {
     "picture_id": "TOWN-loveland-07",
@@ -2487,29 +2501,31 @@
   {
     "picture_id": "TOWN-thornton-05",
     "scene": "Thornton 05 Younger Hispanic adult couple in their late twenties, no children",
-    "source_file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/01_Projects/Website-Astro/output/town-headers/2026-10-07/thornton/05-younger-couple-homecoming-fall.png",
-    "status": "Existing generated source integrated for private town-page review; public approval pending",
+    "source_file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/town-thornton-05-r2.png",
+    "status": "Final image repair reviewed November3; release receipt owns deployed state",
     "origin": "AI-generated fictional editorial illustration",
     "brief": "Preserve complete native 3:2 interaction. Town-inspired composite atmosphere, not an actual address, current street condition, customer, or completed MGI work.",
     "planned_uses": "1",
     "max_uses": "3",
     "remaining_capacity": "2",
-    "src": "/assets/town-thornton-05-1440.webp",
-    "srcset": "/assets/town-thornton-05-480.webp 480w, /assets/town-thornton-05-720.webp 720w, /assets/town-thornton-05-960.webp 960w, /assets/town-thornton-05-1440.webp 1440w",
+    "src": "/assets/town-thornton-05-r2-1440.webp",
+    "srcset": "/assets/town-thornton-05-r2-480.webp 480w, /assets/town-thornton-05-r2-720.webp 720w, /assets/town-thornton-05-r2-960.webp 960w, /assets/town-thornton-05-r2-1440.webp 1440w",
     "width": 1536,
     "height": 1024,
     "alt": "AI-generated illustration: A younger couple in their late twenties arrive at their attractive front porch after a neighborhood walk.",
     "review": {
       "alt": "AI-generated illustration: A younger couple in their late twenties arrive at their attractive front porch after a neighborhood walk.",
       "acceptedForReview": true,
-      "notes": "Existing source review retained: Inspected actual full-resolution output: coherent anatomy and object contact, varied patio/homecoming/grandparent/quiet-porch interaction, appropriate suburban buildings, no lakefront import, distant western horizon. Pass. Selected scene and household sequence inspected together in evidence/town-hubs/montage-0.jpg through montage-3.jpg. Final responsive placement requires page inspection. Fictional illustration only.",
-      "checkedSource": "output/town-headers/2026-10-07/thornton/05-younger-couple-homecoming-fall.png"
+      "notes": "Exact final repaired source inspected at full size and in final desktop/phone placement. AI-generated fictional home scene, not real customer, address, or job proof.",
+      "checkedSource": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/town-thornton-05-r2.png"
     },
     "reuse_policy": "image-reuse-policy.json",
     "household": "Younger Hispanic adult couple in their late twenties, no children",
     "housing_tier": "middle-class",
-    "source_sha256": "14f70ada188512803b704ec94fa6b481e9581e25cdc5368bb86aff65c3c875cc",
-    "source_manifest": "output/town-headers/2026-10-07/thornton/manifest.json"
+    "source_sha256": "9a64466392deaa08ec4430f4065955321b8006f5bd78452bd9e546c1efac4fbb",
+    "source_manifest": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/provenance.json",
+    "asset_stem": "town-thornton-05-r2",
+    "asset_quality": 85
   },
   {
     "picture_id": "TOWN-thornton-07",
@@ -2622,29 +2638,31 @@
   {
     "picture_id": "TOWN-broomfield-05",
     "scene": "Broomfield 05 Younger Hispanic adult couple in their late twenties, no children",
-    "source_file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/01_Projects/Website-Astro/output/town-headers/2026-10-07/broomfield/05-younger-couple-homecoming-fall.png",
-    "status": "Existing generated source integrated for private town-page review; public approval pending",
+    "source_file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/town-broomfield-05-r2.png",
+    "status": "Final image repair reviewed November3; release receipt owns deployed state",
     "origin": "AI-generated fictional editorial illustration",
     "brief": "Preserve complete native 3:2 interaction. Town-inspired composite atmosphere, not an actual address, current street condition, customer, or completed MGI work.",
     "planned_uses": "1",
     "max_uses": "3",
     "remaining_capacity": "2",
-    "src": "/assets/town-broomfield-05-1440.webp",
-    "srcset": "/assets/town-broomfield-05-480.webp 480w, /assets/town-broomfield-05-720.webp 720w, /assets/town-broomfield-05-960.webp 960w, /assets/town-broomfield-05-1440.webp 1440w",
+    "src": "/assets/town-broomfield-05-r2-1440.webp",
+    "srcset": "/assets/town-broomfield-05-r2-480.webp 480w, /assets/town-broomfield-05-r2-720.webp 720w, /assets/town-broomfield-05-r2-960.webp 960w, /assets/town-broomfield-05-r2-1440.webp 1440w",
     "width": 1536,
     "height": 1024,
     "alt": "AI-generated illustration: A younger couple in their late twenties arrive at their attractive front porch after a neighborhood walk.",
     "review": {
       "alt": "AI-generated illustration: A younger couple in their late twenties arrive at their attractive front porch after a neighborhood walk.",
       "acceptedForReview": true,
-      "notes": "Existing source review retained: Inspected actual full-resolution output: welcoming ordinary brick/siding homes, modest level porch/patio/garden, neighboring houses, age/child mix and distinct activities, coherent anatomy and furniture contact. Western foothills moderate in distance, no alpine cliffs. Pass. Selected scene and household sequence inspected together in evidence/town-hubs/montage-0.jpg through montage-3.jpg. Final responsive placement requires page inspection. Fictional illustration only.",
-      "checkedSource": "output/town-headers/2026-10-07/broomfield/05-younger-couple-homecoming-fall.png"
+      "notes": "Exact final repaired source inspected at full size and in final desktop/phone placement. AI-generated fictional home scene, not real customer, address, or job proof.",
+      "checkedSource": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/town-broomfield-05-r2.png"
     },
     "reuse_policy": "image-reuse-policy.json",
     "household": "Younger Hispanic adult couple in their late twenties, no children",
     "housing_tier": "middle-class",
-    "source_sha256": "75b8936508b365ed649d2fe82e141d9ccf281515e97c5e7ba57211061c2dc2c8",
-    "source_manifest": "output/town-headers/2026-10-07/broomfield/manifest.json"
+    "source_sha256": "5a260ce5afc82089f1ee58d10d11acc8ca20732d9cdf4cca86aca082410dae02",
+    "source_manifest": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/provenance.json",
+    "asset_stem": "town-broomfield-05-r2",
+    "asset_quality": 85
   },
   {
     "picture_id": "TOWN-broomfield-07",

@@ -91,11 +91,16 @@
     "status": "Generated, visual review pending"
   },
   "IMG-025": {
-    "file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Astro-2026-10-05/IMG-025-Home-Scene.png",
+    "file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-025-r3.png",
     "prompt": "One clean wide 3:2 editorial photograph for IMG-025. Two older adults consider a crossword at a kitchen table, one pencil between them, different focused expressions and mugs. Fictional White and Hispanic households with natural individual variation. Candid eye-level natural light, ordinary home, relaxed life, complete interaction with generous framing for mobile. Believable intact fingers, limbs, faces and object contact. Photograph only, no paper frame, border, tilted canvas, letters, text, logos, HVAC equipment or branded technicians. AI-generated illustrative home scene, no factual customer claim.",
     "tool": "image_gen.imagegen",
-    "date": "2026-10-05",
-    "status": "Generated, visual review pending"
+    "date": "2026-11-03",
+    "status": "Final image repair reviewed November3; release receipt owns deployed state",
+    "source_file": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-025-r3.png",
+    "asset_stem": "img-025-r3",
+    "repair_provenance": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/provenance.json",
+    "source_sha256": "0b046ae8409e3b65b48728532098447054877e71711ae8aab611c5a571471266",
+    "source_manifest": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/provenance.json"
   },
   "IMG-026": {
     "file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Astro-2026-10-05/IMG-026-Home-Scene.png",
@@ -147,13 +152,18 @@
     "status": "Generated, visual review pending"
   },
   "IMG-033": {
-    "file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Astro-2026-10-07/IMG-033-Couple-Card-Game.png",
+    "file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-033-r2.png",
     "parent_picture_id": "IMG-027",
     "tool": "image_gen.imagegen",
-    "date": "2026-10-07",
-    "status": "Generated, source visually accepted for local review; public approval pending",
+    "date": "2026-11-03",
+    "status": "Final image repair reviewed November3; release receipt owns deployed state",
     "prompt": "Edit IMG-027 to exactly one adult couple, a Hispanic man and White woman playing cards. Remove third man and reconstruct room/table; preserve ordinary home, daylight, plants, mugs, believable hands/cards, relaxed playful feeling, landscape 3:2. No extra people, text, logos, or frame. Fictional illustration, not customer proof.",
-    "generated_output": "/Users/reubensmith/.codex/generated_images/01a11701-e2fb-7e11-8f5a-7ace483fde61/exec-9c4d8044-456f-4a37-89d6-85cfcb78e7d8.png"
+    "generated_output": "/Users/reubensmith/.codex/generated_images/01a11701-e2fb-7e11-8f5a-7ace483fde61/exec-9c4d8044-456f-4a37-89d6-85cfcb78e7d8.png",
+    "source_file": "06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/img-033-r2.png",
+    "asset_stem": "img-033-r2",
+    "repair_provenance": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/provenance.json",
+    "source_sha256": "286ca6121e61addaf34a461495b4a3a20b0815138333cc058ebe500d504c745d",
+    "source_manifest": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Image-Repairs-2026-11-03/provenance.json"
   },
   "IMG-034": {
     "file": "/Volumes/LNserver/Dropbox/Clients/MGI-Heating-Air/06_Assets-&-Resources/Website-Astro-2026-10-07/IMG-034-Older-Couple-Tea.png",

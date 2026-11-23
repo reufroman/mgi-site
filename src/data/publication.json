@@ -4929,5 +4929,14 @@
         "contentHash": "46198691a08e323188e2cd21cca3d4ff9d1174f634178fe69a494ba0c711012e"
       }
     }
+  },
+  "holidaySpecialsRelease": {
+    "authorizedBy": "Reu",
+    "authorizedAt": "2026-11-23T08:26:00-07:00",
+    "canonicalOrigin": "https://mgiheatingandair.com",
+    "evidenceReference": "Reu, Mon Nov 23, 2026, 8:26 AM MT: \"We are good on all yeps.\" Wells Fargo is the 72-month 0% lender (plan 3442, equal monthly payments). Reu, Mon Nov 23, 2026, 8:42 AM MT: \"Update the check to accept my Nov 23 approval as a new record and keep Jesse's Oct 12 record untouched, then give me the Codex deploy prompt.\"",
+    "scope": "/specials/ plus the Specials anchors in the Base.astro header, mobile menu and footer",
+    "routes": ["HOLIDAY-SPECIALS"],
+    "renderSourceHash": "22eed4f2b25e6c6d0ce970e882ae36e9b2b994311e27a50318856d1f58ca3609"
   }
 }

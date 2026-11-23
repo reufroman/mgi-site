@@ -1,0 +1,5 @@
+---
+interface Props {placement:'footer'|'booking'|'lp';}
+const {placement}=Astro.props;
+---
+<p class={placement==='footer'?'sms-disclosure':placement==='booking'?'small-copy':'lp-request-note'} data-mgi-sms-disclosure={placement} style={placement==='footer'?'max-width:none;margin:24px 0 0;font-size:12px;line-height:1.6':placement==='booking'?'max-width:560px;margin:0 0 20px;font-size:14px;line-height:1.6':undefined}><strong>{placement==='footer'?'Text messages:':'Text messages.'}</strong> {placement==='booking'?'When you request service in the scheduler, ':'When you request service, '}you can choose to get texts from MGI Heating and Air at the number you provide. Texts include appointment reminders, dispatch notices and service updates, plus offers and promotions. Opting in is optional and is not a condition of purchase. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out. Reply HELP for help or call <a href="tel:+19702871673">(970) 287-1673</a>. See our <a href="/privacy-policy/#text-messages">Privacy Policy</a> and <a href="/terms/#text-messages">Terms</a>.</p>
