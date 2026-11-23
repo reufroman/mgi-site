@@ -1,6 +1,8 @@
 // Headline rebate total. Change this one value.
 // Carrier Cool Cash ended Nov 20, 2026. The live total is 3033.
 // The hero always keeps the financing half. Only the rebate dollar amount changes.
+// Typed as number so a later switch back to 5133 is a real comparison, not an impossible literal check.
+/** @type {number} */
 export const HEADLINE_REBATE_DOLLARS = 3033;
 
 export const OFFER_END = 'December 30, 2026';
@@ -15,19 +17,23 @@ export const pending = Object.freeze({
 
 const money = dollars => `$${dollars.toLocaleString('en-US')}`;
 
+/** @param {number} [dollars] */
 export function holidayHeadline(dollars = HEADLINE_REBATE_DOLLARS) {
   return `Up to ${money(dollars)} in Rebates + 0% Financing for 72 Months`;
 }
 
+/** @param {number} [dollars] */
 export function financingSectionHeading(dollars = HEADLINE_REBATE_DOLLARS) {
   return `For homeowners buying a new system: 0% APR for 72 months and up to ${money(dollars)} in rebates`;
 }
 
+/** @param {number} [dollars] */
 export function rebatePanelHeading(dollars = HEADLINE_REBATE_DOLLARS) {
   const timing = dollars === 5133 ? ' this week' : '';
   return `Up to ${money(dollars)} in rebates for a dual-fuel system in Windsor${timing}`;
 }
 
+/** @param {number} [dollars] */
 export function windsorRebateLine(dollars = HEADLINE_REBATE_DOLLARS) {
   const amount = money(dollars);
   if (dollars === 5133) return `A dual-fuel system in Windsor can reach ${amount} this week.`;
@@ -43,6 +49,7 @@ export const rebateLines = Object.freeze([
   {id: 'cool-cash', label: 'Carrier Cool Cash', amount: 2100, upTo: true, thisWeekOnly: true, detail: `Buy by ${COOL_CASH_BUY_BY}.`},
 ]);
 
+/** @param {number} [dollars] */
 export function activeRebateLines(dollars = HEADLINE_REBATE_DOLLARS) {
   return rebateLines.filter(line => dollars === 5133 || !line.thisWeekOnly);
 }
@@ -51,10 +58,12 @@ export function rebateLineAmount(line) {
   return `${line.upTo ? 'Up to ' : ''}${money(line.amount)}`;
 }
 
+/** @param {number} [dollars] */
 export function activeRebateTotal(dollars = HEADLINE_REBATE_DOLLARS) {
   return activeRebateLines(dollars).reduce((sum, line) => sum + line.amount, 0);
 }
 
+/** @param {{id: string, headline: string}} offer @param {number} [dollars] */
 export function offerHeadline(offer, dollars = HEADLINE_REBATE_DOLLARS) {
   if (offer.id === 'rebates') return `Up to ${money(dollars)} in rebates for a qualifying new system`;
   return offer.headline;
@@ -148,6 +157,7 @@ export const vipPlans = Object.freeze([
 if (![5133, 3033].includes(HEADLINE_REBATE_DOLLARS)) throw Error('HEADLINE_REBATE_DOLLARS must be 5133 through Nov 20, or 3033 from Nov 21');
 if (activeRebateTotal(HEADLINE_REBATE_DOLLARS) !== HEADLINE_REBATE_DOLLARS) throw Error('Headline rebate total does not match the listed stack');
 
+/** @param {number} [dollars] */
 export function finePrint(dollars = HEADLINE_REBATE_DOLLARS) {
   const coolCash = dollars === 5133
     ? `Carrier Cool Cash of up to $2,100 is in this week's total when the equipment is bought by ${COOL_CASH_BUY_BY}.`
