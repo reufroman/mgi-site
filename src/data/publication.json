@@ -4937,6 +4937,6 @@
     "evidenceReference": "Reu, Mon Nov 23, 2026, 8:26 AM MT: \"We are good on all yeps.\" Wells Fargo is the 72-month 0% lender (plan 3442, equal monthly payments). Reu, Mon Nov 23, 2026, 8:42 AM MT: \"Update the check to accept my Nov 23 approval as a new record and keep Jesse's Oct 12 record untouched, then give me the Codex deploy prompt.\"",
     "scope": "/specials/ plus the Specials anchors in the Base.astro header, mobile menu and footer",
     "routes": ["HOLIDAY-SPECIALS"],
-    "renderSourceHash": "PENDING_WHOLE_SITE_FINGERPRINT"
+    "renderSourceHash": "92fc009aa380b7d2ce9355aecd74559e617fee471a89425983083967072c83e0"
   }
 }
