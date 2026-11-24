@@ -28,7 +28,7 @@ Meta description ES (110 chars): Instalación, reparación y cuidado de minispli
 | Section 4 heading | Choose the path that fits today | Elija la opción que le conviene hoy |  |
 | Section 4 body | If something stopped, ask about a diagnosis. If the system works but you are planning ahead, compare care or replacement options based on the home’s needs. | Reparación, mantenimiento o una instalación nueva por zonas. | Keep phone/brand/legal exact |
 | Section 5 heading | Before a visit is arranged | Antes de acordar la visita |  |
-| Section 5 body | Share what you want checked or changed, the equipment if known and any current problem. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation. | Confirme dirección y disponibilidad con la oficina. (970) 287-1673. | Keep phone/brand/legal exact |
+| Section 5 body | Share what you want checked or changed, the equipment if known and any current problem. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation. | Confirme dirección y disponibilidad con la oficina. (970) 287-1673. Una solicitud no es una cita: la visita necesita una confirmación aparte. | Keep phone/brand/legal exact |
 | FAQ 1 Q | None | ¿Un minisplit puede reemplazar el aire central? |  |
 | FAQ 1 A | None | A veces, según el tamaño de la casa y el diseño. Una visita lo aclara con medidas reales. |  |
 | FAQ 2 Q | None | ¿Hay un plan de mantenimiento para minisplits? |  |

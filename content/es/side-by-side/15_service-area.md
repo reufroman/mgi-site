@@ -59,7 +59,7 @@ Meta description ES: Calefacción, aire acondicionado y agua caliente en Berthou
 | Section 3 heading | Emergency HVAC | Emergencias |  |
 | Section 3 body | Heating or cooling stopped? Find the next step for urgent help. | ¿Dejó de funcionar la calefacción o el aire acondicionado? Vea el siguiente paso para recibir ayuda urgente. |  |
 | Section 3 link 1 | `/services/emergency-hvac-service/` | Ayuda urgente |  |
-| Section 4 heading | Where are you starting? | ¿Dónde está usted hoy? | Heading added in Spanish for the three English cards. |
+| Section 4 heading | Where are you starting? | ¿Por dónde quiere empezar? | Heading added in Spanish for the three English cards. |
 | Section 4 point 1 title | Something stopped working. | Algo dejó de funcionar. |  |
 | Section 4 point 1 | Describe the change and when it started. You do not need to know which part failed. | Describa el cambio y cuándo empezó. No necesita saber qué pieza falló. |  |
 | Section 4 point 2 title | You are planning a change. | Está planeando un cambio. |  |
@@ -72,9 +72,9 @@ Meta description ES: Calefacción, aire acondicionado y agua caliente en Berthou
 | Section 5 point 2 | Get the full scope and price, including any permit or other-trade work. | Pida el alcance y el precio completos, incluidos permisos o trabajos de otros oficios. |  |
 | Section 5 link 1 | `/financing/` | Financiamiento |  |
 | Section 5 link 2 | `/rebates/` | Opciones de reembolso |  |
-| Section 6 heading | Settle in. Keep care simple. | Instálese con calma. Mantenga el cuidado sencillo. |  |
-| Section 6 body | Useful records and regular care give you a clearer starting point for the next question. | Tener sus papeles a la mano y un mantenimiento regular le da un punto de partida más claro para la próxima duda. |  |
-| Section 6 point 1 title | New to the home? | ¿Su casa es nueva para usted? |  |
+| Section 6 heading | Settle in. Keep care simple. | Acomódese a gusto. Mantenga el cuidado sencillo. |  |
+| Section 6 body | Useful records and regular care give you a clearer starting point for the next question. | Con sus papeles a la mano y un mantenimiento regular, tendrá un punto de partida más claro para su próxima pregunta. |  |
+| Section 6 point 1 title | New to the home? | ¿Acaba de mudarse? |  |
 | Section 6 point 1 | Gather the manuals and service records you have. Use the first-days checklist to get familiar with the equipment. | Reúna los manuales y registros de servicio que tenga. Use la lista de los primeros días para conocer el equipo. |  |
 | Section 6 point 2 title | Give tune-ups a place on the calendar. | Ponga el mantenimiento en el calendario. |  |
 | Section 6 point 2 | Explore VIP Comfort Club, see what the furnace and AC tune-ups include, and compare the membership terms. | Conozca el Plan VIP (VIP Comfort Club), vea qué incluyen los mantenimientos del calentón y del aire acondicionado y compare los términos de la membresía. |  |

@@ -9,7 +9,7 @@ Primary ES keyword: reparación de aire acondicionado (volume: not measured; no 
 Supporting: aire acondicionado no enfría, técnico de AC
 Schema type: Service
 CTA ES: Solicite servicio
-Meta title ES (32 chars): Reparación de aire acondicionado
+Meta title ES (55 chars): Reparación de aire acondicionado en el norte de Colorado
 Meta description ES (116 chars): ¿El aire sopla caliente, se congela o gotea? Reparación de aire acondicionado con MGI Heating & Air. (970) 287-1673.
 
 | Field | English | Spanish (UNREVIEWED) | Notes / marketing intent |
@@ -28,7 +28,7 @@ Meta description ES (116 chars): ¿El aire sopla caliente, se congela o gotea? R
 | Section 4 heading | Describe the change before choosing a part | Describa el cambio antes de elegir una pieza |  |
 | Section 4 body | Share when the problem started, which rooms or fixtures are affected and any error shown on the display. A symptom is a starting point, not proof that a whole system needs replacing. | No compre piezas por adelantado. Empiece por el síntoma y la visita de diagnóstico. | Keep phone/brand/legal exact |
 | Section 5 heading | Before a visit is arranged | Antes de acordar la visita |  |
-| Section 5 body | Share what stopped working, when it changed and any visible error. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation. | La oficina confirma dirección, términos y disponibilidad. (970) 287-1673. | Keep phone/brand/legal exact |
+| Section 5 body | Share what stopped working, when it changed and any visible error. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation. | La oficina confirma dirección, términos y disponibilidad. (970) 287-1673. Una solicitud no es una cita: la visita necesita una confirmación aparte. | Keep phone/brand/legal exact |
 | FAQ 1 Q | None | ¿El aire caliente siempre es el compresor? |  |
 | FAQ 1 A | None | No. Puede ser refrigerante, flujo de aire, termostato u otra causa. La evaluación lo confirma. |  |
 | FAQ 2 Q | None | ¿Debo apagar el equipo si hay hielo? |  |

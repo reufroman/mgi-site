@@ -11,9 +11,9 @@ Meta description ES: ¿Se acabó el agua caliente o planea un reemplazo? Encuent
 | Field | English | Spanish | Notes |
 |---|---|---|---|
 | Eyebrow | Water heaters | Calentadores de agua | |
-| H1 / title | Water heater help for life at home. | Ayuda con su calentador de agua para la vida en casa. | |
+| H1 / title | Water heater help for life at home. | Ayuda con su calentador de agua, para disfrutar la vida en casa. | |
 | Summary | Hot water stopped, runs out too soon or needs a replacement plan? Find the right water-heater question before choosing a tank or a repair. | ¿Se le fue el agua caliente, se acaba muy pronto o necesita un plan para reemplazar el calentador? Encuentre la pregunta correcta antes de elegir un tanque o una reparación. | |
-| Answer lead | Choose the concern closest to yours. You do not have to diagnose the problem first. | Elija el problema que más se parezca al suyo. No tiene que diagnosticarlo primero. | |
+| Answer lead | Choose the concern closest to yours. You do not have to diagnose the problem first. | Elija el problema que más se parezca al suyo. No tiene que saber primero qué falló. | |
 | CTA | Ask about water heater help | Solicite ayuda con su calentador de agua | |
 | Section 1 heading | What does your water heater need? | ¿Qué necesita su calentador de agua? | |
 | Section 1 point 1 title | What you notice | Lo que nota. | |
@@ -23,11 +23,11 @@ Meta description ES: ¿Se acabó el agua caliente o planea un reemplazo? Encuent
 | Section 1 point 3 title | Before a visit | Antes de una visita. | |
 | Section 1 point 3 | Share what you want checked or changed, the equipment if known and any current problem. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation. | Comparta qué quiere que se revise o se cambie, el equipo si lo sabe y cualquier problema actual. Confirme si podemos hacer el trabajo en su dirección, qué cubre la visita, cualquier cargo y la disponibilidad actual. Una solicitud no es una cita: la visita necesita una confirmación aparte. | |
 | Section 2 heading | Useful details about water heaters. | Datos útiles sobre los calentadores de agua. | |
-| Section 2 body | These points explain the equipment. The exact model instructions and a qualified assessment guide work in your home. | Estos puntos explican cómo funciona el equipo. Las instrucciones de su modelo y una evaluación calificada guían el trabajo en su casa. | |
+| Section 2 body | These points explain the equipment. The exact model instructions and a qualified assessment guide work in your home. | Estos puntos explican cómo funciona el equipo. Lo que se hace en su casa depende de las instrucciones de su modelo y de la evaluación de un técnico calificado. | |
 | Section 2 point 1 title | Hot water in the first hour | El agua caliente en la primera hora. | |
 | Section 2 point 1 | First-hour rating estimates how much hot water a fully heated tank can deliver during the first hour. | La capacidad de la primera hora (first-hour rating) estima cuánta agua caliente puede dar un tanque ya caliente durante la primera hora. | |
-| Section 2 point 2 title | What the efficiency rating measures | Lo que mide la calificación de eficiencia. | |
-| Section 2 point 2 | Uniform Energy Factor, or UEF, is a water-heater efficiency rating. Compare products using the applicable rating category, not the label alone. | El Uniform Energy Factor, o UEF, es una calificación de eficiencia para calentadores de agua. Compare productos dentro de la categoría de calificación que les corresponde, no solo por la etiqueta. | |
+| Section 2 point 2 title | What the efficiency rating measures | Lo que mide la clasificación de eficiencia. | |
+| Section 2 point 2 | Uniform Energy Factor, or UEF, is a water-heater efficiency rating. Compare products using the applicable rating category, not the label alone. | El Uniform Energy Factor, o UEF, es una clasificación de eficiencia para calentadores de agua. Compare productos dentro de la categoría de clasificación que les corresponde, no solo por la etiqueta. | |
 | Section 2 point 3 title | The tank’s protective rod | La varilla que protege el tanque. | |
 | Section 2 point 3 | A metal rod inside the tank, called a sacrificial anode, corrodes to help protect the steel tank. | Una varilla de metal dentro del tanque, llamada ánodo de sacrificio, se corroe para ayudar a proteger el tanque de acero. | |
 | Section 2 point 4 title | Electric heating elements | Las resistencias eléctricas. | |
@@ -46,12 +46,15 @@ Meta description ES: ¿Se acabó el agua caliente o planea un reemplazo? Encuent
 | Section 4 point 2 | Replacement selects useful hot-water delivery and defines the entire installation job. | El reemplazo elige un calentador que dé el agua caliente que usted necesita y define todo el trabajo de instalación. | |
 | Section 4 point 3 title | Water Heater Maintenance | Mantenimiento de calentador de agua. | |
 | Section 4 point 3 | Care depends on whether the unit has a tank, burner, electric elements or a heat pump. | El mantenimiento depende de si el equipo tiene tanque, quemador, resistencias eléctricas o bomba de calor. | |
-| Section 5 heading | A clear next step. More room for home life. | Un siguiente paso claro. Más espacio para la vida en casa. | |
-| Section 5 body | Start with the concern, agree on the work, and understand the finish. | Empiece por el problema, pónganse de acuerdo en el trabajo y entienda cómo se termina. | |
-| Section 5 point 1 title | Choose the right conversation. | Elija la conversación correcta. | |
+| Section 4 link 1 | `/services/water-heater-repair/` | Reparación de calentador de agua | H3 cards link to these pages in English, as on the other hub pages |
+| Section 4 link 2 | `/services/water-heater-replacement/` | Instalación y reemplazo de calentador de agua | |
+| Section 4 link 3 | `/services/water-heater-maintenance/` | Mantenimiento de calentador de agua | |
+| Section 5 heading | A clear next step. More room for home life. | Un siguiente paso claro. Más tiempo para la vida en casa. | |
+| Section 5 body | Start with the concern, agree on the work, and understand the finish. | Empiece por el problema, acuerde el trabajo y entienda cómo queda al terminar. | |
+| Section 5 point 1 title | Choose the right conversation. | Empiece la conversación correcta. | |
 | Section 5 point 1 | Share the equipment and what you notice or want to change. Confirm the visit scope, charge, and available appointment. | Comparta su equipo y lo que nota o quiere cambiar. Confirme el alcance de la visita, el cargo y la cita disponible. | |
 | Section 5 point 2 title | Decide with the findings in view. | Decida con los resultados a la vista. | |
-| Section 5 point 2 | Review the recommended work, what it would address, its full cost, and anything still unknown before approving it. | Revise el trabajo recomendado, qué resolvería, su costo completo y lo que todavía no se sabe antes de aprobarlo. | |
+| Section 5 point 2 | Review the recommended work, what it would address, its full cost, and anything still unknown before approving it. | Revise el trabajo recomendado, lo que resolvería, su costo total y lo que todavía no se sabe antes de aprobarlo. | |
 | Section 5 point 3 title | Make room for the rest of your day. | Haga espacio para el resto de su día. | |
 | Section 5 point 3 | After the agreed work, review the checks and any remaining next step. Keep the record and get back to the moments you enjoy at home. | Después del trabajo acordado, revise las pruebas y cualquier paso pendiente. Guarde el registro y vuelva a los momentos que disfruta en casa. | |
 | FAQ 1 Q | Is no hot water always a failed tank? | ¿No tener agua caliente siempre significa que el tanque falló? | |
@@ -66,4 +69,3 @@ Meta description ES: ¿Se acabó el agua caliente o planea un reemplazo? Encuent
 
 ## Not carried over
 - Photo captions (lifestyle lines) and the Google review badge. The Spanish page uses the shared Spanish closing and footer.
-- The three service-path cards in Section 4 are links on the English page, but the outline gives no href for them; the repair and replacement links appear in Section 3, and no maintenance link was added.

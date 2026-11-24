@@ -15,7 +15,7 @@ Meta description ES: Recibir una solicitud y confirmar una cita son pasos distin
 | Summary | A received request and a confirmed appointment are separate steps. | Recibir una solicitud y confirmar una cita son pasos distintos. | |
 | CTA | Return to the request form | Volver a la solicitud | |
 | Section 1 heading | No request receipt is available here. | Aquí no aparece un comprobante de solicitud. | |
-| Section 1 body | Opening this page does not show that a request was received. If you used the scheduler, check the message shown there. Your appointment is pending confirmation. | Abrir esta página no muestra que se recibió una solicitud. Si usó el programador en línea, revise el mensaje que le mostró. Su cita queda pendiente de confirmación. | |
+| Section 1 body | Opening this page does not show that a request was received. If you used the scheduler, check the message shown there. Your appointment is pending confirmation. | Esta página por sí sola no confirma que se haya recibido una solicitud. Si usó el programador en línea, revise el mensaje que apareció ahí. Su cita queda pendiente de confirmación. | |
 
 ## Notes
 - The online scheduler is in English and returns to the English confirmation page. This Spanish page exists for parity; it is not wired to the scheduler (no tracking changes in this release).

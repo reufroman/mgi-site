@@ -9,15 +9,15 @@ Primary ES keyword: reparación de calefacción (volume: not measured; verify in
 Supporting: la calefacción no prende, furnace, calentón
 Schema type: Service
 CTA ES: Solicite servicio
-Meta title ES (49 chars): Reparación de calefacción en el norte de Colorado
-Meta description ES (112 chars): ¿La calefacción no prende o hace ruido? Evaluación de reparación con MGI Heating & Air. Llame al (970) 287-1673.
+Meta title ES (46 chars): Reparación de calentón en el norte de Colorado
+Meta description ES (110 chars): ¿El calentón no prende o hace ruido? Reparación de calefacción con MGI Heating & Air. Llame al (970) 287-1673.
 
 | Field | English | Spanish (UNREVIEWED) | Notes / marketing intent |
 |---|---|---|---|
-| Eyebrow | Help for your home | Reparación de calefacción | Brand/context |
-| H1 / title | Furnace Repair | Reparación de calefacción | Primary message |
-| Summary | No heat, short starts or a new furnace noise? Request a repair assessment to understand the cause before deciding what work is needed. | ¿Su calefacción (furnace) no calienta, prende y se apaga seguido o hace un ruido nuevo? Solicite una evaluación para entender la causa antes de decidir el trabajo. | "furnace" shown once for recognition |
-| Answer lead | Repair addresses a fault after someone checks the furnace. A symptom alone does not name the part. | El síntoma nos dice por dónde empezar, pero por sí solo no indica qué pieza falló. Un técnico de MGI revisa su calefacción de gas u otro sistema y le explica las opciones. | Trust opener |
+| Eyebrow | Help for your home | Reparación de calentón | Brand/context |
+| H1 / title | Furnace Repair | Reparación de calentón | Primary message |
+| Summary | No heat, short starts or a new furnace noise? Request a repair assessment to understand the cause before deciding what work is needed. | ¿Su calentón (furnace) no calienta, prende y se apaga seguido o hace un ruido nuevo? Solicite una evaluación para entender la causa antes de decidir el trabajo. | "furnace" shown once for recognition |
+| Answer lead | Repair addresses a fault after someone checks the furnace. A symptom alone does not name the part. | El síntoma nos dice por dónde empezar, pero por sí solo no indica qué pieza falló. Un técnico de MGI revisa su calentón de gas u otro sistema y le explica las opciones. | Trust opener |
 | CTA | Request service | Solicite servicio | Conversion |
 | Section 1 heading | What you notice helps the diagnosis | Lo que nota ayuda al diagnóstico | Furnace repair / no heat leads. |
 | Section 1 body | Describe whether the furnace stays off, starts briefly or runs without warming the home. Share an error on the display if one is visible; do not open internal panels. | ¿No calienta, prende y se apaga seguido, hace ruido, huele raro o el termostato no responde? Describa el cambio. | Keep phone/brand/legal exact |
@@ -28,9 +28,9 @@ Meta description ES (112 chars): ¿La calefacción no prende o hace ruido? Evalu
 | Section 4 heading | Describe the change before choosing a part | Describa el cambio antes de elegir una pieza |  |
 | Section 4 body | Share when the problem started, which rooms or fixtures are affected and any error shown on the display. A symptom is a starting point, not proof that a whole system needs replacing. | No necesita saber qué pieza es. Empiece por el síntoma y deje que la evaluación guíe el trabajo. | Keep phone/brand/legal exact |
 | Section 5 heading | Before a visit is arranged | Antes de acordar la visita |  |
-| Section 5 body | Share what stopped working, when it changed and any visible error. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation. | Confirme dirección, disponibilidad y términos con la oficina al (970) 287-1673. | Keep phone/brand/legal exact |
-| FAQ 1 Q | None | ¿Puedo seguir usando la calefacción si hace ruido? |  |
-| FAQ 1 A | None | Si huele a gas, salga de la casa y llame al 911 o a su compañía de gas desde afuera. Si ve hollín o tiene otra duda de seguridad, apague el equipo y llame a la oficina. Si solo hay un ruido nuevo sin otras señales, programe una evaluación pronto. | Safety fix: gas smell now says leave first, matching page 02 |
+| Section 5 body | Share what stopped working, when it changed and any visible error. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation. | Confirme dirección, disponibilidad y términos con la oficina al (970) 287-1673. Una solicitud no es una cita: la visita necesita una confirmación aparte. | Keep phone/brand/legal exact |
+| FAQ 1 Q | None | ¿Puedo seguir usando el calentón si hace ruido? |  |
+| FAQ 1 A | None | Si huele a gas, salga de la casa y, desde afuera, llame al 911 y a su compañía de gas. No use interruptores ni intente volver a encender el calentón. Si ve hollín o tiene otra duda de seguridad, apague el equipo y llame a la oficina. Si solo hay un ruido nuevo sin otras señales, programe una evaluación pronto. | Safety fix: gas smell now says leave first, matching page 02 |
 | FAQ 2 Q | None | ¿Reparación o reemplazo? |  |
 | FAQ 2 A | None | Depende de la edad, el diagnóstico y el costo. MGI le explica ambas rutas después de la evaluación. |  |
 

@@ -11,11 +11,11 @@ Meta description ES: ¿La casa está fría o el calentón suena diferente? Encue
 | Field | English | Spanish | Notes |
 |---|---|---|---|
 | Eyebrow | Furnaces | Calentones | |
-| H1 / title | Furnace help for life at home. | Ayuda con su calentón para la vida en casa. | |
+| H1 / title | Furnace help for life at home. | Ayuda con su calentón, para disfrutar la vida en casa. | |
 | Summary | The house feels cold, the furnace sounds different, or you are planning a change. Find the repair, replacement, or care path that fits what is happening. | La casa se siente fría, el calentón (furnace) suena diferente o está planeando un cambio. Encuentre la reparación, el reemplazo o el mantenimiento que le conviene según lo que está pasando. | "furnace" shown once for recognition |
 | Answer lead | Choose the concern closest to yours. You do not have to diagnose the problem first. | Elija el problema que más se parezca al suyo. No tiene que saber primero qué falló. | |
-| CTA | Ask about furnace help | Pregunte por ayuda con su calentón | |
-| Section 1 heading | Do not wait for an HVAC visit. | En caso de peligro, no espere una visita de calefacción y aire acondicionado. | Safety notice shown above the first H2 in English |
+| CTA | Ask about furnace help | Solicite ayuda con su calentón | |
+| Section 1 heading | Do not wait for an HVAC visit. | En caso de peligro, no espere la visita de un técnico. | Safety notice shown above the first H2 in English |
 | Section 1 body | Gas smell? Leave. From a safe place, call 911 and your gas utility. Do not use switches or try to relight the furnace. Suspected carbon monoxide? Get outside to fresh air and call 911. Smoke or immediate danger? Leave and call 911 from a safe place. | ¿Huele a gas? Salga de la casa. Desde un lugar seguro, llame al 911 y a su compañía de gas. No use interruptores ni intente volver a prender el calentón. ¿Sospecha que hay monóxido de carbono? Salga al aire libre y llame al 911. ¿Hay humo o peligro inmediato? Salga y llame al 911 desde un lugar seguro. | Safety: same meaning as English |
 | Section 2 heading | What does your furnace need? | ¿Qué necesita su calentón? | |
 | Section 2 point 1 title | What you notice | Lo que nota. | |
@@ -25,14 +25,14 @@ Meta description ES: ¿La casa está fría o el calentón suena diferente? Encue
 | Section 2 point 3 title | Before a visit | Antes de una visita. | |
 | Section 2 point 3 | Share what you want checked or changed, the equipment if known and any current problem. Confirm whether your address and requested work can be served, what the visit covers, any charges and current availability. A request is not an appointment; the visit needs a separate confirmation. | Comparta qué quiere que se revise o se cambie, el equipo si lo conoce y cualquier problema actual. Confirme si podemos hacer el trabajo en su dirección, qué cubre la visita, cualquier cargo y la disponibilidad. Una solicitud no es una cita: la visita necesita una confirmación aparte. | |
 | Section 3 heading | Useful details about furnaces. | Datos útiles sobre los calentones. | |
-| Section 3 body | These points explain the equipment. The exact model instructions and a qualified assessment guide work in your home. | Estos puntos explican cómo funciona el equipo. Las instrucciones de su modelo y una evaluación calificada guían el trabajo en su casa. | |
+| Section 3 body | These points explain the equipment. The exact model instructions and a qualified assessment guide work in your home. | Estos puntos explican cómo funciona el equipo. Lo que se hace en su casa depende de las instrucciones de su modelo y de la evaluación de un técnico calificado. | |
 | Section 3 point 1 title | What AFUE measures | Qué mide el AFUE. | |
 | Section 3 point 1 | AFUE is a furnace efficiency rating. It compares the heat produced over a heating season with the fuel used. | El AFUE es una clasificación de eficiencia del calentón. Compara el calor que produce durante una temporada de calefacción con el combustible que usa. | |
-| Section 3 point 2 title | What the rating leaves out | Lo que la clasificación no cuenta. | |
-| Section 3 point 2 | AFUE does not count electricity used by the fan and controls, or heat lost as warm air travels through the home. | El AFUE no cuenta la electricidad que usan el ventilador y los controles, ni el calor que se pierde mientras el aire caliente recorre la casa. | |
+| Section 3 point 2 title | What the rating leaves out | Lo que la clasificación no incluye. | |
+| Section 3 point 2 | AFUE does not count electricity used by the fan and controls, or heat lost as warm air travels through the home. | El AFUE no incluye la electricidad que usan el ventilador y los controles, ni el calor que se pierde mientras el aire caliente recorre la casa. | |
 | Section 3 point 3 title | What the thermostat shows | Lo que muestra el termostato. | |
 | Section 3 point 3 | A thermostat display and selected mode are useful observations. Keep internal power and equipment checks with a qualified person. | La pantalla del termostato y el modo seleccionado son datos útiles. Deje las revisiones internas de electricidad y del equipo a una persona calificada. | |
-| Section 3 point 4 title | Airflow and shutdown | El flujo de aire y los apagones del equipo. | |
+| Section 3 point 4 title | Airflow and shutdown | El flujo de aire y cuando el calentón se apaga solo. | |
 | Section 3 point 4 | A clogged filter or blocked register can contribute to furnace shutdown. | Un filtro tapado o una rejilla bloqueada pueden contribuir a que el calentón se apague. | |
 | Section 4 heading | What to check before choosing furnace work. | Qué revisar antes de elegir un trabajo en su calentón. | |
 | Section 4 point 1 | First, find the cause and check whether the furnace can be used safely. | Primero, hay que encontrar la causa y revisar si el calentón se puede usar de forma segura. | |
@@ -43,7 +43,7 @@ Meta description ES: ¿La casa está fría o el calentón suena diferente? Encue
 | Section 5 heading | Choose your service path. | Elija el servicio que necesita. | |
 | Section 5 body | Each path answers a different question. | Cada servicio responde a una pregunta distinta. | |
 | Section 5 point 1 title | Furnace Repair | Reparación de calentón. | |
-| Section 5 point 1 | Repair addresses a fault after someone checks the furnace. A symptom alone does not name the part. | La reparación corrige una falla después de que alguien revisa el calentón. El síntoma por sí solo no indica qué pieza falló. | |
+| Section 5 point 1 | Repair addresses a fault after someone checks the furnace. A symptom alone does not name the part. | La reparación corrige una falla después de revisar el calentón. El síntoma por sí solo no indica qué pieza falló. | |
 | Section 5 point 2 title | Furnace Replacement | Reemplazo de calentón. | |
 | Section 5 point 2 | Replacement means choosing a furnace and all the work needed to install and set it up. | El reemplazo significa elegir un calentón y todo el trabajo necesario para instalarlo y dejarlo funcionando. | |
 | Section 5 point 3 title | Furnace Maintenance | Mantenimiento de calentón. | |
@@ -52,7 +52,7 @@ Meta description ES: ¿La casa está fría o el calentón suena diferente? Encue
 | Section 5 link 2 | `/services/furnace-replacement/` | Reemplazo de calentón | |
 | Section 5 link 3 | `/services/furnace-maintenance/` | Mantenimiento de calentón | |
 | Section 6 heading | A clear next step. More room for home life. | Un siguiente paso claro. Más tiempo para la vida en casa. | |
-| Section 6 body | Start with the concern, agree on the work, and understand the finish. | Empiece por el problema, acuerde el trabajo y entienda cómo termina. | |
+| Section 6 body | Start with the concern, agree on the work, and understand the finish. | Empiece por el problema, acuerde el trabajo y entienda cómo queda al terminar. | |
 | Section 6 point 1 title | Choose the right conversation. | Empiece la conversación correcta. | |
 | Section 6 point 1 | Share the equipment and what you notice or want to change. Confirm the visit scope, charge, and available appointment. | Comparta el equipo y lo que nota o quiere cambiar. Confirme el alcance de la visita, el cargo y la cita disponible. | |
 | Section 6 point 2 title | Decide with the findings in view. | Decida con los resultados a la vista. | |

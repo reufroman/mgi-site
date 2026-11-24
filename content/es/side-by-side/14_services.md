@@ -16,7 +16,7 @@ Meta description ES: Reparación, reemplazo y mantenimiento de calentones, aire 
 | CTA | Request service | Solicite servicio | |
 | Section 1 heading | Where to start | Por dónde empezar | Heading added in Spanish; English shows these as three cards under the H1. |
 | Section 1 point 1 title | Something stopped working | Algo dejó de funcionar. | |
-| Section 1 point 1 | Start with repair information. An assessment and a repair are two separate decisions. | Empiece con la información de reparación. La evaluación y la reparación son dos decisiones distintas. | |
+| Section 1 point 1 | Start with repair information. An assessment and a repair are two separate decisions. | Empiece por la información sobre reparaciones. La evaluación y la reparación son dos decisiones distintas. | |
 | Section 1 point 2 title | I am weighing a new system | Estoy pensando en un equipo nuevo. | |
 | Section 1 point 2 | Compare the finding, the repair and the full replacement work before choosing. | Compare el diagnóstico, la reparación y el trabajo completo de un reemplazo antes de elegir. | |
 | Section 1 point 3 title | I want to plan regular care | Quiero planear el mantenimiento. | |
@@ -41,7 +41,7 @@ Meta description ES: Reparación, reemplazo y mantenimiento de calentones, aire 
 | Section 3 link 6 | `/services/mini-split-installation/` | Instalación y reemplazo de minisplit | |
 | Section 3 link 7 | `/services/air-purification-systems/` | Sistemas de purificación de aire | |
 | Section 4 heading | Maintenance | Mantenimiento | |
-| Section 4 body | Compare the care visit with what your equipment needs. If something has stopped working, start with repair information. | Compare la visita de mantenimiento con lo que necesita su equipo. Si algo dejó de funcionar, empiece con la información de reparación. | |
+| Section 4 body | Compare the care visit with what your equipment needs. If something has stopped working, start with repair information. | Compare la visita de mantenimiento con lo que necesita su equipo. Si algo dejó de funcionar, empiece por la información sobre reparaciones. | |
 | Section 4 link 1 | `/services/furnace-maintenance/` | Mantenimiento de calentón | |
 | Section 4 link 2 | `/services/ac-maintenance/` | Mantenimiento de aire acondicionado | |
 | Section 4 link 3 | `/services/heat-pump-maintenance/` | Mantenimiento de bomba de calor | |

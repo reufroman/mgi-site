@@ -12,7 +12,7 @@ Meta description ES: Reparación, reemplazo y mantenimiento de calentones, aire 
 |---|---|---|---|
 | Eyebrow | Heating and cooling in Wellington | Calefacción y aire acondicionado en Wellington | |
 | H1 / title | Heating and cooling services in Wellington. | Servicios de calefacción y aire acondicionado en Wellington. | |
-| Summary | Explore furnace, AC, heat-pump, and water-heater services for your Wellington home. Start with a repair concern, plan a replacement, or make room for routine care. | Conozca los servicios de calentón, aire acondicionado, bomba de calor y calentador de agua para su casa en Wellington. Empiece por una reparación, planee un reemplazo o haga espacio para el mantenimiento de rutina. | |
+| Summary | Explore furnace, AC, heat-pump, and water-heater services for your Wellington home. Start with a repair concern, plan a replacement, or make room for routine care. | Conozca los servicios de calentón, aire acondicionado, bomba de calor y calentador de agua para su casa en Wellington. Empiece por una reparación, planee un reemplazo o no se olvide del mantenimiento de rutina. | |
 | Answer lead | Contact MGI to confirm the work, availability, and service at your address. | Comuníquese con MGI para confirmar el trabajo, la disponibilidad y el servicio en su dirección. | |
 | CTA | Request service in Wellington | Solicite servicio en Wellington | |
 | Section 1 heading | Find the right HVAC service in Wellington. | Encuentre el servicio que necesita en Wellington. | |
@@ -40,7 +40,7 @@ Meta description ES: Reparación, reemplazo y mantenimiento de calentones, aire 
 | Section 2 heading | Emergency HVAC | Emergencias | |
 | Section 2 body | Heating or cooling stopped? Find the next step for urgent help. | ¿Dejó de funcionar la calefacción o el aire acondicionado? Vea el siguiente paso para recibir ayuda urgente. | |
 | Section 2 link 1 | `/services/emergency-hvac-service/` | Ayuda urgente | |
-| Section 3 heading | Where are you starting? | ¿Dónde está usted hoy? | |
+| Section 3 heading | Where are you starting? | ¿Por dónde quiere empezar? | |
 | Section 3 point 1 title | Something stopped working. | Algo dejó de funcionar. | |
 | Section 3 point 1 | Describe the change and when it started. You do not need to know which part failed. | Describa el cambio y cuándo empezó. No necesita saber qué pieza falló. | |
 | Section 3 point 2 title | You are planning a change. | Está planeando un cambio. | |
@@ -49,24 +49,24 @@ Meta description ES: Reparación, reemplazo y mantenimiento de calentones, aire 
 | Section 3 point 3 | Start with your equipment and the last visit you know about. Ask what the next tune-up covers. | Empiece por su equipo y la última visita que recuerde. Pregunte qué cubre el próximo mantenimiento. | |
 | Section 4 heading | Plan equipment work in Wellington. | Planee el trabajo en su equipo en Wellington. | |
 | Section 4 body | For a replacement or new installation, get the property details into the plan before choosing the equipment. | Para un reemplazo o una instalación nueva, incluya los detalles de la propiedad en el plan antes de elegir el equipo. | |
-| Section 4 point 1 title | Before equipment work at your Wellington home. | Antes de trabajar en el equipo de su casa en Wellington. | |
+| Section 4 point 1 title | Before equipment work at your Wellington home. | Antes de un trabajo en el equipo de su casa en Wellington. | |
 | Section 4 point 1 | Wellington lists AC, combined AC and furnace work, furnace replacement, and water heaters in its One Stop permit chart. For planned equipment work, ask which permit applies and who handles the application and inspection. | Wellington incluye el aire acondicionado, el trabajo combinado de aire y calentón, el reemplazo del calentón y los calentadores de agua en su tabla de permisos One Stop. Si planea un trabajo en su equipo, pregunte qué permiso aplica y quién se encarga de la solicitud y la inspección. | |
 | Section 4 point 2 | Include outdoor equipment placement and access in the plan. | Incluya en el plan dónde irá el equipo exterior y cómo se llega a él. | |
 | Section 4 point 3 | Get the full scope and price, including any permit or other-trade work. | Pida el alcance y el precio completos, incluidos permisos o trabajos de otros oficios. | |
-| Section 4 link 1 | `https://www.wellingtoncolorado.gov/DocumentCenter/View/4096` | Información local del proyecto | |
+| Section 4 link 1 | `https://www.wellingtoncolorado.gov/DocumentCenter/View/4096` | Información local para su proyecto | |
 | Section 4 link 2 | `/financing/` | Financiamiento | |
 | Section 4 link 3 | `/rebates/` | Opciones de reembolso | |
 | Section 5 heading | Make a care plan for your Wellington home. | Haga un plan de mantenimiento para su casa en Wellington. | |
-| Section 5 body | Useful records and regular care give you a clearer starting point for the next question. | Tener sus papeles a la mano y un mantenimiento regular le da un punto de partida más claro para la próxima duda. | |
-| Section 5 point 1 title | New to the home? | ¿Su casa es nueva para usted? | |
+| Section 5 body | Useful records and regular care give you a clearer starting point for the next question. | Con sus registros a la mano y un mantenimiento regular, tendrá un punto de partida más claro para su próxima duda. | |
+| Section 5 point 1 title | New to the home? | ¿Acaba de mudarse? | |
 | Section 5 point 1 | Gather the manuals and service records you have. Use the first-days checklist to get familiar with the equipment. | Reúna los manuales y registros de servicio que tenga. Use la lista de los primeros días para conocer el equipo. | |
 | Section 5 point 2 title | Give tune-ups a place on the calendar. | Ponga el mantenimiento en el calendario. | |
 | Section 5 point 2 | Explore VIP Comfort Club, see what the furnace and AC tune-ups include, and compare the membership terms. | Conozca el Plan VIP (VIP Comfort Club), vea qué incluyen los mantenimientos del calentón y del aire acondicionado y compare los términos de la membresía. | |
 | Section 5 link 1 | `/new-homeowners/` | Lista para dueños de casa nuevos | |
 | Section 5 link 2 | `/vip-membership/` | Plan VIP | |
 | FAQ 1 Q | Can MGI help at every Wellington address? | ¿MGI puede ayudar en cualquier dirección de Wellington? | |
-| FAQ 1 A | Coverage depends on the exact address, the work requested and available scheduling. Ask the office to confirm before making plans. | Depende de la dirección exacta, el trabajo que pide y la disponibilidad de citas. Pida a la oficina que lo confirme antes de hacer planes. | |
-| FAQ 2 Q | Do local utility programs apply automatically? | ¿Los programas de la compañía de luz y gas aplican automáticamente? | |
+| FAQ 1 A | Coverage depends on the exact address, the work requested and available scheduling. Ask the office to confirm before making plans. | Depende de la dirección exacta, el trabajo que solicita y la disponibilidad de citas. Pida a la oficina que lo confirme antes de hacer planes. | |
+| FAQ 2 Q | Do local utility programs apply automatically? | ¿Los programas locales de la compañía de luz y gas aplican automáticamente? | |
 | FAQ 2 A | No. The actual utility account, eligible equipment, project requirements and current program terms govern. Check those conditions before counting an incentive in the budget. | No. Dependen de su cuenta de luz y gas, de que el equipo califique, de los requisitos del proyecto y de los términos actuales del programa. Revise esas condiciones antes de contar con un incentivo en su presupuesto. | |
 | FAQ 3 Q | Where do I start if I do not know what is wrong? | ¿Por dónde empiezo si no sé qué está fallando? | |
 | FAQ 3 A | Choose the equipment you need help with, or share what you notice when you request service. You do not need to name a failed part. | Elija el equipo con el que necesita ayuda o cuéntenos lo que nota al solicitar servicio. No necesita saber qué pieza falló. | |
