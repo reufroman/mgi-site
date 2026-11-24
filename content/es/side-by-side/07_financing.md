@@ -17,7 +17,7 @@ Meta description ES (112 chars): Opciones de financiamiento para calefacción y 
 | Eyebrow | MGI Heating and Air | Financiamiento | Brand/context |
 | H1 / title | HVAC financing. A plan for the home you want. | Financiamiento para calefacción y aire. Un plan para el hogar que quiere. | Primary message |
 | Summary | A new heating or cooling system is a big purchase. Financing can spread the upfront cost into payments, so you can weigh the work your home needs alongside your budget. Compare the full project price and payment terms before you choose. | Un sistema nuevo de calefacción o aire es una compra grande. El financiamiento puede repartir el costo inicial en pagos, para que compare el proyecto completo con su presupuesto. | Meta-capable summary |
-| Answer lead | HVAC financing spreads an approved project cost into payments. Approval, interest, fees, and repayment terms depend on the lender and plan. Compare the full project price with the total cost of borrowing before applying. | El financiamiento reparte el costo de un proyecto aprobado en pagos. La aprobación, los intereses, los cargos y los plazos dependen del prestamista y del plan. Antes de solicitar, compare el precio completo del proyecto con el costo total del préstamo. | INTERNAL: consumer terms must come from Wells Fargo / Carrier consumer materials; never publish dealer rate columns |
+| Answer lead | HVAC financing spreads an approved project cost into payments. Approval, interest, fees, and repayment terms depend on the lender and plan. Compare the full project price with the total cost of borrowing before applying. | El financiamiento reparte el costo de un proyecto aprobado en pagos. La aprobación, los intereses, los cargos y los plazos dependen del prestamista y del plan. Antes de solicitar, compare el precio completo del proyecto con el costo total del préstamo. Preguntarle algo a MGI no es una solicitud de crédito. | INTERNAL: consumer terms must come from Wells Fargo / Carrier consumer materials; never publish dealer rate columns |
 | CTA | Talk about financing | Pregunte por financiamiento | Conversion |
 | Section 1 heading | Start with your home | Empiece por su hogar | Financing consideration for replacement jobs. |
 | Section 1 body | Tell us what you want to replace and what you want to be different. The office will confirm the appointment and visit details. | Díganos qué trabajo necesita: una reparación mayor o el reemplazo de su calefacción, aire, bomba de calor o minisplit. | Keep phone/brand/legal exact |
@@ -30,9 +30,9 @@ Meta description ES (112 chars): Opciones de financiamiento para calefacción y 
 | FAQ 1 Q | None | ¿La aprobación está garantizada? |  |
 | FAQ 1 A | None | No. La aprobación y los términos dependen del prestamista. Pregunte en la oficina por las opciones vigentes. | INTERNAL: old FAQ ("¿Qué plan se anuncia?") removed; plan code unconfirmed |
 | FAQ 2 Q | None | ¿Se combina con ofertas de temporada? |  |
-| FAQ 2 A | None | Las ofertas de $99 y $150 no se combinan con otras ofertas. Confirme con la oficina si el financiamiento aplica en el mismo trabajo. |  |
-| FAQ 3 Q | None | None |  |
-| FAQ 3 A | None | None |  |
+| FAQ 2 A | None | Las ofertas de {{tuneUp}} y {{humidifier}} se pueden combinar entre sí. Pregunte en la oficina si se combinan con el financiamiento en el mismo trabajo. |  |
+| FAQ 3 Q | What if a plan says "no interest if paid in full"? | ¿Qué pasa si un plan dice "sin intereses si paga el total"? |  |
+| FAQ 3 A | Check whether it is a deferred-interest offer. With deferred interest, missing the payoff deadline can mean owing interest from the purchase date. Minimum payments may not pay off the balance in time. Read the actual offer before signing. | Revise si es una oferta de intereses diferidos. Con intereses diferidos, si no paga el total antes de la fecha límite, puede deber intereses desde la fecha de compra. Los pagos mínimos tal vez no alcancen para pagar el saldo a tiempo. Lea la oferta antes de firmar. |  |
 | FAQ 4 Q | None | None |  |
 | FAQ 4 A | None | None |  |
 | FAQ 5 Q | None | None |  |

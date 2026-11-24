@@ -11,6 +11,7 @@ import site from '../data/site.json';
 import proof from '../data/home-proof.json';
 import routes from '../data/routes.json';
 import {scheduleHref} from '../data/holiday-specials.mjs';
+import {esForEnglishRoute} from '../data/es.mjs';
 
 declare const process: {env: {MGI_BUILD_MODE?: string}};
 const buildMode = process.env.MGI_BUILD_MODE || 'review';
@@ -25,6 +26,7 @@ const phoneHref = 'tel:' + (dial.length === 10 ? '+1' : '') + dial;
 const canonical = new URL('/specials/', Astro.site).href;
 const description = 'Holiday offers through December 30, 2026. Includes a $99 furnace tune-up, $150 off an installed humidifier, 0% APR financing for 72 months with equal payments, and stacked utility rebates.';
 const robots = 'noindex, nofollow';
+const spanish = esForEnglishRoute('/specials/');
 ---
 <!doctype html>
 <html lang="en">
@@ -35,6 +37,7 @@ const robots = 'noindex, nofollow';
 <meta name="description" content={description}/>
 <meta name="robots" content={robots}/>
 <link rel="canonical" href={canonical}/>
+{spanish && <><link rel="alternate" hreflang="en" href={canonical}/><link rel="alternate" hreflang="es" href={new URL(spanish.esRoute, Astro.site).href}/><link rel="alternate" hreflang="x-default" href={canonical}/></>}
 <meta name="theme-color" content="#174E5B"/>
 <link rel="preload" href="/assets/manrope.woff2" as="font" type="font/woff2" crossorigin/>
 <link rel="preload" href="/assets/cormorant.woff2" as="font" type="font/woff2" crossorigin/>
@@ -60,6 +63,7 @@ const robots = 'noindex, nofollow';
     </nav>
     <a class="brand" href="/" aria-label="MGI Heating and Air home"><img src="/assets/mgi-badge-240.webp" srcset="/assets/mgi-badge-120.webp 120w, /assets/mgi-badge-240.webp 240w" sizes="120px" alt="MGI Heating and Air" width="667" height="667"/></a>
     <div class="header-right">
+      {spanish && <a class="lang-switch desktop-nav" href={spanish.esRoute} hreflang="es" lang="es">Español</a>}
       <details class="header-help desktop-nav">
         <summary>More</summary>
         <nav aria-label="More navigation">
@@ -78,6 +82,7 @@ const robots = 'noindex, nofollow';
         <a href="/specials/" aria-current="page">Specials</a>
         <a href={scheduleHref}>Schedule service</a>
         {phone && <a href={phoneHref}>Call {phone}</a>}
+        {spanish && <a href={spanish.esRoute} hreflang="es" lang="es">Español</a>}
       </nav>
     </details>
   </div>

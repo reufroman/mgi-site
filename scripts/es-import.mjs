@@ -64,11 +64,12 @@ function parse(file) {
   const pageId = (text.match(/Page ID: `([^`]+)`/) || [])[1];
   const enRoute = meta('EN route');
   const esRoute = meta('ES route').split(' ')[0];
-  const rows = {};
+  const rows = {}, enCells = {};
   for (const line of text.split('\n')) {
     if (!line.startsWith('| ') || line.startsWith('| Field') || line.startsWith('|---')) continue;
     const cells = line.split('|').map((c) => c.trim());
     rows[cells[1]] = cells[3];
+    enCells[cells[1]] = cells[2];
   }
   const page = {
     pageId, enRoute, esRoute,
@@ -78,11 +79,25 @@ function parse(file) {
     eyebrow: rows['Eyebrow'], title: rows['H1 / title'], summary: rows['Summary'],
     answer: rows['Answer lead'], cta: rows['CTA'], sections: [], faqs: [],
   };
-  for (let i = 1; i <= 9; i++) {
+  // A section has a heading and at least one of: a body, points (short titled items) or
+  // links. Links keep the English route in the English column; the page resolves it to the
+  // Spanish page when one exists (src/data/es.mjs esLink), so links follow new Spanish pages.
+  for (let i = 1; i <= 15; i++) {
     const heading = rows[`Section ${i} heading`], body = rows[`Section ${i} body`];
-    if (usable(heading) && usable(body)) page.sections.push({ heading, body });
+    const points = [], links = [];
+    for (let j = 1; j <= 25; j++) {
+      const text = rows[`Section ${i} point ${j}`];
+      if (usable(text)) points.push({ title: usable(rows[`Section ${i} point ${j} title`]) ? rows[`Section ${i} point ${j} title`] : '', body: text });
+      const label = rows[`Section ${i} link ${j}`], enRoute = enCells[`Section ${i} link ${j}`];
+      if (usable(label) && enRoute) links.push({ enRoute: enRoute.replace(/`/g, ''), label });
+    }
+    if (!usable(heading) || !(usable(body) || points.length || links.length)) continue;
+    const section = { heading, body: usable(body) ? body : '' };
+    if (points.length) section.points = points;
+    if (links.length) section.links = links;
+    page.sections.push(section);
   }
-  for (let i = 1; i <= 9; i++) {
+  for (let i = 1; i <= 15; i++) {
     const question = rows[`FAQ ${i} Q`], answer = rows[`FAQ ${i} A`];
     if (usable(question) && usable(answer)) page.faqs.push({ question, answer });
   }

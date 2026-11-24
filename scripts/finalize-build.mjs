@@ -11,6 +11,8 @@ await fs.mkdir('evidence',{recursive:true});await fs.writeFile('evidence/build-m
 await fs.writeFile(`${out}/robots.txt`,mode==='review'?'User-agent: *\nDisallow: /\n':`User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`);
 await fs.writeFile(`${out}/_headers`,(mode==='review'?'/*\n  X-Robots-Tag: noindex, nofollow\n':'/*\n')+'  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n'+(mode==='review'?'':'/404/*\n  X-Robots-Tag: noindex, follow\n/404.html\n  X-Robots-Tag: noindex, follow\n/request-received/*\n  X-Robots-Tag: noindex, follow\n'));
 if(routes.some(r=>r.page_id==='ST-019'))await fs.copyFile(`${out}/404/index.html`,`${out}/404.html`);
+// Cloudflare Pages serves the nearest 404.html, so a missing /es/ address gets the Spanish page.
+try{await fs.copyFile(`${out}/es/404/index.html`,`${out}/es/404.html`);}catch(error){if(error.code!=='ENOENT')throw error;}
 await fs.writeFile(`${out}/_redirects`,migrationRules(routes));
 await fs.writeFile(`${out}/sitemap.xml`,sitemapXml(routes,origin,mode==='review'));
 console.log(`Finalized ${mode}: ${routes.length} governed routes, sitemap and 404 behavior`);

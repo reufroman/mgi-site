@@ -11,7 +11,7 @@ const file = (route) => `${out}${route}index.html`;
 const read = (route) => fs.readFileSync(file(route), 'utf8');
 
 test('every Spanish page builds with lang="es", es_US locale and a self canonical', () => {
-  assert.equal(esPages.length, 10);
+  assert.equal(esPages.length, fs.readdirSync('content/es/side-by-side').filter((f) => /^\d\d_.*\.md$/.test(f)).length);
   for (const page of esPages) {
     const html = read(page.esRoute);
     assert.match(html, /<html lang="es"[ >]/, page.esRoute);
@@ -48,7 +48,35 @@ test('no working notes, dealer financing numbers or English placeholders reach S
   for (const page of esPages) {
     const html = read(page.esRoute);
     assert.doesNotMatch(html, /INTERNAL|UNREVIEWED|PLACEHOLDER|\bNone\b/, page.esRoute);
-    assert.doesNotMatch(html, /4115|4155|\b0% APR|\bAPR\b/, page.esRoute);
+    assert.doesNotMatch(html, /4115|4155/, page.esRoute);
+    // Only the Specials page states a rate, because only the English Specials page does.
+    if (page.esRoute !== '/es/ofertas/') assert.doesNotMatch(html, /\b0% APR|\bAPR\b/, page.esRoute);
+  }
+});
+
+test('Spanish Specials states the same financing plan and disclosure as English Specials', () => {
+  const en = read('/specials/'), es = read('/es/ofertas/');
+  assert.match(en, /0% APR for 72 months/);
+  assert.match(es, /0% APR por 72 meses/);
+  assert.match(es, new RegExp(`plan ${esFacts.financePlan} de Wells Fargo`));
+  assert.match(es, /Sujeto a aprobación de crédito\. Se requieren pagos mensuales iguales\./);
+  assert.match(es, new RegExp(`Hasta \\${esFacts.rebateTotal} en reembolsos`));
+});
+
+test('Spanish copy has no dashes as punctuation and uses the approved product words', () => {
+  for (const page of esPages) {
+    const main = read(page.esRoute).match(/<main[^>]*>([\s\S]*)<\/main>/)[1].replace(/<[^>]+>/g, ' ');
+    assert.doesNotMatch(main, /[\u2013\u2014]/, `${page.esRoute} has an en or em dash`);
+    assert.doesNotMatch(main, /\bductless\b/i, page.esRoute);
+  }
+});
+
+test('internal links on Spanish pages lead to pages that exist', () => {
+  for (const page of esPages) {
+    const main = read(page.esRoute).match(/<main[^>]*>([\s\S]*)<\/main>/)[1];
+    for (const [, href] of main.matchAll(/href="(\/[^"#?]*)/g)) {
+      assert.ok(fs.existsSync(`${out}${href}${href.endsWith('/') ? 'index.html' : ''}`), `${page.esRoute} links to missing ${href}`);
+    }
   }
 });
 
